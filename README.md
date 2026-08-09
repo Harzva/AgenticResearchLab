@@ -13,7 +13,7 @@
 [![Code](https://img.shields.io/badge/verified_code-154-a98cff)](src/agentic_research_lab/data/code_repositories_2026.json)
 [![License](https://img.shields.io/badge/license-MIT-34d399)](LICENSE)
 
-[在线体验](https://harzva.github.io/AgenticResearchLab/) · [快速开始](#30-秒开始) · [完整论文库](awesome/all-agentic-papers-2026/README.md) · [Mobile Agentic AI](awesome/mobile-agentic-ai/README.md) · [升级计划](docs/next-upgrade-plan.md) · [Changelog](CHANGELOG.md)
+[在线体验](https://harzva.github.io/AgenticResearchLab/) · [快速开始](#30-秒开始) · [完整论文库](awesome/all-agentic-papers-2026/README.md) · [Mobile Agentic AI](awesome/mobile-agentic-ai/README.md) · [Roadmap](docs/ROADMAP.md) · [Changelog](CHANGELOG.md)
 
 </div>
 
@@ -258,7 +258,9 @@ scripts/build_pages.py       # 从公共 Paper v2 构建 Pages artifact
 | M7 Dashboard / API / workspace / Pages | 🧪 Beta |
 | M8 Release 1.0 | 🚧 In progress |
 
-完整设计、退出条件与 `ARL-101`–`ARL-307` 任务见 [全面升级计划](docs/next-upgrade-plan.md)。
+下一阶段从 `0.2 Beta → 1.0 → 2.0` 的优先级、评测指标和发布门槛见
+[执行 Roadmap](docs/ROADMAP.md)；`0.2` 的完整架构设计与 `ARL-101`–`ARL-307`
+历史任务见 [全面升级计划](docs/next-upgrade-plan.md)。
 
 ## Visual gallery
 
