@@ -1,0 +1,343 @@
+{
+  "schema_version": "1.0",
+  "description": "Deterministic AgenticResearchLab research taxonomy.",
+  "groups": {
+    "topics": [
+      {
+        "id": "mobile-agentic-ai",
+        "keywords": [
+          "mobile",
+          "android",
+          "smartphone",
+          "phone agent"
+        ]
+      },
+      {
+        "id": "gui-agents",
+        "keywords": [
+          "gui agent",
+          "computer use",
+          "graphical user interface",
+          "web agent"
+        ]
+      },
+      {
+        "id": "multi-agent-systems",
+        "keywords": [
+          "multi-agent",
+          "multiagent",
+          "agent collaboration",
+          "agent team"
+        ]
+      },
+      {
+        "id": "agent-memory",
+        "keywords": [
+          "agent memory",
+          "long-term memory",
+          "episodic memory",
+          "memory system"
+        ]
+      },
+      {
+        "id": "agent-safety",
+        "keywords": [
+          "agent safety",
+          "safe agent",
+          "prompt injection",
+          "environmental injection"
+        ]
+      },
+      {
+        "id": "agentic-rl",
+        "keywords": [
+          "agentic reinforcement learning",
+          "multi-turn rl",
+          "reinforcement learning"
+        ]
+      },
+      {
+        "id": "coding-agents",
+        "keywords": [
+          "coding agent",
+          "software engineering agent",
+          "code agent"
+        ]
+      },
+      {
+        "id": "scientific-agents",
+        "keywords": [
+          "scientific agent",
+          "science agent",
+          "research agent"
+        ]
+      },
+      {
+        "id": "embodied-agents",
+        "keywords": [
+          "embodied agent",
+          "robot",
+          "navigation agent"
+        ]
+      },
+      {
+        "id": "evaluation",
+        "keywords": [
+          "benchmark",
+          "evaluation",
+          "arena",
+          "testbed"
+        ]
+      }
+    ],
+    "agentic_components": [
+      {
+        "id": "planning",
+        "keywords": [
+          "planning",
+          "planner",
+          "plan generation"
+        ]
+      },
+      {
+        "id": "memory",
+        "keywords": [
+          "memory",
+          "remember",
+          "experience replay"
+        ]
+      },
+      {
+        "id": "reflection",
+        "keywords": [
+          "reflection",
+          "self-reflect",
+          "self-correction",
+          "critique"
+        ]
+      },
+      {
+        "id": "tool-use",
+        "keywords": [
+          "tool use",
+          "tool-use",
+          "tool calling",
+          "mcp"
+        ]
+      },
+      {
+        "id": "multi-agent",
+        "keywords": [
+          "multi-agent",
+          "multiagent",
+          "agent collaboration",
+          "agent team"
+        ]
+      },
+      {
+        "id": "verification",
+        "keywords": [
+          "verification",
+          "verifier",
+          "validate",
+          "guardrail"
+        ]
+      },
+      {
+        "id": "exploration",
+        "keywords": [
+          "exploration",
+          "explore",
+          "search agent"
+        ]
+      },
+      {
+        "id": "self-evolution",
+        "keywords": [
+          "self-evol",
+          "test-time learning",
+          "continual learning"
+        ]
+      },
+      {
+        "id": "world-model",
+        "keywords": [
+          "world model",
+          "imagination",
+          "simulate futures"
+        ]
+      },
+      {
+        "id": "human-in-the-loop",
+        "keywords": [
+          "human-in-the-loop",
+          "human feedback",
+          "human-agent"
+        ]
+      }
+    ],
+    "environments": [
+      {
+        "id": "android",
+        "keywords": [
+          "android"
+        ]
+      },
+      {
+        "id": "ios",
+        "keywords": [
+          "ios",
+          "iphone",
+          "ipad"
+        ]
+      },
+      {
+        "id": "web",
+        "keywords": [
+          "web agent",
+          "browser",
+          "website",
+          "web navigation"
+        ]
+      },
+      {
+        "id": "desktop",
+        "keywords": [
+          "desktop",
+          "operating system",
+          "computer use"
+        ]
+      },
+      {
+        "id": "robotics",
+        "keywords": [
+          "robot",
+          "embodied",
+          "manipulation"
+        ]
+      },
+      {
+        "id": "scientific-workflow",
+        "keywords": [
+          "scientific",
+          "laboratory",
+          "experiment agent"
+        ]
+      },
+      {
+        "id": "software-repository",
+        "keywords": [
+          "software engineering",
+          "repository",
+          "coding agent"
+        ]
+      }
+    ],
+    "modalities": [
+      {
+        "id": "text",
+        "keywords": [
+          "language model",
+          "text",
+          "llm"
+        ]
+      },
+      {
+        "id": "vision",
+        "keywords": [
+          "vision",
+          "visual",
+          "image",
+          "screenshot",
+          "vlm"
+        ]
+      },
+      {
+        "id": "audio",
+        "keywords": [
+          "audio",
+          "speech",
+          "sound"
+        ]
+      },
+      {
+        "id": "structured-ui",
+        "keywords": [
+          "ui tree",
+          "accessibility",
+          "dom",
+          "xml"
+        ]
+      }
+    ],
+    "failure_modes": [
+      {
+        "id": "prompt-injection",
+        "keywords": [
+          "prompt injection",
+          "indirect injection"
+        ]
+      },
+      {
+        "id": "environmental-injection",
+        "keywords": [
+          "environmental injection",
+          "visual injection"
+        ]
+      },
+      {
+        "id": "hallucination",
+        "keywords": [
+          "hallucination",
+          "hallucinate"
+        ]
+      },
+      {
+        "id": "error-propagation",
+        "keywords": [
+          "error propagation",
+          "snowballing",
+          "cascading failure"
+        ]
+      },
+      {
+        "id": "privacy-leakage",
+        "keywords": [
+          "privacy",
+          "sensitive information",
+          "data leakage"
+        ]
+      },
+      {
+        "id": "unsafe-action",
+        "keywords": [
+          "unsafe action",
+          "irreversible action",
+          "harmful action"
+        ]
+      },
+      {
+        "id": "bias-amplification",
+        "keywords": [
+          "bias amplification",
+          "biased swarm"
+        ]
+      },
+      {
+        "id": "collusion",
+        "keywords": [
+          "collusion",
+          "collude"
+        ]
+      },
+      {
+        "id": "long-horizon-drift",
+        "keywords": [
+          "long-horizon",
+          "long horizon",
+          "misesvolve"
+        ]
+      }
+    ]
+  }
+}

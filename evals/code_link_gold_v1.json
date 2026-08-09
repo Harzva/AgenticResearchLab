@@ -1,0 +1,707 @@
+{
+  "schema_version": "1.0",
+  "id": "code-link-gold-v1",
+  "description": "Deterministic positive examples with code URLs explicitly stated in official paper abstracts.",
+  "examples": [
+    {
+      "paper_id": "iclr-2026-10008785",
+      "title": "AgentGym-RL: An Open-Source Framework to Train LLM Agents for Long-Horizon Decision Making via Multi-Turn RL",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/WooooDyy/AgentGym-RL",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10011618",
+      "title": "Agentic Jigsaw Interaction Learning for Enhancing Visual Perception and Reasoning in Vision-Language Models",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/yuzeng0-0/AGILE",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10009306",
+      "title": "Agentic Reinforced Policy Optimization",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/RUC-NLPIR/ARPO",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10010827",
+      "title": "AgentSynth: Scalable Task Generation for Generalist Computer-Use Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/sunblaze-ucb/AgentSynth",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10007543",
+      "title": "Aligned Agents, Biased Swarm: Measuring Bias Amplification in Multi-Agent Systems",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/weizhihao1/MAS-Bias",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10009249",
+      "title": "Automated Stateful Specialization for Adaptive Agent Systems",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/myanvoos/ASpec",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10009813",
+      "title": "BOAD: Discovering Hierarchical Software Engineering Agents via Bandit Optimization",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/iamxjy/BOAD-SWE-Agent",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10010180",
+      "title": "CARD: Towards Conditional Design of Multi-agent Topological Structures",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Warma10032/CARD",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10009048",
+      "title": "ChatInject: Abusing Chat Templates for Prompt Injection in LLM Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/hwanchang00/ChatInject",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10007435",
+      "title": "ComputerRL: Scaling End-to-End Online Reinforcement Learning for Computer Use Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/THUDM/ComputerRL",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10010672",
+      "title": "Context Learning for Multi-Agent Discussion",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/HansenHua/M2CL-ICLR26",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10011305",
+      "title": "Continuous-Time Value Iteration for Multi-Agent Reinforcement Learning",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Wangxuefeng1024/Continuous-Time-Value-Iteration-for-Multi-Agent-Reinforcement-Learning",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10010899",
+      "title": "Demystifying and Enhancing the Efficiency of Large Language Model Based Search Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/tiannuo-yang/SearchAgent-X",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10007188",
+      "title": "Do LLM Agents Know How to Ground, Recover, and Assess? Evaluating Epistemic Competence in Information-Seeking Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/SHAO-Jiaqi757/SeekBench",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008884",
+      "title": "Dynamic Speculative Agent Planning",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/guanyilin428/Dynamic-Speculative-Planning",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008386",
+      "title": "Earth-Agent: Unlocking the Full Landscape of Earth Observation with Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/opendatalab/Earth-Agent",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008872",
+      "title": "EdiVal-Agent: An Object-Centric Framework for Automated, Fine-Grained Evaluation of Multi-Turn Editing",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/TianyuCodings/EdiVal",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10007512",
+      "title": "FingerTip 20K: A Benchmark for Proactive and Personalized Mobile LLM Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/tsinghua-fib-lab/FingerTip-20K",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10009545",
+      "title": "Flash-Searcher: Fast and Effective Web Agents via DAG-Based Parallel Execution",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/OPPO-PersonalAI/Flash-Searcher",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008072",
+      "title": "From Conversation to Query Execution: Benchmarking User and Tool Interactions for EHR Database Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/glee4810/EHR-ChatQA",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10007273",
+      "title": "From Reproduction to Replication: Evaluating Research Agents with Progressive Code Masking",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/j1mk1m/AutoExperiment",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008001",
+      "title": "From Single to Multi-Granularity: Toward Long-Term Memory Association and Selection of Conversational Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Applied-Machine-Learning-Lab/ICLR2026_MemGAS",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008792",
+      "title": "GraphPlanner: Graph Memory-Augmented Agentic Routing for Multi-Agent LLMs",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/ulab-uiuc/GraphPlanner",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10009851",
+      "title": "GUI-Shift: Enhancing VLM-Based GUI Agents through Self-supervised Reinforcement Learning",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/UbiquitousLearning/GUI-Shift",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10009105",
+      "title": "Helmsman: Autonomous Synthesis of Federated Learning Systems via Collaborative LLM Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/haoyuan-l/Helmsman",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10009347",
+      "title": "Hierarchy-of-Groups Policy Optimization for Long-Horizon Agentic Tasks",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/langfengQ/verl-agent/tree/master/recipe/hgpo",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10009359",
+      "title": "Huxley-G\\\"odel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/metauto-ai/HGM",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10007215",
+      "title": "Information Gain-based Policy Optimization: A Simple and Effective Approach for Multi-Turn Search Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/GuoqingWang1/IGPO",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10011365",
+      "title": "IR-Agent: Expert-Inspired LLM Agents for Structure Elucidation from Infrared Spectra",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/HeewoongNoh/IR-Agent",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10011252",
+      "title": "Language Agents for Hypothesis-driven Clinical Decision Making with Reinforcement Learning",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/dharouni/LA-CDM",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008264",
+      "title": "MATA: A Trainable Hierarchical Automaton System for Multi-Agent Visual Reasoning",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/ControlNet/MATA",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10007929",
+      "title": "MCP Security Bench (MSB): Benchmarking Attacks Against Model Context Protocol in LLM Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/dongsenzhang/MSB",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008961",
+      "title": "MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/MIT-MI/MEM1",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10010890",
+      "title": "MobileRL: Online Agentic Reinforcement Learning for Mobile GUI Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/THUDM/MobileRL",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10010955",
+      "title": "NetArena: Dynamic Benchmarks for AI Agents in Network Automation",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Froot-NetSys/NetArena",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10010438",
+      "title": "Orak: A Foundational Benchmark for Training and Evaluating LLM Agents on Diverse Video Games",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/krafton-ai/Orak",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10007881",
+      "title": "PropensityBench: Evaluating Latent Safety Risks in Large Language Models via an Agentic Approach",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/scaleapi/propensity-evaluation",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10006613",
+      "title": "ProRe: A Proactive Reward System for GUI Agents via Reasoner–Actor Collaboration",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/V-Droid-Agent/ProRe",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10007887",
+      "title": "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/google-research/reasoning-bank",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10010130",
+      "title": "ResiliBench: Evaluating Agentic Workflow Adaptation in Stochastic Environments",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Archer222arc/ResiliBench",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008779",
+      "title": "Resp-Agent: An Agent-Based System for Multimodal Respiratory Sound Generation and Disease Diagnosis",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/zpforlove/Resp-Agent",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10009300",
+      "title": "Retaining Suboptimal Actions to Follow Shifting Optima in Multi-Agent Reinforcement Learning",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/hyeon1996/S2Q",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10009261",
+      "title": "Safe Continuous-time Multi-Agent Reinforcement Learning via Epigraph Form",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Wangxuefeng1024/Safe-Continuous-time-Multi-Agent-Reinforcement-Learning-via-Epigraph-Form",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008777",
+      "title": "Search Self-Play: Pushing the Frontier of Agent Capability without Supervision",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Qwen-Applications/SSP",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10009685",
+      "title": "Seeing, Listening, Remembering, and Reasoning: A Multimodal Agent with Long-Term Memory",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/ByteDance-Seed/m3-agent",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10010282",
+      "title": "Stronger-MAS: Multi-Agent Reinforcement Learning for Collaborative LLMs",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/pettingllms-ai/PettingLLMs",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10011762",
+      "title": "Towards Self-Evolving Agent Benchmarks : Validatable Agent Trajectory via Test-Time Exploration",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/titanwings/trace-benchmark-evolving",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10011945",
+      "title": "TusoAI: Agentic Optimization for Scientific Methods",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Alistair-Turcan/TusoAI",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10010674",
+      "title": "USTBench: Benchmarking and Dissecting Spatiotemporal Reasoning Capabilities of LLMs as Urban Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/usail-hkust/USTBench",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10010274",
+      "title": "Visual Multi-Agent System: Mitigating Hallucination Snowballing via Visual Flow",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/YU-deep/ViF",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008481",
+      "title": "WALT: Web Agents that Learn Tools",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/SalesforceAIResearch/WALT",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10007037",
+      "title": "Web-CogReasoner: Towards Multimodal Knowledge-Induced Cognitive Reasoning for Web Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Gnonymous/Web-CogReasoner",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10006567",
+      "title": "When Agents “Misremember” Collectively: Exploring the Mandela Effect in LLM-based Multi-Agent Systems",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/bluedream02/Mandela-Effect",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008753",
+      "title": "When AI Agents Collude Online: Financial Fraud Risks by Collaborative LLM Agents on Social Platforms",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/zheng977/MutiAgent4Fraud",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "iclr-2026-10008692",
+      "title": "Zephyrus: An Agentic Framework for Weather Science",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Rose-STL-Lab/Zephyrus",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-66270",
+      "title": "ACON: Optimizing Context Compression for Long-horizon LLM Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/microsoft/acon",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-61450",
+      "title": "Active Exploring like a Pigeon: Reinforcing Spatial Reasoning via Agentic Vision-Language Models",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/dw-dengwei/active-spatial-reasoning",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-63989",
+      "title": "AdaMEM: Test-Time Adaptive Memory for Language Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/yunx-z/AdaMEM",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-64306",
+      "title": "Agent World Model: Infinity Synthetic Environments for Agentic Reinforcement Learning",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Snowflake-Labs/agent-world-model",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-63271",
+      "title": "Agent-Omit: Adaptive Context Omission for Efficient LLM Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/usail-hkust/Agent-Omit",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-66362",
+      "title": "AgentSelect: Benchmark for Narrative Query-to-Agent Recommendation",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Ancientshi/AgentSelect",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-66603",
+      "title": "AgentSuite: Toward More Reliable Agent Evaluation with a Component-Based Benchmark Auditing Pipeline",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Agent-Suite/AgentSuite",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-60754",
+      "title": "AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Pt3Y/AgentTailor",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-61748",
+      "title": "AgentVocab: Structure-Aware Vocabulary Adaptation for Efficient LLM Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Starry-159/AgentVocab",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-63068",
+      "title": "AgentWebBench: Benchmarking Multi-Agent Coordination in Agentic Web",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/cxcscmu/AgentWebBench",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-62581",
+      "title": "Are Your Agents Upward Deceivers?",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/QingyuLiu/Agentic-Upward-Deception",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-65909",
+      "title": "ARLArena: A Unified Framework for Stable Agentic Reinforcement Learning",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/WillDreamer/ARL-Arena",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-63820",
+      "title": "BlueCodeAgent: A Blue Teaming Agent Powered by Automated Red Teaming for CodeGen AI",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/1mocat/BlueCodeAgent",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-65179",
+      "title": "Can Agents Generalize to the Open World? Unveiling the Fragility of Static Training in Tool Use",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/LAMDA-NeSy/OpenAgent",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-66672",
+      "title": "Clarify Before You Draw: Proactive Agents for Robust Text-to-CAD Generation",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/BoYuanVisionary/Pro-CAD",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-66421",
+      "title": "ComplexMCP: Evaluation of LLM Agents in Dynamic, Interdependent, and Large-Scale Tool Sandbox",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/AIDC-AI/complex-mcp",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-65839",
+      "title": "CoPE: A Framework for Optimizing Coordination between Planning and Execution in LLM-based Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Octobrist/CoPE",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-61907",
+      "title": "CyberJurors: A Multi-Agent Simulation Task for E-Commerce Disputes Verdict",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/YanhuiS/CyberJurors",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-62583",
+      "title": "Data Agent: Learning to Select Data via End-to-End Dynamic Optimization",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Jackbrocp/Data-Agent",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-66263",
+      "title": "Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Xinyu-Pang/Deliberate-Evolution",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-63516",
+      "title": "EffGen: Enabling Small Language Models as Capable Autonomous Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/ctrl-gaurav/effGen",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-63023",
+      "title": "EMBGuard: Constructing Hazard-Aware Guardrails for Safe Planning in Embodied Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/dongwxxkchoi/EMBGuard",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-66645",
+      "title": "EngiAgent: Fully Connected Coordination of LLM Agents for Solving Open-ended Engineering Problems with Feasible Solutions",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/AI4Engi/EngiAgent",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-65992",
+      "title": "Escaping Whack-a-Mole: Optimizing Documentation as Repo-Specific Playbooks for Coding Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/ccsnow127/docsearch",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-61343",
+      "title": "Estimating the Empowerment of Language Model Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Jinyeop3110/EELMA",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-62216",
+      "title": "EvoMAS: Evolutionary Generation of Multi-Agent Systems",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/amazon-science/EvoMAS",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-64271",
+      "title": "Experience-Evolving Multi-Turn Tool-Use Agent with Hybrid Episodic–Procedural Memory",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/LISijia-dev/H-EPM",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-62898",
+      "title": "Fix Before Search: Benchmarking Agentic Visual Query Pre-processing in Multimodal Retrieval-augmented Generation",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/phycholosogy/VQQP_Bench",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-63972",
+      "title": "From Conflict to Consensus: Boosting Medical Reasoning via Multi-Round Agentic RAG",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/NJU-RL/MA-RAG",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-61502",
+      "title": "From Interaction Trajectories to Prompt Rules: Credit Assignment for Multi-Agent Prompt Optimization",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/bingo-w/TRUCE",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-63475",
+      "title": "FT-Dojo: Towards Autonomous LLM Fine-Tuning with Language Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/microsoft/rd-agent",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-61718",
+      "title": "GRASP: Graph Reasoning via Agentic Solving and Probing of LLMs",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/PKU-ML/GRASP",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-61155",
+      "title": "Helpful to a Fault: Measuring Illicit Assistance in Multi-Turn, Multilingual LLM Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/epfl-nlp/helpful-to-a-fault",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-66577",
+      "title": "Hybrid-Gym: Training Coding Agents to Generalize Across Tasks",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/Hybrid-Gym/Hybrid-Gym",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-65730",
+      "title": "InteractComp: Evaluating Search Agents With Ambiguous Queries",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/FoundationAgents/InteractComp",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-61427",
+      "title": "Is Vibe Coding Safe? Benchmarking Vulnerability of Agent-Generated Code in Real-World Tasks",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/LeiLiLab/susvibes",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-66266",
+      "title": "Learning Query-Aware Budget-Tier Routing for Runtime Agent Memory",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/ViktorAxelsen/BudgetMem",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-63625",
+      "title": "LitReview Arena: Evaluating Literature Review Agents with Battle-style Peer Review Platform",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/VanellopeAsher/LitReview-Arena",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-62974",
+      "title": "LiveFigure: Generating Editable Scientific Illustration with VLM Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/tsinghua-fib-lab/LiveFigure",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-64729",
+      "title": "MaMa: A Game-Theoretic Approach for Designing Safe Agentic Systems",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/JNoether/MaMa",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-65053",
+      "title": "MARS-SQL: A Multi-Agent Reinforcement Learning Framework For Text-To-SQL",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/YangHaolin0526/MARS-SQL",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-62219",
+      "title": "MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/wangzx1219/MASPO",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-60873",
+      "title": "MCP-Persona: Benchmarking LLM Agents on Real-World Personal Applications via Environment Simulation",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/wwh0411/MCP-Persona",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-60772",
+      "title": "NL2Repo-Bench: Towards Long-Horizon Repository Generation Evaluation of Coding Agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/multimodal-art-projection/NL2RepoBench",
+      "evidence_source": "official-abstract-explicit-url"
+    },
+    {
+      "paper_id": "icml-2026-61624",
+      "title": "On Information Self-Locking in Reinforcement Learning for Active Reasoning of LLM agents",
+      "expected_status": "verified",
+      "expected_code_url": "https://github.com/unimpor/T3",
+      "evidence_source": "official-abstract-explicit-url"
+    }
+  ]
+}

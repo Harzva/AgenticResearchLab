@@ -18,6 +18,9 @@ Then regenerate and verify:
 ```bash
 arl awesome mobile-agentic-ai --write awesome/mobile-agentic-ai/README.md
 python -m unittest discover -s tests -v
+arl evaluate
+python scripts/validate_repository.py
+python scripts/check_public_safety.py
 ```
 
 ## Scope
@@ -45,3 +48,8 @@ python -m unittest discover -s tests -v
 The exporter deliberately removes `downloaded_path` and `download_error`. Do not manually add
 local paths to the public JSON. Code links may be added only when they point to an official or
 author-linked repository; leave `code` null when a repository has not been verified.
+
+Repository verification exceptions belong in
+`src/agentic_research_lab/data/code_link_decisions.json`. Rebuilds must preserve negative and
+manual decisions as audit evidence, and must never promote an unavailable candidate into
+`links.code`.

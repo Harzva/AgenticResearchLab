@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Harzva/AgenticResearchLab/schemas/project-profile.schema.json",
+  "title": "AgenticResearchLab Project Profile",
+  "type": "object",
+  "required": ["schema_version", "name", "root", "goal", "languages", "frameworks", "components", "agentic_capabilities", "constraints", "evidence"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "name": {"type": "string"},
+    "root": {"type": "string"},
+    "goal": {"type": ["string", "null"]},
+    "languages": {"type": "object"},
+    "frameworks": {"type": "array", "items": {"type": "string"}},
+    "components": {"type": "array", "items": {"type": "string"}},
+    "agentic_capabilities": {"type": "array", "items": {"type": "string"}},
+    "constraints": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": true
+}

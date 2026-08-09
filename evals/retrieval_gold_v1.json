@@ -1,0 +1,807 @@
+{
+  "schema_version": "1.0",
+  "id": "retrieval-smoke-gold-v1",
+  "description": "A deterministic 100-query retrieval regression set. It is a smoke benchmark, not a substitute for the planned human-authored semantic research-query set.",
+  "examples": [
+    {
+      "id": "retrieval-001",
+      "query": "evaluation robotics framework studying behavior",
+      "relevant_paper_ids": [
+        "iclr-2026-10006666"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-002",
+      "query": "evaluation adaptive foundation tool-aware",
+      "relevant_paper_ids": [
+        "iclr-2026-10011617"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-003",
+      "query": "multi-agent-systems evaluation multi-agent a2asecbench protocol-aware security",
+      "relevant_paper_ids": [
+        "iclr-2026-10010017"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-004",
+      "query": "agentic-rl evaluation memory achieving olympia-level geometry",
+      "relevant_paper_ids": [
+        "iclr-2026-10011798"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-005",
+      "query": "multi-agent-systems evaluation multi-agent adaptive collaboration humans",
+      "relevant_paper_ids": [
+        "iclr-2026-10010313"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-006",
+      "query": "evaluation ios adaptive social learning",
+      "relevant_paper_ids": [
+        "iclr-2026-10010511"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-007",
+      "query": "multi-agent-systems evaluation multi-agent advancing traffic",
+      "relevant_paper_ids": [
+        "iclr-2026-10011322"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-008",
+      "query": "multi-agent-systems agentic-rl multi-agent aegis automated error",
+      "relevant_paper_ids": [
+        "iclr-2026-10006419"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-009",
+      "query": "evaluation tool-use software-repository data protocol unifying",
+      "relevant_paper_ids": [
+        "iclr-2026-10006993"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-010",
+      "query": "evaluation tool-use ios agent-x evaluating deep",
+      "relevant_paper_ids": [
+        "iclr-2026-10009109"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-011",
+      "query": "gui-agents evaluation web agentfold long-horizon proactive",
+      "relevant_paper_ids": [
+        "iclr-2026-10010254"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-012",
+      "query": "agentic-rl exploration ios agentgym-rl open-source framework",
+      "relevant_paper_ids": [
+        "iclr-2026-10008785"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-013",
+      "query": "agent-memory evaluation memory context engineering evolving",
+      "relevant_paper_ids": [
+        "iclr-2026-10008343"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-014",
+      "query": "agentic-rl exploration jigsaw interaction learning",
+      "relevant_paper_ids": [
+        "iclr-2026-10011618"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-015",
+      "query": "agentic-rl evaluation tool-use reinforced policy optimization",
+      "relevant_paper_ids": [
+        "iclr-2026-10009306"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-016",
+      "query": "agentic-rl evaluation exploration reinforcement learning implicit",
+      "relevant_paper_ids": [
+        "iclr-2026-10007373"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-017",
+      "query": "agentic-rl evaluation tool-use agentmath empowering mathematical",
+      "relevant_paper_ids": [
+        "iclr-2026-10008363"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-018",
+      "query": "multi-agent-systems agentic-rl multi-agent agentpo enhancing",
+      "relevant_paper_ids": [
+        "iclr-2026-10011478"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-019",
+      "query": "multi-agent-systems agentic-rl evaluation agentracer inducing failure",
+      "relevant_paper_ids": [
+        "iclr-2026-10007726"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-020",
+      "query": "evaluation long-horizon-drift agentsynth scalable task",
+      "relevant_paper_ids": [
+        "iclr-2026-10010827"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-021",
+      "query": "fundamentals valuing data",
+      "relevant_paper_ids": [
+        "iclr-2026-10012113"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-022",
+      "query": "multi-agent-systems evaluation multi-agent ai-for-science low-code platform",
+      "relevant_paper_ids": [
+        "iclr-2026-10010820"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-023",
+      "query": "multi-agent-systems evaluation multi-agent aligned biased swarm",
+      "relevant_paper_ids": [
+        "iclr-2026-10007543"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-024",
+      "query": "multi-agent-systems agentic-rl planning alphaagentevo evolution-oriented alpha",
+      "relevant_paper_ids": [
+        "iclr-2026-10007685"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-025",
+      "query": "evaluation ios software-repository ambig-swe interactive overcome",
+      "relevant_paper_ids": [
+        "iclr-2026-10009007"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-026",
+      "query": "evaluation verification framework llms solving",
+      "relevant_paper_ids": [
+        "iclr-2026-10010957"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-027",
+      "query": "information theoretic perspective",
+      "relevant_paper_ids": [
+        "iclr-2026-10007928"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-028",
+      "query": "evaluation verification hallucination aria retrieval iterative",
+      "relevant_paper_ids": [
+        "iclr-2026-10010860"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-029",
+      "query": "evaluation memory exploration arms adaptive red-teaming",
+      "relevant_paper_ids": [
+        "iclr-2026-10006730"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-030",
+      "query": "evaluation scientific-workflow astabench rigorous benchmarking",
+      "relevant_paper_ids": [
+        "iclr-2026-10009971"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-031",
+      "query": "multi-agent-systems evaluation planning atlas constraints-aware multi-agent",
+      "relevant_paper_ids": [
+        "iclr-2026-10007591"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-032",
+      "query": "evaluation human-in-the-loop autolibra metric induction",
+      "relevant_paper_ids": [
+        "iclr-2026-10011573"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-033",
+      "query": "evaluation reflection scientific-workflow automated stateful specialization",
+      "relevant_paper_ids": [
+        "iclr-2026-10009249"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-034",
+      "query": "multi-agent-systems agentic-rl evaluation bayesian robust cooperative",
+      "relevant_paper_ids": [
+        "iclr-2026-10010539"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-035",
+      "query": "embodied-agents evaluation planning beat visual backdoor",
+      "relevant_paper_ids": [
+        "iclr-2026-10009735"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-036",
+      "query": "multi-agent-systems evaluation multi-agent benefits limitations communication",
+      "relevant_paper_ids": [
+        "iclr-2026-10011921"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-037",
+      "query": "multi-agent-systems coding-agents evaluation boad discovering hierarchical",
+      "relevant_paper_ids": [
+        "iclr-2026-10009813"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-038",
+      "query": "evaluation breaking backbones evaluating",
+      "relevant_paper_ids": [
+        "iclr-2026-10007758"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-039",
+      "query": "multi-agent-systems multi-agent privacy-leakage breaking fixing defenses",
+      "relevant_paper_ids": [
+        "iclr-2026-10009684"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-040",
+      "query": "evaluation planning verification building foundational guardrail",
+      "relevant_paper_ids": [
+        "iclr-2026-10009978"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-041",
+      "query": "multi-agent-systems multi-agent card conditional design",
+      "relevant_paper_ids": [
+        "iclr-2026-10010180"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-042",
+      "query": "agentic-rl evaluation planning care clinical accountability",
+      "relevant_paper_ids": [
+        "iclr-2026-10006707"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-043",
+      "query": "multi-agent-systems evaluation reflection cellagent llm-driven multi-agent",
+      "relevant_paper_ids": [
+        "iclr-2026-10010902"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-044",
+      "query": "agent-safety exploration robotics chatinject abusing chat",
+      "relevant_paper_ids": [
+        "iclr-2026-10009048"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-045",
+      "query": "evaluation planning ios chinatravel open-ended travel",
+      "relevant_paper_ids": [
+        "iclr-2026-10011926"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-046",
+      "query": "clause neuro-symbolic knowledge",
+      "relevant_paper_ids": [
+        "iclr-2026-10011143"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-047",
+      "query": "gui-agents multi-agent-systems evaluation coact-1 computer-using multi-agent",
+      "relevant_paper_ids": [
+        "iclr-2026-10007725"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-048",
+      "query": "multi-agent-systems evaluation planning coda systems collaborative",
+      "relevant_paper_ids": [
+        "iclr-2026-10009977"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-049",
+      "query": "multi-agent-systems agentic-rl evaluation code aesthetics reward",
+      "relevant_paper_ids": [
+        "iclr-2026-10009618"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-050",
+      "query": "multi-agent-systems evaluation planning collaborative framework enabling",
+      "relevant_paper_ids": [
+        "iclr-2026-10010519"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-051",
+      "query": "agentic-rl collmlight cooperative network-wide",
+      "relevant_paper_ids": [
+        "iclr-2026-10010107"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-052",
+      "query": "multi-agent-systems agentic-rl evaluation comas co-evolving multi-agent",
+      "relevant_paper_ids": [
+        "iclr-2026-10007941"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-053",
+      "query": "multi-agent-systems evaluation multi-agent comind community-driven machine",
+      "relevant_paper_ids": [
+        "iclr-2026-10009716"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-054",
+      "query": "multi-agent-systems evaluation multi-agent comparing cybersecurity professionals",
+      "relevant_paper_ids": [
+        "iclr-2026-10009190"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-055",
+      "query": "multi-agent-systems evaluation reflection completing missing annotation",
+      "relevant_paper_ids": [
+        "iclr-2026-10010800"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-056",
+      "query": "gui-agents evaluation memory computer arena human-centric",
+      "relevant_paper_ids": [
+        "iclr-2026-10011593"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-057",
+      "query": "gui-agents desktop computer survey visual",
+      "relevant_paper_ids": [
+        "iclr-2026-10012131"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-058",
+      "query": "gui-agents agentic-rl evaluation computerrl scaling end-to-end",
+      "relevant_paper_ids": [
+        "iclr-2026-10007435"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-059",
+      "query": "multi-agent-systems agentic-rl multi-agent content promotion strategic",
+      "relevant_paper_ids": [
+        "iclr-2026-10012130"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-060",
+      "query": "mobile-agentic-ai multi-agent-systems multi-agent context learning",
+      "relevant_paper_ids": [
+        "iclr-2026-10010672"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-061",
+      "query": "planning contextnav multimodal in-context",
+      "relevant_paper_ids": [
+        "iclr-2026-10007829"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-062",
+      "query": "multi-agent-systems agentic-rl evaluation continuous-time value iteration",
+      "relevant_paper_ids": [
+        "iclr-2026-10011305"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-063",
+      "query": "multi-agent-systems agentic-rl evaluation correlated policy optimization",
+      "relevant_paper_ids": [
+        "iclr-2026-10009287"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-064",
+      "query": "cp-agent context aware",
+      "relevant_paper_ids": [
+        "iclr-2026-10011323"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-065",
+      "query": "evaluation credit-budgeted icpc-style coding",
+      "relevant_paper_ids": [
+        "iclr-2026-10009067"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-066",
+      "query": "evaluation software-repository long-horizon-drift cyber-zero training cybersecurity",
+      "relevant_paper_ids": [
+        "iclr-2026-10011808"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-067",
+      "query": "evaluation cybergym evaluating real-world",
+      "relevant_paper_ids": [
+        "iclr-2026-10011727"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-068",
+      "query": "evaluation planning verification dacomp benchmarking data",
+      "relevant_paper_ids": [
+        "iclr-2026-10010637"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-069",
+      "query": "coding-agents evaluation verification darwin machine open-ended",
+      "relevant_paper_ids": [
+        "iclr-2026-10007327"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-070",
+      "query": "gui-agents evaluation verification dave vision encoder",
+      "relevant_paper_ids": [
+        "iclr-2026-10007757"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-071",
+      "query": "multi-agent-systems evaluation planning decompgail learning realistic",
+      "relevant_paper_ids": [
+        "iclr-2026-10011020"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-072",
+      "query": "agentic-rl evaluation tool-use deepeyesv2 multimodal",
+      "relevant_paper_ids": [
+        "iclr-2026-10006578"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-073",
+      "query": "scientific-agents evaluation exploration deepresearch bench comprehensive",
+      "relevant_paper_ids": [
+        "iclr-2026-10008065"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-074",
+      "query": "multi-agent-systems agentic-rl multi-agent defending against unknown",
+      "relevant_paper_ids": [
+        "iclr-2026-10014054"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-075",
+      "query": "exploration demystifying enhancing efficiency",
+      "relevant_paper_ids": [
+        "iclr-2026-10010899"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-076",
+      "query": "evaluation devops-gym benchmarking software",
+      "relevant_paper_ids": [
+        "iclr-2026-10008611"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-077",
+      "query": "multi-agent-systems agentic-rl multi-agent distributionally robust cooperative",
+      "relevant_paper_ids": [
+        "iclr-2026-10011740"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-078",
+      "query": "multi-agent-systems memory tool-use divide conquer standardize",
+      "relevant_paper_ids": [
+        "iclr-2026-10012081"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-079",
+      "query": "agentic-rl evaluation verification know ground recover",
+      "relevant_paper_ids": [
+        "iclr-2026-10007188"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-080",
+      "query": "multi-agent-systems agentic-rl evaluation doctor-r1 mastering clinical",
+      "relevant_paper_ids": [
+        "iclr-2026-10006814"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-081",
+      "query": "agentic-rl evaluation tool-use just fine-tune tune",
+      "relevant_paper_ids": [
+        "iclr-2026-10007443"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-082",
+      "query": "multi-agent-systems multi-agent verification dover intervention-driven auto",
+      "relevant_paper_ids": [
+        "iclr-2026-10007537"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-083",
+      "query": "embodied-agents planning reflection dreamphase offline imagination",
+      "relevant_paper_ids": [
+        "iclr-2026-10011238"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-084",
+      "query": "evaluation memory reflection dual-scale world",
+      "relevant_paper_ids": [
+        "iclr-2026-10008626"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-085",
+      "query": "mobile-agentic-ai agentic-rl evaluation dyna-mind learning simulate",
+      "relevant_paper_ids": [
+        "iclr-2026-10010625"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-086",
+      "query": "agentic-rl evaluation planning dynamic speculative",
+      "relevant_paper_ids": [
+        "iclr-2026-10008884"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-087",
+      "query": "evaluation tool-use scientific-workflow earth-agent unlocking full",
+      "relevant_paper_ids": [
+        "iclr-2026-10008386"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-088",
+      "query": "evaluation verification edival-agent object-centric framework",
+      "relevant_paper_ids": [
+        "iclr-2026-10008872"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-089",
+      "query": "gui-agents evaluation desktop efficient training computer",
+      "relevant_paper_ids": [
+        "iclr-2026-10008530"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-090",
+      "query": "agentic-rl exploration scientific-workflow ego-foresight self-supervised learning",
+      "relevant_paper_ids": [
+        "iclr-2026-10011356"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-091",
+      "query": "multi-agent-systems tool-use multi-agent eigen-agent adaptive",
+      "relevant_paper_ids": [
+        "iclr-2026-10008628"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-092",
+      "query": "agent-memory embodied-agents evaluation embodied meet personalization",
+      "relevant_paper_ids": [
+        "iclr-2026-10010718"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-093",
+      "query": "agentic-rl planning memory emergence spatial representation",
+      "relevant_paper_ids": [
+        "iclr-2026-10007655"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-094",
+      "query": "multi-agent-systems multi-agent emergent coordination",
+      "relevant_paper_ids": [
+        "iclr-2026-10009408"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-095",
+      "query": "ios enhancing persona following",
+      "relevant_paper_ids": [
+        "iclr-2026-10007674"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-096",
+      "query": "evaluation planning memory evaluating incremental",
+      "relevant_paper_ids": [
+        "iclr-2026-10010781"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-097",
+      "query": "agentic-rl evaluation memory evotest evolutionary test-time",
+      "relevant_paper_ids": [
+        "iclr-2026-10010217"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-098",
+      "query": "evaluation self-evolution expanding capability frontier",
+      "relevant_paper_ids": [
+        "iclr-2026-10008542"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-099",
+      "query": "agentic-rl memory exploration exploratory memory-augmented hybrid",
+      "relevant_paper_ids": [
+        "iclr-2026-10009229"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    },
+    {
+      "id": "retrieval-100",
+      "query": "planning tool-use exploration fasta fast-slow toolpath",
+      "relevant_paper_ids": [
+        "iclr-2026-10006536"
+      ],
+      "source": "taxonomy-plus-title-sanity-query"
+    }
+  ]
+}

@@ -10,6 +10,7 @@ dist/
 build/
 .env
 agentic-research-lab.local.toml
+.arl/
 .DS_Store
 
 # Local/private research material. Never commit PDFs, vector stores, or credentials.

@@ -42,7 +42,7 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/)
   - `ID: ijcai-f89700f7fbd9 · AI → Agent-based and Multi-agent Systems; AI → Humans and AI · selected`
 - **AgentRetro: Agent-Enhanced Molecular Spectral Domain Generalization Framework for Retrosynthesis Prediction Under Mixed OOD Shifts** — Jiahang Shen, Hongxin Xiang, Yiping Liu
-  - [page](https://2026.ijcai.org/accepted-papers/)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [code](https://github.com/jiahangshen/IJCAI26-AgentRetro)
   - `ID: ijcai-a8d47ce1cc4c · Agent-based and Multi-agent Systems → Applications; Machine Learning → Adversarial machine learning; Machine Learning → Meta-learning; Machine Learning → Open-World/Open-Set/OOD Learning; Multidisciplinary Topics and Applications → Bioinformatics · selected`
 - **Agents Trusting Agents? Restoring Lost Capabilities with Inclusive Healthcare** — Alba Aguilera, Georgina Curto, Nardine Osman, Ahmed Al-Awah
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2507.23644v4) · [arXiv](https://arxiv.org/abs/2507.23644)
@@ -87,7 +87,7 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2604.16349v2) · [arXiv](https://arxiv.org/abs/2604.16349)
   - `ID: ijcai-6fc0d2c2082b · Natural Language Processing → Resources and evaluation · selected`
 - **Beyond Isolated Investor: Predicting Startup Success via Roleplay-Based Collective Agents** — Zhongyang Liu, Haoyu Pei, Xiangyi Xiao, Xiaocong Du, Yihui Li, Suting Hong, Kunpeng Zhang, Haipeng Zhang
-  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2512.22608v3) · [arXiv](https://arxiv.org/abs/2512.22608)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2512.22608v3) · [arXiv](https://arxiv.org/abs/2512.22608) · [code](https://github.com/ZhangDataLab/SimVC-CAS)
   - `ID: ijcai-ff8d759911c5 · Domain-specific AI4Tech → AI4Finance · selected`
 - **Beyond Scaling: A Survey of Data-Efficient Learning for LLM Agents** — Yaqing Wang, Zhenlin Luo, Peiyao Zhao, Yunfeng Cai, Quanming Yao
   - [page](https://2026.ijcai.org/accepted-papers/)
@@ -123,7 +123,7 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2510.07971v1) · [arXiv](https://arxiv.org/abs/2510.07971)
   - `ID: ijcai-2d837bd9a792 · Agent-based and Multi-agent Systems → Agent-based and Multi-agent Systems; Humans and AI → Humans and AI; Machine Learning → Machine Learning; AI Ethics, Trust, Fairness → AI Ethics, Trust, Fairness · selected`
 - **CodeDelegator: Mitigating Context Pollution via Role Separation in Code-as-Action Agents** — Tianxiang Fei, Cheng Chen, Yue Pan, Mao Zheng, Mingyang Song
-  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2601.14914v1) · [arXiv](https://arxiv.org/abs/2601.14914)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2601.14914v1) · [arXiv](https://arxiv.org/abs/2601.14914) · [code](https://github.com/txfei/code-delegator)
   - `ID: ijcai-27ece2cbe381 · Agent-based and Multi-agent Systems → Applications; Agent-based and Multi-agent Systems → Multi-agent planning · selected`
 - **Competitive Connected Multi-robot Exploration of Unknown Graphs** — Dolev Mutzari, Yonatan Aumann, Sarit Kraus
   - [page](https://2026.ijcai.org/accepted-papers/)
@@ -165,7 +165,7 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2602.03776v1) · [arXiv](https://arxiv.org/abs/2602.03776)
   - `ID: ijcai-e9c82c328631 · Domain-specific AI4Tech → AI4Finance · selected`
 - **DIRECT: Decentralized Intention and Latent Rule Emergence for Multi-Agent Cooperation Under Intermittent Communication** — Enguang Yao, Qidong Liu, Jialu Sun, Kaibo Huang, Mingliang Xu
-  - [page](https://2026.ijcai.org/accepted-papers/)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [code](https://github.com/AAI-ZZU/DIRECT-master)
   - `ID: ijcai-2b51d007e436 · Agent-based and Multi-agent Systems → Coordination and cooperation; Agent-based and Multi-agent Systems → Multi-agent learning; Machine Learning → Multiagent Reinforcement Learning · selected`
 - **Efficient Algorithms for Influence Maximization in General Models and Observed Cascades** — Fabian Spaeh, Themistoklis Haris, Alina Ene, Huy L. Nguyen
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2606.22241v1) · [arXiv](https://arxiv.org/abs/2606.22241)
@@ -228,16 +228,16 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2509.15738v1) · [arXiv](https://arxiv.org/abs/2509.15738)
   - `ID: ijcai-0b8784681a36 · Agent-based and Multi-agent Systems → Agent-based simulation and emergence; AI → Knowledge Representation and Reasoning; AI → Machine Learning; Agent-based and Multi-agent Systems → Multi-agent learning · selected`
 - **Guiding Team Objectives with Individual Policies: A Two-Stage Model Aggregation Framework for Partially Cooperative MARL** — Wanting Liu, Baoxi Wang, Pengyi Li, Lu Jiang, Chengwei Zhang
-  - [page](https://2026.ijcai.org/accepted-papers/)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [code](https://github.com/RL-DLMU/TSMA)
   - `ID: ijcai-4f157794b8f3 · Agent-based and Multi-agent Systems → Coordination and cooperation; Agent-based and Multi-agent Systems → Multi-agent learning · selected`
 - **HardSecBench: Benchmarking the Security Awareness of LLMs for Hardware Code Generation** — Qirui Chen, Jingxian Shuai, Shuangwu Chen, Shenghao Ye, Zijian Wen, Xufei Su, Jie Jin, Jiangming Li, Jun Chen, Xiaobin Tan, Jian Yang
-  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2601.13864v2) · [arXiv](https://arxiv.org/abs/2601.13864)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2601.13864v2) · [arXiv](https://arxiv.org/abs/2601.13864) · [code](https://github.com/chenqirui2002/HardSecBench)
   - `ID: ijcai-8172960f1217 · AI Ethics, Trust, Fairnes → Safety and robustness; Multidisciplinary Topics and Applications → AI hardware · selected`
 - **Harmonizing Real-Time Constraints and Long-Horizon Reasoning: An Asynchronous Agentic Framework for Dynamic Scheduling** — Shijie Cao, Yuan Yuan, Jing Liu
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2605.29262v1) · [arXiv](https://arxiv.org/abs/2605.29262)
   - `ID: ijcai-685e0a7917de · Planning and Scheduling → Learning in planning and scheduling; Planning and Scheduling → Planning under uncertainty; Planning and Scheduling → POMDPs; Planning and Scheduling → Real-time planning; Planning and Scheduling → Scheduling · selected`
 - **Harnessing Multiple Large Language Models: A Survey on LLM Ensemble** — Zhijun Chen, Xiaodong Lu, Jingzheng Li, Pengpeng Chen, Zhuoran Li, Kai Sun, Yuankai Luo, Qianren Mao, Ming Li, Likang Xiao, Dingqi Yang, Yikun Ban, Hailong Sun
-  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2502.18036v6) · [arXiv](https://arxiv.org/abs/2502.18036)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2502.18036v6) · [arXiv](https://arxiv.org/abs/2502.18036) · [code](https://github.com/junchenzhi/Awesome-LLM-Ensemble)
   - `ID: ijcai-0ef37e2c2607 · SV → Agent-based and Multi-agent Systems; Agent-based and Multi-agent Systems → Other; Natural Language Processing → Applications; Machine Learning → Ensemble methods · selected`
 - **Human-Aware AI: Asking What AI can do for you?** — Sarath Sreedharan
   - [page](https://2026.ijcai.org/accepted-papers/)
@@ -246,7 +246,7 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/)
   - `ID: ijcai-11e73ab3689b · Human-Centred AI → Agent-based and Multi-agent Systems; Human-Centred AI → Humans and AI; Human-Centred AI → Uncertainty in AI; Human-Centred AI → Multidisciplinary Topics and Applications · selected`
 - **Hybrid-Adaptive Thread Tuning to Mitigate Simulation Execution Bottlenecks in High-Performance Reinforcement Learning Inference** — Jiming Su, Hantao Hua, Lujia Yin, Yiping Yao, Feng Zhu
-  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2608.06025v1) · [arXiv](https://arxiv.org/abs/2608.06025)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2608.06025v1) · [arXiv](https://arxiv.org/abs/2608.06025) · [code](https://github.com/suchenjm/AutoThread)
   - `ID: ijcai-409e025b28fd · Agent-based and Multi-agent Systems → Engineering methods, platforms, languages and tools; Machine Learning → Knowledge-aided learning; Machine Learning → Multiagent Reinforcement Learning; Machine Learning → Reinforcement learning; Planning and Scheduling → Scheduling · selected`
 - **I-EDI: Robust Self-Evolution Agents via Verifiable Counterfactual Simulation** — Runze Fan, Yong Li
   - [page](https://2026.ijcai.org/accepted-papers/)
@@ -273,7 +273,7 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/)
   - `ID: ijcai-fc84f5e4539f · Data Mining → Applications; Data Mining → Mining graphs; Machine Learning → Supervised Learning · selected`
 - **LISTEN to Your Preferences: An LLM Framework for Multi-Objective Selection** — Adam S. Jovine, Tinghan Ye, Francis Bahk, Jingjing Wang, Matthew Ford, David B. Shmoys, Peter I. Frazier
-  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2510.25799v3) · [arXiv](https://arxiv.org/abs/2510.25799)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2510.25799v3) · [arXiv](https://arxiv.org/abs/2510.25799) · [code](https://github.com/AdamJovine/LISTEN)
   - `ID: ijcai-f59c4c088474 · Humans and AI → Personalization and user modeling; Knowledge Representation and Reasoning → Preference modelling and preference-based reasoning; Natural Language Processing → Language models · selected`
 - **LLM-Based Agents on the Edge: A Survey of Privacy, Scalability, Heterogeneity, and Autonomy** — Nikita Agrawal, Ruben Mayer
   - [page](https://2026.ijcai.org/accepted-papers/)
@@ -282,7 +282,7 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/)
   - `ID: ijcai-afcf8ffbe5b7 · Agent-based and Multi-agent Systems → Coordination and cooperation; Computer Vision → Biomedical image analysis · selected`
 - **LLM-to-Map: Transparent Conversational Tool Orchestration for Real-Time Multi-Domain Simulation** — Marouane Benbrahim, Kavya Gautam, Zonghan Zhang, Zhiqian Chen
-  - [page](https://2026.ijcai.org/accepted-papers/)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [code](https://github.com/MarouaneBenbrahim/Map-LLM)
   - `ID: ijcai-a8d07d1f3144 · AI → Natural Language Processing; AI → Agent-based and Multi-agent Systems; AI → Humans and AI; AI → Multidisciplinary Topics and Applications · selected`
 - **MA-RWG: A Multi-Agent Framework for Thematically Structuring and Generation of Related Work** — Zhuang Liu, Jian Liu, Chun Kang, Chenbin Zhang, Rui Li, Fanhu Zeng, Yong Dai, Lei Sha
   - [page](https://2026.ijcai.org/accepted-papers/)
@@ -333,7 +333,7 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2603.19397v2) · [arXiv](https://arxiv.org/abs/2603.19397)
   - `ID: ijcai-ce33e60958ce · Public health → Public health · selected`
 - **PENTESTLLMAGENT: A Task Dependency Graph Planning-Based Multi-Agent Framework for Automated Penetration Testing** — Shuo Sheng, Jixin Zhang, Jia Yang, Ke Cheng, Zheng Qin
-  - [page](https://2026.ijcai.org/accepted-papers/)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [code](https://github.com/sanbai123/PentestLLMAgent_code-and-videos)
   - `ID: ijcai-463916d22ec8 · Advanced AI4Tech → Generative and LLMs-driven AI4Tech; Domain-specific AI4Tech → AI4Security · selected`
 - **PERELMAN: Pipeline for Scientific Literature Meta-Analysis** — Daniil Sherki, Daniil Merkulov, Aleksandra Savina, Dzhantemir Kikov, Dmitry Parpulov, Alexander Ivanov, Artem Abakumov, Ekaterina Muravleva
   - [page](https://2026.ijcai.org/accepted-papers/)
@@ -351,7 +351,7 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2608.03521v1) · [arXiv](https://arxiv.org/abs/2608.03521)
   - `ID: ijcai-798c7da7743e · Data Mining → Mining spatial and/or temporal data; AI → Machine Learning · selected`
 - **PoemDirector: A Multi-Agent Context-Adaptive Instructional Mode Selection Framework for Chinese Classical Poetry Video Generation** — Tengteng Cheng, Xiaoli Zeng, Jialu Huang, Mingliang Hou, Zitao Liu, Xiangyu Zhao, Weiqi Luo
-  - [page](https://2026.ijcai.org/accepted-papers/)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [code](https://github.com/ai4ed/PoemDirector)
   - `ID: ijcai-4d492770900f · Agent-based and Multi-agent Systems → Agent-based and Multi-agent Systems; Humans and AI → Humans and AI; Natural Language Processing → Natural Language Processing · selected`
 - **Post Hoc Extraction of Pareto Fronts for Continuous Control** — Raghav Thakar, Gaurav Dixit, Kagan Tumer
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2603.02628v1) · [arXiv](https://arxiv.org/abs/2603.02628)
@@ -399,7 +399,7 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/)
   - `ID: ijcai-57c669810c33 · Humans and AI → Human-AI collaboration; Humans and AI → Human-computer interaction; Machine Learning → Applications · selected`
 - **SCOPE: Safety-Constrained Online Preview Enforcement for Efficient Encirclement in Multi-UAV Pursuit-Evasion** — Cheng Chen, Weiwei Yuan, Xiaozhen Lu, Yicong Li, Jiale Zhang
-  - [page](https://2026.ijcai.org/accepted-papers/)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [code](https://github.com/98177qdn/SCOPE)
   - `ID: ijcai-602e3f3009d5 · Agent-based and Multi-agent Systems → Multi-agent learning; AI Ethics, Trust, Fairnes → Safety and robustness; Machine Learning → Multiagent Reinforcement Learning; Robotics → Multi-robot systems · selected`
 - **Secure Coding Unleashed: Boosting Productivity With On-Premise LLM-Powered IDE Plugins** — Vasilii Krikunov, Nikolay Kotlyarov, Eugenii Nikolaev, Vasily Konovalov
   - [page](https://2026.ijcai.org/accepted-papers/)
@@ -435,7 +435,7 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2601.15563v2) · [arXiv](https://arxiv.org/abs/2601.15563)
   - `ID: ijcai-b3a49160d64c · Agent-based and Multi-agent Systems → Multi-agent planning; Game Theory and Economic Paradigms → Computational social choice; Game Theory and Economic Paradigms → Mechanism design · selected`
 - **STAR: Spatio-Temporal Attention Rebalancing for Eco-Friendly Autonomous Mobility-on-Demand Systems** — Jungeun Lee, Seungjae Baek, Seongjae Lee, Sunhwi Kim, Jeong hwan Jeon
-  - [page](https://2026.ijcai.org/accepted-papers/)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [code](https://github.com/2jungeuni/eco-friendly-fleet-rebalancing)
   - `ID: ijcai-51f49cdedde2 · Agent-based and Multi-agent Systems → Coordination and cooperation; Agent-based and Multi-agent Systems → Multi-agent learning; Planning and Scheduling → Learning in planning and scheduling · selected`
 - **Stay in Character, Stay Safe: Dual-Cycle Adversarial Self-Evolution for Role-Playing Agents** — Mingyang Liao, Yichen Wan, Shuchen Wu, Chenxi Miao, Xin Shen, Weikang Li, Yang Li, Deguo Xia, Jizhou Huang
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2602.13234v1) · [arXiv](https://arxiv.org/abs/2602.13234)
@@ -447,16 +447,16 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2605.16671v1) · [arXiv](https://arxiv.org/abs/2605.16671)
   - `ID: ijcai-9e6fa6faea9a · Humans and AI → Humans and AI; Knowledge Representation and Reasoning → Knowledge Representation and Reasoning; Multidisciplinary Topics and Applications → Multidisciplinary Topics and Applications; Agent-based and Multi-agent Systems → Agent-based and Multi-agent Systems · selected`
 - **THGAgents: Traceable Biomedical Hypothesis Generation via Dynamic Causal Reasoning** — Mingjian Yang, Kun Dong, Kevin Lim, Juan Liu
-  - [page](https://2026.ijcai.org/accepted-papers/)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [code](https://github.com/yangCode-res/THGAgents)
   - `ID: ijcai-6d885205a69f · LLM in medicine → LLM in medicine; Medical knowledge representation → Medical knowledge representation · selected`
 - **Tight Asymptotic Bounds for Fair Division with Externalities** — Frank Connor, Max Dupré la Tour, Vishnu V. Narayan, Šimon Schierreich
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2601.13287v1) · [arXiv](https://arxiv.org/abs/2601.13287)
   - `ID: ijcai-d1812e287685 · Game Theory and Economic Paradigms → Fair division · selected`
 - **Towards Automated Kernel Generation in the Era of LLMs** — Yang Yu, Peiyu Zang, Chi Hsu Tsai, Haiming Wu, Yixin Shen, Jialing Zhang, Haoyu Wang, Zhiyou Xiao, Jingze Shi, Yuyu Luo, Wentao Zhang, Chunlei Men, Guang Liu, Yonghua Lin
-  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2601.15727v3) · [arXiv](https://arxiv.org/abs/2601.15727)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2601.15727v3) · [arXiv](https://arxiv.org/abs/2601.15727) · [code](https://github.com/flagos-ai/awesome-LLM-driven-kernel-generation)
   - `ID: ijcai-ef650601752c · Multidisciplinary Topics and Applications → AI hardware; Multidisciplinary Topics and Applications → Software engineering; Natural Language Processing → Applications; Agent-based and Multi-agent Systems → Applications · selected`
 - **TraceBrain: An Open-Source Framework for Agentic Trace Management** — Quy Minh Le, Oscar Cao, Hoang Quoc Viet Pham, Hoang Thanh Lam, Hoang D. Nguyen
-  - [page](https://2026.ijcai.org/accepted-papers/)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [code](https://github.com/ToolBrain/TraceBrain)
   - `ID: ijcai-0f21fe11f948 · AI → Agent-based and Multi-agent Systems; AI → Knowledge Representation and Reasoning; AI → Search; AI → Uncertainty in AI · selected`
 - **Unified Sensor Simulation for Autonomous Driving** — Nikolay Patakin, Arsenii Shirokov, Anton Konushin, Dmitry Senushkin
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2602.05617v1) · [arXiv](https://arxiv.org/abs/2602.05617)
@@ -474,13 +474,13 @@ in the source manifest. Full abstracts and structured metadata are in the JSON c
   - [page](https://2026.ijcai.org/accepted-papers/)
   - `ID: ijcai-4d3835ba18a0 · AI → Agent-based and Multi-agent Systems; AI → Machine Learning; AI → Multidisciplinary Topics and Applications; AI → Knowledge Representation and Reasoning · selected`
 - **Visualizing Deep Agents in Long-Horizon Tasks: Towards Explainable and Trustworthy Agentic AI** — Amirkia Rafiei Oskooei, Mehmet S. Aktas
-  - [page](https://2026.ijcai.org/accepted-papers/)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [code](https://github.com/amirkiarafiei/repo-learn)
   - `ID: ijcai-fc7821d8e4c3 · AI → Agent-based and Multi-agent Systems; AI → Humans and AI; AI → AI Ethics, Trust, Fairnes · selected`
 - **VLM-AR3L: Vision-Language Models for Absolute and Relative Rewards in Reinforcement Learning** — Kuan-Chen Chen, Winston Chen, Wei-Fang Sun, Min-Chun Hu
   - [page](https://2026.ijcai.org/accepted-papers/) · [pdf](https://arxiv.org/pdf/2607.00483v2) · [arXiv](https://arxiv.org/abs/2607.00483)
   - `ID: ijcai-c409c0f6df66 · Computer Vision → Embodied vision: Active agents, simulation; Machine Learning → Foundation models; Machine Learning → Learning preferences or rankings; Machine Learning → Partially observable reinforcement learning and POMDPs; Machine Learning → Reinforcement learning · selected`
 - **vSpeedUI: Turning Past GUI Experience into Fast Executable Plans** — Xiaohan Zheng, Yihong Chen, Haiquan Qiu, Quanming Yao
-  - [page](https://2026.ijcai.org/accepted-papers/)
+  - [page](https://2026.ijcai.org/accepted-papers/) · [code](https://github.com/LARS-research/vSpeedUI)
   - `ID: ijcai-cbd458ec36fb · AI → Agent-based and Multi-agent Systems; AI → Planning and Scheduling; AI → Knowledge Representation and Reasoning; AI → Machine Learning · selected`
 - **Wavelength.AI: Extending the Collaborative Game Wavelength as a Testbed for Studying Shared Understanding in Human–Agent Collaboration** — Katelyn Morrison, Gabriel Enrique Gonzalez, Zahra Ashktorab, Matt Riemer, Andrew Anderson, Djallel Bouneffouf, Justin D. Weisz
   - [page](https://2026.ijcai.org/accepted-papers/)

@@ -12,5 +12,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install -e .
+      - run: python -m pip install -e '.[dev]'
       - run: python -m unittest discover -s tests -v
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: arl index-build --store /tmp/arl-ci.sqlite3
+      - run: arl evaluate --store /tmp/arl-ci.sqlite3 --output /tmp/arl-metrics.json
+      - run: python scripts/validate_repository.py
+      - run: python scripts/check_public_safety.py
+      - run: python -m build
+      - run: python -c "import zipfile; p=next(__import__('pathlib').Path('dist').glob('*.whl')); z=zipfile.ZipFile(p); assert any(n.endswith('conference_agent_papers_2026.json') for n in z.namelist()); assert not any(n.endswith(('.pdf', '.sqlite3')) for n in z.namelist())"

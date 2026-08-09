@@ -1,0 +1,86 @@
+{
+  "code_links": {
+    "examples": 100,
+    "correct": 100,
+    "false_positive": 0,
+    "missing": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "passed": true
+  },
+  "retrieval": {
+    "examples": 100,
+    "k": 20,
+    "recall_at_k": 1.0,
+    "mrr": 1.0,
+    "ndcg_at_k": 1.0,
+    "passed": true
+  },
+  "proposals": {
+    "subjects": 10,
+    "passed": true,
+    "results": [
+      {
+        "subject": "privacy-aware mobile agent with long-term memory",
+        "candidates": 3,
+        "passed": 3,
+        "evidence": 5
+      },
+      {
+        "subject": "safe GUI agent under environmental injection",
+        "candidates": 3,
+        "passed": 3,
+        "evidence": 5
+      },
+      {
+        "subject": "efficient device cloud routing for mobile agents",
+        "candidates": 3,
+        "passed": 3,
+        "evidence": 5
+      },
+      {
+        "subject": "self-evolving coding agent with verified memory",
+        "candidates": 3,
+        "passed": 3,
+        "evidence": 5
+      },
+      {
+        "subject": "multi-agent scientific workflow with independent verification",
+        "candidates": 3,
+        "passed": 3,
+        "evidence": 5
+      },
+      {
+        "subject": "web agent recovery under dynamic page changes",
+        "candidates": 3,
+        "passed": 3,
+        "evidence": 5
+      },
+      {
+        "subject": "personalized assistant with permission-aware tool use",
+        "candidates": 3,
+        "passed": 3,
+        "evidence": 5
+      },
+      {
+        "subject": "long-horizon embodied planning with world models",
+        "candidates": 3,
+        "passed": 3,
+        "evidence": 5
+      },
+      {
+        "subject": "agent benchmark with process-level success verifiers",
+        "candidates": 3,
+        "passed": 3,
+        "evidence": 5
+      },
+      {
+        "subject": "cost-aware multi-agent collaboration under equal inference budget",
+        "candidates": 3,
+        "passed": 3,
+        "evidence": 5
+      }
+    ]
+  },
+  "passed": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Harzva/AgenticResearchLab/schemas/repository.schema.json",
+  "title": "AgenticResearchLab Repository",
+  "type": "object",
+  "required": ["id", "url", "paper_ids", "status", "verification"],
+  "properties": {
+    "id": {"type": "string"},
+    "url": {"type": "string", "format": "uri"},
+    "source_urls": {"type": "array", "items": {"type": "string", "format": "uri"}},
+    "paper_ids": {"type": "array", "items": {"type": "string"}},
+    "license": {"type": ["string", "null"]},
+    "default_branch": {"type": ["string", "null"]},
+    "archived": {"type": ["boolean", "null"]},
+    "languages": {"type": "array", "items": {"type": "string"}},
+    "frameworks": {"type": "array", "items": {"type": "string"}},
+    "entrypoints": {"type": "array", "items": {"type": "string"}},
+    "tests": {"type": "array", "items": {"type": "string"}},
+    "environments": {"type": "array", "items": {"type": "string"}},
+    "installability": {"type": "string"},
+    "reproducibility_assets": {"type": "array", "items": {"type": "string"}},
+    "last_verified_at": {"type": ["string", "null"]},
+    "status": {"enum": ["verified", "probable", "ambiguous", "unavailable", "archived", "verification-error"]},
+    "verification": {"type": "array", "items": {"$ref": "evidence.schema.json"}}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "description": "Persistent exceptions from public repository verification.",
+  "decisions": {
+    "icml-2026-63290": {
+      "status": "unavailable",
+      "url": "https://github.com/ZJUHJ/mas_architect",
+      "reason": "github-http-404"
+    },
+    "icml-2026-64296": {
+      "status": "unavailable",
+      "url": "https://github.com/henry-yeh/mce",
+      "reason": "github-http-404"
+    },
+    "icml-2026-66387": {
+      "status": "unavailable",
+      "url": "https://github.com/ulab-uiuc/ExpWeaver",
+      "reason": "github-http-404"
+    },
+    "ijcai-2026-ijcai-afcf8ffbe5b7": {
+      "status": "unavailable",
+      "url": "https://github.com/yqhuang2912/AgenticCT",
+      "reason": "github-http-404"
+    }
+  }
+}
