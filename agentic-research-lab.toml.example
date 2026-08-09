@@ -1,0 +1,8 @@
+[corpus]
+# Keep machine-specific paths in an untracked local config file.
+manifest = "/path/to/conference-agent-papers-2026.csv"
+pdf_root = "/path/to/pdfs"
+
+[analysis]
+default_topic = "mobile-agentic-ai"
+top_k = 8

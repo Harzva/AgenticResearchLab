@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+.env
+agentic-research-lab.local.toml
+.DS_Store
+
+# Local/private research material. Never commit PDFs, vector stores, or credentials.
+data/raw/
+data/private/
+data/indexes/
+outputs/
+*.pdf
+*.faiss
+*.sqlite3
