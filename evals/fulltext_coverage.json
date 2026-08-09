@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "extractor": "pymupdf-page-chunks-v1",
+  "available_pdfs": 989,
+  "indexed_pdfs": 989,
+  "failed_pdfs": 0,
+  "page_aware_chunks": 30909,
+  "success_rate": 1.0,
+  "note": "Aggregate validation only. Local paths, extracted text, checksums, and indexes are not committed."
+}

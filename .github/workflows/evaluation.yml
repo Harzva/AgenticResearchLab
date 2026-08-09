@@ -1,0 +1,49 @@
+name: Evaluation Gates
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+    inputs:
+      run_human_gate:
+        description: Fail unless independently reviewed human Gold sets are release-ready
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  scheduled-evaluation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -e '.[dev]'
+      - name: Validate required smoke gate
+        run: arl eval-validate smoke --require-ready
+      - name: Validate human annotation scaffolds without claiming readiness
+        run: arl eval-validate human
+      - name: Run scheduled deterministic regression suite
+        run: >-
+          arl evaluate --suite smoke --store /tmp/arl-scheduled.sqlite3
+          --output .arl/evaluation/scheduled.json --report .arl/evaluation/scheduled.md
+      - name: Run manual human release gate
+        if: github.event_name == 'workflow_dispatch' && inputs.run_human_gate
+        run: >-
+          arl evaluate --suite human --store /tmp/arl-human.sqlite3
+          --output .arl/evaluation/human.json --report .arl/evaluation/human.md
+      - name: Preserve evaluation reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evaluation-reports
+          path: |
+            .arl/evaluation/scheduled.json
+            .arl/evaluation/scheduled.md
+            .arl/evaluation/human.json
+            .arl/evaluation/human.md
+          if-no-files-found: ignore

@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-08-09T13:13:19.512Z",
+  "static": [
+    {
+      "id": "dashboard-hero",
+      "title": "Loaded evidence and proposal candidates",
+      "path": "dashboard-hero.png",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1050
+    },
+    {
+      "id": "dashboard-desktop",
+      "title": "Evidence and proposal dashboard",
+      "path": "dashboard-desktop.png",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1050
+    },
+    {
+      "id": "dashboard-mobile",
+      "title": "Responsive mobile dashboard",
+      "path": "dashboard-mobile.png",
+      "viewport": "mobile",
+      "width": 430,
+      "height": 932
+    }
+  ],
+  "motion": [],
+  "hero": {
+    "path": "hero.png",
+    "title": "AgenticResearchLab"
+  },
+  "gallery": {
+    "path": "gallery.html"
+  },
+  "projectName": "AgenticResearchLab",
+  "config": "showcase.config.json"
+}

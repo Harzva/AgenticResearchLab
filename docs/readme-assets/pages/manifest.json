@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-08-09T13:45:45.890Z",
+  "static": [
+    {
+      "id": "pages-home",
+      "title": "GitHub Pages research homepage",
+      "path": "pages-home.png",
+      "viewport": "desktopHero",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "pages-explorer",
+      "title": "Public Paper v2 research explorer",
+      "path": "pages-explorer.png",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1050
+    },
+    {
+      "id": "pages-mobile",
+      "title": "Responsive public research explorer",
+      "path": "pages-mobile.png",
+      "viewport": "mobile",
+      "width": 430,
+      "height": 932
+    }
+  ],
+  "motion": [],
+  "hero": {
+    "path": "hero.png",
+    "title": "AgenticResearchLab Pages"
+  },
+  "gallery": {
+    "path": "gallery.html"
+  },
+  "projectName": "AgenticResearchLab Pages",
+  "config": "showcase-pages.config.json"
+}

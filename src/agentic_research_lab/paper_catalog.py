@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import re
 from collections import Counter
@@ -9,11 +10,20 @@ from pathlib import Path
 from typing import Any
 
 from .catalog import tokenize
+from .enrichment import (
+    DECISIONS_FILENAME,
+    REPOSITORY_CATALOG_FILENAME,
+    build_code_gold_set,
+    enrich_code_links,
+    merge_repository_verification,
+    write_repository_catalog,
+)
 from .models import Resource
+from .taxonomy import enrich_taxonomy, write_taxonomy
 
 CATALOG_ID = "conference-agent-papers-2026"
 CATALOG_FILENAME = "conference_agent_papers_2026.json"
-SCHEMA_VERSION = "1.0"
+SCHEMA_VERSION = "2.0"
 FORBIDDEN_PUBLIC_FIELDS = {"downloaded_path", "download_error"}
 URL_FIELDS = {
     "official_page",
@@ -67,11 +77,16 @@ def _links(row: dict[str, str]) -> dict[str, str | None]:
 
 
 def public_paper(row: dict[str, str]) -> dict[str, Any]:
+    paper_id = _paper_id(row)
     return {
-        "id": _paper_id(row),
+        "id": paper_id,
+        "canonical_id": paper_id,
         "conference": _clean(row.get("conference")),
         "year": int(_clean(row.get("year")) or 0),
         "paper_id": _clean(row.get("paper_id")),
+        "doi": None,
+        "version": None,
+        "updated_at": None,
         "title": _clean(row.get("title")),
         "authors": _authors(row.get("authors")),
         "abstract": _optional(row.get("abstract")),
@@ -82,22 +97,51 @@ def public_paper(row: dict[str, str]) -> dict[str, Any]:
             "provenance": _clean(row.get("provenance")),
         },
         "links": _links(row),
+        "topics": [],
+        "tasks": [],
+        "environments": [],
+        "modalities": [],
+        "agentic_components": [],
+        "methods": [],
+        "benchmarks": [],
+        "datasets": [],
+        "metrics": [],
+        "claims": [],
+        "limitations": [],
+        "failure_modes": [],
+        "artifacts": {"code_candidates": []},
+        "evidence": [],
+        "enrichment_status": {
+            "code": "pending",
+            "taxonomy": "pending",
+            "fulltext": "pending",
+        },
     }
 
 
-def build_public_catalog(manifest: Path) -> dict[str, Any]:
+def build_public_catalog(
+    manifest: Path, decisions_path: Path | None = None
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    manifest_sha256 = hashlib.sha256(manifest.read_bytes()).hexdigest()
     with manifest.open(encoding="utf-8-sig", newline="") as stream:
         papers = [public_paper(row) for row in csv.DictReader(stream)]
     papers.sort(key=lambda paper: (paper["conference"], paper["title"].casefold()))
+    repository_catalog = enrich_code_links(papers, decisions_path)
     conferences = Counter(paper["conference"] for paper in papers)
     catalog = {
         "schema_version": SCHEMA_VERSION,
+        "catalog_version": f"2026.{manifest_sha256[:12]}",
         "id": CATALOG_ID,
         "title": "Conference Agent and Agentic Papers 2026",
         "description": (
             "Sanitized public metadata for the complete local 2026 Agent/Agentic conference "
             "paper manifest. Local paths and download diagnostics are excluded."
         ),
+        "source": {
+            "projection": "sanitized-conference-manifest",
+            "records": len(papers),
+            "sha256": manifest_sha256,
+        },
         "summary": {
             "papers": len(papers),
             "conferences": dict(sorted(conferences.items())),
@@ -112,7 +156,7 @@ def build_public_catalog(manifest: Path) -> dict[str, Any]:
         "papers": papers,
     }
     validate_public_catalog(catalog)
-    return catalog
+    return catalog, repository_catalog
 
 
 def validate_public_catalog(catalog: dict[str, Any]) -> None:
@@ -272,7 +316,7 @@ def render_corpus_index(catalog: dict[str, Any]) -> str:
         f"- Author lists: **{summary['with_authors']:,}**",
         f"- OpenReview links: **{summary['with_openreview']:,}**",
         f"- arXiv links: **{summary['with_arxiv']:,}**",
-        f"- Indexed code repositories: **{summary['with_code']:,}** (not present in the source manifest)",
+        f"- Verified code links: **{summary['with_code']:,}**",
         "",
         "## Conferences",
         "",
@@ -342,11 +386,29 @@ def write_corpus_awesome(catalog: dict[str, Any], target: Path) -> list[Path]:
 
 
 def build_public_assets(manifest: Path, data_target: Path, awesome_target: Path) -> dict[str, Any]:
-    catalog = build_public_catalog(manifest)
+    decisions_target = data_target.with_name(DECISIONS_FILENAME)
+    catalog, repositories = build_public_catalog(
+        manifest, decisions_target if decisions_target.is_file() else None
+    )
+    coverage = enrich_taxonomy(catalog)
     write_public_catalog(catalog, data_target)
+    taxonomy_target = data_target.with_name("agentic_taxonomy.json")
+    write_taxonomy(taxonomy_target)
+    repository_target = data_target.with_name(REPOSITORY_CATALOG_FILENAME)
+    merge_repository_verification(repositories, repository_target)
+    write_repository_catalog(repositories, repository_target)
+    gold_target = data_target.parents[3] / "evals" / "code_link_gold_v1.json"
+    gold = build_code_gold_set(catalog["papers"], gold_target)
     pages = write_corpus_awesome(catalog, awesome_target)
     return {
         "papers": catalog["summary"]["papers"],
+        "code_links": catalog["summary"]["with_code"],
+        "repositories": repositories["summary"]["repositories"],
+        "gold_examples": len(gold["examples"]),
+        "taxonomy_coverage": coverage,
         "data": str(data_target),
+        "taxonomy_data": str(taxonomy_target),
+        "repository_data": str(repository_target),
+        "code_gold": str(gold_target),
         "pages": [str(page) for page in pages],
     }

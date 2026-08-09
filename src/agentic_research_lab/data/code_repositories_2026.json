@@ -1,0 +1,5214 @@
+{
+  "schema_version": "1.0",
+  "id": "verified-code-repositories-2026",
+  "description": "Verified paper-to-code links extracted from official paper metadata. Unknown repository metadata remains null until independently checked.",
+  "summary": {
+    "repositories": 158,
+    "linked_papers": 154,
+    "paper_extraction_status": {
+      "not-found": 1084,
+      "unavailable": 4,
+      "verified": 154
+    },
+    "repository_status": {
+      "unavailable": 4,
+      "verified": 154
+    }
+  },
+  "repositories": [
+    {
+      "id": "github.com/1mocat/bluecodeagent",
+      "url": "https://github.com/1mocat/BlueCodeAgent",
+      "source_urls": [
+        "https://github.com/1mocat/BlueCodeAgent"
+      ],
+      "paper_ids": [
+        "icml-2026-63820"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:09:47+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63820",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63820",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/2jungeuni/eco-friendly-fleet-rebalancing",
+      "url": "https://github.com/2jungeuni/eco-friendly-fleet-rebalancing",
+      "source_urls": [
+        "https://github.com/2jungeuni/eco-friendly-fleet-rebalancing"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-51f49cdedde2"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:09:48+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-51f49cdedde2",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/98177qdn/scope",
+      "url": "https://github.com/98177qdn/SCOPE",
+      "source_urls": [
+        "https://github.com/98177qdn/SCOPE"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-602e3f3009d5"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:09:49+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-602e3f3009d5",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/aai-zzu/direct-master",
+      "url": "https://github.com/AAI-ZZU/DIRECT-master",
+      "source_urls": [
+        "https://github.com/AAI-ZZU/DIRECT-master"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-2b51d007e436"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:09:50+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-2b51d007e436",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/adamjovine/listen",
+      "url": "https://github.com/AdamJovine/LISTEN",
+      "source_urls": [
+        "https://github.com/AdamJovine/LISTEN"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-f59c4c088474"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:09:51+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-f59c4c088474",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/adastraabyssoque/scaling-the-scaling-logic",
+      "url": "https://github.com/AdAstraAbyssoque/Scaling-the-Scaling-Logic",
+      "source_urls": [
+        "https://github.com/AdAstraAbyssoque/Scaling-the-Scaling-Logic"
+      ],
+      "paper_ids": [
+        "icml-2026-66221"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:09:52+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66221",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/66221",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/agent-suite/agentsuite",
+      "url": "https://github.com/Agent-Suite/AgentSuite",
+      "source_urls": [
+        "https://github.com/Agent-Suite/AgentSuite"
+      ],
+      "paper_ids": [
+        "icml-2026-66603"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:09:53+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66603",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/66603",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/ai4ed/poemdirector",
+      "url": "https://github.com/ai4ed/PoemDirector",
+      "source_urls": [
+        "https://github.com/ai4ed/PoemDirector"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-4d492770900f"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:09:56+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-4d492770900f",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/ai4engi/engiagent",
+      "url": "https://github.com/AI4Engi/EngiAgent",
+      "source_urls": [
+        "https://github.com/AI4Engi/EngiAgent"
+      ],
+      "paper_ids": [
+        "icml-2026-66645"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:09:56+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66645",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/66645",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/aidc-ai/complex-mcp",
+      "url": "https://github.com/AIDC-AI/complex-mcp",
+      "source_urls": [
+        "https://github.com/AIDC-AI/complex-mcp"
+      ],
+      "paper_ids": [
+        "icml-2026-66421"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:09:58+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66421",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/66421",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/aiming-lab/simplemem",
+      "url": "https://github.com/aiming-lab/SimpleMem",
+      "source_urls": [
+        "https://github.com/aiming-lab/SimpleMem"
+      ],
+      "paper_ids": [
+        "icml-2026-61640"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:09:59+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61640",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61640",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/alistair-turcan/tusoai",
+      "url": "https://github.com/Alistair-Turcan/TusoAI",
+      "source_urls": [
+        "https://github.com/Alistair-Turcan/TusoAI"
+      ],
+      "paper_ids": [
+        "iclr-2026-10011945"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:00+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10011945",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10011945",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/amazon-science/evomas",
+      "url": "https://github.com/amazon-science/EvoMAS",
+      "source_urls": [
+        "https://github.com/amazon-science/EvoMAS"
+      ],
+      "paper_ids": [
+        "icml-2026-62216"
+      ],
+      "license": "NOASSERTION",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:02+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-62216",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/62216",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/amirkiarafiei/repo-learn",
+      "url": "https://github.com/amirkiarafiei/repo-learn",
+      "source_urls": [
+        "https://github.com/amirkiarafiei/repo-learn"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-fc7821d8e4c3"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "TypeScript"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:02+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-fc7821d8e4c3",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/ancientshi/agentselect",
+      "url": "https://github.com/Ancientshi/AgentSelect",
+      "source_urls": [
+        "https://github.com/Ancientshi/AgentSelect"
+      ],
+      "paper_ids": [
+        "icml-2026-66362"
+      ],
+      "license": null,
+      "default_branch": "master",
+      "archived": false,
+      "languages": [
+        "HTML"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:03+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66362",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/66362",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/apos3637/threat2traffic",
+      "url": "https://github.com/apos3637/Threat2Traffic",
+      "source_urls": [
+        "https://github.com/apos3637/Threat2Traffic"
+      ],
+      "paper_ids": [
+        "icml-2026-64510"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:04+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-64510",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/64510",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/applied-machine-learning-lab/iclr2026_memgas",
+      "url": "https://github.com/Applied-Machine-Learning-Lab/ICLR2026_MemGAS",
+      "source_urls": [
+        "https://github.com/Applied-Machine-Learning-Lab/ICLR2026_MemGAS"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008001"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:05+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008001",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008001",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/archer222arc/resilibench",
+      "url": "https://github.com/Archer222arc/ResiliBench",
+      "source_urls": [
+        "https://github.com/Archer222arc/ResiliBench"
+      ],
+      "paper_ids": [
+        "iclr-2026-10010130"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:06+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10010130",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10010130",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/bingo-w/truce",
+      "url": "https://github.com/bingo-w/TRUCE",
+      "source_urls": [
+        "https://github.com/bingo-w/TRUCE"
+      ],
+      "paper_ids": [
+        "icml-2026-61502"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:07+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61502",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61502",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/bluedream02/mandela-effect",
+      "url": "https://github.com/bluedream02/Mandela-Effect",
+      "source_urls": [
+        "https://github.com/bluedream02/Mandela-Effect"
+      ],
+      "paper_ids": [
+        "iclr-2026-10006567"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:08+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10006567",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10006567",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/boyuanvisionary/pro-cad",
+      "url": "https://github.com/BoYuanVisionary/Pro-CAD",
+      "source_urls": [
+        "https://github.com/BoYuanVisionary/Pro-CAD"
+      ],
+      "paper_ids": [
+        "icml-2026-66672"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:09+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66672",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/66672",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/bytedance-seed/m3-agent",
+      "url": "https://github.com/ByteDance-Seed/m3-agent",
+      "source_urls": [
+        "https://github.com/ByteDance-Seed/m3-agent"
+      ],
+      "paper_ids": [
+        "iclr-2026-10009685"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "master",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:10+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10009685",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10009685",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/ccsnow127/docsearch",
+      "url": "https://github.com/ccsnow127/docsearch",
+      "source_urls": [
+        "https://github.com/ccsnow127/docsearch"
+      ],
+      "paper_ids": [
+        "icml-2026-65992"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:11+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65992",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65992",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/chengcanwu/bpd",
+      "url": "https://github.com/ChengcanWu/BPD",
+      "source_urls": [
+        "https://github.com/ChengcanWu/BPD"
+      ],
+      "paper_ids": [
+        "icml-2026-63780"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:12+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63780",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63780",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/chengyh23/privact",
+      "url": "https://github.com/chengyh23/PrivAct",
+      "source_urls": [
+        "https://github.com/chengyh23/PrivAct"
+      ],
+      "paper_ids": [
+        "icml-2026-65131"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:13+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65131",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65131",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/chenqirui2002/hardsecbench",
+      "url": "https://github.com/chenqirui2002/HardSecBench",
+      "source_urls": [
+        "https://github.com/chenqirui2002/HardSecBench"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-8172960f1217"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:14+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-8172960f1217",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/chunhuiz/tftsc",
+      "url": "https://github.com/chunhuiz/TFTSC",
+      "source_urls": [
+        "https://github.com/chunhuiz/TFTSC/tree/master"
+      ],
+      "paper_ids": [
+        "icml-2026-64438"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:15+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-64438",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/64438",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/controlnet/mata",
+      "url": "https://github.com/ControlNet/MATA",
+      "source_urls": [
+        "https://github.com/ControlNet/MATA"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008264"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "master",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:16+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008264",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008264",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/cszhangzhen/radar",
+      "url": "https://github.com/cszhangzhen/RADAR",
+      "source_urls": [
+        "https://github.com/cszhangzhen/RADAR"
+      ],
+      "paper_ids": [
+        "icml-2026-65087"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:17+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65087",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65087",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/ctrl-gaurav/effgen",
+      "url": "https://github.com/ctrl-gaurav/effGen",
+      "source_urls": [
+        "https://github.com/ctrl-gaurav/effGen"
+      ],
+      "paper_ids": [
+        "icml-2026-63516"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:18+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63516",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63516",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/cxcscmu/agentwebbench",
+      "url": "https://github.com/cxcscmu/AgentWebBench",
+      "source_urls": [
+        "https://github.com/cxcscmu/AgentWebBench"
+      ],
+      "paper_ids": [
+        "icml-2026-63068"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:19+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63068",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63068",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/dharouni/la-cdm",
+      "url": "https://github.com/dharouni/LA-CDM",
+      "source_urls": [
+        "https://github.com/dharouni/LA-CDM"
+      ],
+      "paper_ids": [
+        "iclr-2026-10011252"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:20+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10011252",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10011252",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/dongsenzhang/msb",
+      "url": "https://github.com/dongsenzhang/MSB",
+      "source_urls": [
+        "https://github.com/dongsenzhang/MSB"
+      ],
+      "paper_ids": [
+        "iclr-2026-10007929"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:21+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10007929",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10007929",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/dongwxxkchoi/embguard",
+      "url": "https://github.com/dongwxxkchoi/EMBGuard",
+      "source_urls": [
+        "https://github.com/dongwxxkchoi/EMBGuard"
+      ],
+      "paper_ids": [
+        "icml-2026-63023"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:22+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63023",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63023",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/dw-dengwei/active-spatial-reasoning",
+      "url": "https://github.com/dw-dengwei/active-spatial-reasoning",
+      "source_urls": [
+        "https://github.com/dw-dengwei/active-spatial-reasoning"
+      ],
+      "paper_ids": [
+        "icml-2026-61450"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:23+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61450",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61450",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/echochef/videoseal",
+      "url": "https://github.com/Echochef/VideoSEAL",
+      "source_urls": [
+        "https://github.com/Echochef/VideoSEAL"
+      ],
+      "paper_ids": [
+        "icml-2026-64001"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:24+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-64001",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/64001",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/ecthelionliu/todoevolve",
+      "url": "https://github.com/EcthelionLiu/TodoEvolve",
+      "source_urls": [
+        "https://github.com/EcthelionLiu/TodoEvolve"
+      ],
+      "paper_ids": [
+        "icml-2026-64136"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:24+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-64136",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/64136",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/epfl-nlp/helpful-to-a-fault",
+      "url": "https://github.com/epfl-nlp/helpful-to-a-fault",
+      "source_urls": [
+        "https://github.com/epfl-nlp/helpful-to-a-fault"
+      ],
+      "paper_ids": [
+        "icml-2026-61155"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:25+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61155",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61155",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/eviehub/rationality",
+      "url": "https://github.com/EVIEHub/Rationality",
+      "source_urls": [
+        "https://github.com/EVIEHub/Rationality"
+      ],
+      "paper_ids": [
+        "icml-2026-64009"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Shell"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:26+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-64009",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/64009",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/facebookresearch/decrypto",
+      "url": "https://github.com/facebookresearch/decrypto",
+      "source_urls": [
+        "https://github.com/facebookresearch/decrypto"
+      ],
+      "paper_ids": [
+        "icml-2026-62135"
+      ],
+      "license": "NOASSERTION",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:27+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-62135",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/62135",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/fatemehpesaran310/weasel",
+      "url": "https://github.com/fatemehpesaran310/weasel",
+      "source_urls": [
+        "https://github.com/fatemehpesaran310/weasel"
+      ],
+      "paper_ids": [
+        "icml-2026-65342"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:28+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65342",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65342",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/flagos-ai/awesome-llm-driven-kernel-generation",
+      "url": "https://github.com/flagos-ai/awesome-LLM-driven-kernel-generation",
+      "source_urls": [
+        "https://github.com/flagos-ai/awesome-LLM-driven-kernel-generation"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-ef650601752c"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:29+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-ef650601752c",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/foundationagents/interactcomp",
+      "url": "https://github.com/FoundationAgents/InteractComp",
+      "source_urls": [
+        "https://github.com/FoundationAgents/InteractComp"
+      ],
+      "paper_ids": [
+        "icml-2026-65730"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:30+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65730",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65730",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/froot-netsys/netarena",
+      "url": "https://github.com/Froot-NetSys/NetArena",
+      "source_urls": [
+        "https://github.com/Froot-NetSys/NetArena"
+      ],
+      "paper_ids": [
+        "iclr-2026-10010955"
+      ],
+      "license": null,
+      "default_branch": "a2a-agentx",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:31+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10010955",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10010955",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/gift-oys/pdagent",
+      "url": "https://github.com/Gift-OYS/PDAgent",
+      "source_urls": [
+        "https://github.com/Gift-OYS/PDAgent"
+      ],
+      "paper_ids": [
+        "icml-2026-63768"
+      ],
+      "license": "CC-BY-4.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:32+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63768",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63768",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/glee4810/ehr-chatqa",
+      "url": "https://github.com/glee4810/EHR-ChatQA",
+      "source_urls": [
+        "https://github.com/glee4810/EHR-ChatQA"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008072"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:33+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008072",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008072",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/gnonymous/web-cogreasoner",
+      "url": "https://github.com/Gnonymous/Web-CogReasoner",
+      "source_urls": [
+        "https://github.com/Gnonymous/Web-CogReasoner"
+      ],
+      "paper_ids": [
+        "iclr-2026-10007037"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:34+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10007037",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10007037",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/google-research/reasoning-bank",
+      "url": "https://github.com/google-research/reasoning-bank",
+      "source_urls": [
+        "https://github.com/google-research/reasoning-bank"
+      ],
+      "paper_ids": [
+        "iclr-2026-10007887"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:35+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10007887",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10007887",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/guanyilin428/dynamic-speculative-planning",
+      "url": "https://github.com/guanyilin428/Dynamic-Speculative-Planning",
+      "source_urls": [
+        "https://github.com/guanyilin428/Dynamic-Speculative-Planning"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008884"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:36+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008884",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008884",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/guoqingwang1/igpo",
+      "url": "https://github.com/GuoqingWang1/IGPO",
+      "source_urls": [
+        "https://github.com/GuoqingWang1/IGPO"
+      ],
+      "paper_ids": [
+        "iclr-2026-10007215"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:37+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10007215",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10007215",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/hansenhua/m2cl-iclr26",
+      "url": "https://github.com/HansenHua/M2CL-ICLR26",
+      "source_urls": [
+        "https://github.com/HansenHua/M2CL-ICLR26"
+      ],
+      "paper_ids": [
+        "iclr-2026-10010672"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:38+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10010672",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10010672",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/haoyuan-l/helmsman",
+      "url": "https://github.com/haoyuan-l/Helmsman",
+      "source_urls": [
+        "https://github.com/haoyuan-l/Helmsman"
+      ],
+      "paper_ids": [
+        "iclr-2026-10009105"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:39+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10009105",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10009105",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/heewoongnoh/ir-agent",
+      "url": "https://github.com/HeewoongNoh/IR-Agent",
+      "source_urls": [
+        "https://github.com/HeewoongNoh/IR-Agent"
+      ],
+      "paper_ids": [
+        "iclr-2026-10011365"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:40+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10011365",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10011365",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/henry-yeh/mce",
+      "url": "https://github.com/henry-yeh/mce",
+      "source_urls": [
+        "https://github.com/henry-yeh/mce"
+      ],
+      "paper_ids": [
+        "icml-2026-64296"
+      ],
+      "license": null,
+      "default_branch": null,
+      "archived": null,
+      "languages": [],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:41+00:00",
+      "status": "unavailable",
+      "verification": [
+        {
+          "paper_id": "icml-2026-64296",
+          "source": "manual-decision",
+          "source_url": "https://icml.cc/virtual/2026/poster/64296",
+          "method": "manual-decision",
+          "confidence": 1.0
+        }
+      ],
+      "verification_error": "github-http-404"
+    },
+    {
+      "id": "github.com/hwanchang00/chatinject",
+      "url": "https://github.com/hwanchang00/ChatInject",
+      "source_urls": [
+        "https://github.com/hwanchang00/ChatInject"
+      ],
+      "paper_ids": [
+        "iclr-2026-10009048"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:41+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10009048",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10009048",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/hybrid-gym/hybrid-gym",
+      "url": "https://github.com/Hybrid-Gym/Hybrid-Gym",
+      "source_urls": [
+        "https://github.com/Hybrid-Gym/Hybrid-Gym"
+      ],
+      "paper_ids": [
+        "icml-2026-66577"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:42+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66577",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/66577",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/hyeon1996/s2q",
+      "url": "https://github.com/hyeon1996/S2Q",
+      "source_urls": [
+        "https://github.com/hyeon1996/S2Q"
+      ],
+      "paper_ids": [
+        "iclr-2026-10009300"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:43+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10009300",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10009300",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/iamxjy/boad-swe-agent",
+      "url": "https://github.com/iamxjy/BOAD-SWE-Agent",
+      "source_urls": [
+        "https://github.com/iamxjy/BOAD-SWE-Agent"
+      ],
+      "paper_ids": [
+        "iclr-2026-10009813"
+      ],
+      "license": "NOASSERTION",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:44+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10009813",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10009813",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/j1mk1m/autoexperiment",
+      "url": "https://github.com/j1mk1m/AutoExperiment",
+      "source_urls": [
+        "https://github.com/j1mk1m/AutoExperiment"
+      ],
+      "paper_ids": [
+        "iclr-2026-10007273"
+      ],
+      "license": null,
+      "default_branch": "master",
+      "archived": false,
+      "languages": [
+        "Jupyter Notebook"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:45+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10007273",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10007273",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/jackbrocp/data-agent",
+      "url": "https://github.com/Jackbrocp/Data-Agent",
+      "source_urls": [
+        "https://github.com/Jackbrocp/Data-Agent"
+      ],
+      "paper_ids": [
+        "icml-2026-62583"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:46+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-62583",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/62583",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/jiahangshen/ijcai26-agentretro",
+      "url": "https://github.com/jiahangshen/IJCAI26-AgentRetro",
+      "source_urls": [
+        "https://github.com/jiahangshen/IJCAI26-AgentRetro"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-a8d47ce1cc4c"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:47+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-a8d47ce1cc4c",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/jinyeop3110/eelma",
+      "url": "https://github.com/Jinyeop3110/EELMA",
+      "source_urls": [
+        "https://github.com/Jinyeop3110/EELMA"
+      ],
+      "paper_ids": [
+        "icml-2026-61343"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:48+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61343",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61343",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/jnoether/mama",
+      "url": "https://github.com/JNoether/MaMa",
+      "source_urls": [
+        "https://github.com/JNoether/MaMa"
+      ],
+      "paper_ids": [
+        "icml-2026-64729"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:49+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-64729",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/64729",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/junchenzhi/awesome-llm-ensemble",
+      "url": "https://github.com/junchenzhi/Awesome-LLM-Ensemble",
+      "source_urls": [
+        "https://github.com/junchenzhi/Awesome-LLM-Ensemble"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-0ef37e2c2607"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "HTML"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:50+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-0ef37e2c2607",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/krafton-ai/orak",
+      "url": "https://github.com/krafton-ai/Orak",
+      "source_urls": [
+        "https://github.com/krafton-ai/Orak"
+      ],
+      "paper_ids": [
+        "iclr-2026-10010438"
+      ],
+      "license": "MIT",
+      "default_branch": "release",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:51+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10010438",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10010438",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/l-ailab/promptpilot",
+      "url": "https://github.com/L-AILab/PromptPilot",
+      "source_urls": [
+        "https://github.com/L-AILab/PromptPilot"
+      ],
+      "paper_ids": [
+        "icml-2026-65063"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Jupyter Notebook"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:52+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65063",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65063",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/lamda-nesy/openagent",
+      "url": "https://github.com/LAMDA-NeSy/OpenAgent",
+      "source_urls": [
+        "https://github.com/LAMDA-NeSy/OpenAgent"
+      ],
+      "paper_ids": [
+        "icml-2026-65179"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:53+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65179",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65179",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/langfengq/verl-agent",
+      "url": "https://github.com/langfengQ/verl-agent",
+      "source_urls": [
+        "https://github.com/langfengQ/verl-agent/tree/master/recipe/hgpo"
+      ],
+      "paper_ids": [
+        "iclr-2026-10009347"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "master",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:54+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10009347",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10009347",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/lars-research/vspeedui",
+      "url": "https://github.com/LARS-research/vSpeedUI",
+      "source_urls": [
+        "https://github.com/LARS-research/vSpeedUI"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-cbd458ec36fb"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:55+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-cbd458ec36fb",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/leililab/susvibes",
+      "url": "https://github.com/LeiLiLab/susvibes",
+      "source_urls": [
+        "https://github.com/LeiLiLab/susvibes"
+      ],
+      "paper_ids": [
+        "icml-2026-61427"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:57+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61427",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61427",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/lisijia-dev/h-epm",
+      "url": "https://github.com/LISijia-dev/H-EPM",
+      "source_urls": [
+        "https://github.com/LISijia-dev/H-EPM"
+      ],
+      "paper_ids": [
+        "icml-2026-64271"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:57+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-64271",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/64271",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/ljj-cyber/safeharbor",
+      "url": "https://github.com/ljj-cyber/SafeHarbor",
+      "source_urls": [
+        "https://github.com/ljj-cyber/SafeHarbor"
+      ],
+      "paper_ids": [
+        "icml-2026-64556"
+      ],
+      "license": "NOASSERTION",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:10:59+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-64556",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/64556",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/marouanebenbrahim/map-llm",
+      "url": "https://github.com/MarouaneBenbrahim/Map-LLM",
+      "source_urls": [
+        "https://github.com/MarouaneBenbrahim/Map-LLM"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-a8d07d1f3144"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:00+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-a8d07d1f3144",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/metauto-ai/hgm",
+      "url": "https://github.com/metauto-ai/HGM",
+      "source_urls": [
+        "https://github.com/metauto-ai/HGM"
+      ],
+      "paper_ids": [
+        "iclr-2026-10009359"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:01+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10009359",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10009359",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/microsoft/acon",
+      "url": "https://github.com/microsoft/acon",
+      "source_urls": [
+        "https://github.com/microsoft/acon"
+      ],
+      "paper_ids": [
+        "icml-2026-66270"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:02+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66270",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/66270",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/microsoft/rd-agent",
+      "url": "https://github.com/microsoft/rd-agent",
+      "source_urls": [
+        "https://github.com/microsoft/rd-agent"
+      ],
+      "paper_ids": [
+        "icml-2026-63475"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:03+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63475",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63475",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/mit-mi/mem1",
+      "url": "https://github.com/MIT-MI/MEM1",
+      "source_urls": [
+        "https://github.com/MIT-MI/MEM1"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008961"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:04+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008961",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008961",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/multimodal-art-projection/nl2repobench",
+      "url": "https://github.com/multimodal-art-projection/NL2RepoBench",
+      "source_urls": [
+        "https://github.com/multimodal-art-projection/NL2RepoBench"
+      ],
+      "paper_ids": [
+        "icml-2026-60772"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:05+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-60772",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/60772",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/myanvoos/aspec",
+      "url": "https://github.com/myanvoos/ASpec",
+      "source_urls": [
+        "https://github.com/myanvoos/ASpec"
+      ],
+      "paper_ids": [
+        "iclr-2026-10009249"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:06+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10009249",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10009249",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/ninggao-ai/interactcs-rl",
+      "url": "https://github.com/NingGao-Ai/InteractCS-RL",
+      "source_urls": [
+        "https://github.com/NingGao-Ai/InteractCS-RL"
+      ],
+      "paper_ids": [
+        "icml-2026-65380"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:07+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65380",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65380",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/nju-rl/ma-rag",
+      "url": "https://github.com/NJU-RL/MA-RAG",
+      "source_urls": [
+        "https://github.com/NJU-RL/MA-RAG"
+      ],
+      "paper_ids": [
+        "icml-2026-63972"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:08+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63972",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63972",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/oceanflowlab/hoi-edit",
+      "url": "https://github.com/oceanflowlab/HOI-Edit",
+      "source_urls": [
+        "https://github.com/oceanflowlab/HOI-Edit"
+      ],
+      "paper_ids": [
+        "icml-2026-63999"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:09+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63999",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63999",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/octobrist/cope",
+      "url": "https://github.com/Octobrist/CoPE",
+      "source_urls": [
+        "https://github.com/Octobrist/CoPE"
+      ],
+      "paper_ids": [
+        "icml-2026-65839"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:10+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65839",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65839",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/opendatalab/earth-agent",
+      "url": "https://github.com/opendatalab/Earth-Agent",
+      "source_urls": [
+        "https://github.com/opendatalab/Earth-Agent"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008386"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:11+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008386",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008386",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/opensage-agent/opensage-adk",
+      "url": "https://github.com/opensage-agent/opensage-adk",
+      "source_urls": [
+        "https://github.com/opensage-agent/opensage-adk"
+      ],
+      "paper_ids": [
+        "icml-2026-66121"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:12+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66121",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/66121",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/oppo-personalai/flash-searcher",
+      "url": "https://github.com/OPPO-PersonalAI/Flash-Searcher",
+      "source_urls": [
+        "https://github.com/OPPO-PersonalAI/Flash-Searcher"
+      ],
+      "paper_ids": [
+        "iclr-2026-10009545"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:13+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10009545",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10009545",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/panzaifeng/kvflow",
+      "url": "https://github.com/PanZaifeng/KVFlow",
+      "source_urls": [
+        "https://github.com/PanZaifeng/KVFlow"
+      ],
+      "paper_ids": [
+        "icml-2026-62000"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:15+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-62000",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/62000",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/pettingllms-ai/pettingllms",
+      "url": "https://github.com/pettingllms-ai/PettingLLMs",
+      "source_urls": [
+        "https://github.com/pettingllms-ai/PettingLLMs"
+      ],
+      "paper_ids": [
+        "iclr-2026-10010282"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:16+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10010282",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10010282",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/phycholosogy/vqqp_bench",
+      "url": "https://github.com/phycholosogy/VQQP_Bench",
+      "source_urls": [
+        "https://github.com/phycholosogy/VQQP_Bench"
+      ],
+      "paper_ids": [
+        "icml-2026-62898"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:17+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-62898",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/62898",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/pku-ml/grasp",
+      "url": "https://github.com/PKU-ML/GRASP",
+      "source_urls": [
+        "https://github.com/PKU-ML/GRASP"
+      ],
+      "paper_ids": [
+        "icml-2026-61718"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:18+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61718",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61718",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/pt3y/agenttailor",
+      "url": "https://github.com/Pt3Y/AgentTailor",
+      "source_urls": [
+        "https://github.com/Pt3Y/AgentTailor"
+      ],
+      "paper_ids": [
+        "icml-2026-60754"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:20+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-60754",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/60754",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/qingyuliu/agentic-upward-deception",
+      "url": "https://github.com/QingyuLiu/Agentic-Upward-Deception",
+      "source_urls": [
+        "https://github.com/QingyuLiu/Agentic-Upward-Deception"
+      ],
+      "paper_ids": [
+        "icml-2026-62581"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:20+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-62581",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/62581",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/qwen-applications/ssp",
+      "url": "https://github.com/Qwen-Applications/SSP",
+      "source_urls": [
+        "https://github.com/Qwen-Applications/SSP"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008777"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:22+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008777",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008777",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/rl-dlmu/tsma",
+      "url": "https://github.com/RL-DLMU/TSMA",
+      "source_urls": [
+        "https://github.com/RL-DLMU/TSMA"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-4f157794b8f3"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:23+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-4f157794b8f3",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/rose-stl-lab/zephyrus",
+      "url": "https://github.com/Rose-STL-Lab/Zephyrus",
+      "source_urls": [
+        "https://github.com/Rose-STL-Lab/Zephyrus"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008692"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:24+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008692",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008692",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/ruc-nlpir/arpo",
+      "url": "https://github.com/RUC-NLPIR/ARPO",
+      "source_urls": [
+        "https://github.com/RUC-NLPIR/ARPO"
+      ],
+      "paper_ids": [
+        "iclr-2026-10009306"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:24+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10009306",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10009306",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/salesforceairesearch/walt",
+      "url": "https://github.com/SalesforceAIResearch/WALT",
+      "source_urls": [
+        "https://github.com/SalesforceAIResearch/WALT"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008481"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:26+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008481",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008481",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/sanbai123/pentestllmagent_code-and-videos",
+      "url": "https://github.com/sanbai123/PentestLLMAgent_code-and-videos",
+      "source_urls": [
+        "https://github.com/sanbai123/PentestLLMAgent_code-and-videos"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-463916d22ec8"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:26+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-463916d22ec8",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/scaleapi/propensity-evaluation",
+      "url": "https://github.com/scaleapi/propensity-evaluation",
+      "source_urls": [
+        "https://github.com/scaleapi/propensity-evaluation"
+      ],
+      "paper_ids": [
+        "iclr-2026-10007881"
+      ],
+      "license": "GPL-3.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:27+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10007881",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10007881",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/scaleapi/vero",
+      "url": "https://github.com/scaleapi/vero",
+      "source_urls": [
+        "https://github.com/scaleapi/vero"
+      ],
+      "paper_ids": [
+        "icml-2026-60518"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:28+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-60518",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/60518",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/scottliao920/verl-retro-agent",
+      "url": "https://github.com/ScottLiao920/verl-retro-agent",
+      "source_urls": [
+        "https://github.com/ScottLiao920/verl-retro-agent"
+      ],
+      "paper_ids": [
+        "icml-2026-61540"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "master",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:29+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61540",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61540",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/shao-jiaqi757/seekbench",
+      "url": "https://github.com/SHAO-Jiaqi757/SeekBench",
+      "source_urls": [
+        "https://github.com/SHAO-Jiaqi757/SeekBench"
+      ],
+      "paper_ids": [
+        "iclr-2026-10007188"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:30+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10007188",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10007188",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/shishishi123/tool-guard",
+      "url": "https://github.com/shishishi123/Tool-Guard",
+      "source_urls": [
+        "https://github.com/shishishi123/Tool-Guard"
+      ],
+      "paper_ids": [
+        "icml-2026-62116"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:31+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-62116",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/62116",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/shuhui-zhu/align",
+      "url": "https://github.com/shuhui-zhu/ALIGN",
+      "source_urls": [
+        "https://github.com/shuhui-zhu/ALIGN"
+      ],
+      "paper_ids": [
+        "icml-2026-62130"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:32+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-62130",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/62130",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/sinatayebati/agent-tracer",
+      "url": "https://github.com/sinatayebati/agent-tracer",
+      "source_urls": [
+        "https://github.com/sinatayebati/agent-tracer"
+      ],
+      "paper_ids": [
+        "icml-2026-61608"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:33+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61608",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61608",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/snowflake-labs/agent-world-model",
+      "url": "https://github.com/Snowflake-Labs/agent-world-model",
+      "source_urls": [
+        "https://github.com/Snowflake-Labs/agent-world-model"
+      ],
+      "paper_ids": [
+        "icml-2026-64306"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:34+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-64306",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/64306",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/snu-mllab/rule2drc",
+      "url": "https://github.com/snu-mllab/Rule2DRC",
+      "source_urls": [
+        "https://github.com/snu-mllab/Rule2DRC"
+      ],
+      "paper_ids": [
+        "icml-2026-63031"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:35+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63031",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63031",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/starry-159/agentvocab",
+      "url": "https://github.com/Starry-159/AgentVocab",
+      "source_urls": [
+        "https://github.com/Starry-159/AgentVocab"
+      ],
+      "paper_ids": [
+        "icml-2026-61748"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:36+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61748",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61748",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/suchenjm/autothread",
+      "url": "https://github.com/suchenjm/AutoThread",
+      "source_urls": [
+        "https://github.com/suchenjm/AutoThread"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-409e025b28fd"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Jupyter Notebook"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:37+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-409e025b28fd",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/sunblaze-ucb/agentsynth",
+      "url": "https://github.com/sunblaze-ucb/AgentSynth",
+      "source_urls": [
+        "https://github.com/sunblaze-ucb/AgentSynth"
+      ],
+      "paper_ids": [
+        "iclr-2026-10010827"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:38+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10010827",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10010827",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/sunnweiwei/foldagent",
+      "url": "https://github.com/sunnweiwei/FoldAgent",
+      "source_urls": [
+        "https://github.com/sunnweiwei/FoldAgent"
+      ],
+      "paper_ids": [
+        "icml-2026-61950"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:39+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61950",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61950",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/thudm/computerrl",
+      "url": "https://github.com/THUDM/ComputerRL",
+      "source_urls": [
+        "https://github.com/THUDM/ComputerRL"
+      ],
+      "paper_ids": [
+        "iclr-2026-10007435"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:40+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10007435",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10007435",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/thudm/mobilerl",
+      "url": "https://github.com/THUDM/MobileRL",
+      "source_urls": [
+        "https://github.com/THUDM/MobileRL"
+      ],
+      "paper_ids": [
+        "iclr-2026-10010890"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:41+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10010890",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10010890",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/tiannuo-yang/searchagent-x",
+      "url": "https://github.com/tiannuo-yang/SearchAgent-X",
+      "source_urls": [
+        "https://github.com/tiannuo-yang/SearchAgent-X"
+      ],
+      "paper_ids": [
+        "iclr-2026-10010899"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:42+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10010899",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10010899",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/tianyucodings/edival",
+      "url": "https://github.com/TianyuCodings/EdiVal",
+      "source_urls": [
+        "https://github.com/TianyuCodings/EdiVal"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008872"
+      ],
+      "license": null,
+      "default_branch": "master",
+      "archived": false,
+      "languages": [
+        "Jupyter Notebook"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:43+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008872",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008872",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/timan-group/plugmem",
+      "url": "https://github.com/TIMAN-group/PlugMem",
+      "source_urls": [
+        "https://github.com/TIMAN-group/PlugMem"
+      ],
+      "paper_ids": [
+        "icml-2026-64446"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:44+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-64446",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/64446",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/titanwings/trace-benchmark-evolving",
+      "url": "https://github.com/titanwings/trace-benchmark-evolving",
+      "source_urls": [
+        "https://github.com/titanwings/trace-benchmark-evolving"
+      ],
+      "paper_ids": [
+        "iclr-2026-10011762"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:45+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10011762",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10011762",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/toolbrain/tracebrain",
+      "url": "https://github.com/ToolBrain/TraceBrain",
+      "source_urls": [
+        "https://github.com/ToolBrain/TraceBrain"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-0f21fe11f948"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:46+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-0f21fe11f948",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/tsinghua-fib-lab/fingertip-20k",
+      "url": "https://github.com/tsinghua-fib-lab/FingerTip-20K",
+      "source_urls": [
+        "https://github.com/tsinghua-fib-lab/FingerTip-20K"
+      ],
+      "paper_ids": [
+        "iclr-2026-10007512"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:47+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10007512",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10007512",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/tsinghua-fib-lab/livefigure",
+      "url": "https://github.com/tsinghua-fib-lab/LiveFigure",
+      "source_urls": [
+        "https://github.com/tsinghua-fib-lab/LiveFigure"
+      ],
+      "paper_ids": [
+        "icml-2026-62974"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:48+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-62974",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/62974",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/tsinghua-fib-lab/profinagent",
+      "url": "https://github.com/tsinghua-fib-lab/ProFinAgent",
+      "source_urls": [
+        "https://github.com/tsinghua-fib-lab/ProFinAgent"
+      ],
+      "paper_ids": [
+        "icml-2026-60732"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:49+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-60732",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/60732",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/tsinghua-fib-lab/scinet",
+      "url": "https://github.com/tsinghua-fib-lab/SciNet",
+      "source_urls": [
+        "https://github.com/tsinghua-fib-lab/SciNet"
+      ],
+      "paper_ids": [
+        "icml-2026-66769"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:50+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66769",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/66769",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/txfei/code-delegator",
+      "url": "https://github.com/txfei/code-delegator",
+      "source_urls": [
+        "https://github.com/txfei/code-delegator"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-27ece2cbe381"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:51+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-27ece2cbe381",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/ubiquitouslearning/gui-shift",
+      "url": "https://github.com/UbiquitousLearning/GUI-Shift",
+      "source_urls": [
+        "https://github.com/UbiquitousLearning/GUI-Shift"
+      ],
+      "paper_ids": [
+        "iclr-2026-10009851"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:51+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10009851",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10009851",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/ulab-uiuc/expweaver",
+      "url": "https://github.com/ulab-uiuc/ExpWeaver",
+      "source_urls": [
+        "https://github.com/ulab-uiuc/ExpWeaver"
+      ],
+      "paper_ids": [
+        "icml-2026-66387"
+      ],
+      "license": null,
+      "default_branch": null,
+      "archived": null,
+      "languages": [],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:52+00:00",
+      "status": "unavailable",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66387",
+          "source": "manual-decision",
+          "source_url": "https://icml.cc/virtual/2026/poster/66387",
+          "method": "manual-decision",
+          "confidence": 1.0
+        }
+      ],
+      "verification_error": "github-http-404"
+    },
+    {
+      "id": "github.com/ulab-uiuc/graphplanner",
+      "url": "https://github.com/ulab-uiuc/GraphPlanner",
+      "source_urls": [
+        "https://github.com/ulab-uiuc/GraphPlanner"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008792"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:53+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008792",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008792",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/unimpor/t3",
+      "url": "https://github.com/unimpor/T3",
+      "source_urls": [
+        "https://github.com/unimpor/T3"
+      ],
+      "paper_ids": [
+        "icml-2026-61624"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:54+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61624",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61624",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/usail-hkust/agent-omit",
+      "url": "https://github.com/usail-hkust/Agent-Omit",
+      "source_urls": [
+        "https://github.com/usail-hkust/Agent-Omit"
+      ],
+      "paper_ids": [
+        "icml-2026-63271"
+      ],
+      "license": null,
+      "default_branch": "yasNing",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:55+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63271",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63271",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/usail-hkust/ustbench",
+      "url": "https://github.com/usail-hkust/USTBench",
+      "source_urls": [
+        "https://github.com/usail-hkust/USTBench"
+      ],
+      "paper_ids": [
+        "iclr-2026-10010674"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:56+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10010674",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10010674",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/v-droid-agent/prore",
+      "url": "https://github.com/V-Droid-Agent/ProRe",
+      "source_urls": [
+        "https://github.com/V-Droid-Agent/ProRe"
+      ],
+      "paper_ids": [
+        "iclr-2026-10006613"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:57+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10006613",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10006613",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/vanellopeasher/litreview-arena",
+      "url": "https://github.com/VanellopeAsher/LitReview-Arena",
+      "source_urls": [
+        "https://github.com/VanellopeAsher/LitReview-Arena"
+      ],
+      "paper_ids": [
+        "icml-2026-63625"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:58+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63625",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63625",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/viktoraxelsen/budgetmem",
+      "url": "https://github.com/ViktorAxelsen/BudgetMem",
+      "source_urls": [
+        "https://github.com/ViktorAxelsen/BudgetMem"
+      ],
+      "paper_ids": [
+        "icml-2026-66266"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:11:59+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66266",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/66266",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/wangxuefeng1024/continuous-time-value-iteration-for-multi-agent-reinforcement-learning",
+      "url": "https://github.com/Wangxuefeng1024/Continuous-Time-Value-Iteration-for-Multi-Agent-Reinforcement-Learning",
+      "source_urls": [
+        "https://github.com/Wangxuefeng1024/Continuous-Time-Value-Iteration-for-Multi-Agent-Reinforcement-Learning"
+      ],
+      "paper_ids": [
+        "iclr-2026-10011305"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:00+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10011305",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10011305",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/wangxuefeng1024/safe-continuous-time-multi-agent-reinforcement-learning-via-epigraph-form",
+      "url": "https://github.com/Wangxuefeng1024/Safe-Continuous-time-Multi-Agent-Reinforcement-Learning-via-Epigraph-Form",
+      "source_urls": [
+        "https://github.com/Wangxuefeng1024/Safe-Continuous-time-Multi-Agent-Reinforcement-Learning-via-Epigraph-Form"
+      ],
+      "paper_ids": [
+        "iclr-2026-10009261"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:01+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10009261",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10009261",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/wangzx1219/maspo",
+      "url": "https://github.com/wangzx1219/MASPO",
+      "source_urls": [
+        "https://github.com/wangzx1219/MASPO"
+      ],
+      "paper_ids": [
+        "icml-2026-62219"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:02+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-62219",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/62219",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/warma10032/card",
+      "url": "https://github.com/Warma10032/CARD",
+      "source_urls": [
+        "https://github.com/Warma10032/CARD"
+      ],
+      "paper_ids": [
+        "iclr-2026-10010180"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:03+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10010180",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10010180",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/weizhihao1/mas-bias",
+      "url": "https://github.com/weizhihao1/MAS-Bias",
+      "source_urls": [
+        "https://github.com/weizhihao1/MAS-Bias"
+      ],
+      "paper_ids": [
+        "iclr-2026-10007543"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:04+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10007543",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10007543",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/wildalg/parevo",
+      "url": "https://github.com/WildAlg/ParEVO",
+      "source_urls": [
+        "https://github.com/WildAlg/ParEVO"
+      ],
+      "paper_ids": [
+        "icml-2026-61756"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "C++"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:12+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61756",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61756",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/willdreamer/arl-arena",
+      "url": "https://github.com/WillDreamer/ARL-Arena",
+      "source_urls": [
+        "https://github.com/WillDreamer/ARL-Arena"
+      ],
+      "paper_ids": [
+        "icml-2026-65909"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:12+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65909",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65909",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/wisdomjoy/qm-libbench",
+      "url": "https://github.com/WisdomJoy/QM-LibBench",
+      "source_urls": [
+        "https://github.com/WisdomJoy/QM-LibBench"
+      ],
+      "paper_ids": [
+        "icml-2026-60997"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "C"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:13+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-60997",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/60997",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/woooodyy/agentgym-rl",
+      "url": "https://github.com/WooooDyy/AgentGym-RL",
+      "source_urls": [
+        "https://github.com/WooooDyy/AgentGym-RL"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008785"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:15+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008785",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008785",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/wwh0411/mcp-persona",
+      "url": "https://github.com/wwh0411/MCP-Persona",
+      "source_urls": [
+        "https://github.com/wwh0411/MCP-Persona"
+      ],
+      "paper_ids": [
+        "icml-2026-60873"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:16+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-60873",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/60873",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/wzhsteve/epc-aw",
+      "url": "https://github.com/wzhSteve/EPC-AW",
+      "source_urls": [
+        "https://github.com/wzhSteve/EPC-AW"
+      ],
+      "paper_ids": [
+        "icml-2026-65821"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:17+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65821",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65821",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/xinyu-pang/deliberate-evolution",
+      "url": "https://github.com/Xinyu-Pang/Deliberate-Evolution",
+      "source_urls": [
+        "https://github.com/Xinyu-Pang/Deliberate-Evolution"
+      ],
+      "paper_ids": [
+        "icml-2026-66263"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:18+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-66263",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/66263",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/xskill-agent/xskill",
+      "url": "https://github.com/XSkill-Agent/XSkill",
+      "source_urls": [
+        "https://github.com/XSkill-Agent/XSkill"
+      ],
+      "paper_ids": [
+        "icml-2026-65729"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:19+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65729",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65729",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/yangcode-res/thgagents",
+      "url": "https://github.com/yangCode-res/THGAgents",
+      "source_urls": [
+        "https://github.com/yangCode-res/THGAgents"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-6d885205a69f"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:20+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-6d885205a69f",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/yanghaolin0526/mars-sql",
+      "url": "https://github.com/YangHaolin0526/MARS-SQL",
+      "source_urls": [
+        "https://github.com/YangHaolin0526/MARS-SQL"
+      ],
+      "paper_ids": [
+        "icml-2026-65053"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:21+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65053",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65053",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/yanhuis/cyberjurors",
+      "url": "https://github.com/YanhuiS/CyberJurors",
+      "source_urls": [
+        "https://github.com/YanhuiS/CyberJurors"
+      ],
+      "paper_ids": [
+        "icml-2026-61907"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:21+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-61907",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/61907",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/ydhe1012/strat-reasoner",
+      "url": "https://github.com/ydhe1012/Strat-Reasoner",
+      "source_urls": [
+        "https://github.com/ydhe1012/Strat-Reasoner"
+      ],
+      "paper_ids": [
+        "icml-2026-63649"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:22+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63649",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63649",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/yqhuang2912/agenticct",
+      "url": "https://github.com/yqhuang2912/AgenticCT",
+      "source_urls": [
+        "https://github.com/yqhuang2912/AgenticCT"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-afcf8ffbe5b7"
+      ],
+      "license": null,
+      "default_branch": null,
+      "archived": null,
+      "languages": [],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:23+00:00",
+      "status": "unavailable",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-afcf8ffbe5b7",
+          "source": "manual-decision",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "manual-decision",
+          "confidence": 1.0
+        }
+      ],
+      "verification_error": "github-http-404"
+    },
+    {
+      "id": "github.com/yu-deep/vif",
+      "url": "https://github.com/YU-deep/ViF",
+      "source_urls": [
+        "https://github.com/YU-deep/ViF"
+      ],
+      "paper_ids": [
+        "iclr-2026-10010274"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:25+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10010274",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10010274",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/yunhao-feng/skilltrojan",
+      "url": "https://github.com/Yunhao-Feng/SkillTrojan",
+      "source_urls": [
+        "https://github.com/Yunhao-Feng/SkillTrojan"
+      ],
+      "paper_ids": [
+        "icml-2026-65209"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:26+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-65209",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/65209",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/yunx-z/adamem",
+      "url": "https://github.com/yunx-z/AdaMEM",
+      "source_urls": [
+        "https://github.com/yunx-z/AdaMEM"
+      ],
+      "paper_ids": [
+        "icml-2026-63989"
+      ],
+      "license": "Apache-2.0",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:27+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63989",
+          "source": "abstract",
+          "source_url": "https://icml.cc/virtual/2026/poster/63989",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/yuzeng0-0/agile",
+      "url": "https://github.com/yuzeng0-0/AGILE",
+      "source_urls": [
+        "https://github.com/yuzeng0-0/AGILE"
+      ],
+      "paper_ids": [
+        "iclr-2026-10011618"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:28+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10011618",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10011618",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/zhangdatalab/simvc-cas",
+      "url": "https://github.com/ZhangDataLab/SimVC-CAS",
+      "source_urls": [
+        "https://github.com/ZhangDataLab/SimVC-CAS"
+      ],
+      "paper_ids": [
+        "ijcai-2026-ijcai-ff8d759911c5"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:29+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "ijcai-2026-ijcai-ff8d759911c5",
+          "source": "abstract",
+          "source_url": "https://2026.ijcai.org/accepted-papers/",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/zheng977/mutiagent4fraud",
+      "url": "https://github.com/zheng977/MutiAgent4Fraud",
+      "source_urls": [
+        "https://github.com/zheng977/MutiAgent4Fraud"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008753"
+      ],
+      "license": null,
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:30+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008753",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008753",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "github.com/zjuhj/mas_architect",
+      "url": "https://github.com/ZJUHJ/mas_architect",
+      "source_urls": [
+        "https://github.com/ZJUHJ/mas_architect"
+      ],
+      "paper_ids": [
+        "icml-2026-63290"
+      ],
+      "license": null,
+      "default_branch": null,
+      "archived": null,
+      "languages": [],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:31+00:00",
+      "status": "unavailable",
+      "verification": [
+        {
+          "paper_id": "icml-2026-63290",
+          "source": "manual-decision",
+          "source_url": "https://icml.cc/virtual/2026/poster/63290",
+          "method": "manual-decision",
+          "confidence": 1.0
+        }
+      ],
+      "verification_error": "github-http-404"
+    },
+    {
+      "id": "github.com/zpforlove/resp-agent",
+      "url": "https://github.com/zpforlove/Resp-Agent",
+      "source_urls": [
+        "https://github.com/zpforlove/Resp-Agent"
+      ],
+      "paper_ids": [
+        "iclr-2026-10008779"
+      ],
+      "license": "MIT",
+      "default_branch": "main",
+      "archived": false,
+      "languages": [
+        "Python"
+      ],
+      "frameworks": [],
+      "entrypoints": [],
+      "tests": [],
+      "environments": [],
+      "installability": "not-checked",
+      "reproducibility_assets": [],
+      "last_verified_at": "2026-08-09T13:12:32+00:00",
+      "status": "verified",
+      "verification": [
+        {
+          "paper_id": "iclr-2026-10008779",
+          "source": "abstract",
+          "source_url": "https://iclr.cc/virtual/2026/poster/10008779",
+          "method": "official-abstract-explicit-url",
+          "confidence": 1.0
+        }
+      ]
+    }
+  ]
+}

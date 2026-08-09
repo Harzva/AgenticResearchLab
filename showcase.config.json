@@ -1,0 +1,59 @@
+{
+  "projectName": "AgenticResearchLab",
+  "root": ".",
+  "type": "manual",
+  "installCommand": "python -m pip install -e .",
+  "startCommand": ".venv/bin/arl serve --host 127.0.0.1 --port 18766",
+  "baseUrl": "http://127.0.0.1:18766",
+  "outputDir": "docs/readme-assets",
+  "readme": "README.md",
+  "waitMs": 1200,
+  "timeoutMs": 60000,
+  "disableAnimations": true,
+  "viewports": {
+    "desktop": {"width": 1440, "height": 1050},
+    "mobile": {"width": 430, "height": 932}
+  },
+  "screenshots": [
+    {
+      "id": "dashboard-hero",
+      "title": "Loaded evidence and proposal candidates",
+      "path": "/",
+      "viewport": "desktop",
+      "waitFor": ".result",
+      "steps": [
+        {"click": "#propose"},
+        {"wait": 1800}
+      ],
+      "waitMs": 500,
+      "fullPage": false
+    },
+    {
+      "id": "dashboard-desktop",
+      "title": "Evidence and proposal dashboard",
+      "path": "/",
+      "viewport": "desktop",
+      "waitFor": ".result",
+      "waitMs": 1500,
+      "fullPage": true
+    },
+    {
+      "id": "dashboard-mobile",
+      "title": "Responsive mobile dashboard",
+      "path": "/",
+      "viewport": "mobile",
+      "waitFor": ".result",
+      "waitMs": 1500,
+      "fullPage": true
+    }
+  ],
+  "motions": [],
+  "hero": {
+    "title": "AgenticResearchLab",
+    "subtitle": "Evidence-grounded Agentic research intelligence",
+    "images": [
+      "dashboard-hero",
+      "dashboard-mobile"
+    ]
+  }
+}

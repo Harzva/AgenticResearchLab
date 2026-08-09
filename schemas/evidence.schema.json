@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Harzva/AgenticResearchLab/schemas/evidence.schema.json",
+  "title": "AgenticResearchLab Evidence",
+  "type": "object",
+  "required": ["source", "source_url", "method", "confidence"],
+  "properties": {
+    "paper_id": {"type": ["string", "null"]},
+    "repository_id": {"type": ["string", "null"]},
+    "source": {"type": "string"},
+    "source_url": {"type": "string", "format": "uri"},
+    "section": {"type": ["string", "null"]},
+    "page_start": {"type": ["integer", "null"], "minimum": 1},
+    "page_end": {"type": ["integer", "null"], "minimum": 1},
+    "chunk_id": {"type": ["string", "null"]},
+    "method": {"type": "string"},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+  },
+  "additionalProperties": false
+}

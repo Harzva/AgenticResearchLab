@@ -14,7 +14,7 @@ is the exhaustive corpus layer: every source-manifest row is retained and tracea
 - Author lists: **1,236**
 - OpenReview links: **315**
 - arXiv links: **689**
-- Indexed code repositories: **0** (not present in the source manifest)
+- Verified code links: **154**
 
 ## Conferences
 

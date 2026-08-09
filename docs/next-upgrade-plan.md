@@ -2,7 +2,25 @@
 
 > 目标：把 AgenticResearchLab 从“论文目录 + 关键词报告生成器”升级为一个可追溯、可评测、可扩展的 Agentic Research Intelligence 系统。
 
-本文是下一阶段的实施基线。后续功能、Issue 和里程碑应能映射到本文中的工作流、验收门槛与产物；没有通过对应门槛的功能不视为完成。
+> **文档状态：0.2 架构与历史实施基线。** 下一阶段的优先级、任务编号、质量指标和
+> `0.2 Beta → 1.0 → 2.0` 发布门槛已经迁移到 [执行 Roadmap](ROADMAP.md)。下文的
+> “当前主要缺口”保留为升级前问题记录，应结合实施快照阅读。
+
+本文曾作为 `0.2` 的实施基线；其中的工作流、Schema、验收门槛与产物继续有效，
+后续功能、Issue 和里程碑统一映射到新的执行 Roadmap。
+
+## 实施快照（2026-08-09）
+
+本轮已交付可运行的 `0.2.0` 全面升级 Beta：M0–M2 已达到退出条件，M3–M7
+已形成端到端实现并进入 Beta。当前公开目录包含 1,242 篇论文、158 个显式代码
+候选与 154 个在线验证通过的 GitHub 仓库；本机验证已将 989/989 个可用 PDF
+解析为 30,909 个页码级 Chunk，并建立 1,242 个确定性向量、194 个实体和 4,816
+条关系。CLI、本地 Dashboard/API、工程画像、Proposal 工作区、评测、CI、Schema
+和 README 已同步。
+
+仍未将 M8/1.0 标记为完成：现有 100 条检索集是确定性 smoke Gold，而不是人工
+撰写的中英文语义 Gold；taxonomy 和 Proposal 引擎是规则型 Beta。发布时必须保留
+这一限制说明，不能把 smoke 指标表述为通用语义检索质量。
 
 ## 1. 当前基线
 
@@ -451,34 +469,34 @@ arl serve
 
 ### P0：本轮之后立即开始
 
-- [ ] ARL-101：建立 `Paper v2`、`Repository`、`Evidence` JSON Schema；
-- [ ] ARL-102：为公共数据增加 `catalog_version` 和输入 checksum；
-- [ ] ARL-103：从 938 篇摘要中抽取 GitHub/GitLab/项目地址候选；
-- [ ] ARL-104：实现仓库验证器和人工裁决文件；
-- [ ] ARL-105：生成论文–代码覆盖率报告；
-- [ ] ARL-106：建立 100 条代码匹配 Gold Set；
-- [ ] ARL-107：增加 `arl enrich code --dry-run --resume`；
-- [ ] ARL-108：确保自动结果不能覆盖人工验证结果。
+- [x] ARL-101：建立 `Paper v2`、`Repository`、`Evidence` JSON Schema；
+- [x] ARL-102：为公共数据增加 `catalog_version` 和输入 checksum；
+- [x] ARL-103：从 938 篇摘要中抽取 GitHub/GitLab/项目地址候选；
+- [x] ARL-104：实现仓库验证器和人工裁决文件；
+- [x] ARL-105：生成论文–代码覆盖率报告；
+- [x] ARL-106：建立 100 条代码匹配 Gold Set；
+- [x] ARL-107：增加 `arl enrich-code --dry-run --resume`；
+- [x] ARL-108：确保自动结果不能覆盖人工验证结果。
 
 ### P1：代码富化稳定后
 
-- [ ] ARL-201：设计 `.arl/catalog.sqlite3`；
-- [ ] ARL-202：实现 PDF checksum、解析状态和错误码；
-- [ ] ARL-203：实现 PyMuPDF 页码级提取；
-- [ ] ARL-204：实现章节检测和 Chunk Schema；
-- [ ] ARL-205：建立 SQLite FTS5 索引；
-- [ ] ARL-206：实现 Evidence 引用格式；
+- [x] ARL-201：设计 `.arl/catalog.sqlite3`；
+- [x] ARL-202：实现 PDF checksum、解析状态和错误码；
+- [x] ARL-203：实现 PyMuPDF 页码级提取；
+- [x] ARL-204：实现章节检测和 Chunk Schema；
+- [x] ARL-205：建立 SQLite FTS5 索引；
+- [x] ARL-206：实现 Evidence 引用格式；
 - [ ] ARL-207：建立全文抽样质量集。
 
 ### P2：检索稳定后
 
-- [ ] ARL-301：建立 Agentic taxonomy 和实体抽取器；
-- [ ] ARL-302：实现混合召回和字段过滤；
+- [x] ARL-301：建立 Agentic taxonomy 和实体抽取器；
+- [x] ARL-302：实现混合召回和字段过滤；
 - [ ] ARL-303：建立 100 条中英文检索 Gold Set；
-- [ ] ARL-304：实现最近工作差异矩阵；
-- [ ] ARL-305：实现 Claim、Baseline 和实验 Schema；
-- [ ] ARL-306：实现候选否决 Tournament；
-- [ ] ARL-307：建立 Proposal 质量回归集。
+- [x] ARL-304：实现最近工作差异矩阵；
+- [x] ARL-305：实现 Claim、Baseline 和实验 Schema；
+- [x] ARL-306：实现候选否决 Tournament；
+- [x] ARL-307：建立 Proposal 质量回归集。
 
 ## 17. 全面完成的定义
 

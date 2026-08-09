@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="Explore 1,242 Agentic AI papers and 154 verified code repositories in AgenticResearchLab." />
+  <meta property="og:title" content="AgenticResearchLab · Public Research Explorer" />
+  <meta property="og:description" content="Explore public Agentic AI papers and verified code, then build page-aware research locally." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://harzva.github.io/AgenticResearchLab/" />
+  <meta property="og:image" content="https://harzva.github.io/AgenticResearchLab/assets/social-preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>AgenticResearchLab · Public Research Explorer</title>
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+  <a class="skip-link" href="#explorer">Skip to paper explorer</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="AgenticResearchLab home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>AgenticResearchLab</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#explorer">Explorer</a>
+      <a href="#workflow">Workflow</a>
+      <a href="https://github.com/Harzva/AgenticResearchLab">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Public metadata explorer · local-first research lab</p>
+        <h1 id="hero-title">Evidence before<br /><em>agentic novelty.</em></h1>
+        <p class="lede">Search the complete 2026 Agent/Agentic conference corpus, follow verified paper and code links, then move to the local lab for page-aware evidence and falsifiable research proposals.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#explorer">Explore 1,242 papers</a>
+          <a class="button secondary" href="https://github.com/Harzva/AgenticResearchLab#30-%E7%A7%92%E5%BC%80%E5%A7%8B">Run locally</a>
+        </div>
+        <p class="trust-line">No login · no tracking · no model key · public metadata only</p>
+      </div>
+      <aside class="signal-card" aria-label="Research signal summary">
+        <div class="signal-top"><span>RESEARCH SIGNAL</span><b>LIVE</b></div>
+        <div class="signal-orbit" aria-hidden="true">
+          <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
+          <span class="signal-core">ARL</span>
+        </div>
+        <dl>
+          <div><dt>Corpus</dt><dd>AAAI · ICLR · ICML · IJCAI · ECCV</dd></div>
+          <div><dt>Proof</dt><dd>Paper pages · PDFs · verified repositories</dd></div>
+          <div><dt>Boundary</dt><dd>Full text and private projects stay local</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="metrics" aria-label="Dataset metrics">
+      <article><strong id="paper-count">1,242</strong><span>conference papers</span></article>
+      <article><strong id="code-count">154</strong><span>verified code links</span></article>
+      <article><strong>989</strong><span>PDFs validated locally</span></article>
+      <article><strong>30,909</strong><span>page-aware local chunks</span></article>
+    </section>
+
+    <section class="explorer" id="explorer" aria-labelledby="explorer-title" tabindex="-1">
+      <div class="section-heading">
+        <div><p class="eyebrow">PUBLIC RESEARCH EXPLORER</p><h2 id="explorer-title">Find the nearest work before naming the novelty.</h2></div>
+        <p id="load-status" role="status">Loading the public Paper v2 catalog…</p>
+      </div>
+
+      <div class="search-panel">
+        <label class="query-field">
+          <span>Research question, failure mode, or system</span>
+          <input id="query" type="search" value="mobile agent memory safety" placeholder="e.g. mobile GUI agent under prompt injection" autocomplete="off" />
+        </label>
+        <label><span>Conference</span><select id="conference"><option value="">All conferences</option></select></label>
+        <label class="code-filter"><input id="with-code" type="checkbox" /><span>Verified code only</span></label>
+        <button id="search-button" class="button primary" type="button">Search evidence</button>
+      </div>
+
+      <div class="suggestions" aria-label="Example searches">
+        <span>Try:</span>
+        <button type="button" data-query="mobile GUI privacy safety">mobile privacy</button>
+        <button type="button" data-query="multi-agent scientific verification">scientific agents</button>
+        <button type="button" data-query="coding agent memory reflection">coding memory</button>
+        <button type="button" data-query="long-horizon embodied planning">embodied planning</button>
+      </div>
+
+      <div class="result-layout">
+        <div>
+          <div class="result-toolbar"><strong id="result-count" role="status" aria-live="polite">Preparing index…</strong><span>Title · abstract · taxonomy</span></div>
+          <div id="results" class="results"></div>
+        </div>
+        <aside class="boundary-card">
+          <p class="eyebrow">EVIDENCE BOUNDARY</p>
+          <h3>Web for discovery.<br />Local lab for research.</h3>
+          <ul>
+            <li><b>Here:</b> public titles, abstracts, taxonomy and verified URLs.</li>
+            <li><b>Local:</b> PDF checksums, sections, pages, chunks and vectors.</li>
+            <li><b>Private:</b> project profiles and research workspaces remain in <code>.arl/</code>.</li>
+          </ul>
+          <a href="https://github.com/Harzva/AgenticResearchLab#%E9%A1%B5%E7%A0%81%E7%BA%A7-evidence-%E6%A3%80%E7%B4%A2">Open the evidence workflow →</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="workflow" id="workflow" aria-labelledby="workflow-title">
+      <div class="section-heading compact"><div><p class="eyebrow">FROM QUESTION TO CLAIM</p><h2 id="workflow-title">A research workflow with rejection built in.</h2></div></div>
+      <div class="workflow-grid">
+        <article><span>01</span><h3>Retrieve</h3><p>Find nearest papers, repositories and page-level evidence.</p></article>
+        <article><span>02</span><h3>Compare</h3><p>Map components, environments, benchmarks and failure modes.</p></article>
+        <article><span>03</span><h3>Propose</h3><p>Write falsifiable claims, baseline ladders and experiment matrices.</p></article>
+        <article><span>04</span><h3>Reject</h3><p>Fail weak ideas on necessity, evidence, budget, safety or ablations.</p></article>
+      </div>
+    </section>
+
+    <section class="local-lab" aria-labelledby="local-title">
+      <div><p class="eyebrow">30-SECOND LOCAL START</p><h2 id="local-title">Turn the explorer into a page-aware research workspace.</h2><p>The deterministic core works without a hosted service or model key.</p></div>
+      <pre><code>git clone https://github.com/Harzva/AgenticResearchLab.git
+cd AgenticResearchLab
+python -m pip install -e .
+arl index-build
+arl propose "privacy-aware mobile agent memory"</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <span>AgenticResearchLab · MIT</span>
+    <span>Public-safe metadata · Evidence-grounded research</span>
+    <a href="https://github.com/Harzva/AgenticResearchLab">Source on GitHub ↗</a>
+  </footer>
+  <noscript><p class="noscript">JavaScript is required for browser search. <a href="https://github.com/Harzva/AgenticResearchLab/tree/main/awesome/all-agentic-papers-2026">Open the complete paper index on GitHub.</a></p></noscript>
+  <script src="assets/site.js" defer></script>
+</body>
+</html>

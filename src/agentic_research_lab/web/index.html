@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgenticResearchLab</title>
+  <style>
+    :root { color-scheme: dark; --bg:#07111f; --panel:#0d1a2d; --line:#203553; --ink:#edf6ff; --muted:#91a8c3; --cyan:#58e7d0; --violet:#a98cff; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:15px/1.55 ui-sans-serif,system-ui,-apple-system,sans-serif; background:radial-gradient(circle at 15% 0,#123453 0,transparent 32%),var(--bg); color:var(--ink); }
+    main { width:min(1120px,calc(100% - 32px)); margin:auto; padding:56px 0 80px; }
+    header { display:grid; grid-template-columns:1.4fr .6fr; gap:30px; align-items:end; margin-bottom:34px; }
+    .eyebrow { color:var(--cyan); letter-spacing:.16em; text-transform:uppercase; font-weight:750; font-size:12px; }
+    h1 { font-size:clamp(42px,7vw,78px); line-height:.95; letter-spacing:-.055em; margin:12px 0 18px; }
+    h1 span { color:var(--cyan); }
+    .lead { max-width:740px; color:#c3d2e5; font-size:18px; }
+    .status { border:1px solid var(--line); border-radius:18px; background:#0a1728cc; padding:18px; }
+    .status b { color:var(--cyan); }
+    .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:22px 0 28px; }
+    .stat { background:linear-gradient(145deg,#10223a,#0b1728); border:1px solid var(--line); border-radius:16px; padding:18px; }
+    .stat strong { display:block; font-size:28px; color:var(--cyan); }
+    .stat span { color:var(--muted); font-size:13px; }
+    .search { display:grid; grid-template-columns:1fr 160px 110px; gap:10px; background:var(--panel); border:1px solid var(--line); padding:12px; border-radius:18px; }
+    input,select,button,textarea { width:100%; border:1px solid #294261; background:#071321; color:var(--ink); border-radius:11px; padding:12px 14px; font:inherit; }
+    button { cursor:pointer; font-weight:750; background:linear-gradient(135deg,var(--cyan),#4cb7e8); color:#031016; border:0; }
+    .workspace { display:grid; grid-template-columns:1.15fr .85fr; gap:18px; margin-top:18px; }
+    section { background:#0a1728df; border:1px solid var(--line); border-radius:18px; padding:20px; min-height:250px; }
+    h2 { margin:0 0 14px; font-size:18px; }
+    .result { padding:14px 0; border-top:1px solid var(--line); }
+    .result:first-child { border-top:0; padding-top:0; }
+    .result a { color:var(--ink); font-weight:700; text-decoration:none; }
+    .meta,.empty { color:var(--muted); font-size:13px; }
+    mark { background:#1e5c62; color:#dffff9; border-radius:3px; }
+    textarea { min-height:98px; resize:vertical; margin-bottom:10px; }
+    .candidate { margin-top:12px; padding:13px; border:1px solid var(--line); border-radius:12px; }
+    .candidate b { color:var(--violet); }
+    footer { margin-top:24px; color:var(--muted); text-align:center; }
+    @media (max-width:760px) { header,.workspace { grid-template-columns:1fr; } .stats { grid-template-columns:repeat(2,1fr); } .search { grid-template-columns:1fr; } main { padding-top:30px; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <div class="eyebrow">Evidence before novelty</div>
+      <h1>Agentic<br><span>Research Lab</span></h1>
+      <div class="lead">Search 1,242 Agent/Agentic papers, inspect page-level evidence, and turn a topic or software project into falsifiable research proposals.</div>
+    </div>
+    <div class="status"><b>Local-first.</b><br>PDF text, indexes, project profiles, and credentials stay on this machine.</div>
+  </header>
+  <div class="stats">
+    <div class="stat"><strong id="papers">1,242</strong><span>conference papers</span></div>
+    <div class="stat"><strong id="code">154</strong><span>verified code links</span></div>
+    <div class="stat"><strong id="fulltext">989</strong><span>full-text papers</span></div>
+    <div class="stat"><strong id="chunks">30,909</strong><span>page-aware chunks</span></div>
+  </div>
+  <div class="search">
+    <input id="query" value="mobile agent memory safety" aria-label="Research query" />
+    <select id="conference"><option value="">All conferences</option><option>AAAI</option><option>ICLR</option><option>ICML</option><option>IJCAI</option><option>ECCV</option></select>
+    <button id="search">Search</button>
+  </div>
+  <div class="workspace">
+    <section><h2>Evidence retrieval</h2><div id="results" class="empty">Run a query to retrieve papers and page-level evidence.</div></section>
+    <section>
+      <h2>Proposal candidates</h2>
+      <textarea id="subject">A privacy-aware mobile assistant with long-term memory</textarea>
+      <button id="propose">Generate & reject</button>
+      <div id="proposals" class="empty">Candidates must pass necessity, nearest-work, baseline, experiment, cost, safety, and evidence gates.</div>
+    </section>
+  </div>
+  <footer>AgenticResearchLab · deterministic core · optional model synthesis</footer>
+</main>
+<script>
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+async function loadStats(){const d=await fetch('/api/stats').then(r=>r.json()); document.querySelector('#papers').textContent=d.catalog.papers.toLocaleString(); document.querySelector('#code').textContent=d.catalog.with_code.toLocaleString(); if(d.local_store.fulltext_status){document.querySelector('#fulltext').textContent=(d.local_store.fulltext_status.indexed||0).toLocaleString();document.querySelector('#chunks').textContent=(d.local_store.chunks||0).toLocaleString();}}
+async function search(){const q=document.querySelector('#query').value, c=document.querySelector('#conference').value; const d=await fetch(`/api/search?q=${encodeURIComponent(q)}&conference=${encodeURIComponent(c)}`).then(r=>r.json()); document.querySelector('#results').innerHTML=d.hits.map(h=>`<div class="result"><a href="${esc(h.source_url)}" target="_blank">${esc(h.title)}</a><div class="meta">${esc(h.paper_id)} · ${esc(h.section||h.kind)}${h.page_start?' · page '+h.page_start:''}</div><div>${h.excerpt||''}</div></div>`).join('')||'<div class="empty">No evidence found.</div>';}
+async function propose(){const subject=document.querySelector('#subject').value; document.querySelector('#proposals').textContent='Building candidates…'; const d=await fetch('/api/propose',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({subject})}).then(r=>r.json()); document.querySelector('#proposals').innerHTML=(d.candidates||[]).map(p=>`<div class="candidate"><b>${esc(p.id)}</b><div>${esc(p.falsifiable_claim)}</div><div class="meta">${p.rejection_gates.filter(g=>g.passed).length}/${p.rejection_gates.length} gates passed</div></div>`).join('');}
+document.querySelector('#search').onclick=search; document.querySelector('#propose').onclick=propose; document.querySelector('#query').onkeydown=e=>{if(e.key==='Enter')search()}; loadStats(); search();
+</script>
+</body>
+</html>

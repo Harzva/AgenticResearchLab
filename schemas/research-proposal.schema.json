@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Harzva/AgenticResearchLab/schemas/research-proposal.schema.json",
+  "title": "AgenticResearchLab Research Proposal",
+  "type": "object",
+  "required": ["schema_version", "subject", "problem", "agentic_necessity", "nearest_work", "falsifiable_claim", "method_blueprint", "baseline_ladder", "experiment_matrix", "ablation_matrix", "metrics", "budget", "risks", "rejection_gates", "evidence"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "subject": {"type": "string"},
+    "problem": {"type": "string"},
+    "agentic_necessity": {"type": "string"},
+    "nearest_work": {"type": "array", "items": {"type": "object"}},
+    "falsifiable_claim": {"type": "string"},
+    "method_blueprint": {"type": "array", "items": {"type": "object"}},
+    "baseline_ladder": {"type": "array", "items": {"type": "string"}},
+    "experiment_matrix": {"type": "array", "items": {"type": "object"}},
+    "ablation_matrix": {"type": "array", "items": {"type": "object"}},
+    "metrics": {"type": "array", "items": {"type": "string"}},
+    "budget": {"type": "object"},
+    "risks": {"type": "array", "items": {"type": "string"}},
+    "rejection_gates": {"type": "array", "items": {"type": "object"}},
+    "evidence": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": true
+}

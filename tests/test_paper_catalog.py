@@ -64,7 +64,7 @@ class PaperCatalogTests(unittest.TestCase):
 
     def test_public_export_strips_local_download_fields(self) -> None:
         with TemporaryDirectory() as directory:
-            catalog = build_public_catalog(self._manifest(directory))
+            catalog, repositories = build_public_catalog(self._manifest(directory))
             paper = catalog["papers"][0]
             self.assertNotIn("downloaded_path", paper)
             self.assertNotIn("download_error", paper)
@@ -72,10 +72,11 @@ class PaperCatalogTests(unittest.TestCase):
             self.assertEqual(paper["links"]["official_page"], "https://example.org/papers/42")
             self.assertEqual(paper["links"]["openreview"], "https://openreview.net/forum?id=test42")
             self.assertIsNone(paper["links"]["code"])
+            self.assertEqual(repositories["summary"]["repositories"], 0)
 
     def test_round_trip_search_and_render(self) -> None:
         with TemporaryDirectory() as directory:
-            catalog = build_public_catalog(self._manifest(directory))
+            catalog, _ = build_public_catalog(self._manifest(directory))
             target = Path(directory) / "catalog.json"
             write_public_catalog(catalog, target)
             loaded = load_public_catalog(target)
@@ -90,6 +91,7 @@ class PaperCatalogTests(unittest.TestCase):
     def test_packaged_catalog_has_complete_manifest(self) -> None:
         catalog = load_public_catalog()
         self.assertEqual(catalog["summary"]["papers"], 1242)
+        self.assertGreater(catalog["summary"]["taxonomy_coverage"]["topics"], 900)
         self.assertEqual(catalog["summary"]["with_official_page"], 1242)
         self.assertEqual(len(catalog["papers"]), 1242)
         root = Path(__file__).resolve().parents[1] / "awesome" / "all-agentic-papers-2026"
