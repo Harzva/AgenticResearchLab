@@ -4,7 +4,7 @@
 
 ### Turn projects and topics into evidence-grounded agentic research.
 
-[Mobile Agentic AI](awesome/mobile-agentic-ai/README.md) · [Research Method](docs/research-method.md) · [Contributing](CONTRIBUTING.md)
+[Mobile Agentic AI](awesome/mobile-agentic-ai/README.md) · [All 1,242 Agentic Papers](awesome/all-agentic-papers-2026/README.md) · [Research Method](docs/research-method.md) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -25,7 +25,24 @@ The first vertical is [Awesome Mobile Agentic AI](awesome/mobile-agentic-ai/READ
 - AndroidWorld, AndroidLab, MobileWorld, B-MoCA, LlamaTouch, and related benchmarks
 - verified open-source implementations and cross-platform GUI foundations
 
-The catalog currently contains over 25 evidence-linked resources and can be searched without an API key.
+The curated catalog contains 32 evidence-linked resources and can be searched without an API key.
+
+## Complete 2026 conference corpus
+
+[Awesome Conference Agent and Agentic Papers 2026](awesome/all-agentic-papers-2026/README.md)
+contains every one of the **1,242** records in the connected conference manifest:
+
+| Conference | Papers |
+| --- | ---: |
+| AAAI 2026 | 298 |
+| ICLR 2026 | 316 |
+| ICML 2026 | 460 |
+| IJCAI 2026 | 162 |
+| ECCV 2026 | 6 |
+
+Every record has an official public page. The catalog also preserves all available PDF,
+OpenReview, arXiv, author, abstract, track, selection, and provenance fields. Missing fields
+remain explicit instead of being inferred. See the [corpus schema](docs/corpus-schema.md).
 
 ## Quick start
 
@@ -38,6 +55,8 @@ arl topics
 arl search "mobile privacy safety"
 arl analyze-topic "A privacy-aware mobile assistant with long-term memory"
 arl corpus-search "mobile agent memory"
+arl corpus-search "GUI agent safety" --conference ICML --limit 20
+arl corpus-show icml-2026-64842
 ```
 
 Analyze a local project:
@@ -50,6 +69,12 @@ Inspect an external paper manifest:
 
 ```bash
 arl corpus-stats --manifest /path/to/conference-agent-papers-2026.csv
+```
+
+Rebuild the sanitized public catalog and all conference pages:
+
+```bash
+arl corpus-build --manifest /path/to/conference-agent-papers-2026.csv
 ```
 
 Generate the Awesome page from the machine-readable catalog:
@@ -98,6 +123,7 @@ project/topic
 ```text
 AgenticResearchLab/
 ├── awesome/mobile-agentic-ai/   # Human-readable curated theme
+├── awesome/all-agentic-papers-2026/ # Complete conference corpus pages
 ├── docs/                        # Research and contribution contracts
 ├── src/agentic_research_lab/    # CLI, catalog, corpus, and analysis engine
 ├── tests/                       # Deterministic unit tests
@@ -116,7 +142,8 @@ arl corpus-stats
 Alternatively, copy `agentic-research-lab.toml.example` to
 `agentic-research-lab.local.toml` and set the manifest there. The local file is ignored by Git.
 
-The following are ignored by Git:
+The committed catalog is sanitized and contains public metadata only. The following remain
+outside Git:
 
 - PDFs and raw/private corpora
 - vector and SQLite indexes

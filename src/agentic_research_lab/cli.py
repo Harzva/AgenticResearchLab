@@ -9,6 +9,13 @@ from pathlib import Path
 from .analysis import build_research_report, profile_repository, safe_output_name
 from .catalog import get_topic, load_topics, render_awesome, search, topic_as_json, write_awesome
 from .corpus import corpus_stats, optional_manifest, resolve_manifest, search_corpus
+from .paper_catalog import (
+    CATALOG_FILENAME,
+    build_public_assets,
+    get_public_paper,
+    load_public_catalog,
+    search_public_catalog,
+)
 
 DEFAULT_TOPIC = "mobile-agentic-ai"
 
@@ -68,8 +75,29 @@ def build_parser() -> argparse.ArgumentParser:
     corpus_search = sub.add_parser("corpus-search", help="Search the external paper manifest")
     corpus_search.add_argument("query")
     corpus_search.add_argument("--manifest")
+    corpus_search.add_argument("--catalog", type=Path)
+    corpus_search.add_argument("--conference")
     corpus_search.add_argument("--limit", type=int, default=10)
     corpus_search.add_argument("--json", action="store_true")
+
+    corpus_show = sub.add_parser(
+        "corpus-show", help="Show the complete public metadata and addresses for one paper"
+    )
+    corpus_show.add_argument("paper_id")
+    corpus_show.add_argument("--catalog", type=Path)
+
+    corpus_build = sub.add_parser(
+        "corpus-build", help="Build the sanitized public catalog and Awesome pages"
+    )
+    corpus_build.add_argument("--manifest")
+    corpus_build.add_argument(
+        "--data-output",
+        type=Path,
+        default=Path("src/agentic_research_lab/data") / CATALOG_FILENAME,
+    )
+    corpus_build.add_argument(
+        "--awesome-output", type=Path, default=Path("awesome/all-agentic-papers-2026")
+    )
     return parser
 
 
@@ -108,7 +136,11 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "analyze-topic":
             topic = get_topic(args.topic)
             manifest = optional_manifest(args.manifest)
-            external = search_corpus(manifest, args.subject, args.top_k) if manifest else []
+            external = (
+                search_corpus(manifest, args.subject, args.top_k)
+                if manifest
+                else search_public_catalog(load_public_catalog(), args.subject, args.top_k)
+            )
             report = build_research_report(args.subject, "", topic, args.top_k, external)
             _write_or_print(report, args.output, args.subject)
             return 0
@@ -119,7 +151,9 @@ def main(argv: list[str] | None = None) -> int:
             external = (
                 search_corpus(manifest, f"{profile.name} {context[:20_000]}", args.top_k)
                 if manifest
-                else []
+                else search_public_catalog(
+                    load_public_catalog(), f"{profile.name} {context[:20_000]}", args.top_k
+                )
             )
             report = build_research_report(
                 profile.name, context, get_topic(args.topic), args.top_k, external
@@ -134,8 +168,27 @@ def main(argv: list[str] | None = None) -> int:
             )
             return 0
         if args.command == "corpus-search":
-            resources = search_corpus(resolve_manifest(args.manifest), args.query, args.limit)
+            resources = (
+                search_corpus(resolve_manifest(args.manifest), args.query, args.limit)
+                if args.manifest
+                else search_public_catalog(
+                    load_public_catalog(args.catalog),
+                    args.query,
+                    args.limit,
+                    args.conference,
+                )
+            )
             _print_resources(resources, args.json)
+            return 0
+        if args.command == "corpus-show":
+            paper = get_public_paper(load_public_catalog(args.catalog), args.paper_id)
+            print(json.dumps(paper, ensure_ascii=False, indent=2))
+            return 0
+        if args.command == "corpus-build":
+            result = build_public_assets(
+                resolve_manifest(args.manifest), args.data_output, args.awesome_output
+            )
+            print(json.dumps(result, ensure_ascii=False, indent=2))
             return 0
     except (KeyError, ValueError, FileNotFoundError, NotADirectoryError) as exc:
         print(f"error: {exc}", file=sys.stderr)
