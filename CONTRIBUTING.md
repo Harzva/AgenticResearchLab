@@ -60,3 +60,16 @@ manual decisions as audit evidence, and must never promote an unavailable candid
 The public Explorer is generated from the canonical Paper v2 catalog. Edit `site/`, then run
 `python scripts/build_pages.py`; do not edit the ignored `_site/` output. Pages changes must pass
 the public-safety scan and `tests/test_pages.py` before deployment.
+
+## Human evaluation
+
+Human Gold data must follow the two-reviewer and adjudication process in
+[Human Evaluation Guide](docs/human-evaluation.md). Generated candidates remain `draft` and
+`unreviewed`; never fill labels with model output or promote a suite merely to satisfy CI.
+
+Validate both layers before submitting evaluation changes:
+
+```bash
+arl eval-validate smoke --require-ready
+arl eval-validate human
+```

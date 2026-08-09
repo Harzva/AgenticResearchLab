@@ -21,7 +21,14 @@ from .enrichment import (
     write_repository_catalog,
     write_verification_decisions,
 )
-from .evaluation import build_retrieval_gold, evaluate_all, write_metrics
+from .evaluation import (
+    build_human_evaluation_scaffold,
+    build_retrieval_gold,
+    evaluate_suite,
+    resolve_evaluation_suite,
+    validate_evaluation_suite,
+    write_evaluation_report,
+)
 from .fulltext import MissingFulltextDependency, build_fulltext_index
 from .paper_catalog import (
     CATALOG_FILENAME,
@@ -237,10 +244,27 @@ def build_parser() -> argparse.ArgumentParser:
     )
     eval_build.add_argument("--limit", type=int, default=100)
 
-    evaluate = sub.add_parser("evaluate", help="Run code-link, retrieval, and proposal gates")
+    eval_scaffold = sub.add_parser(
+        "eval-scaffold", help="Create unreviewed human Gold annotation scaffolds"
+    )
+    eval_scaffold.add_argument("--catalog", type=Path)
+    eval_scaffold.add_argument("--output", type=Path, default=Path("evals"))
+    eval_scaffold.add_argument("--fulltext-limit", type=int, default=100)
+    eval_scaffold.add_argument("--force", action="store_true")
+
+    eval_validate = sub.add_parser(
+        "eval-validate", help="Validate an evaluation suite and its human-review readiness"
+    )
+    eval_validate.add_argument("suite", help="smoke, human, or an evaluation suite path")
+    eval_validate.add_argument("--require-ready", action="store_true")
+
+    evaluate = sub.add_parser("evaluate", help="Run a versioned evaluation suite")
     evaluate.add_argument("--catalog", type=Path)
     evaluate.add_argument("--store", type=Path, default=DEFAULT_STORE)
+    evaluate.add_argument("--suite", default="smoke")
     evaluate.add_argument("--output", type=Path, default=Path("evals/latest_metrics.json"))
+    evaluate.add_argument("--report", type=Path)
+    evaluate.add_argument("--baseline", type=Path)
     return parser
 
 
@@ -476,12 +500,42 @@ def main(argv: list[str] | None = None) -> int:
                 )
             )
             return 0
+        if args.command == "eval-scaffold":
+            outputs = build_human_evaluation_scaffold(
+                load_public_catalog(args.catalog),
+                args.output,
+                fulltext_limit=args.fulltext_limit,
+                force=args.force,
+            )
+            print(json.dumps({"status": "draft", "outputs": [str(path) for path in outputs]}))
+            return 0
+        if args.command == "eval-validate":
+            validation = validate_evaluation_suite(resolve_evaluation_suite(args.suite))
+            print(json.dumps(validation, ensure_ascii=False, indent=2))
+            if not validation["valid"]:
+                return 4
+            if args.require_ready and not validation["gate_ready"]:
+                return 5
+            return 0
         if args.command == "evaluate":
-            metrics = evaluate_all(catalog_path=args.catalog, store_path=args.store)
-            write_metrics(metrics, args.output)
-            print(json.dumps(metrics, ensure_ascii=False, indent=2))
-            return 0 if metrics["passed"] else 4
-    except (KeyError, TypeError, ValueError, FileNotFoundError, NotADirectoryError) as exc:
+            report = evaluate_suite(
+                resolve_evaluation_suite(args.suite),
+                catalog_path=args.catalog,
+                store_path=args.store,
+                baseline_path=args.baseline,
+            )
+            outputs = write_evaluation_report(report, args.output, args.report)
+            print(
+                json.dumps(
+                    {**report, "outputs": {"json": str(outputs[0]), "markdown": str(outputs[1])}},
+                    ensure_ascii=False,
+                    indent=2,
+                )
+            )
+            if report["summary"]["blocked"]:
+                return 5
+            return 0 if report["passed"] else 4
+    except (KeyError, TypeError, ValueError, OSError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
     except MissingFulltextDependency as exc:

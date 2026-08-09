@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "id": "smoke-v1",
+  "version": "1.0.0",
+  "title": "Required deterministic regression gates",
+  "tier": "required",
+  "review_status": "automated",
+  "description": "Offline engineering regression gates. Passing does not imply human semantic or novelty quality.",
+  "corpus": {
+    "id": "conference-agent-papers-2026",
+    "catalog_version": "2026.6728520d18d8",
+    "schema_version": "2.0",
+    "source_sha256": "6728520d18d812a67ba34f3bb8b4a46107db05770f5c22e1252010824ee952b1",
+    "papers": 1242
+  },
+  "evaluations": [
+    {
+      "id": "code-links-smoke",
+      "task": "code-links",
+      "dataset": "../code_link_gold_v1.json",
+      "thresholds": {
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    {
+      "id": "retrieval-smoke",
+      "task": "retrieval-smoke",
+      "dataset": "../retrieval_gold_v1.json",
+      "configuration": {
+        "k": 20
+      },
+      "thresholds": {
+        "recall_at_k": 0.85,
+        "ndcg_at_k": 0.75
+      }
+    },
+    {
+      "id": "proposal-structure-smoke",
+      "task": "proposal-regression",
+      "thresholds": {}
+    }
+  ]
+}

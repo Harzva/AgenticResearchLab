@@ -195,20 +195,29 @@ arl analyze-repo /path/to/project --output .arl/workspaces/project/
 | `arl propose SUBJECT` | 生成结构化候选与研究计划 |
 | `arl reject proposals.json` | 执行九项否决门槛 |
 | `arl repo-inspect PATH` | 深度、只读地分析本地工程 |
-| `arl evaluate` | 运行代码、检索和 Proposal 回归门槛 |
+| `arl eval-scaffold` | 生成明确未审核的人工作业模板与全文候选 |
+| `arl eval-validate SUITE` | 校验评测结构和人工审核就绪状态 |
+| `arl evaluate --suite SUITE` | 输出版本化 JSON/Markdown 评测报告 |
 | `arl serve` | 启动本地 Dashboard 与 JSON API |
 
 ## 评测不是装饰
 
-当前 CI 门槛：
+当前 required smoke 门槛：
 
 - 100 条显式代码正例：Precision **1.00**、Recall **1.00**；
 - 100 条 taxonomy + title smoke Query：Recall@20 **1.00**、MRR **1.00**、nDCG@20 **1.00**；
 - 10 个 Proposal 回归选题：全部候选通过结构化证据门槛；
-- 27 项单元/集成测试；
+- 30 项单元/集成测试；
 - Ruff、Wheel、Schema、生成物一致性和公开安全扫描。
 
-> Retrieval smoke set 用来防止工程回归，不代表通用语义检索已经解决。路线图仍要求建立人工撰写的中英文研究 Query Gold Set。
+`arl evaluate` 现在把指标绑定到 Suite、Dataset、Corpus 版本和 source checksum，并同时
+生成 JSON 与 Markdown；可选 `--baseline` 会报告同名数值指标差异。评测分为 PR required、
+定时 scheduled 和人工 manual 三层。
+
+> Retrieval smoke set 用来防止工程回归，不代表通用语义检索已经解决。当前 Human
+> Suite 是有效但不可发布的 `draft`：全文候选为 100 个、人工审核为 0；中英文语义 Query
+> 和引用 Gold 均等待维护者撰写，不能用自动生成标签填充。参见
+> [Human Evaluation Guide](docs/human-evaluation.md)。
 
 ## Local-first 数据边界
 
@@ -256,6 +265,7 @@ scripts/build_pages.py       # 从公共 Paper v2 构建 Pages artifact
 | M5 创新候选与否决引擎 | 🧪 Beta |
 | M6 工程到论文 | 🧪 Beta |
 | M7 Dashboard / API / workspace / Pages | 🧪 Beta |
+| 0.3 Evaluation Foundation | 🚧 ARL-405/406 implemented; human Gold remains blocked |
 | M8 Release 1.0 | 🚧 In progress |
 
 下一阶段从 `0.2 Beta → 1.0 → 2.0` 的优先级、评测指标和发布门槛见

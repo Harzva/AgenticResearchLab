@@ -74,6 +74,20 @@ flowchart LR
 | ARL-405 | 统一评测报告 | `arl evaluate` 输出机器可读 JSON、Markdown 报告、数据版本与基线差异 |
 | ARL-406 | 回归策略分层 | smoke、human Gold、慢速本地评测分别进入 required、scheduled、manual gate |
 
+实施状态（2026-08-10）：
+
+| ID | 状态 | 证据与剩余工作 |
+| --- | --- | --- |
+| ARL-401 | 🟡 基础设施完成 | 100 个跨会议公开候选、Schema、双人标注与裁决校验已落盘；人工审核仍为 0/100 |
+| ARL-402 | 🟡 基础设施完成 | 中英文 Query Schema、切片字段和校验器已落盘；120 条人工 Query 尚未撰写 |
+| ARL-403 | 🟡 基础设施完成 | Claim–Evidence Schema、支持标签和引用评测器已落盘；100 条人工审计尚未撰写 |
+| ARL-404 | ⚪ 未开始 | 需要专家量表、30 个真实选题与双人裁决 |
+| ARL-405 | ✅ 已实现 | `arl evaluate` 输出绑定语料/Suite/Dataset 版本的 JSON、Markdown 与 baseline delta |
+| ARL-406 | ✅ 已实现 | PR required、每周 scheduled、显式 manual Human Gate；Draft 会被阻止发布 |
+
+标注流程、字段定义和晋级规则见 [Human Evaluation Guide](human-evaluation.md)。`0.3` 整体
+仍为进行中，不能在 ARL-401–404 完成人工工作前标记完成。
+
 退出条件：
 
 - 全文样本的正文提取成功率不低于 98%，错误必须有可追踪分类；
@@ -278,4 +292,3 @@ Beta 发布，但不能提升为 Stable。
 4. 指标进入版本化评测报告，或明确说明为何不适用；
 5. 用户可从 CLI/API 或界面验证结果；
 6. Changelog、Roadmap 状态和发布版本同步更新。
-

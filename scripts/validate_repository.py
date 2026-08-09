@@ -3,6 +3,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from agentic_research_lab.evaluation import validate_evaluation_suite
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -15,7 +17,15 @@ def main() -> int:
     assert catalog["summary"]["with_code"] == 154
     assert repositories["summary"]["repositories"] == 158
     assert repositories["summary"]["linked_papers"] == 154
+    assert metrics["report_schema_version"] == "1.0"
+    assert metrics["evaluation_suite"]["id"] == "smoke-v1"
+    assert metrics["corpus"]["catalog_version"] == catalog["catalog_version"]
+    assert metrics["corpus"]["source_sha256"] == catalog["source"]["sha256"]
     assert metrics["passed"] is True
+    smoke = validate_evaluation_suite(ROOT / "evals/suites/smoke-v1.json")
+    human = validate_evaluation_suite(ROOT / "evals/suites/human-v1.draft.json")
+    assert smoke["valid"] is True and smoke["gate_ready"] is True
+    assert human["valid"] is True and human["gate_ready"] is False
     assert len({paper["id"] for paper in catalog["papers"]}) == 1242
     pages = ROOT / "awesome/all-agentic-papers-2026"
     entries = sum(

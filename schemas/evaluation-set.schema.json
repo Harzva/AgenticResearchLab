@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Harzva/AgenticResearchLab/schemas/evaluation-set.schema.json",
+  "title": "AgenticResearchLab Human Evaluation Set",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "version",
+    "task",
+    "review_status",
+    "minimum_examples",
+    "annotation_policy",
+    "provenance",
+    "examples"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "id": {"type": "string", "minLength": 1},
+    "version": {"type": "string", "minLength": 1},
+    "task": {
+      "enum": ["fulltext-quality", "semantic-retrieval", "citation-quality"]
+    },
+    "review_status": {"enum": ["draft", "reviewed"]},
+    "minimum_examples": {"type": "integer", "minimum": 1},
+    "annotation_policy": {
+      "type": "object",
+      "required": ["required_annotators", "adjudication_required", "blind_independent_pass"],
+      "properties": {
+        "required_annotators": {"type": "integer", "minimum": 2},
+        "adjudication_required": {"const": true},
+        "blind_independent_pass": {"const": true}
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["corpus", "status", "method", "note"],
+      "properties": {
+        "corpus": {"type": "object"},
+        "status": {"enum": ["unreviewed", "reviewed"]},
+        "method": {"type": "string", "minLength": 1},
+        "note": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "annotations", "adjudication"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "annotations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["annotator_id", "labels", "notes"],
+              "properties": {
+                "annotator_id": {"type": "string", "minLength": 1},
+                "labels": {"type": "object"},
+                "notes": {"type": ["string", "null"]}
+              },
+              "additionalProperties": false
+            }
+          },
+          "adjudication": {
+            "type": "object",
+            "required": ["status", "decision", "notes"],
+            "properties": {
+              "status": {"enum": ["pending", "resolved"]},
+              "decision": {"type": ["object", "null"]},
+              "notes": {"type": ["string", "null"]}
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

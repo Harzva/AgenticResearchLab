@@ -1,86 +1,139 @@
 {
-  "code_links": {
-    "examples": 100,
-    "correct": 100,
-    "false_positive": 0,
-    "missing": 0,
-    "precision": 1.0,
-    "recall": 1.0,
-    "passed": true
+  "report_schema_version": "1.0",
+  "id": "smoke-v1-report",
+  "evaluation_suite": {
+    "id": "smoke-v1",
+    "version": "1.0.0",
+    "tier": "required",
+    "review_status": "automated"
   },
-  "retrieval": {
-    "examples": 100,
-    "k": 20,
-    "recall_at_k": 1.0,
-    "mrr": 1.0,
-    "ndcg_at_k": 1.0,
-    "passed": true
+  "corpus": {
+    "id": "conference-agent-papers-2026",
+    "catalog_version": "2026.6728520d18d8",
+    "schema_version": "2.0",
+    "source_sha256": "6728520d18d812a67ba34f3bb8b4a46107db05770f5c22e1252010824ee952b1",
+    "papers": 1242
   },
-  "proposals": {
-    "subjects": 10,
-    "passed": true,
-    "results": [
-      {
-        "subject": "privacy-aware mobile agent with long-term memory",
-        "candidates": 3,
-        "passed": 3,
-        "evidence": 5
-      },
-      {
-        "subject": "safe GUI agent under environmental injection",
-        "candidates": 3,
-        "passed": 3,
-        "evidence": 5
-      },
-      {
-        "subject": "efficient device cloud routing for mobile agents",
-        "candidates": 3,
-        "passed": 3,
-        "evidence": 5
-      },
-      {
-        "subject": "self-evolving coding agent with verified memory",
-        "candidates": 3,
-        "passed": 3,
-        "evidence": 5
-      },
-      {
-        "subject": "multi-agent scientific workflow with independent verification",
-        "candidates": 3,
-        "passed": 3,
-        "evidence": 5
-      },
-      {
-        "subject": "web agent recovery under dynamic page changes",
-        "candidates": 3,
-        "passed": 3,
-        "evidence": 5
-      },
-      {
-        "subject": "personalized assistant with permission-aware tool use",
-        "candidates": 3,
-        "passed": 3,
-        "evidence": 5
-      },
-      {
-        "subject": "long-horizon embodied planning with world models",
-        "candidates": 3,
-        "passed": 3,
-        "evidence": 5
-      },
-      {
-        "subject": "agent benchmark with process-level success verifiers",
-        "candidates": 3,
-        "passed": 3,
-        "evidence": 5
-      },
-      {
-        "subject": "cost-aware multi-agent collaboration under equal inference budget",
-        "candidates": 3,
-        "passed": 3,
-        "evidence": 5
+  "configuration": {
+    "offline_capable": true,
+    "store_mode": "temporary-index"
+  },
+  "evaluations": {
+    "code-links-smoke": {
+      "examples": 100,
+      "correct": 100,
+      "false_positive": 0,
+      "missing": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "passed": true,
+      "task": "code-links",
+      "dataset_version": "1.0",
+      "thresholds": {
+        "precision": 1.0,
+        "recall": 1.0
       }
-    ]
+    },
+    "retrieval-smoke": {
+      "examples": 100,
+      "k": 20,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "error_categories": {
+        "no_relevant_in_top_k": 0,
+        "partial_recall": 0
+      },
+      "slices": {
+        "unspecified": {
+          "examples": 100,
+          "recall_at_k": 1.0
+        }
+      },
+      "passed": true,
+      "task": "retrieval-smoke",
+      "dataset_version": "1.0",
+      "thresholds": {
+        "recall_at_k": 0.85,
+        "ndcg_at_k": 0.75
+      }
+    },
+    "proposal-structure-smoke": {
+      "subjects": 10,
+      "passed": true,
+      "results": [
+        {
+          "subject": "privacy-aware mobile agent with long-term memory",
+          "candidates": 3,
+          "passed": 3,
+          "evidence": 5
+        },
+        {
+          "subject": "safe GUI agent under environmental injection",
+          "candidates": 3,
+          "passed": 3,
+          "evidence": 5
+        },
+        {
+          "subject": "efficient device cloud routing for mobile agents",
+          "candidates": 3,
+          "passed": 3,
+          "evidence": 5
+        },
+        {
+          "subject": "self-evolving coding agent with verified memory",
+          "candidates": 3,
+          "passed": 3,
+          "evidence": 5
+        },
+        {
+          "subject": "multi-agent scientific workflow with independent verification",
+          "candidates": 3,
+          "passed": 3,
+          "evidence": 5
+        },
+        {
+          "subject": "web agent recovery under dynamic page changes",
+          "candidates": 3,
+          "passed": 3,
+          "evidence": 5
+        },
+        {
+          "subject": "personalized assistant with permission-aware tool use",
+          "candidates": 3,
+          "passed": 3,
+          "evidence": 5
+        },
+        {
+          "subject": "long-horizon embodied planning with world models",
+          "candidates": 3,
+          "passed": 3,
+          "evidence": 5
+        },
+        {
+          "subject": "agent benchmark with process-level success verifiers",
+          "candidates": 3,
+          "passed": 3,
+          "evidence": 5
+        },
+        {
+          "subject": "cost-aware multi-agent collaboration under equal inference budget",
+          "candidates": 3,
+          "passed": 3,
+          "evidence": 5
+        }
+      ],
+      "task": "proposal-regression",
+      "dataset_version": "built-in-v1",
+      "thresholds": {}
+    }
+  },
+  "summary": {
+    "status": "passed",
+    "passed": true,
+    "blocked": false,
+    "evaluations": 3,
+    "passed_evaluations": 3
   },
   "passed": true
 }

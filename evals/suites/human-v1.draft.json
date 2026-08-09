@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "id": "human-gold-v1-draft",
+  "version": "0.1.0-draft",
+  "title": "Human evaluation gate draft",
+  "tier": "manual",
+  "review_status": "draft",
+  "description": "Annotation-ready scaffolds for ARL-401/402/403. This suite is structurally valid but blocked until independent human review and adjudication are complete.",
+  "corpus": {
+    "id": "conference-agent-papers-2026",
+    "catalog_version": "2026.6728520d18d8",
+    "schema_version": "2.0",
+    "source_sha256": "6728520d18d812a67ba34f3bb8b4a46107db05770f5c22e1252010824ee952b1",
+    "papers": 1242
+  },
+  "evaluations": [
+    {
+      "id": "fulltext-quality-human",
+      "task": "fulltext-quality",
+      "dataset": "../human/fulltext_quality_v1.draft.json",
+      "thresholds": {
+        "extraction_success_rate": 0.98,
+        "title_accuracy": 0.98,
+        "page_accuracy": 0.95,
+        "chunk_boundary_accuracy": 0.95
+      }
+    },
+    {
+      "id": "semantic-retrieval-human",
+      "task": "semantic-retrieval",
+      "dataset": "../human/semantic_retrieval_v1.draft.json",
+      "configuration": {
+        "k": 20
+      },
+      "thresholds": {
+        "recall_at_k": 0.85,
+        "ndcg_at_k": 0.75
+      }
+    },
+    {
+      "id": "citation-quality-human",
+      "task": "citation-quality",
+      "dataset": "../human/citation_quality_v1.draft.json",
+      "thresholds": {
+        "paper_accuracy": 0.98,
+        "page_accuracy": 0.95
+      }
+    }
+  ]
+}

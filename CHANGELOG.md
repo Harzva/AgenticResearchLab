@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Added versioned required/manual evaluation suites bound to corpus identity and checksums.
+- Added JSON and Markdown evaluation reports, baseline deltas, retrieval slices, and error classes.
+- Added 100 unreviewed full-text candidates plus explicit draft scaffolds for bilingual retrieval
+  and citation-quality human Gold Sets; no human labels are claimed.
+- Added `eval-scaffold`, `eval-validate`, and layered required/scheduled/manual evaluation gates.
+
 ## 0.2.0
 
 - Added Paper v2 catalog versioning and source checksums.

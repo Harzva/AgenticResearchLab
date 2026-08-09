@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "id": "citation-quality-human-v1-draft",
+  "version": "0.1.0-draft",
+  "task": "citation-quality",
+  "review_status": "draft",
+  "minimum_examples": 100,
+  "annotation_policy": {
+    "required_annotators": 2,
+    "adjudication_required": true,
+    "blind_independent_pass": true
+  },
+  "provenance": {
+    "corpus": {
+      "id": "conference-agent-papers-2026",
+      "catalog_version": "2026.6728520d18d8",
+      "schema_version": "2.0",
+      "source_sha256": "6728520d18d812a67ba34f3bb8b4a46107db05770f5c22e1252010824ee952b1",
+      "papers": 1242
+    },
+    "status": "unreviewed",
+    "note": "Generated structure and candidates are not human Gold labels.",
+    "method": "maintainer-authored-claim-evidence-triples-required"
+  },
+  "examples": []
+}

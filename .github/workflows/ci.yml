@@ -17,6 +17,8 @@ jobs:
       - run: ruff check .
       - run: ruff format --check .
       - run: arl index-build --store /tmp/arl-ci.sqlite3
+      - run: arl eval-validate smoke --require-ready
+      - run: arl eval-validate human
       - run: arl evaluate --store /tmp/arl-ci.sqlite3 --output /tmp/arl-metrics.json
       - run: python scripts/validate_repository.py
       - run: python scripts/check_public_safety.py
