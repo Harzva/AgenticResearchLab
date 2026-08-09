@@ -21,6 +21,7 @@ python -m unittest discover -s tests -v
 arl evaluate
 python scripts/validate_repository.py
 python scripts/check_public_safety.py
+python scripts/build_pages.py
 ```
 
 ## Scope
@@ -53,3 +54,9 @@ Repository verification exceptions belong in
 `src/agentic_research_lab/data/code_link_decisions.json`. Rebuilds must preserve negative and
 manual decisions as audit evidence, and must never promote an unavailable candidate into
 `links.code`.
+
+## GitHub Pages
+
+The public Explorer is generated from the canonical Paper v2 catalog. Edit `site/`, then run
+`python scripts/build_pages.py`; do not edit the ignored `_site/` output. Pages changes must pass
+the public-safety scan and `tests/test_pages.py` before deployment.

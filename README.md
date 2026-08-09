@@ -7,27 +7,42 @@
 把论文、代码与本地工程转化为可引用、可证伪、可执行的 Agentic Paper 研究方案。
 
 [![CI](https://github.com/Harzva/AgenticResearchLab/actions/workflows/ci.yml/badge.svg)](https://github.com/Harzva/AgenticResearchLab/actions/workflows/ci.yml)
+[![Pages](https://github.com/Harzva/AgenticResearchLab/actions/workflows/pages.yml/badge.svg)](https://harzva.github.io/AgenticResearchLab/)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
 [![Papers](https://img.shields.io/badge/papers-1%2C242-55e7d0)](awesome/all-agentic-papers-2026/README.md)
 [![Code](https://img.shields.io/badge/verified_code-154-a98cff)](src/agentic_research_lab/data/code_repositories_2026.json)
 [![License](https://img.shields.io/badge/license-MIT-34d399)](LICENSE)
 
-[快速开始](#30-秒开始) · [完整论文库](awesome/all-agentic-papers-2026/README.md) · [Mobile Agentic AI](awesome/mobile-agentic-ai/README.md) · [升级计划](docs/next-upgrade-plan.md) · [视觉预览](docs/readme-assets/gallery.html)
+[在线体验](https://harzva.github.io/AgenticResearchLab/) · [快速开始](#30-秒开始) · [完整论文库](awesome/all-agentic-papers-2026/README.md) · [Mobile Agentic AI](awesome/mobile-agentic-ai/README.md) · [升级计划](docs/next-upgrade-plan.md) · [Changelog](CHANGELOG.md)
 
 </div>
 
 <!-- showcase:start -->
 <p align="center">
-  <img src="docs/readme-assets/dashboard-hero.png" width="960" alt="AgenticResearchLab local dashboard showing page-aware evidence retrieval and research proposal candidates" />
+  <a href="https://harzva.github.io/AgenticResearchLab/"><img src="docs/readme-assets/pages/pages-home.png" width="960" alt="AgenticResearchLab GitHub Pages public research explorer with corpus metrics and evidence-first positioning" /></a>
 </p>
 <!-- showcase:end -->
 
 > **Evidence before novelty.** AgenticResearchLab 不把“增加多个 Agent”当作创新。它先检索最近工作与页码级证据，再要求候选方案通过 Agentic 必要性、Baseline、公平预算、实验、消融、成本、安全与复现门槛。
 
+## 在线探索，回到本地研究
+
+[GitHub Pages Research Explorer](https://harzva.github.io/AgenticResearchLab/) 无需安装即可检索全部公共论文元数据、taxonomy 和已验证代码地址。它刻意不上传 PDF 全文、向量或私人工程；深入研究在本地完成。
+
+| Public Explorer | Local Research Lab |
+| --- | --- |
+| 1,242 篇公共 Paper v2 元数据 | 989 篇 PDF、30,909 个页码级 Chunk |
+| 浏览器端标题、摘要和 taxonomy 检索 | FTS5 + 向量 + 关系图混合检索 |
+| 154 个验证通过的代码地址 | ProjectProfile、Proposal 和工作区 |
+| 无登录、无跟踪、无模型密钥 | 私有数据保留在忽略的 `.arl/` |
+
+[打开在线 Explorer →](https://harzva.github.io/AgenticResearchLab/) · [查看 Pages 架构与部署](docs/github-pages.md)
+
 ## 已经可以做什么
 
 | 能力 | 当前状态 | 可验证结果 |
 | --- | --- | --- |
+| GitHub Pages Explorer | ✅ 在线 | 公开安全、响应式、可筛选的 1,242 篇论文浏览器 |
 | 会议论文目录 | ✅ 稳定 | 1,242 篇 AAAI / ICLR / ICML / IJCAI / ECCV 2026 论文 |
 | 论文代码富化 | ✅ 稳定 | 158 个显式候选，154 个 GitHub 实时验证通过，4 个不可用 |
 | 本地全文知识库 | ✅ 稳定 | 989/989 PDF 解析成功，30,909 个页码级 Chunk |
@@ -190,7 +205,7 @@ arl analyze-repo /path/to/project --output .arl/workspaces/project/
 - 100 条显式代码正例：Precision **1.00**、Recall **1.00**；
 - 100 条 taxonomy + title smoke Query：Recall@20 **1.00**、MRR **1.00**、nDCG@20 **1.00**；
 - 10 个 Proposal 回归选题：全部候选通过结构化证据门槛；
-- 25 项单元/集成测试；
+- 26 项单元/集成测试；
 - Ruff、Wheel、Schema、生成物一致性和公开安全扫描。
 
 > Retrieval smoke set 用来防止工程回归，不代表通用语义检索已经解决。路线图仍要求建立人工撰写的中英文研究 Query Gold Set。
@@ -223,6 +238,10 @@ src/agentic_research_lab/
 ├── evaluation.py        # measurable regression gates
 ├── server.py            # local dashboard and JSON API
 └── cli.py
+
+site/                        # GitHub Pages 静态 Explorer 源码
+scripts/build_pages.py       # 从公共 Paper v2 构建 Pages artifact
+.github/workflows/pages.yml  # GitHub Pages Actions 部署
 ```
 
 ## Roadmap status
@@ -236,7 +255,7 @@ src/agentic_research_lab/
 | M4 Agentic taxonomy 与研究关系 | 🧪 Beta |
 | M5 创新候选与否决引擎 | 🧪 Beta |
 | M6 工程到论文 | 🧪 Beta |
-| M7 Dashboard / API / workspace | 🧪 Beta |
+| M7 Dashboard / API / workspace / Pages | 🧪 Beta |
 | M8 Release 1.0 | 🚧 In progress |
 
 完整设计、退出条件与 `ARL-101`–`ARL-307` 任务见 [全面升级计划](docs/next-upgrade-plan.md)。
@@ -244,10 +263,12 @@ src/agentic_research_lab/
 ## Visual gallery
 
 <p align="center">
-  <img src="docs/readme-assets/dashboard-mobile.png" width="280" alt="AgenticResearchLab responsive mobile dashboard" />
+  <img src="docs/readme-assets/pages/pages-mobile.png" width="280" alt="AgenticResearchLab GitHub Pages mobile homepage" />
+  &nbsp;&nbsp;
+  <img src="docs/readme-assets/dashboard-mobile.png" width="280" alt="AgenticResearchLab local dashboard on mobile" />
 </p>
 
-[打开完整 README 视觉预览](docs/readme-assets/gallery.html)
+[Pages 视觉预览](docs/readme-assets/pages/gallery.html) · [本地 Dashboard 视觉预览](docs/readme-assets/gallery.html)
 
 ## Contributing
 

@@ -20,5 +20,6 @@ jobs:
       - run: arl evaluate --store /tmp/arl-ci.sqlite3 --output /tmp/arl-metrics.json
       - run: python scripts/validate_repository.py
       - run: python scripts/check_public_safety.py
+      - run: python scripts/build_pages.py --output /tmp/arl-pages
       - run: python -m build
       - run: python -c "import zipfile; p=next(__import__('pathlib').Path('dist').glob('*.whl')); z=zipfile.ZipFile(p); assert any(n.endswith('conference_agent_papers_2026.json') for n in z.namelist()); assert not any(n.endswith(('.pdf', '.sqlite3')) for n in z.namelist())"

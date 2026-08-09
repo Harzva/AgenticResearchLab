@@ -11,6 +11,7 @@
 - Added structured proposal generation, experiment plans, and rejection gates.
 - Added deep read-only project inspection, regression evaluation, a local JSON API, and dashboard.
 - Rebuilt the README with real desktop/mobile product screenshots.
+- Added a public-safe GitHub Pages Research Explorer with client-side corpus search.
 
 ## 0.1.0
 

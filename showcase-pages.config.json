@@ -1,0 +1,62 @@
+{
+  "projectName": "AgenticResearchLab Pages",
+  "root": ".",
+  "type": "static-html",
+  "installCommand": ".venv/bin/python scripts/build_pages.py",
+  "startCommand": ".venv/bin/python scripts/serve_pages.py --host 127.0.0.1 --port 18767",
+  "baseUrl": "http://127.0.0.1:18767",
+  "outputDir": "docs/readme-assets/pages",
+  "readme": "README.md",
+  "waitMs": 900,
+  "timeoutMs": 60000,
+  "disableAnimations": true,
+  "viewports": {
+    "desktopHero": {"width": 1440, "height": 900},
+    "desktop": {"width": 1440, "height": 1050},
+    "mobile": {"width": 430, "height": 932}
+  },
+  "screenshots": [
+    {
+      "id": "pages-home",
+      "title": "GitHub Pages research homepage",
+      "path": "/",
+      "viewport": "desktopHero",
+      "waitFor": "body[data-ready='true']",
+      "waitMs": 600,
+      "fullPage": false
+    },
+    {
+      "id": "pages-explorer",
+      "title": "Public Paper v2 research explorer",
+      "path": "/",
+      "viewport": "desktop",
+      "waitFor": "body[data-ready='true']",
+      "steps": [
+        {"click": "[data-query='mobile GUI privacy safety']"},
+        {"wait": 350},
+        {"scroll": 900},
+        {"wait": 350}
+      ],
+      "waitMs": 350,
+      "fullPage": false
+    },
+    {
+      "id": "pages-mobile",
+      "title": "Responsive public research explorer",
+      "path": "/",
+      "viewport": "mobile",
+      "waitFor": "body[data-ready='true']",
+      "steps": [
+        {"wait": 350}
+      ],
+      "waitMs": 350,
+      "fullPage": false
+    }
+  ],
+  "motions": [],
+  "hero": {
+    "title": "AgenticResearchLab Pages",
+    "subtitle": "Explore public evidence. Build research locally.",
+    "images": ["pages-home", "pages-mobile"]
+  }
+}

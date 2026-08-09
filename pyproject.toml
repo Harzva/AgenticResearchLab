@@ -18,6 +18,11 @@ classifiers = [
 ]
 dependencies = []
 
+[project.urls]
+Homepage = "https://harzva.github.io/AgenticResearchLab/"
+Repository = "https://github.com/Harzva/AgenticResearchLab"
+Issues = "https://github.com/Harzva/AgenticResearchLab/issues"
+
 [project.optional-dependencies]
 dev = ["build>=1.2", "pytest>=8", "ruff>=0.9"]
 fulltext = ["PyMuPDF>=1.24"]

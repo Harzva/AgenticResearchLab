@@ -8,6 +8,7 @@ __pycache__/
 htmlcov/
 dist/
 build/
+_site/
 .env
 agentic-research-lab.local.toml
 .arl/
