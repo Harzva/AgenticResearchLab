@@ -38,8 +38,14 @@ def public_web_paper(paper: dict[str, Any]) -> dict[str, Any]:
 
 def build(output: Path) -> dict[str, Any]:
     resolved_output = output.resolve()
-    if resolved_output in {ROOT.resolve(), ROOT.parent.resolve()}:
-        raise ValueError("refusing to replace the repository or its parent")
+    try:
+        relative_output = resolved_output.relative_to(ROOT.resolve())
+    except ValueError:
+        relative_output = None
+    if resolved_output in {ROOT.resolve(), ROOT.parent.resolve(), SOURCE.resolve()} or (
+        relative_output is not None and relative_output.parts[:1] != ("_site",)
+    ):
+        raise ValueError("refusing to replace repository source or tracked directories")
     if output.exists():
         shutil.rmtree(output)
     shutil.copytree(SOURCE, output)
@@ -58,7 +64,7 @@ def build(output: Path) -> dict[str, Any]:
         encoding="utf-8",
     )
     result = {
-        "output": str(output),
+        "output_name": output.name,
         "papers": len(web_catalog["papers"]),
         "with_code": payload["summary"]["with_code"],
         "catalog_bytes": (data / "catalog.json").stat().st_size,
@@ -66,6 +72,9 @@ def build(output: Path) -> dict[str, Any]:
     (output / "build.json").write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
+    social_preview = ROOT / "docs/readme-assets/pages/pages-home.png"
+    if social_preview.is_file():
+        shutil.copy2(social_preview, output / "assets/social-preview.png")
     return result
 
 

@@ -145,6 +145,7 @@ input[type="search"]:focus, select:focus { border-color: var(--cyan-deep); box-s
 pre { margin: 0; overflow: auto; padding: 20px; border: 1px solid #29435b; border-radius: 15px; background: #06121e; color: #c8e5e2; font: 12px/1.8 ui-monospace, SFMono-Regular, Menlo, monospace; }
 footer { width: min(1180px, calc(100% - 32px)); margin: 0 auto 28px; padding-top: 22px; display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line-soft); color: #6f89a3; font-size: 11px; }
 footer a { color: #93aec8; text-decoration: none; }
+.noscript { width: min(1180px, calc(100% - 32px)); margin: 0 auto 30px; padding: 14px; border: 1px solid var(--orange); border-radius: 10px; color: #ffd9a8; }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; padding-top: 70px; }
@@ -159,7 +160,7 @@ footer a { color: #93aec8; text-decoration: none; }
 
 @media (max-width: 620px) {
   .site-header { margin-top: 8px; }
-  nav a:not(:last-child) { display: none; }
+  nav a:nth-child(2) { display: none; }
   .brand { font-size: 14px; }
   .hero { min-height: auto; gap: 35px; padding: 64px 0 44px; }
   h1 { font-size: clamp(44px, 15vw, 66px); }

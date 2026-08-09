@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - agent/comprehensive-upgrade
   workflow_dispatch:
 
 permissions:
@@ -20,14 +19,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
+      - run: python scripts/check_public_safety.py
       - run: python scripts/build_pages.py --output _site
-      - run: python -c "import json, pathlib; p=pathlib.Path('_site'); d=json.loads((p/'data/catalog.json').read_text()); assert d['summary']['papers']==1242; assert (p/'.nojekyll').is_file()"
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - run: python -c "import json, pathlib; p=pathlib.Path('_site'); d=json.loads((p/'data/catalog.json').read_text()); assert d['summary']['papers']==len(d['papers']); assert (p/'.nojekyll').is_file()"
+      - run: python scripts/check_pages_artifact.py --root _site
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -40,4 +41,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

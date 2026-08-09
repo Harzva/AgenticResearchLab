@@ -39,7 +39,10 @@ flowchart LR
 ```
 
 `.github/workflows/pages.yml` builds and deploys the site with GitHub's official Pages actions.
-The workflow also verifies the 1,242-paper count and `.nojekyll` boundary before upload.
+The workflow verifies that the declared paper count matches the generated records and checks the
+`.nojekyll` boundary before upload.
+The deploy path additionally runs the repository safety scan and a second scan over the exact
+generated Pages artifact.
 
 ## Visual regression assets
 

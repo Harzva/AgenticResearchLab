@@ -205,7 +205,7 @@ arl analyze-repo /path/to/project --output .arl/workspaces/project/
 - 100 条显式代码正例：Precision **1.00**、Recall **1.00**；
 - 100 条 taxonomy + title smoke Query：Recall@20 **1.00**、MRR **1.00**、nDCG@20 **1.00**；
 - 10 个 Proposal 回归选题：全部候选通过结构化证据门槛；
-- 26 项单元/集成测试；
+- 27 项单元/集成测试；
 - Ruff、Wheel、Schema、生成物一致性和公开安全扫描。
 
 > Retrieval smoke set 用来防止工程回归，不代表通用语义检索已经解决。路线图仍要求建立人工撰写的中英文研究 Query Gold Set。

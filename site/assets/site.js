@@ -1,4 +1,4 @@
-const state = { papers: [], summary: {}, query: "", conference: "", withCode: false };
+const state = { papers: [] };
 
 const escapeHtml = (value) => String(value ?? "").replace(
   /[&<>"']/g,
@@ -8,13 +8,13 @@ const escapeHtml = (value) => String(value ?? "").replace(
 const tokens = (value) => {
   const normalized = String(value ?? "").toLocaleLowerCase().normalize("NFKC");
   const words = normalized.match(/[\p{L}\p{N}][\p{L}\p{N}_.+-]*/gu) ?? [];
-  return [...new Set(words.filter((word) => word.length > 1))];
+  return [...new Set(words)];
 };
 
+const normalizeSearchText = (value) => String(value ?? "").toLocaleLowerCase().normalize("NFKC");
+
 function scorePaper(paper, queryTokens, phrase) {
-  const title = paper.title.toLocaleLowerCase();
-  const abstract = (paper.abstract ?? "").toLocaleLowerCase();
-  const taxonomy = paper.taxonomy.join(" ").toLocaleLowerCase();
+  const { title, abstract, taxonomy } = paper.searchText;
   let score = phrase && title.includes(phrase) ? 30 : 0;
   score += phrase && abstract.includes(phrase) ? 8 : 0;
   for (const token of queryTokens) {
@@ -30,10 +30,7 @@ function runSearch() {
   const conference = document.querySelector("#conference").value;
   const withCode = document.querySelector("#with-code").checked;
   const queryTokens = tokens(query);
-  const phrase = query.toLocaleLowerCase();
-  state.query = query;
-  state.conference = conference;
-  state.withCode = withCode;
+  const phrase = normalizeSearchText(query);
 
   const ranked = state.papers
     .filter((paper) => !conference || paper.conference === conference)
@@ -80,11 +77,17 @@ function renderResults(items, total) {
 async function loadCatalog() {
   const status = document.querySelector("#load-status");
   try {
-    const response = await fetch("data/catalog.json", { cache: "no-cache" });
+    const response = await fetch("data/catalog.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const payload = await response.json();
-    state.papers = payload.papers;
-    state.summary = payload.summary;
+    state.papers = payload.papers.map((paper) => ({
+      ...paper,
+      searchText: {
+        title: normalizeSearchText(paper.title),
+        abstract: normalizeSearchText(paper.abstract),
+        taxonomy: normalizeSearchText(paper.taxonomy.join(" ")),
+      },
+    }));
     document.querySelector("#paper-count").textContent = payload.summary.papers.toLocaleString();
     document.querySelector("#code-count").textContent = payload.summary.with_code.toLocaleString();
     const conferences = Object.keys(payload.summary.conferences);

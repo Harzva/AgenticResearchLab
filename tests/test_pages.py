@@ -27,6 +27,24 @@ class PagesTests(unittest.TestCase):
             serialized = json.dumps(payload)
             self.assertNotIn("/" + "Users/", serialized)
             self.assertNotIn("/" + "Volumes/", serialized)
+            build = json.loads((output / "build.json").read_text(encoding="utf-8"))
+            self.assertEqual(build["output_name"], "site")
+
+    def test_builder_refuses_to_replace_site_source(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(root / "scripts/build_pages.py"),
+                "--output",
+                str(root / "site"),
+            ],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertTrue((root / "site/index.html").is_file())
 
 
 if __name__ == "__main__":
