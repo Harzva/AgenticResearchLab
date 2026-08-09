@@ -4,7 +4,7 @@
 
 ### Turn projects and topics into evidence-grounded agentic research.
 
-[Mobile Agentic AI](awesome/mobile-agentic-ai/README.md) · [All 1,242 Agentic Papers](awesome/all-agentic-papers-2026/README.md) · [Research Method](docs/research-method.md) · [Contributing](CONTRIBUTING.md)
+[Mobile Agentic AI](awesome/mobile-agentic-ai/README.md) · [All 1,242 Agentic Papers](awesome/all-agentic-papers-2026/README.md) · [Upgrade Plan](docs/next-upgrade-plan.md) · [Research Method](docs/research-method.md) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -164,7 +164,8 @@ A proposed method is not considered Agentic merely because it calls an LLM or as
 
 ## Status
 
-Early MVP. The next milestones are full-text chunking, citation-aware retrieval, project-to-paper schemas, optional model providers, and reproducible experiment-plan generation.
+Early MVP. The implementation sequence, architecture decisions, quality gates, and release
+criteria are defined in the [comprehensive upgrade plan](docs/next-upgrade-plan.md).
 
 ## License
 
