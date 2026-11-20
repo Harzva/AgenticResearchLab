@@ -1,5 +1,7 @@
 # Contributing
 
+To suggest or correct an AgentHot item, see the [AgentHot contribution guide](agent-hot/CONTRIBUTING.md).
+
 ## Adding a mobile-agent resource
 
 Edit `src/agentic_research_lab/data/topics.json` and provide:

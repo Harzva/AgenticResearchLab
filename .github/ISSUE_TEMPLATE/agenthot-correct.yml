@@ -1,0 +1,36 @@
+name: AgentHot 纠错
+description: 修正 AgentHot 条目、来源或每日专题中的错误。
+title: "[AgentHot 纠错] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: 这是公开 Issue。请使用公开链接和可公开分享的复现信息。
+  - type: input
+    id: id
+    attributes:
+      label: 条目 ID 或专题日期
+      description: 例如 sci-agent-exam 或 2026-11-20。页面级问题可以留空。
+      placeholder: sci-agent-exam
+  - type: input
+    id: page
+    attributes:
+      label: 受影响的页面
+      description: 复制出现问题的 AgentHot 页面地址。
+      placeholder: https://harzva.online/agent-hot/?item=sci-agent-exam
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: 发现的问题与建议修正
+      description: 说明哪段内容有误、链接哪里失效，或者页面表现与预期有何不同。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 公开依据或复现步骤
+      description: 附原文链接和可定位的位置，或说明从页面入口复现问题的步骤。
+    validations:
+      required: true

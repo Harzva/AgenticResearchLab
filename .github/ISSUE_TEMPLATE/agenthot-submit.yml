@@ -1,0 +1,35 @@
+name: AgentHot 投稿
+description: 推荐可核查的 Agent 论文、项目或实验报告。
+title: "[AgentHot 投稿] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: 这是公开 Issue。请分享能公开访问的链接，避免上传 PDF 原件或提交私人资料和凭据。
+  - type: input
+    id: source
+    attributes:
+      label: 公开来源
+      description: 填写论文原文、作者的代码仓库或官方报告链接。
+      placeholder: https://arxiv.org/abs/...
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: 推荐内容
+      description: 简述它解决的问题、采用的方法，以及和 Agent 研究的关系。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 可核对的证据
+      description: 指出支撑你推荐理由的图表、实验结果、报告段落或代码位置。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现或补充来源
+      description: 可附作者链接的代码、公开 PDF 或最短的复现步骤。
