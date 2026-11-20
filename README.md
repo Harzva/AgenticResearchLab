@@ -35,7 +35,9 @@ Agent 研究与开源热点。首期专题《Agent 怎么做科研？从找论�
 
 [每日专题](https://harzva.online/agent-hot/?view=daily) 每天北京时间 14:00 更新。新文献专题根据 arXiv 公开订阅源聚合。新文献不足时，会从不同研究方向轮换发布基础文献回顾。保留日期页及机器可读版本。
 
-[精选 RSS](https://harzva.online/agent-hot/rss.xml) · [每日专题 RSS](https://harzva.online/agent-hot/daily/rss.xml) · [Agent 入口](https://harzva.online/agent-hot/llms.txt) · [RSDL 拆解](agent-hot/RSDL-REFERENCE.md) · [构建与发布](agent-hot/DEPLOY.md)
+在 AgentHot 按 `Ctrl/⌘ + K` 搜索精选和每日专题。收藏保存在当前浏览器，可以导出 Markdown 资料单供自己或 Agent 使用。读者可以通过 GitHub 推荐研究或从对应页面提交纠错。
+
+[专题归档](https://harzva.online/agent-hot/?view=archive) · [每日专题 RSS](https://harzva.online/agent-hot/daily/rss.xml) · [Agent 入口](https://harzva.online/agent-hot/llms.txt) · [参与共建](agent-hot/CONTRIBUTING.md) · [十站对照](agent-hot/REFERENCES.md) · [构建与发布](agent-hot/DEPLOY.md)
 
 ## First built-in topic
 
