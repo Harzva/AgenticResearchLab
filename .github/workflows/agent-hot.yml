@@ -1,0 +1,92 @@
+name: Build AgentHot
+
+on:
+  pull_request:
+    paths:
+      - "agent-hot/**"
+      - "tests/**"
+      - "pyproject.toml"
+      - ".github/workflows/agent-hot.yml"
+  push:
+    branches: ["**"]
+    paths:
+      - "agent-hot/**"
+      - "tests/**"
+      - "pyproject.toml"
+      - ".github/workflows/agent-hot.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run repository tests
+        run: |
+          python -m pip install -e .
+          python -m unittest discover -s tests -v
+      - name: Build public site
+        run: |
+          python3 agent-hot/build.py --out "$RUNNER_TEMP/agent-hot"
+          for file in index.html styles.css app.js feed.json rss.xml llms.txt; do
+            if [ ! -s "$RUNNER_TEMP/agent-hot/$file" ]; then
+              echo "Missing static site file: $file" >&2
+              exit 1
+            fi
+          done
+          unexpected=$(find "$RUNNER_TEMP/agent-hot" \( -type l -o -iname '*.pdf' \) -print -quit)
+          if [ -n "$unexpected" ]; then
+            echo "AgentHot artifact contains a symbolic link or raw PDF" >&2
+            exit 1
+          fi
+      - name: Check daily publication without the network
+        run: |
+          printf '[]\n' > "$RUNNER_TEMP/agent-hot-fixture.json"
+          python3 agent-hot/daily.py --feed "$RUNNER_TEMP/agent-hot/feed.json" \
+            --out "$RUNNER_TEMP/agent-hot-daily-test" --date 2026-11-19 \
+            --fixture "$RUNNER_TEMP/agent-hot-fixture.json"
+          python3 agent-hot/daily.py --feed "$RUNNER_TEMP/agent-hot/feed.json" \
+            --out "$RUNNER_TEMP/agent-hot-daily-test" --date 2026-11-20 \
+            --fixture "$RUNNER_TEMP/agent-hot-fixture.json"
+          systemd-analyze calendar "$(sed -n 's/^OnCalendar=//p' agent-hot/systemd/agenthot-daily.timer)"
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          out = Path(os.environ["RUNNER_TEMP"]) / "agent-hot-daily-test"
+          edition = json.loads((out / "latest.json").read_text())
+          index = json.loads((out / "index.json").read_text())
+          assert edition["date"] == index["latest"] == "2026-11-20"
+          assert edition["mode"] == "review" and edition["items"]
+          assert len(index["editions"]) == 2
+          assert index["editions"][1]["title"] != edition["title"]
+          assert (out / "2026-11-20.md").stat().st_size
+          assert ET.parse(out / "rss.xml").findtext("channel/item/link").endswith("?view=daily&day=2026-11-20")
+          PY
+      - name: Upload static site
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-hot
+          path: ${{ runner.temp }}/agent-hot
+          if-no-files-found: error
+      - name: Upload daily production files
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-hot-daily-runtime
+          path: |
+            agent-hot/build.py
+            agent-hot/daily.py
+            agent-hot/systemd/agenthot-daily.service
+            agent-hot/systemd/agenthot-daily.timer
+          if-no-files-found: error
