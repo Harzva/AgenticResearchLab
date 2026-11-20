@@ -9,10 +9,10 @@
   <link rel="alternate" type="application/rss+xml" title="AgentHot 精选" href="./rss.xml">
   <link rel="alternate" type="application/rss+xml" title="AgentHot 每日专题" href="./daily/rss.xml">
   <link rel="alternate" type="application/json" href="./feed.json">
-  <link rel="stylesheet" href="./styles.css?v=2">
+  <link rel="stylesheet" href="./styles.css?v=3">
   <link rel="icon" href="data:,">
   <title>AgentHot · Agent 研究与开源热点</title>
-  <script type="module" src="./app.js?v=2"></script>
+  <script type="module" src="./app.js?v=3"></script>
 </head>
 <body>
   <a class="skip" href="#main">跳到正文</a>
@@ -25,6 +25,7 @@
       <nav class="site-links" aria-label="站点入口">
         <a href="./" data-home data-route aria-current="page">发现</a>
         <a href="?view=daily" data-route>每日专题</a>
+        <a href="?view=community" data-route data-community>实验笔记</a>
         <a href="/agent-papers/">论文知识库 <span aria-hidden="true">↗</span></a>
       </nav>
       <div class="mast-actions">
@@ -87,6 +88,10 @@
           <a class="panel-destination" href="/agent-papers/?view=research">科研工作台 <span aria-hidden="true">↗</span></a>
           <a class="panel-destination" href="./llms.txt">交给你的 Agent <span aria-hidden="true">↗</span></a>
         </section>
+        <section class="panel community-panel" aria-labelledby="community-panel-title">
+          <div class="panel-head"><h2 id="community-panel-title">实验笔记</h2><a href="?view=community" data-route>全部 <span aria-hidden="true">↗</span></a></div>
+          <div id="community-teaser"><p class="muted">正在载入实验笔记…</p></div>
+        </section>
         <section class="panel contribute" aria-labelledby="contribute-panel-title">
           <h2 id="contribute-panel-title">在 GitHub 共建</h2>
           <p>推荐论文、补充代码或提交纠错，公开跟踪处理进度。</p>
@@ -99,7 +104,7 @@
         </section>
       </aside>
     </div>
-    <noscript><p>可以直接读取 <a href="./feed.json">JSON 精选</a>、<a href="./daily/rss.xml">每日专题 RSS</a> 或 <a href="./llms.txt">Agent 使用说明</a>。</p></noscript>
+    <noscript><p>可以直接读取 <a href="./feed.json">JSON 精选</a>、<a href="./community/index.json">实验笔记 JSON</a>、<a href="./daily/rss.xml">每日专题 RSS</a> 或 <a href="./llms.txt">Agent 使用说明</a>。</p></noscript>
   </main>
 
   <footer class="shell site-footer">
@@ -116,8 +121,8 @@
       <button class="button" type="submit" aria-label="关闭搜索">关闭</button>
     </form>
     <form id="quick-form" role="search">
-      <label class="sr-only" for="quick-query">搜索精选与每日专题</label>
-      <input id="quick-query" type="search" maxlength="160" placeholder="搜索精选与每日专题" autofocus>
+      <label class="sr-only" for="quick-query">搜索精选、专题和实验笔记</label>
+      <input id="quick-query" type="search" maxlength="160" placeholder="搜索精选、专题和实验笔记" autofocus>
       <button class="button primary" type="submit">搜索</button>
     </form>
     <p id="quick-status" class="muted" role="status"></p>

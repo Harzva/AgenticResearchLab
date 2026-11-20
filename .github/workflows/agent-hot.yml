@@ -34,10 +34,13 @@ jobs:
         run: |
           python -m pip install -e .
           python -m unittest discover -s tests -v
+      - name: Validate community experiment notes
+        run: python3 agent-hot/test_community.py -v
       - name: Build public site
         run: |
           python3 agent-hot/build.py --out "$RUNNER_TEMP/agent-hot"
-          for file in index.html styles.css app.js feed.json rss.xml llms.txt; do
+          for file in index.html styles.css app.js feed.json rss.xml llms.txt \
+              community/index.json community/paperbench-aqua-test-split.md; do
             if [ ! -s "$RUNNER_TEMP/agent-hot/$file" ]; then
               echo "Missing static site file: $file" >&2
               exit 1

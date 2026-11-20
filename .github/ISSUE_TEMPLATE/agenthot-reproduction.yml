@@ -1,0 +1,66 @@
+name: AgentHot 提交复现记录
+description: 分享一项待验证的步骤、运行结果或独立复核证据。
+title: "[AgentHot 复现] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: 这是公开 Issue。请使用可公开访问的链接和已处理的日志片段。维护者审阅后通过 PR 收录实验笔记。
+  - type: input
+    id: item
+    attributes:
+      label: 关联的精选条目
+      description: 填写 AgentHot 精选条目的 ID。
+      placeholder: paperbench
+    validations:
+      required: true
+  - type: input
+    id: note
+    attributes:
+      label: 已有实验笔记 ID
+      description: 补充已有笔记时填写。提出新实验可留空。
+      placeholder: paperbench-aqua-test-split
+  - type: input
+    id: page
+    attributes:
+      label: AgentHot 页面
+      description: 附上实验笔记或关联精选的公开地址。
+      placeholder: "https://harzva.online/agent-hot/?view=community&note=paperbench-aqua-test-split"
+  - type: input
+    id: scope
+    attributes:
+      label: 要核对的结论或评分项
+      description: 选一项具体主张、结果或评分项，并说明核对范围。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 实验版本和环境
+      description: 如果已经运行，填入代码提交、数据或评分清单版本，以及影响结果的依赖和硬件。
+  - type: textarea
+    id: steps
+    attributes:
+      label: 最小操作步骤
+      description: 列出可以复查的操作或命令，并注明哪些已实际执行。
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: 预期与实际观察
+      description: 写下比较标准和观察结果。尚未运行时填写预期。环境启动失败时说明阻塞原因，科学结果记为未评估。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 公开证据
+      description: 提供可定位的原文、固定版本的评分清单，或对应本次运行的公开结果和日志链接。
+    validations:
+      required: true
+  - type: textarea
+    id: review-receipt
+    attributes:
+      label: 独立复核回执
+      description: 如果另一位参与者已复核，请附其公开回执、复核日期、核对范围及所用版本和运行证据。没有回执可留空。

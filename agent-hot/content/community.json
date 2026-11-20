@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "notes": [
+    {
+      "id": "paperbench-aqua-test-split",
+      "item_id": "paperbench",
+      "title": "PaperBench 最小复现 · 核查 AQuA-RAT 测试集",
+      "published_at": "2026-11-20",
+      "status": "planned",
+      "scope": "材料核对已定位 PaperBench 的 Semantic Self-Consistency 评分叶节点 43f23e0e-2c5b-4a2b-80ab-6cc9c62723f1。该节点评估能否取得 254 条 AQuA-RAT 测试样本，归属代码开发下的数据集与模型获取。本笔记计划核查固定版本数据是否可用及其记录结构，范围止于该评分项。完整论文复现还需要后续独立运行。",
+      "steps": [
+        "打开固定提交的 PaperBench rubric，以节点 ID 定位该评分项，确认它考核测试集的可用性。",
+        "在空工作目录下载固定版本的 test.json。可以执行 curl -fL https://raw.githubusercontent.com/google-deepmind/AQuA/26b64ed1f22208c6742f47df547dfd65088ec30d/test.json -o test.json。",
+        "用 Python 3 的 json.loads 逐行解析非空行并计数。检查每行字段名、options 的元素数和 correct 的取值。把无法解析或结构不符的行号记在报告中。",
+        "用 shasum -a 256 test.json 或 sha256sum test.json 记录校验和。保存本次命令、退出状态、源提交和检查输出，供另一位读者复核。"
+      ],
+      "expected": "报告应记录固定源提交、SHA-256 和逐行检查结果。预期 test.json 为 130192 字节，含 254 个 JSON 对象。各行字段为 question、options、rationale、correct，options 有 5 项，correct 为 A 到 E 之一。预期 SHA-256 为 de41581881ef95c5588c44ddc701c77fd480839241dd422a0d181262af24520c。",
+      "sources": [
+        {
+          "title": "OpenAI PaperBench 固定版本的 Semantic Self-Consistency rubric",
+          "url": "https://github.com/openai/frontier-evals/blob/b78dab1da774a6456b1ed9c48c9ff194ee3ff36d/project/paperbench/data/papers/semantic-self-consistency/rubric.json"
+        },
+        {
+          "title": "AQuA-RAT 作者仓库固定版本的测试集",
+          "url": "https://github.com/google-deepmind/AQuA/blob/26b64ed1f22208c6742f47df547dfd65088ec30d/test.json"
+        }
+      ]
+    }
+  ]
+}

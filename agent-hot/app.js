@@ -1,6 +1,8 @@
 const labels = new Map([["paper", "论文"], ["report", "技术报告"], ["repo", "开源仓库"]]);
 const stages = new Map([["literature", "找文献"], ["hypothesis", "提问题"],
   ["experiment", "做实验"], ["iteration", "看反馈再迭代"]]);
+const noteStatuses = new Map([["planned", "待复现"], ["reported", "公开运行记录"], ["reviewed", "独立复核"]]);
+const outcomes = new Map([["reproduced", "复现成功"], ["partial", "部分复现"], ["not_reproduced", "未复现"]]);
 const formatCount = new Intl.NumberFormat("zh-CN");
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -21,6 +23,9 @@ let itemsById;
 let state;
 let archive;
 let archiveError = false;
+let community;
+let communityLoading = false;
+let communityError = false;
 const dailyCache = new Map();
 let dailyRender = 0;
 const repos = new Map();
@@ -59,6 +64,10 @@ function route(changes = {}) {
     if (next.q) params.set("q", next.q);
   } else if (next.view === "saved") {
     params.set("view", "saved");
+  } else if (next.view === "community") {
+    params.set("view", "community");
+    if (next.noteStatus) params.set("status", next.noteStatus);
+    if (next.note) params.set("note", next.note);
   } else {
     if (next.kind !== "all") params.set("kind", next.kind);
     if (next.stage) params.set("stage", next.stage);
@@ -85,8 +94,10 @@ function getState() {
   const view = q.get("view");
   const sort = q.get("sort");
   const mode = q.get("mode");
+  const note = q.get("note");
+  const noteStatus = q.get("status");
   return {
-    view: ["daily", "archive", "saved"].includes(view) ? view : "feed",
+    view: ["daily", "archive", "saved", "community"].includes(view) ? view : "feed",
     kind: labels.has(kind) ? kind : "all",
     stage: stages.has(stage) ? stage : "",
     q: (q.get("q") ?? "").slice(0, 160),
@@ -94,6 +105,8 @@ function getState() {
     day: datePattern.test(day ?? "") ? day : "",
     mode: ["fresh", "review"].includes(mode) ? mode : "",
     sort: ["oldest", "featured"].includes(sort) ? sort : "recent",
+    note: note && note.length <= 100 && slugPattern.test(note) ? note : "",
+    noteStatus: noteStatuses.has(noteStatus) ? noteStatus : "",
   };
 }
 
@@ -174,6 +187,12 @@ function correction(id, page) {
   return remote("到 GitHub 纠错", `${repository}/issues/new?${params}`, "text-action");
 }
 
+function submitReproduction(item, note, page) {
+  const params = new URLSearchParams({ template: "agenthot-reproduction.yml",
+    item, note, page: new URL(page, "https://harzva.online/").href });
+  return remote("提交复现记录", `${repository}/issues/new?${params}`, "button");
+}
+
 function documentTools(path, share) {
   return `<a class="button" href="${path}" download>下载 Agent Markdown</a>
     <button class="button" type="button" data-action="copy" data-copy="${path}">复制给 Agent</button>
@@ -246,8 +265,10 @@ function renderEntry(item, focus) {
     <section class="entry-block"><h3>证据从哪里来</h3>${paras(item.evidence)}</section>
     <section class="entry-block"><h3>从哪一步开始复现</h3>${paras(item.reproduce)}</section>
     <section class="entry-block"><h3>论文、报告与代码</h3>${sourceList(item.sources)}</section>
+    <section id="related-community" class="entry-block" aria-label="关联实验笔记"></section>
     <div class="entry-tools">${saveButton(`paper:${item.id}`)}${documentTools(markdown, share)}
       ${correction(item.id, share)}<a href="/agent-papers/">浏览论文知识库</a></div>`, focus);
+  renderRelatedCommunity(item, share);
   document.title = `${item.title} · AgentHot`;
 }
 
@@ -284,6 +305,119 @@ async function getJson(path) {
   const res = await fetch(path, { headers: { Accept: "application/json" } });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();
+}
+
+function communityRoute(note = "", noteStatus = "") {
+  return { view: "community", note, noteStatus };
+}
+
+function noteBadge(note) {
+  return `<span class="note-status note-status-${esc(note.status)}">${esc(noteStatuses.get(note.status))}</span>`;
+}
+
+function noteLink(note) {
+  return internal(esc(note.title), communityRoute(note.id));
+}
+
+function renderRelatedCommunity(item, share) {
+  const section = $("#related-community");
+  if (!section) return;
+  const related = community?.filter(note => note.item_id === item.id) ?? [];
+  section.innerHTML = `<div class="panel-head"><h3>实验笔记</h3>${submitReproduction(item.id, "", share)}</div>
+    ${related.length ? `<ul class="note-related">${related.map(note =>
+      `<li>${noteBadge(note)} ${noteLink(note)}</li>`).join("")}</ul>` : ""}`;
+}
+
+function renderCommunityTeaser() {
+  const latest = community?.[0];
+  $("#community-teaser").innerHTML = latest
+    ? `<div class="note-teaser">${noteBadge(latest)}${noteLink(latest)}</div>`
+    : `<p class="muted">${communityError ? "暂时无法读取实验笔记。" : "暂无公开实验笔记。"}</p>`;
+}
+
+async function loadCommunity() {
+  if (communityLoading) return;
+  communityLoading = true;
+  communityError = false;
+  if (state.view === "community") renderCommunity(entry.contains(document.activeElement));
+  try {
+    const data = await getJson("./community/index.json");
+    if (data.schema_version !== 1 || !Array.isArray(data.notes) ||
+        data.notes.some(note => !noteStatuses.has(note.status) || typeof note.title !== "string" ||
+          !slugPattern.test(note.id ?? "") || !Array.isArray(note.steps) || !Array.isArray(note.sources))) {
+      throw new Error("Invalid community index");
+    }
+    community = data.notes;
+  } catch { communityError = true; }
+  communityLoading = false;
+  renderCommunityTeaser();
+  if (state.view === "community") renderCommunity(entry.contains(document.activeElement));
+  if (state.view === "feed" && state.item) {
+    const share = route({ view: "feed", kind: "all", stage: "", q: "", sort: "recent", item: state.item });
+    renderRelatedCommunity(itemsById.get(state.item), share);
+  }
+  if (searchDialog.open) renderQuick();
+}
+
+function communitySources(sources) {
+  return `<ul class="note-sources">${sources.map(source =>
+    `<li>${remote(source.title, source.url)}</li>`).join("")}</ul>`;
+}
+
+function renderNote(note, back, focus) {
+  const item = itemsById.get(note.item_id);
+  const original = internal(esc(item?.title ?? "阅读关联精选"), { view: "feed", kind: "all", stage: "", q: "", sort: "recent", item: note.item_id });
+  const share = route(communityRoute(note.id));
+  const run = note.run;
+  const review = note.review;
+  const runDetails = run ? `<section class="entry-block note-run">
+      <h2>运行记录</h2><dl><dt>结果</dt><dd>${esc(outcomes.get(run.outcome) ?? "未评估")}</dd>
+      <dt>提交者</dt><dd>${esc(run.author)}</dd><dt>版本</dt><dd>${esc(run.revision)}</dd><dt>环境</dt><dd>${esc(run.environment)}</dd>
+      <dt>实际操作</dt><dd>${esc(run.method)}</dd><dt>观察结果</dt><dd>${esc(run.observed)}</dd></dl>
+      ${communitySources(run.evidence)}</section>`
+    : '<p class="note-result">尚无公开运行记录，实验结果未评估。</p>';
+  openEntry(`${back}<header><div class="row-meta">${noteBadge(note)}
+      <time datetime="${esc(note.published_at)}">${esc(displayDate(note.published_at))}</time></div>
+      <h1 id="entry-title" tabindex="-1">${esc(note.title)}</h1><p class="note-parent">${original}</p>
+      <div class="note-heading-actions">${submitReproduction(note.item_id, note.id, share)}</div></header>
+      <section class="entry-block"><h2>来源与核查范围</h2><p>${esc(note.scope)}</p>${communitySources(note.sources)}</section>
+      <section class="entry-block"><h2>复现步骤</h2><ol class="note-steps">${note.steps.map(step => `<li>${esc(step)}</li>`).join("")}</ol>
+      <h3>预期产物</h3><p>${esc(note.expected)}</p></section>
+      ${runDetails}
+      ${review ? `<section class="entry-block"><h2>独立复核</h2>
+        <p>${esc(review.reviewer)} · ${esc(review.revision)}</p><p>${esc(review.summary)}</p>
+        ${remote("查看公开复核记录", review.url)}</section>` : ""}
+      <div class="entry-tools">${documentTools(`./community/${encodeURIComponent(note.id)}.md`, share)}
+        <a class="button" href="./community/index.json">实验笔记 JSON</a></div>`, focus);
+  document.title = `${note.title} · AgentHot`;
+}
+
+function renderCommunity(focus) {
+  const back = `<div class="entry-back">${internal("‹ 实验笔记", communityRoute("", state.noteStatus))}</div>`;
+  document.title = "实验笔记 · AgentHot";
+  if (!community) {
+    openEntry(`<h1 id="entry-title" tabindex="-1">实验笔记</h1>${communityError ?
+      '<p class="empty">暂时无法读取实验笔记。 <button class="button" type="button" data-action="retry-community">重试</button></p>' :
+      '<p class="empty">正在载入实验笔记…</p>'}`, focus);
+    return;
+  }
+  if (state.note) {
+    const note = community.find(record => record.id === state.note);
+    if (note) renderNote(note, back, focus);
+    else openEntry(`${back}<h1 id="entry-title" tabindex="-1">没有找到这条笔记</h1>`, focus);
+    return;
+  }
+  const options = [["", "全部"], ...noteStatuses];
+  const notes = community.filter(note => !state.noteStatus || note.status === state.noteStatus);
+  openEntry(`<h1 id="entry-title" tabindex="-1">实验笔记</h1>
+    <p class="summary">从一条公开研究主张开始，记录可核对的步骤、运行结果与复核证据。</p>
+    <nav class="filters note-filters" aria-label="按复现阶段筛选">${options.map(([status, label]) =>
+      internal(label, communityRoute("", status), `class="filter"${state.noteStatus === status ? ' aria-current="page"' : ""}`)).join("")}</nav>
+    ${notes.length ? `<ul class="note-list">${notes.map(note => `<li class="note-card">
+      <div class="row-meta">${noteBadge(note)}<time datetime="${esc(note.published_at)}">${esc(displayDate(note.published_at))}</time></div>
+      <h2>${noteLink(note)}</h2><p>${esc(note.scope)}</p></li>`).join("")}</ul>`
+    : '<p class="empty">当前阶段还没有实验笔记。</p>'}
+    <div class="entry-tools"><a href="./community/index.json">实验笔记 JSON</a></div>`, focus);
 }
 
 function getEdition(day) {
@@ -464,15 +598,18 @@ function render(focus = false) {
   $("#home-hero").hidden = state.view !== "feed" || Boolean(state.item);
   const home = $("[data-home]");
   const daily = $('.site-links a[href="?view=daily"]');
+  const notes = $("[data-community]");
   const collection = $(".mast-saved");
   for (const [node, selected] of [[home, state.view === "feed"],
-    [daily, ["daily", "archive"].includes(state.view)], [collection, state.view === "saved"]]) {
+    [daily, ["daily", "archive"].includes(state.view)], [collection, state.view === "saved"],
+    [notes, state.view === "community"]]) {
     if (selected) node.setAttribute("aria-current", "page");
     else node.removeAttribute("aria-current");
   }
   if (state.view === "daily") renderDaily(focus);
   else if (state.view === "archive") renderArchive(focus);
   else if (state.view === "saved") renderSaved(focus);
+  else if (state.view === "community") renderCommunity(focus);
   else if (state.item) renderEntry(itemsById.get(state.item), focus);
   else {
     renderBrowse();
@@ -529,22 +666,26 @@ function renderQuick() {
   const contains = text => query.every(word => text.toLowerCase().includes(word));
   const status = $("#quick-status");
   if (!query.length) {
-    status.textContent = "可搜索精选研究、项目名称和往期专题。";
+    status.textContent = "可搜索精选研究、历期专题和实验笔记。";
     quickResults.innerHTML = `<li>${internal("查看最新每日专题", { view: "daily", day: "" })}</li>
       <li>${internal("浏览往期专题", { view: "archive", mode: "", q: "" })}</li>
+      <li>${internal("浏览实验笔记", communityRoute())}</li>
       <li>${internal("打开我的收藏", { view: "saved" })}</li>`;
     return;
   }
   const items = feed.items.filter(item => contains(item.searchText));
   const editions = (archive?.editions ?? []).filter(item =>
     contains(`${item.title} ${item.date} ${displayDate(item.date)}`));
-  const count = items.length + editions.length;
+  const notes = (community ?? []).filter(note => contains(`${note.title} ${note.scope}`));
+  const count = items.length + editions.length + notes.length;
   status.textContent = count ? `找到 ${count} 条结果` : "AgentHot 暂无匹配，可继续到论文知识库查找。";
   const feedRoute = { view: "feed", kind: "all", stage: "", q: "", sort: "recent" };
   quickResults.innerHTML = items.slice(0, 6).map(item => `<li class="quick-result">${internal(
     `<span>${esc(item.title)}</span><small>${esc(stages.get(item.stage))}</small>`, { ...feedRoute, item: item.id })}</li>`).join("") +
     editions.slice(0, 4).map(item => `<li class="quick-result">${internal(
       `<span>${esc(editionTitle(item.title))}</span><small>${esc(displayDate(item.date))}</small>`, { view: "daily", day: item.date })}</li>`).join("") +
+    notes.slice(0, 4).map(note => `<li class="quick-result">${internal(
+      `<span>${esc(note.title)}</span><small>实验笔记</small>`, communityRoute(note.id))}</li>`).join("") +
     (items.length > 6 ? `<li>${internal("查看全部精选结果", { ...feedRoute, item: "", q: value })}</li>` : "") +
     (editions.length > 4 ? `<li>${internal("查看全部专题结果", { view: "archive", mode: "", q: value })}</li>` : "") +
     `<li><a href="/agent-papers/?${new URLSearchParams({ q: value })}">到论文知识库搜索 ↗</a></li>`;
@@ -601,6 +742,7 @@ function bind() {
     if (action?.dataset.action === "save") toggleSaved(action.dataset.save);
     if (action?.dataset.action === "remove") toggleSaved(action.dataset.saveKey);
     if (action?.dataset.action === "export") exportSaved();
+    if (action?.dataset.action === "retry-community") loadCommunity();
   });
   searchForm.addEventListener("submit", event => {
     event.preventDefault();
@@ -644,3 +786,4 @@ bind();
 $("#open-search").disabled = false;
 render();
 loadArchive();
+loadCommunity();
