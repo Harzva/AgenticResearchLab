@@ -9,7 +9,7 @@ User=agenthot-daily
 Group=agenthot-daily
 ExecStart=/usr/bin/python3 /srv/harzva-agent-hot/bin/current/daily.py --feed /srv/harzva-agent-hot/current/agent-hot/feed.json --out /srv/harzva-agent-hot/live/agent-hot/daily
 Environment=PYTHONDONTWRITEBYTECODE=1
-TimeoutStartSec=20s
+TimeoutStartSec=80s
 UMask=0022
 NoNewPrivileges=yes
 PrivateTmp=yes

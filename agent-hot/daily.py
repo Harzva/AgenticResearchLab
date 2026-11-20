@@ -5,7 +5,9 @@ import argparse
 from datetime import date, datetime, timedelta, timezone
 from email.utils import format_datetime
 import fcntl
+from gzip import GzipFile
 from html import escape as html_escape
+from http.client import HTTPException
 import json
 import os
 from pathlib import Path
@@ -17,6 +19,7 @@ from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 from zoneinfo import ZoneInfo
+import zlib
 
 from build import ATOM, BASE_URL, markdown_inline, publication_time, public_url, validate
 
@@ -24,9 +27,12 @@ from build import ATOM, BASE_URL, markdown_inline, publication_time, public_url,
 ARXIV_ATOM = "https://rss.arxiv.org/atom/cs.AI"
 SHANGHAI = ZoneInfo("Asia/Shanghai")
 MAX_ATOM_BYTES = 2 * 1024 * 1024
-REQUEST_SECONDS = 8
+MAX_ATOM_CANDIDATES = 24
+REQUEST_SECONDS = 65
 AGENT = re.compile(r"\bagent(?:s|ic)?\b|\bmultiagent\b", re.IGNORECASE)
-ARXIV_PAPER = re.compile(r"/abs/(\d{4}\.\d{4,5}(?:v\d+)?)\Z", re.ASCII)
+ARXIV_HOSTS = {"arxiv.org", "export.arxiv.org", "www.arxiv.org"}
+ARXIV_PAPER = re.compile(r"/abs/(\d{4}\.\d{4,5})(?:v\d+)?\Z", re.ASCII)
+SOURCE_ERRORS = (OSError, EOFError, HTTPException, zlib.error, ValueError, ET.ParseError)
 DATE_FILE = re.compile(r"\d{4}-\d{2}-\d{2}\.json\Z", re.ASCII)
 THEMES = (
     ("科研自动化与实验 Agent", r"research agents?|self-driving laborator|scientific|experiments?|科研|实验",
@@ -58,7 +64,7 @@ def source_urls(url, pdf_url=None):
     if isinstance(url, str) and url.startswith(("http://arxiv.org/", "http://export.arxiv.org/")):
         url = "https://" + url.split("://", 1)[1]
     public_url(url, "daily source url")
-    if not pdf_url and urlsplit(url).hostname in {"arxiv.org", "export.arxiv.org", "www.arxiv.org"}:
+    if not pdf_url and urlsplit(url).hostname in ARXIV_HOSTS:
         match = ARXIV_PAPER.fullmatch(urlsplit(url).path)
         if match:
             pdf_url = "https://arxiv.org/pdf/" + match[1]
@@ -77,34 +83,62 @@ def candidate(title, url, pdf_url, published, abstract):
     return {"title": title, "url": url, "pdf_url": pdf_url, "published_at": published, "abstract": abstract}
 
 
-def atom_candidates(contents):
-    root = ET.fromstring(contents)
-    if root.tag != "{http://www.w3.org/2005/Atom}feed":
-        raise ValueError("Expected an arXiv Atom feed")
-    papers = []
-    for entry in root.findall("{*}entry"):
-        announce = entry.findtext("{http://arxiv.org/schemas/atom}announce_type")
-        if announce and announce != "new":
-            continue
-        published = entry.findtext("{*}published")
-        link = next((node.get("href") for node in entry.findall("{*}link") if node.get("rel", "alternate") == "alternate"), None)
-        url = link or entry.findtext("{*}id")
-        if not published or not url:
-            continue
-        if urlsplit(url).hostname not in {"arxiv.org", "export.arxiv.org", "www.arxiv.org"}:
-            continue
-        abstract = entry.findtext("{*}summary") or ""
-        if "Abstract:" in abstract:
-            abstract = abstract.split("Abstract:", 1)[1]
-        papers.append(candidate(entry.findtext("{*}title"), url, None, published, abstract))
-    return papers
+def atom_candidate(entry):
+    announce = entry.findtext("{http://arxiv.org/schemas/atom}announce_type")
+    if announce and announce != "new":
+        return None
+    published = entry.findtext(f"{{{ATOM}}}published")
+    link = next((node.get("href") for node in entry.findall(f"{{{ATOM}}}link")
+                 if node.get("rel", "alternate") == "alternate"), None)
+    url = urlsplit(link or entry.findtext(f"{{{ATOM}}}id") or "")
+    paper = ARXIV_PAPER.fullmatch(url.path)
+    if not published or url.hostname not in ARXIV_HOSTS or not paper:
+        return None
+    title = entry.findtext(f"{{{ATOM}}}title") or ""
+    abstract = (entry.findtext(f"{{{ATOM}}}summary") or "").split("Abstract:", 1)[-1]
+    if not (AGENT.search(title) or AGENT.search(abstract)):
+        return None
+    return candidate(title, "https://arxiv.org/abs/" + paper[1], None, published, abstract)
+
+
+def stream_atom_candidates(document):
+    parser = ET.XMLPullParser(events=("start", "end"))
+    papers = {}
+    size = 0
+    depth = 0
+    try:
+        while chunk := document.read1(16 * 1024):
+            size += len(chunk)
+            if size > MAX_ATOM_BYTES:
+                raise ValueError("arXiv Atom feed exceeded the size limit")
+            parser.feed(chunk)
+            for event, element in parser.read_events():
+                if event == "start":
+                    if depth == 0 and element.tag != f"{{{ATOM}}}feed":
+                        raise ValueError("Expected an arXiv Atom feed")
+                    depth += 1
+                else:
+                    depth -= 1
+                    if depth == 1 and element.tag == f"{{{ATOM}}}entry":
+                        row = atom_candidate(element)
+                        element.clear()
+                        if row:
+                            papers.setdefault(row["url"], row)
+                            if len(papers) == MAX_ATOM_CANDIDATES:
+                                return list(papers.values())
+        parser.close()
+    except SOURCE_ERRORS as error:
+        if len(papers) < 5:
+            raise
+        print(f"arXiv interrupted ({type(error).__name__}); using {len(papers)} complete entries", file=sys.stderr)
+    return list(papers.values())
 
 
 def fixture_candidates(path):
-    raw = path.read_bytes()
-    if raw.lstrip().startswith(b"<"):
-        return atom_candidates(raw)
-    data = json.loads(raw)
+    with path.open("rb") as document:
+        if document.peek(256).lstrip().startswith(b"<"):
+            return stream_atom_candidates(document)
+        data = json.load(document)
     if not isinstance(data, list) or any(not isinstance(row, dict) for row in data):
         raise ValueError("Expected a fixture array of candidate objects")
     return [
@@ -122,13 +156,14 @@ def fetch_arxiv():
     try:
         request = Request(ARXIV_ATOM, headers={
             "Accept": "application/atom+xml",
+            "Accept-Encoding": "gzip",
             "User-Agent": "AgentHot/1.0 (+https://harzva.online/agent-hot/)",
         })
         with urlopen(request, timeout=REQUEST_SECONDS) as response:
-            contents = response.read(MAX_ATOM_BYTES + 1)
-        if len(contents) > MAX_ATOM_BYTES:
-            raise ValueError("arXiv Atom feed exceeded the size limit")
-        return atom_candidates(contents)
+            if response.headers.get("Content-Encoding", "").lower() == "gzip":
+                with GzipFile(fileobj=response) as document:
+                    return stream_atom_candidates(document)
+            return stream_atom_candidates(response)
     finally:
         signal.setitimer(signal.ITIMER_REAL, 0)
         signal.signal(signal.SIGALRM, previous)
@@ -172,7 +207,8 @@ def create_edition(day, now, feed, papers, history):
     cutoff = datetime.combine(day - timedelta(days=1), datetime.min.time(), tzinfo=SHANGHAI)
     prior = [item for edition in history if edition["date"] < day.isoformat() and edition["mode"] == "fresh"
              for item in edition["items"]]
-    known = {item["url"] for item in prior}
+    known = {item["url"] for edition in history if edition["date"] != day.isoformat() and edition["mode"] == "fresh"
+             for item in edition["items"]}
     last = max((publication_time(item["published_at"], "previous daily source") for item in prior), default=None)
     fresh = []
     for row in papers:
@@ -280,7 +316,7 @@ def existing_editions(out):
     return editions
 
 
-def run(feed_path, out, day, now, fixture):
+def run(feed_path, out, day, now, fixture, promote_review=False):
     out.mkdir(parents=True, exist_ok=True)
     with (out / ".publish.lock").open("a") as lock:
         try:
@@ -290,7 +326,8 @@ def run(feed_path, out, day, now, fixture):
             return
         history = existing_editions(out)
         existing = next((row for row in history if row["date"] == day.isoformat()), None)
-        if existing is None:
+        original = existing
+        if existing is None or (promote_review and existing["mode"] == "review"):
             feed = json.loads(feed_path.read_text(encoding="utf-8"))
             validate(feed)
             if fixture:
@@ -298,15 +335,18 @@ def run(feed_path, out, day, now, fixture):
             else:
                 try:
                     candidates = fetch_arxiv()
-                except (OSError, ValueError, ET.ParseError) as error:
+                except SOURCE_ERRORS as error:
                     print(f"arXiv unavailable ({type(error).__name__}); using curated review", file=sys.stderr)
                     candidates = []
-            existing = create_edition(day, now, feed, candidates, history)
-            atomic_write(out / f"{day}.md", edition_markdown(existing))
+            proposed = create_edition(day, now, feed, candidates, history)
+            if existing is None or proposed["mode"] == "fresh":
+                if existing is not None:
+                    history.remove(existing)
+                existing = proposed
+                history.append(existing)
+        atomic_write(out / f"{day}.md", edition_markdown(existing))
+        if existing is not original:
             atomic_write(out / f"{day}.json", existing)
-            history.append(existing)
-        else:
-            atomic_write(out / f"{day}.md", edition_markdown(existing))
 
         history.sort(key=lambda row: row["date"], reverse=True)
         atomic_write(out / "latest.json", history[0])
@@ -324,13 +364,14 @@ def main():
     parser.add_argument("--out", type=Path, required=True, help="Daily publication directory")
     parser.add_argument("--date", help="Edition date, defaulting to today in Asia/Shanghai")
     parser.add_argument("--fixture", type=Path, help="Offline Atom or JSON candidate fixture")
+    parser.add_argument("--promote-review", action="store_true", help="Promote an existing review if fresh sources are available")
     args = parser.parse_args()
     now = datetime.now(SHANGHAI)
     try:
         day = date_value(args.date) if args.date else now.date()
         if args.date:
             now = datetime.combine(day, datetime.max.time(), tzinfo=SHANGHAI)
-        run(args.feed, args.out, day, now, args.fixture)
+        run(args.feed, args.out, day, now, args.fixture, args.promote_review)
     except (OSError, ValueError, ET.ParseError) as error:
         parser.exit(1, f"Daily build failed: {error}\n")
 
