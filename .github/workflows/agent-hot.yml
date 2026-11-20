@@ -74,6 +74,23 @@ jobs:
           assert (out / "2026-11-20.md").stat().st_size
           assert ET.parse(out / "rss.xml").findtext("channel/item/link").endswith("?view=daily&day=2026-11-20")
           PY
+          cat > "$RUNNER_TEMP/agent-hot-promote-fixture.json" <<'JSON'
+          [{"title":"Agent benchmark test fixture","url":"https://arxiv.org/abs/2611.25043","published_at":"2026-11-20T05:00:00Z","abstract":"Agent evaluation test fixture for dated review promotion."}]
+          JSON
+          python3 agent-hot/daily.py --feed "$RUNNER_TEMP/agent-hot/feed.json" \
+            --out "$RUNNER_TEMP/agent-hot-daily-test" --date 2026-11-20 \
+            --fixture "$RUNNER_TEMP/agent-hot-promote-fixture.json" --promote-review
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          out = Path(os.environ["RUNNER_TEMP"]) / "agent-hot-daily-test"
+          edition = json.loads((out / "latest.json").read_text())
+          index = json.loads((out / "index.json").read_text())
+          assert edition["date"] == "2026-11-20" and edition["mode"] == "fresh"
+          assert len(index["editions"]) == 2 and index["editions"][0]["mode"] == "fresh"
+          PY
       - name: Upload static site
         uses: actions/upload-artifact@v4
         with:

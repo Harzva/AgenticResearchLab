@@ -5,6 +5,7 @@ import argparse
 from datetime import date, datetime, timedelta, timezone
 from email.utils import format_datetime
 import fcntl
+from gzip import GzipFile
 from html import escape as html_escape
 import json
 import os
@@ -24,7 +25,7 @@ from build import ATOM, BASE_URL, markdown_inline, publication_time, public_url,
 ARXIV_ATOM = "https://rss.arxiv.org/atom/cs.AI"
 SHANGHAI = ZoneInfo("Asia/Shanghai")
 MAX_ATOM_BYTES = 2 * 1024 * 1024
-REQUEST_SECONDS = 8
+REQUEST_SECONDS = 65
 AGENT = re.compile(r"\bagent(?:s|ic)?\b|\bmultiagent\b", re.IGNORECASE)
 ARXIV_PAPER = re.compile(r"/abs/(\d{4}\.\d{4,5}(?:v\d+)?)\Z", re.ASCII)
 DATE_FILE = re.compile(r"\d{4}-\d{2}-\d{2}\.json\Z", re.ASCII)
@@ -122,10 +123,15 @@ def fetch_arxiv():
     try:
         request = Request(ARXIV_ATOM, headers={
             "Accept": "application/atom+xml",
+            "Accept-Encoding": "gzip",
             "User-Agent": "AgentHot/1.0 (+https://harzva.online/agent-hot/)",
         })
         with urlopen(request, timeout=REQUEST_SECONDS) as response:
-            contents = response.read(MAX_ATOM_BYTES + 1)
+            if response.headers.get("Content-Encoding", "").lower() == "gzip":
+                with GzipFile(fileobj=response) as document:
+                    contents = document.read(MAX_ATOM_BYTES + 1)
+            else:
+                contents = response.read(MAX_ATOM_BYTES + 1)
         if len(contents) > MAX_ATOM_BYTES:
             raise ValueError("arXiv Atom feed exceeded the size limit")
         return atom_candidates(contents)
@@ -280,7 +286,7 @@ def existing_editions(out):
     return editions
 
 
-def run(feed_path, out, day, now, fixture):
+def run(feed_path, out, day, now, fixture, promote_review=False):
     out.mkdir(parents=True, exist_ok=True)
     with (out / ".publish.lock").open("a") as lock:
         try:
@@ -290,7 +296,8 @@ def run(feed_path, out, day, now, fixture):
             return
         history = existing_editions(out)
         existing = next((row for row in history if row["date"] == day.isoformat()), None)
-        if existing is None:
+        original = existing
+        if existing is None or (promote_review and existing["mode"] == "review"):
             feed = json.loads(feed_path.read_text(encoding="utf-8"))
             validate(feed)
             if fixture:
@@ -298,15 +305,18 @@ def run(feed_path, out, day, now, fixture):
             else:
                 try:
                     candidates = fetch_arxiv()
-                except (OSError, ValueError, ET.ParseError) as error:
+                except (OSError, EOFError, ValueError, ET.ParseError) as error:
                     print(f"arXiv unavailable ({type(error).__name__}); using curated review", file=sys.stderr)
                     candidates = []
-            existing = create_edition(day, now, feed, candidates, history)
-            atomic_write(out / f"{day}.md", edition_markdown(existing))
+            proposed = create_edition(day, now, feed, candidates, history)
+            if existing is None or proposed["mode"] == "fresh":
+                if existing is not None:
+                    history.remove(existing)
+                existing = proposed
+                history.append(existing)
+        atomic_write(out / f"{day}.md", edition_markdown(existing))
+        if existing is not original:
             atomic_write(out / f"{day}.json", existing)
-            history.append(existing)
-        else:
-            atomic_write(out / f"{day}.md", edition_markdown(existing))
 
         history.sort(key=lambda row: row["date"], reverse=True)
         atomic_write(out / "latest.json", history[0])
@@ -324,13 +334,14 @@ def main():
     parser.add_argument("--out", type=Path, required=True, help="Daily publication directory")
     parser.add_argument("--date", help="Edition date, defaulting to today in Asia/Shanghai")
     parser.add_argument("--fixture", type=Path, help="Offline Atom or JSON candidate fixture")
+    parser.add_argument("--promote-review", action="store_true", help="Promote an existing review if fresh sources are available")
     args = parser.parse_args()
     now = datetime.now(SHANGHAI)
     try:
         day = date_value(args.date) if args.date else now.date()
         if args.date:
             now = datetime.combine(day, datetime.max.time(), tzinfo=SHANGHAI)
-        run(args.feed, args.out, day, now, args.fixture)
+        run(args.feed, args.out, day, now, args.fixture, args.promote_review)
     except (OSError, ValueError, ET.ParseError) as error:
         parser.exit(1, f"Daily build failed: {error}\n")
 

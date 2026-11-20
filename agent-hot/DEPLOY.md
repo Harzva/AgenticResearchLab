@@ -151,7 +151,7 @@ systemctl enable --now agenthot-daily.timer
 systemctl list-timers agenthot-daily.timer
 ~~~
 
-定时器每天北京时间 14:00 运行，错过触发后会补运行。当天重复执行时会复用已写入的专题。源站无新条目或暂不可用时会生成精选回顾，并在 JSON 中标记 `mode: "review"`。首次运行可从服务日志和公开的 daily/latest.json 确认采集结果。
+定时器每天北京时间 14:00 运行，错过触发后会补运行。当天重复执行时会复用已写入的专题。源站无新条目或暂不可用时会生成精选回顾，并在 JSON 中标记 `mode: "review"`。首次运行可从服务日志和公开的 daily/latest.json 确认采集结果。生产请求允许最多 65 秒并协商压缩。运维人员可用 `--promote-review` 重试一次当天回顾，只有确实取得新文献时才更新同一个日期页。
 
 ## 验收
 
