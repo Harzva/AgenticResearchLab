@@ -1,0 +1,30 @@
+{
+  "sources": [
+    {
+      "id": "agentic-research-lab",
+      "title": "AgenticResearchLab 2026 conference catalog",
+      "url": "https://github.com/Harzva/AgenticResearchLab/blob/a72629f9dff5a1f5ca6282cd31de736bfe85fd89/src/agentic_research_lab/data/conference_agent_papers_2026.json",
+      "commit": "a72629f9dff5a1f5ca6282cd31de736bfe85fd89",
+      "path": "src/agentic_research_lab/data/conference_agent_papers_2026.json",
+      "sha256": "62b800d6f6532e8e79da1a129f64311bb161e01ba1c59988cce56dc00107cd37",
+      "count": 1242
+    },
+    {
+      "id": "awesome-ai-paper-notes",
+      "title": "Awesome AI Paper Notes CVPR 2026 catalog",
+      "url": "https://github.com/Harzva/awesome-ai-paper-notes/blob/1291bb69861f494d09b10d31a2a7628f568c9b4b/data/catalog.json",
+      "commit": "1291bb69861f494d09b10d31a2a7628f568c9b4b",
+      "path": "knowledge-base/sources/cvpr-2026.json",
+      "sha256": "e1568ee1157c0fd369abbca3e501fa8e39474dbf77421b8ffb4368145e6bc1d9",
+      "count": 153
+    },
+    {
+      "id": "ieee-tpami",
+      "title": "IEEE TPAMI Agent papers, selected from publisher DOI records",
+      "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+      "path": "knowledge-base/sources/tpami.json",
+      "sha256": "a790dffd3cb074a770ecc3d043fb473286db42d33b40d49a3bc7fc7fe6060552",
+      "count": 3
+    }
+  ]
+}

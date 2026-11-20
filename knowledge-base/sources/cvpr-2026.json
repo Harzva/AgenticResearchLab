@@ -1,0 +1,4014 @@
+{
+  "schema": "awesome-paper-notes/v1",
+  "updated_at": "2026-09-14",
+  "series": [
+    {
+      "id": "cvpr",
+      "label": "CVPR",
+      "kind": "conference"
+    },
+    {
+      "id": "aaai",
+      "label": "AAAI",
+      "kind": "conference"
+    },
+    {
+      "id": "tpami",
+      "label": "TPAMI",
+      "kind": "journal"
+    },
+    {
+      "id": "nature",
+      "label": "Nature 系列",
+      "kind": "journal-family"
+    }
+  ],
+  "topics": [
+    {
+      "id": "detection",
+      "label": "检测与识别"
+    },
+    {
+      "id": "segmentation",
+      "label": "分割与定位"
+    },
+    {
+      "id": "video",
+      "label": "视频 Agent"
+    },
+    {
+      "id": "gui_web_doc",
+      "label": "GUI、Web 与文档 Agent"
+    },
+    {
+      "id": "embodied",
+      "label": "3D 与具身"
+    },
+    {
+      "id": "vla",
+      "label": "VLA"
+    },
+    {
+      "id": "generation",
+      "label": "生成与编辑"
+    },
+    {
+      "id": "tool_reasoning",
+      "label": "工具调用与推理"
+    },
+    {
+      "id": "cross_domain",
+      "label": "跨领域 Agent"
+    }
+  ],
+  "papers": [
+    {
+      "id": "cvpr-2026-001",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "AgentDet: A Shared-Blackboard Multi-Agent Framework for Zero-/Few-Shot Object Detection",
+      "note_title": "CVPR 2026 检测与识别专题｜AgentDet：共享黑板统一零样本与少样本检测",
+      "authors": [
+        "Haolin Li",
+        "Yaohua Wang",
+        "Ze Yan",
+        "Lijie Wen",
+        "Biqing Huang"
+      ],
+      "topics": [
+        "detection"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_AgentDet_A_Shared-Blackboard_Multi-Agent_Framework_for_Zero-Few-Shot_Object_Detection_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_AgentDet_A_Shared-Blackboard_Multi-Agent_Framework_for_Zero-Few-Shot_Object_Detection_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-002",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "FusionAgent: A Multimodal Agent with Dynamic Model Selection for Human Recognition",
+      "note_title": "CVPR 2026 检测与识别专题｜FusionAgent：按样本选择识别模型并融合分数",
+      "authors": [
+        "Jie Zhu",
+        "Xiao Guo",
+        "Yiyang Su",
+        "Anil Jain",
+        "Xiaoming Liu"
+      ],
+      "topics": [
+        "detection"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhu_FusionAgent_A_Multimodal_Agent_with_Dynamic_Model_Selection_for_Human_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhu_FusionAgent_A_Multimodal_Agent_with_Dynamic_Model_Selection_for_Human_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-003",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "OVOD-Agent: A Markov-Bandit Framework for Proactive Visual Reasoning and Self-Evolving Detection",
+      "note_title": "CVPR 2026 检测与识别专题｜OVOD-Agent：无LLM的主动开放词汇检测",
+      "authors": [
+        "Chujie Wang",
+        "Jianyu Lu",
+        "Zhiyuan Luo",
+        "Xi Chen",
+        "Chu He"
+      ],
+      "topics": [
+        "detection"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_OVOD-Agent_A_Markov-Bandit_Framework_for_Proactive_Visual_Reasoning_and_Self-Evolving_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_OVOD-Agent_A_Markov-Bandit_Framework_for_Proactive_Visual_Reasoning_and_Self-Evolving_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-004",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Seeing as Experts Do: A Knowledge-Augmented Agent for Open-Set Fine-Grained Visual Understanding",
+      "note_title": "CVPR 2026 检测与识别专题｜KFRA：让检索知识落到细粒度视觉区域",
+      "authors": [
+        "Junhan Chen",
+        "Zilu Zhou",
+        "Yujun Tong",
+        "Dongliang Chang",
+        "Yitao Luo",
+        "Zhanyu Ma"
+      ],
+      "topics": [
+        "detection"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Seeing_as_Experts_Do_A_Knowledge-Augmented_Agent_for_Open-Set_Fine-Grained_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_Seeing_as_Experts_Do_A_Knowledge-Augmented_Agent_for_Open-Set_Fine-Grained_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-005",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Tackling Model Bias via Game-theoretic Multi-agent Collaboration Framework for Hateful Meme Classification",
+      "note_title": "CVPR 2026 检测与识别专题｜GECO：用博弈协作纠正仇恨模因分类偏差",
+      "authors": [
+        "Yiwei Wei",
+        "Zhengliang Guo",
+        "Shaozu Yuan",
+        "Chengyin Hu",
+        "Zhiyang Jia",
+        "Jiujiang Guo",
+        "Meng Chen",
+        "Peiying Wang",
+        "Longbiao Wang"
+      ],
+      "topics": [
+        "detection"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wei_Tackling_Model_Bias_via_Game-theoretic_Multi-agent_Collaboration_Framework_for_Hateful_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wei_Tackling_Model_Bias_via_Game-theoretic_Multi-agent_Collaboration_Framework_for_Hateful_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/NagisaG/GECO",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-006",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Attack for Defense: Adversarial Agents for Point Prompt Optimization Empowering Segment Anything Model",
+      "note_title": "CVPR 2026 分割与定位专题｜PPD：对抗式提示优化增强SAM分割",
+      "authors": [
+        "Xueyu Liu",
+        "Xiaoyi Zhang",
+        "Meilin Liu",
+        "Guangze Shi",
+        "Jia Shen",
+        "Yujie Wang",
+        "Cai Zhao",
+        "Ziyuan He",
+        "Yongfei Wu",
+        "Mingqiang Wei",
+        "Yongle Chen"
+      ],
+      "topics": [
+        "segmentation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_Attack_for_Defense_Adversarial_Agents_for_Point_Prompt_Optimization_Empowering_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_Attack_for_Defense_Adversarial_Agents_for_Point_Prompt_Optimization_Empowering_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/L-AILab/PPD",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-007",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "REALM: An MLLM-Agent Framework for Open World 3D Reasoning Segmentation and Editing on Gaussian Splatting",
+      "note_title": "CVPR 2026 分割与定位专题｜REALM：全局到局部3D推理分割",
+      "authors": [
+        "Changyue Shi",
+        "Minghao Chen",
+        "Yiping Mao",
+        "Chuxiao Yang",
+        "Xinyuan Hu",
+        "Jiajun Ding",
+        "Zhou Yu"
+      ],
+      "topics": [
+        "segmentation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Shi_REALM_An_MLLM-Agent_Framework_for_Open_World_3D_Reasoning_Segmentation_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Shi_REALM_An_MLLM-Agent_Framework_for_Open_World_3D_Reasoning_Segmentation_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-008",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Refer-Agent: A Collaborative Multi-Agent System with Reasoning and Reflection for Referring Video Object Segmentation",
+      "note_title": "CVPR 2026 分割与定位专题｜Refer-Agent：推理反思交替优化RVOS",
+      "authors": [
+        "Haichao Jiang",
+        "Tianming Liang",
+        "Wei-Shi Zheng",
+        "Jian-Fang Hu"
+      ],
+      "topics": [
+        "segmentation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Jiang_Refer-Agent_A_Collaborative_Multi-Agent_System_with_Reasoning_and_Reflection_for_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Jiang_Refer-Agent_A_Collaborative_Multi-Agent_System_with_Reasoning_and_Reflection_for_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-009",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Towards GUI Agents: Vision-Language Diffusion Models for GUI Grounding",
+      "note_title": "CVPR 2026 分割与定位专题｜离散扩散替代自回归：首次探索DVLM的GUI界面元素定位",
+      "authors": [
+        "Shrinidhi Kumbhar",
+        "Haofu Liao",
+        "Srikar Appalaraju",
+        "Kunwar Yashraj Singh"
+      ],
+      "topics": [
+        "segmentation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Kumbhar_Towards_GUI_Agents_Vision-Language_Diffusion_Models_for_GUI_Grounding_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Kumbhar_Towards_GUI_Agents_Vision-Language_Diffusion_Models_for_GUI_Grounding_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-010",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "BAMI: Training-Free Bias Mitigation in GUI Grounding",
+      "note_title": "CVPR 2026 分割与定位专题｜BAMI：识别并消除GUI定位的两类归纳偏差",
+      "authors": [
+        "Borui Zhang",
+        "Bo Zhang",
+        "Bo Wang",
+        "Wenzhao Zheng",
+        "Yuhao Cheng",
+        "Liang Tang",
+        "Yiqiang Yan",
+        "Jie Zhou",
+        "Jiwen Lu"
+      ],
+      "topics": [
+        "segmentation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_BAMI_Training-Free_Bias_Mitigation_in_GUI_Grounding_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_BAMI_Training-Free_Bias_Mitigation_in_GUI_Grounding_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/Neur-IO/BAMI",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-011",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "DRS-GUI: Dynamic Region Search for Training-Free GUI Grounding",
+      "note_title": "CVPR 2026 分割与定位专题｜DRS-GUI：用蒙特卡洛树搜索动态寻找界面定位区域",
+      "authors": [
+        "Yichao Liu",
+        "Huawen Shen",
+        "Liu Yu",
+        "Shiyu Liu",
+        "Zeyu Chen",
+        "Yu Zhou"
+      ],
+      "topics": [
+        "segmentation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_DRS-GUI_Dynamic_Region_Search_for_Training-Free_GUI_Grounding_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_DRS-GUI_Dynamic_Region_Search_for_Training-Free_GUI_Grounding_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-012",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Exposing and Evaluating Hallucinations for GUI Grounding",
+      "note_title": "CVPR 2026 分割与定位专题｜GUI-HalluBench：解析缺陷如何导致GUI接地幻觉",
+      "authors": [
+        "Zicheng Zhang",
+        "Hongyi Jing",
+        "Rui Lv",
+        "Shuo Fang",
+        "Shiai Zhu",
+        "Junying Wang",
+        "Chunyi Li",
+        "Xiaohong Liu",
+        "Chenguang Ma",
+        "Guangtao Zhai"
+      ],
+      "topics": [
+        "segmentation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Exposing_and_Evaluating_Hallucinations_for_GUI_Grounding_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_Exposing_and_Evaluating_Hallucinations_for_GUI_Grounding_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-013",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "MVP: Multiple View Prediction Improves GUI Grounding",
+      "note_title": "CVPR 2026 分割与定位专题｜MVP：多视图聚合克服GUI接地坐标漂移",
+      "authors": [
+        "Yunzhu Zhang",
+        "Zeyu Pan",
+        "Zhengwen Zeng",
+        "Shuheng Shen",
+        "Changhua Meng",
+        "Linchao Zhu"
+      ],
+      "topics": [
+        "segmentation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_MVP_Multiple_View_Prediction_Improves_GUI_Grounding_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_MVP_Multiple_View_Prediction_Improves_GUI_Grounding_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-014",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "From Observation to Action: Latent Action-based Primitive Segmentation for VLA Pre-training in Industrial Settings",
+      "note_title": "CVPR 2026 分割与定位专题｜LAPS：潜在动作能量驱动无监督动作发现",
+      "authors": [
+        "Jiajie Zhang",
+        "Sören Schwertfeger",
+        "Alexander Kleiner"
+      ],
+      "topics": [
+        "segmentation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_From_Observation_to_Action_Latent_Action-based_Primitive_Segmentation_for_VLA_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_From_Observation_to_Action_Latent_Action-based_Primitive_Segmentation_for_VLA_CVPR_2026_paper.pdf",
+      "code_url": "https://jiajiezhang7.github.io/latent-action-primitive-segmenter/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-015",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning",
+      "note_title": "CVPR 2026 视频 Agent 专题｜A4VL：多智能体感知—行动联盟——用互评和剪枝完成长视频推理",
+      "authors": [
+        "Yichang Xu",
+        "Gaowen Liu",
+        "Ramana Rao Kompella",
+        "Tiansheng Huang",
+        "Sihao Hu",
+        "Fatih Ilhan",
+        "Selim Furkan Tekin",
+        "Zachary Yahn",
+        "Ling Liu"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_A_Multi-Agent_Perception-Action_Alliance_for_Efficient_Long_Video_Reasoning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xu_A_Multi-Agent_Perception-Action_Alliance_for_Efficient_Long_Video_Reasoning_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-016",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Agentic Video Summarization via Self-Reflecting Multimodal Understanding",
+      "note_title": "CVPR 2026 视频 Agent 专题｜AgenticVS：自反思视频摘要——Summarizer、Verifier 与 Reflector 如何闭环",
+      "authors": [
+        "Miaotian Guo",
+        "Shuguang Dou",
+        "Yin Li",
+        "Aidong Men",
+        "Dongsheng Jiang"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Guo_Agentic_Video_Summarization_via_Self-Reflecting_Multimodal_Understanding_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Guo_Agentic_Video_Summarization_via_Self-Reflecting_Multimodal_Understanding_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-017",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Asynchronous Temporal Modeling with Two-Agent Framework for Streaming Dense Video Captioning",
+      "note_title": "CVPR 2026 视频 Agent 专题｜Takusen：异步双 Agent 流式字幕——把“何时说”和“说什么”拆开",
+      "authors": [
+        "Yolo Y. Tang",
+        "Chao Huang",
+        "Susan Liang",
+        "Jing Bi",
+        "Yicheng Wang",
+        "Daiki Shimada",
+        "Chenliang Xu"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Tang_Asynchronous_Temporal_Modeling_with_Two-Agent_Framework_for_Streaming_Dense_Video_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Tang_Asynchronous_Temporal_Modeling_with_Two-Agent_Framework_for_Streaming_Dense_Video_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-018",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos",
+      "note_title": "CVPR 2026 视频 Agent 专题｜Ego2Web：补上从第一视角视频到网页执行的评测缺口",
+      "authors": [
+        "Shoubin Yu",
+        "Lei Shu",
+        "Antoine Yang",
+        "Yao Fu",
+        "Srinivas Sunkara",
+        "Maria Wang",
+        "Jindong Chen",
+        "Mohit Bansal",
+        "Boqing Gong"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yu_Ego2Web_A_Web_Agent_Benchmark_Grounded_in_Egocentric_Videos_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yu_Ego2Web_A_Web_Agent_Benchmark_Grounded_in_Egocentric_Videos_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-019",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "EVA: Efficient Reinforcement Learning for End-to-End Video Agent",
+      "note_title": "CVPR 2026 视频 Agent 专题｜EVA：先规划再感知——端到端视频 Agent 的三阶段强化学习",
+      "authors": [
+        "Yaolun Zhang",
+        "Ruohui Wang",
+        "Jiahao Wang",
+        "Yepeng Tang",
+        "Xuanyu Zheng",
+        "Haonan Duan",
+        "Hao Lu",
+        "Hanming Deng",
+        "Lewei Lu"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EVA_Efficient_Reinforcement_Learning_for_End-to-End_Video_Agent_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_EVA_Efficient_Reinforcement_Learning_for_End-to-End_Video_Agent_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-020",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Hierarchical Long Video Understanding with Audiovisual Entity Cohesion and Agentic Search",
+      "note_title": "CVPR 2026 视频 Agent 专题｜HAVEN：层级长视频理解——视听实体一致性与跨层 Agentic Search",
+      "authors": [
+        "Xinlei Yin",
+        "Xiulian Peng",
+        "Xiao Li",
+        "Zhiwei Xiong",
+        "Yan Lu"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yin_Hierarchical_Long_Video_Understanding_with_Audiovisual_Entity_Cohesion_and_Agentic_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yin_Hierarchical_Long_Video_Understanding_with_Audiovisual_Entity_Cohesion_and_Agentic_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-021",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "LensWalk: Agentic Video Understanding by Planning How You See in Videos",
+      "note_title": "CVPR 2026 视频 Agent 专题｜LensWalk：主动观察视频——让推理器控制时间范围与采样密度",
+      "authors": [
+        "Keliang Li",
+        "Yansong Li",
+        "Hongze Shen",
+        "Mengdi Liu",
+        "Hong Chang",
+        "Shiguang Shan"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_LensWalk_Agentic_Video_Understanding_by_Planning_How_You_See_in_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_LensWalk_Agentic_Video_Understanding_by_Planning_How_You_See_in_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-022",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Lighting-grounded Video Generation with Renderer-based Agent Reasoning",
+      "note_title": "CVPR 2026 视频 Agent 专题｜LiVER：渲染器 Agent 如何控制视频生成中的布局、灯光与相机",
+      "authors": [
+        "Ziqi Cai",
+        "Taoyu Yang",
+        "Zheng Chang",
+        "Si Li",
+        "Han Jiang",
+        "Shuchen Weng",
+        "Boxin Shi"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Cai_Lighting-grounded_Video_Generation_with_Renderer-based_Agent_Reasoning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Cai_Lighting-grounded_Video_Generation_with_Renderer-based_Agent_Reasoning_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-023",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "MoReGen: Multi-Agent Motion-Reasoning Engine for Code-based Text-to-Video Synthesis",
+      "note_title": "CVPR 2026 视频 Agent 专题｜MoReGen：多 Agent 把牛顿运动约束转成可执行视频代码",
+      "authors": [
+        "Xiangyu Bai",
+        "He Liang",
+        "Bishoy Galoaa",
+        "Utsav Nandi",
+        "Shayda Moezzi",
+        "Yuhang He",
+        "Sarah Ostadabbas"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Bai_MoReGen_Multi-Agent_Motion-Reasoning_Engine_for_Code-based_Text-to-Video_Synthesis_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Bai_MoReGen_Multi-Agent_Motion-Reasoning_Engine_for_Code-based_Text-to-Video_Synthesis_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-024",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "SAGE: Training Smart Any-Horizon Agents for Long Video Reasoning with Reinforcement Learning",
+      "note_title": "CVPR 2026 视频 Agent 专题｜SAGE：在直答与多轮视频搜索之间自适应选择",
+      "authors": [
+        "Jitesh Jain",
+        "Allen AI blank",
+        "Jialuo Li",
+        "Zixian Ma",
+        "Jieyu Zhang",
+        "Chris Dongjoo Kim",
+        "Sangho Lee",
+        "Rohun Tripathi",
+        "Tanmay Gupta",
+        "Christopher Clark",
+        "Humphrey Shi"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Jain_SAGE_Training_Smart_Any-Horizon_Agents_for_Long_Video_Reasoning_with_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Jain_SAGE_Training_Smart_Any-Horizon_Agents_for_Long_Video_Reasoning_with_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-025",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "SciEducator: Scientific Video Understanding and Educating via Deming-Cycle Multi-Agent System",
+      "note_title": "CVPR 2026 视频 Agent 专题｜SciEducator：用 PDSA 循环核验科学视频证据",
+      "authors": [
+        "Zhiyu Xu",
+        "Weilong Yan",
+        "Yufei Shi",
+        "Xin Meng",
+        "Tao He",
+        "Huiping Zhuang",
+        "Ming Li",
+        "Hehe Fan"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_SciEducator_Scientific_Video_Understanding_and_Educating_via_Deming-Cycle_Multi-Agent_System_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xu_SciEducator_Scientific_Video_Understanding_and_Educating_via_Deming-Cycle_Multi-Agent_System_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-026",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "SVAgent: Storyline-guided Long Video Understanding via Cross-Modal Multi-Agent Collaboration",
+      "note_title": "CVPR 2026 视频 Agent 专题｜SVAgent：以动态故事线连接长视频中的分散证据",
+      "authors": [
+        "Zhongyu Yang",
+        "Zuhao Yang",
+        "Shuo Zhan",
+        "Tan Yue",
+        "Wei Pang",
+        "Yingfang Yuan"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_SVAgent_Storyline-guided_Long_Video_Understanding_via_Cross-Modal_Multi-Agent_Collaboration_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_SVAgent_Storyline-guided_Long_Video_Understanding_via_Cross-Modal_Multi-Agent_Collaboration_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-027",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Symphony: A Cognitively-Inspired Multi-Agent System for Long-Video Understanding",
+      "note_title": "CVPR 2026 视频 Agent 专题｜Symphony：规划、定位、感知与反思协作完成长视频推理",
+      "authors": [
+        "Haiyang Yan",
+        "Hongyun Zhou",
+        "Peng Xu",
+        "Xiaoxue Feng",
+        "Mengyi Liu"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yan_Symphony_A_Cognitively-Inspired_Multi-Agent_System_for_Long-Video_Understanding_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yan_Symphony_A_Cognitively-Inspired_Multi-Agent_System_for_Long-Video_Understanding_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-028",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Think, Then Verify: A Hypothesis-Verification Multi-Agent Framework for Long Video Understanding",
+      "note_title": "CVPR 2026 视频 Agent 专题｜VideoHV-Agent：先提出可检验假设，再定位视频证据",
+      "authors": [
+        "Zheng Wang",
+        "Haoran Chen",
+        "Haoxuan Qin",
+        "Zhipeng Wei",
+        "Tianwen Qian",
+        "Cong Bai"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Think_Then_Verify_A_Hypothesis-Verification_Multi-Agent_Framework_for_Long_Video_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_Think_Then_Verify_A_Hypothesis-Verification_Multi-Agent_Framework_for_Long_Video_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-029",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "VideoARM: Agentic Reasoning over Hierarchical Memory for Long-Form Video Understanding",
+      "note_title": "CVPR 2026 视频 Agent 专题｜VideoARM：边观察边构建层级多模态记忆",
+      "authors": [
+        "Yufei Yin",
+        "Qianke Meng",
+        "Minghao Chen",
+        "Jiajun Ding",
+        "Zhenwei Shao",
+        "Zhou Yu"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yin_VideoARM_Agentic_Reasoning_over_Hierarchical_Memory_for_Long-Form_Video_Understanding_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yin_VideoARM_Agentic_Reasoning_over_Hierarchical_Memory_for_Long-Form_Video_Understanding_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-030",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "VideoChat-M1: Collaborative Policy Planning for Video Understanding via Multi-Agent Reinforcement Learning",
+      "note_title": "CVPR 2026 视频 Agent 专题｜VideoChat-M1：用多 Agent 强化学习优化视频工具策略",
+      "authors": [
+        "Boyu Chen",
+        "Zikang Wang",
+        "Zhengrong Yue",
+        "Kainan Yan",
+        "Chenyun Yu",
+        "Yi Huang",
+        "Zijun Liu",
+        "Yafei Wen",
+        "Xiaoxin Chen",
+        "Yang Liu",
+        "Peng Li",
+        "Yali Wang"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_VideoChat-M1_Collaborative_Policy_Planning_for_Video_Understanding_via_Multi-Agent_Reinforcement_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_VideoChat-M1_Collaborative_Policy_Planning_for_Video_Understanding_via_Multi-Agent_Reinforcement_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-031",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "VideoSeek: Long-Horizon Video Agent with Tool-Guided Seeking",
+      "note_title": "CVPR 2026 视频 Agent 专题｜VideoSeek：用 overview、skim 与 focus 主动寻找长视频证据",
+      "authors": [
+        "Jingyang Lin",
+        "Jialian Wu",
+        "Jiang Liu",
+        "Ximeng Sun",
+        "Ze Wang",
+        "Xiaodong Yu",
+        "Jiebo Luo",
+        "Zicheng Liu",
+        "Emad Barsoum"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Lin_VideoSeek_Long-Horizon_Video_Agent_with_Tool-Guided_Seeking_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lin_VideoSeek_Long-Horizon_Video_Agent_with_Tool-Guided_Seeking_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-032",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "VideoWeaver: Multimodal Multi-View Video-to-Video Transfer for Embodied Agents",
+      "note_title": "CVPR 2026 视频 Agent 专题｜VideoWeaver：用 4D 点云统一多相机视频域迁移",
+      "authors": [
+        "George Eskandar",
+        "Fengyi Shen",
+        "Mohammad Altillawi",
+        "Dong Chen",
+        "Yang Bai",
+        "Liudi Yang",
+        "Ziyuan Liu"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Eskandar_VideoWeaver_Multimodal_Multi-View_Video-to-Video_Transfer_for_Embodied_Agents_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Eskandar_VideoWeaver_Multimodal_Multi-View_Video-to-Video_Transfer_for_Embodied_Agents_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-033",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "VISTA: A Test-Time Self-Improving Video Generation Agent",
+      "note_title": "CVPR 2026 视频 Agent 专题｜VISTA：测试时迭代评审并重写视频生成提示",
+      "authors": [
+        "Do Xuan Long",
+        "Xingchen Wan",
+        "Hootan Nakhost",
+        "Chen-Yu Lee",
+        "Tomas Pfister",
+        "Sercan Ö. Arik"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Long_VISTA_A_Test-Time_Self-Improving_Video_Generation_Agent_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Long_VISTA_A_Test-Time_Self-Improving_Video_Generation_Agent_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-034",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning",
+      "note_title": "CVPR 2026 视频 Agent 专题｜WorldMM：动态选择事件、语义与视觉记忆",
+      "authors": [
+        "Woongyeong Yeo",
+        "Kangsan Kim",
+        "Jaehong Yoon",
+        "Sung Ju Hwang"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yeo_WorldMM_Dynamic_Multimodal_Memory_Agent_for_Long_Video_Reasoning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yeo_WorldMM_Dynamic_Multimodal_Memory_Agent_for_Long_Video_Reasoning_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-035",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "LongVT: Incentivizing \"Thinking with Long Videos\" via Native Tool Calling",
+      "note_title": "CVPR 2026 视频 Agent 专题｜LongVT：在文本推理中原生调用视频裁切工具",
+      "authors": [
+        "Zuhao Yang",
+        "Sudong Wang",
+        "Kaichen Zhang",
+        "Keming Wu",
+        "Sicong Leng",
+        "Yifan Zhang",
+        "Bo Li",
+        "Chengwei Qin",
+        "Shijian Lu",
+        "Xingxuan Li",
+        "Lidong Bing"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_LongVT_Incentivizing_Thinking_with_Long_Videos_via_Native_Tool_Calling_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_LongVT_Incentivizing_Thinking_with_Long_Videos_via_Native_Tool_Calling_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-036",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for Long Video Reasoning",
+      "note_title": "CVPR 2026 视频 Agent 专题｜VITAL：用多模态工具轨迹联合训练问答与时间定位",
+      "authors": [
+        "Haoji Zhang",
+        "Xin Gu",
+        "Jiawen Li",
+        "Chixiang Ma",
+        "Sule Bai",
+        "Chubin Zhang",
+        "Bowen Zhang",
+        "Zhichao Zhou",
+        "Dongliang He",
+        "Yansong Tang"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Thinking_With_Videos_Multimodal_Tool-Augmented_Reinforcement_Learning_for_Long_Video_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_Thinking_With_Videos_Multimodal_Tool-Augmented_Reinforcement_Learning_for_Long_Video_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-037",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Spatial-Aware VLA Pretraining through Visual-Physical Alignment from Human Videos",
+      "note_title": "CVPR 2026 视频 Agent 专题｜VIPA-VLA：从人类视频预训练 3D 视觉—物理对齐",
+      "authors": [
+        "Yicheng Feng",
+        "Wanpeng Zhang",
+        "Ye Wang",
+        "Hao Luo",
+        "Haoqi Yuan",
+        "Sipeng Zheng",
+        "Zongqing Lu"
+      ],
+      "topics": [
+        "video"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Feng_Spatial-Aware_VLA_Pretraining_through_Visual-Physical_Alignment_from_Human_Videos_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Feng_Spatial-Aware_VLA_Pretraining_through_Visual-Physical_Alignment_from_Human_Videos_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-038",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "AdapAction: Adaptive Target Action Backdoor Attack against GUI Agents",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜AdapAction：会根据界面状态选择恶意动作的 GUI Agent 后门",
+      "authors": [
+        "Baicheng Chen",
+        "Mingda Zhang",
+        "Min Zhang",
+        "Haizhou Li",
+        "Baoyuan Wu"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_AdapAction_Adaptive_Target_Action_Backdoor_Attack_against_GUI_Agents_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_AdapAction_Adaptive_Target_Action_Backdoor_Attack_against_GUI_Agents_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-039",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "GUI-CEval: A Hierarchical and Comprehensive Chinese Benchmark for Mobile GUI Agents",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜GUI-CEval：覆盖中文移动端完整能力链的分层评测",
+      "authors": [
+        "Yang Li",
+        "Yuchen Liu",
+        "Haoyu Lu",
+        "Zhiqiang Xia",
+        "Hongzhen Wang",
+        "Kaiyang Han",
+        "Changpeng Yang",
+        "Jinyang Wu",
+        "Jiaming Xu",
+        "Runyu Shi",
+        "Ying Huang"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_GUI-CEval_A_Hierarchical_and_Comprehensive_Chinese_Benchmark_for_Mobile_GUI_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_GUI-CEval_A_Hierarchical_and_Comprehensive_Chinese_Benchmark_for_Mobile_GUI_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-040",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "HATS: Hardness-Aware Trajectory Synthesis for GUI Agents",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜HATS：用语义困难度驱动 GUI 轨迹探索与修复",
+      "authors": [
+        "Rui Shao",
+        "Ruize Gao",
+        "Bin Xie",
+        "Yixing Li",
+        "Kaiwen Zhou",
+        "Shuai Wang",
+        "Weili Guan",
+        "Gongwei Chen"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Shao_HATS_Hardness-Aware_Trajectory_Synthesis_for_GUI_Agents_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Shao_HATS_Hardness-Aware_Trajectory_Synthesis_for_GUI_Agents_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-041",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "HiconAgent: History Context-aware Policy Optimization for GUI Agents",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜HiconAgent：动态选择历史长度并压缩视觉历史",
+      "authors": [
+        "Xurui Zhou",
+        "Gongwei Chen",
+        "Yuquan Xie",
+        "Zaijing Li",
+        "Kaiwen Zhou",
+        "Shuai Wang",
+        "Shuo Yang",
+        "Zhuotao Tian",
+        "Rui Shao"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_HiconAgent_History_Context-aware_Policy_Optimization_for_GUI_Agents_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhou_HiconAgent_History_Context-aware_Policy_Optimization_for_GUI_Agents_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-042",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "iSHIFT: Lightweight Slow-Fast GUI Agent with Adaptive Perception",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜iSHIFT：按界面难度切换快路径与精细视觉感知",
+      "authors": [
+        "Sarthak Mehrotra",
+        "Sairam VC Rebbapragada",
+        "Mani Bonthu",
+        "Vineeth N. Balasubramanian"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Mehrotra_iSHIFT_Lightweight_Slow-Fast_GUI_Agent_with_Adaptive_Perception_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Mehrotra_iSHIFT_Lightweight_Slow-Fast_GUI_Agent_with_Adaptive_Perception_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-043",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "LaSM: Layer-wise Scaling Mechanism for Defending Pop-up Attack on GUI Agents",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜LaSM：定位关键网络层并抵御 GUI 弹窗注入",
+      "authors": [
+        "Zihe Yan",
+        "Zhuosheng Zhang",
+        "Jiaping Gui",
+        "Gongshen Liu"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yan_LaSM_Layer-wise_Scaling_Mechanism_for_Defending_Pop-up_Attack_on_GUI_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yan_LaSM_Layer-wise_Scaling_Mechanism_for_Defending_Pop-up_Attack_on_GUI_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-044",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Learning to Adapt: Self-Improving Web Agent via Cognitive-Aware Exploration",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜SCALE：让 Web Agent 用预测失败发现未知网页状态",
+      "authors": [
+        "Weile Chen",
+        "Bingchen Miao",
+        "Qifan Yu",
+        "Wendong Bu",
+        "Guoming Wang",
+        "Wenqiao Zhang",
+        "Shengyu Zhang",
+        "Juncheng Li",
+        "Siliang Tang"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Learning_to_Adapt_Self-Improving_Web_Agent_via_Cognitive-Aware_Exploration_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_Learning_to_Adapt_Self-Improving_Web_Agent_via_Cognitive-Aware_Exploration_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-045",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "MMBench-GUI: A Unified Hierarchical Evaluation Framework for Multi-Platform GUI Agents",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜MMBench-GUI：跨六类平台联合评测能力与操作效率",
+      "authors": [
+        "Xuehui Wang",
+        "Zhenyu Wu",
+        "JingJing Xie",
+        "Zichen Ding",
+        "Bowen Yang",
+        "Zehao Li",
+        "Zhaoyang Liu",
+        "Qingyun Li",
+        "Xuan Dong",
+        "Zhe Chen",
+        "Weiyun Wang",
+        "Xiangyu Zhao",
+        "Jixuan Chen",
+        "Haodong Duan",
+        "Tianbao Xie",
+        "Chenyu Yang",
+        "Shiqian Su",
+        "Yue Yu",
+        "Yanting Zhang",
+        "Xiangyu Yue",
+        "Weijie Su",
+        "Xizhou Zhu",
+        "Wei Shen",
+        "Jifeng Dai",
+        "Wenhai Wang"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_MMBench-GUI_A_Unified_Hierarchical_Evaluation_Framework_for_Multi-Platform_GUI_Agents_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_MMBench-GUI_A_Unified_Hierarchical_Evaluation_Framework_for_Multi-Platform_GUI_Agents_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-046",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "ORCA: Orchestrated Reasoning with Collaborative Agents for Document Visual Question Answering",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜ORCA：让文档专家、辩论与最终校验协同回答视觉问题",
+      "authors": [
+        "Aymen Lassoued",
+        "Mohamed Ali Souibgui",
+        "Yousri Kessentini"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Lassoued_ORCA_Orchestrated_Reasoning_with_Collaborative_Agents_for_Document_Visual_Question_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lassoued_ORCA_Orchestrated_Reasoning_with_Collaborative_Agents_for_Document_Visual_Question_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-047",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "ProSoftArena: Benchmarking Hierarchical Capabilities of Multi-modal Agents in Professional Software Environments",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜ProSoftArena：分层评测专业软件 Agent 的真实操作能力",
+      "authors": [
+        "Jiaxin Ai",
+        "Yukang Feng",
+        "Fanrui Zhang",
+        "Jianwen Sun",
+        "Zizhen Li",
+        "Chuanhao Li",
+        "Yifan Chang",
+        "Wenxiao Wu",
+        "Ruoxi Wang",
+        "Mingliang Zhai",
+        "Kaipeng Zhang"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ai_ProSoftArena_Benchmarking_Hierarchical_Capabilities_of_Multi-modal_Agents_in_Professional_Software_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Ai_ProSoftArena_Benchmarking_Hierarchical_Capabilities_of_Multi-modal_Agents_in_Professional_Software_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-048",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "ReFAct: Empowering Multimodal Web Agents with Visual and Context Focusing",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜ReFAct：让 Web Agent 聚焦目标并按需取回视觉上下文",
+      "authors": [
+        "Rui Wu",
+        "Shuo Zhang",
+        "Xiaoxuan Tang",
+        "Ruirui Zhang",
+        "Yi Liu",
+        "Tao Jiang",
+        "Wenhao Xu",
+        "Yong Li"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wu_ReFAct_Empowering_Multimodal_Web_Agents_with_Visual_and_Context_Focusing_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wu_ReFAct_Empowering_Multimodal_Web_Agents_with_Visual_and_Context_Focusing_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-049",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Resolving Evidence Sparsity: Agentic Context Engineering for Long-Document Understanding",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜SLEUTH：把长文档稀疏证据压缩成高密度决策上下文",
+      "authors": [
+        "Keliang Liu",
+        "Zizhi Chen",
+        "Mingcheng Li",
+        "Jingqun Tang",
+        "Dingkang Yang",
+        "Lihua Zhang"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_Resolving_Evidence_Sparsity_Agentic_Context_Engineering_for_Long-Document_Understanding_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_Resolving_Evidence_Sparsity_Agentic_Context_Engineering_for_Long-Document_Understanding_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-050",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "See, Think, Act: Teaching Multimodal Agents to Effectively Interact with GUI by Identifying Toggles",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜StaR：先判断开关当前状态再决定是否执行切换",
+      "authors": [
+        "Zongru Wu",
+        "Rui Mao",
+        "Zhiyuan Tian",
+        "Pengzhou Cheng",
+        "Tianjie Ju",
+        "Zheng Wu",
+        "Lingzhong Dong",
+        "Haiyue Sheng",
+        "Zhuosheng Zhang",
+        "Gongshen Liu"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wu_See_Think_Act_Teaching_Multimodal_Agents_to_Effectively_Interact_with_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wu_See_Think_Act_Teaching_Multimodal_Agents_to_Effectively_Interact_with_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-051",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Visual Document Understanding and Reasoning: A Multi-Agent Collaboration Framework with Agent-Wise Adaptive Test-Time Scaling",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜MACT：用四类文档 Agent 协作并按难度分配测试时计算",
+      "authors": [
+        "Xinlei Yu",
+        "Chengming Xu",
+        "Zhangquan Chen",
+        "Yudong Zhang",
+        "Shilin Lu",
+        "Cheng Yang",
+        "Jiangning Zhang",
+        "Shuicheng Yan",
+        "Xiaobin Hu"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yu_Visual_Document_Understanding_and_Reasoning_A_Multi-Agent_Collaboration_Framework_with_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yu_Visual_Document_Understanding_and_Reasoning_A_Multi-Agent_Collaboration_Framework_with_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-052",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "WebGym: Scaling Training Environments for Long-Horizon Visual Web Agents with Realistic Tasks",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜WebGym：用近三十万真实任务扩展视觉 Web Agent 训练环境",
+      "authors": [
+        "Hao Bai",
+        "Alexey Taymanov",
+        "Tong Zhang",
+        "Aviral Kumar",
+        "Spencer Whitehead"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Bai_WebGym_Scaling_Training_Environments_for_Long-Horizon_Visual_Web_Agents_with_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Bai_WebGym_Scaling_Training_Environments_for_Long-Horizon_Visual_Web_Agents_with_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-053",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "CGL: Advancing Continual GUI Learning via Reinforcement Fine-Tuning",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜CGL：用错误路由、梯度投影与熵调节平衡新旧 GUI 任务",
+      "authors": [
+        "Zhenquan Yao",
+        "Zitong Huang",
+        "Yihan Zeng",
+        "Jianhua Han",
+        "Hang Xu",
+        "Chun-Mei Feng",
+        "Jianwei Ma",
+        "Wangmeng Zuo"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yao_CGL_Advancing_Continual_GUI_Learning_via_Reinforcement_Fine-Tuning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yao_CGL_Advancing_Continual_GUI_Learning_via_Reinforcement_Fine-Tuning_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-054",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "GUI-SAGE: Enhancing GUI Automation with Self-Explanatory Learning",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜GUI-SAGE：用分布内自解释摆脱 GUI 强化学习的零优势陷阱",
+      "authors": [
+        "Fei Tang",
+        "Zhangxuan Gu",
+        "Zhengxi Lu",
+        "Shangzhan Zhang",
+        "Zhengwen Zeng",
+        "Shuheng Shen",
+        "Changhua Meng",
+        "Yuchen Yan",
+        "Wenqi Zhang",
+        "Yongliang Shen",
+        "Weiming Lu",
+        "Yueting Zhuang"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Tang_GUI-SAGE_Enhancing_GUI_Automation_with_Self-Explanatory_Learning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Tang_GUI-SAGE_Enhancing_GUI_Automation_with_Self-Explanatory_Learning_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-055",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "GUIDE: A Benchmark for Understanding and Assisting Users in Open-Ended GUI Tasks",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜GUIDE：评测 GUI Agent 能否理解用户行为、意图与求助时机",
+      "authors": [
+        "Saelyne Yang",
+        "Jaesang Yu",
+        "Yi-Hao Peng",
+        "Kevin Qinghong Lin",
+        "Jae Won Cho",
+        "Yale Song",
+        "Juho Kim"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_GUIDE_A_Benchmark_for_Understanding_and_Assisting_Users_in_Open-Ended_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_GUIDE_A_Benchmark_for_Understanding_and_Assisting_Users_in_Open-Ended_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-056",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜OS-Oracle：用跨平台步骤级 Critic 阻止 GUI 错误累积",
+      "authors": [
+        "Zhenyu Wu",
+        "Jingjing Xie",
+        "Zehao Li",
+        "Bowen Yang",
+        "Qiushi Sun",
+        "Zhaoyang Liu",
+        "Zhoumianze Liu",
+        "Yu Qiao",
+        "Xiangyu Yue",
+        "Zun Wang",
+        "Zichen Ding"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wu_OS-Oracle_A_Comprehensive_Framework_for_Cross-Platform_GUI_Critic_Models_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wu_OS-Oracle_A_Comprehensive_Framework_for_Cross-Platform_GUI_Critic_Models_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-057",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "ShowUI-p: Flow-based Generative Models as GUI Dexterous Hands",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜ShowUI-pi：用流生成统一点击与连续拖拽动作",
+      "authors": [
+        "Siyuan Hu",
+        "Kevin Qinghong Lin",
+        "Mike Zheng Shou"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Hu_ShowUI-p_Flow-based_Generative_Models_as_GUI_Dexterous_Hands_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Hu_ShowUI-p_Flow-based_Generative_Models_as_GUI_Dexterous_Hands_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-058",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Training High-Level Schedulers with Execution-Feedback Reinforcement Learning for Long-Horizon GUI Automation",
+      "note_title": "CVPR 2026 GUI、Web 与文档 Agent 专题｜CES：用执行反馈训练长程 GUI 任务的高层调度器",
+      "authors": [
+        "Zehao Deng",
+        "Tianjie Ju",
+        "Zheng Wu",
+        "Zhuosheng Zhang",
+        "Gongshen Liu"
+      ],
+      "topics": [
+        "gui_web_doc"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Deng_Training_High-Level_Schedulers_with_Execution-Feedback_Reinforcement_Learning_for_Long-Horizon_GUI_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Deng_Training_High-Level_Schedulers_with_Execution-Feedback_Reinforcement_Learning_for_Long-Horizon_GUI_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-059",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "3D-VCD: Hallucination Mitigation in 3D-LLM Embodied Agents through Visual Contrastive Decoding",
+      "note_title": "CVPR 2026 3D 与具身专题｜3D-VCD：场景图对比解码抑制具身幻觉",
+      "authors": [
+        "Makanjuola Adekunmi Ogunleye",
+        "Eman Abdelrahman",
+        "Ismini Lourentzou"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ogunleye_3D-VCD_Hallucination_Mitigation_in_3D-LLM_Embodied_Agents_through_Visual_Contrastive_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Ogunleye_3D-VCD_Hallucination_Mitigation_in_3D-LLM_Embodied_Agents_through_Visual_Contrastive_CVPR_2026_paper.pdf",
+      "code_url": "https://plan-lab.github.io/3d-vcd",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-060",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "AGENTSAFE: Benchmarking the Safety of Embodied Agents on Hazardous Instructions",
+      "note_title": "CVPR 2026 3D 与具身专题｜AGENTSAFE：从感知到执行的三阶段具身安全评测",
+      "authors": [
+        "Zonghao Ying",
+        "Le Wang",
+        "Yisong Xiao",
+        "Jiakai Wang",
+        "Yuqing Ma",
+        "Jinyang Guo",
+        "Zhenfei Yin",
+        "Mingchuan Zhang",
+        "Aishan Liu",
+        "Xianglong Liu"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ying_AGENTSAFE_Benchmarking_the_Safety_of_Embodied_Agents_on_Hazardous_Instructions_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Ying_AGENTSAFE_Benchmarking_the_Safety_of_Embodied_Agents_on_Hazardous_Instructions_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-061",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Align While Search: Belief-Guided Exploratory Inference for World-Grounded Embodied Agents",
+      "note_title": "CVPR 2026 3D 与具身专题｜AWS：信息增益驱动的信念引导搜索",
+      "authors": [
+        "Seohui Bae",
+        "Jeonghye Kim",
+        "Youngchul Sung",
+        "Woohyung Lim"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Bae_Align_While_Search_Belief-Guided_Exploratory_Inference_for_World-Grounded_Embodied_Agents_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Bae_Align_While_Search_Belief-Guided_Exploratory_Inference_for_World-Grounded_Embodied_Agents_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/LGAI-Research/AWS-agent",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-062",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "AREA3D: Active Reconstruction Agent with Unified Feed-Forward 3D Perception and Vision-Language Guidance",
+      "note_title": "CVPR 2026 3D 与具身专题｜AREA3D：双场驱动物体与场景主动重建",
+      "authors": [
+        "Tianling Xu",
+        "Shengzhe Gan",
+        "Leslie Gu",
+        "Yuelei Li",
+        "Fangneng Zhan",
+        "Hanspeter Pfister"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_AREA3D_Active_Reconstruction_Agent_with_Unified_Feed-Forward_3D_Perception_and_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xu_AREA3D_Active_Reconstruction_Agent_with_Unified_Feed-Forward_3D_Perception_and_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-063",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Beyond Rule-Based Agents: Active Markov Games for Realistic Multi-Agent Interaction in Autonomous Driving",
+      "note_title": "CVPR 2026 3D 与具身专题｜AMG协同进化：让自动驾驶策略在博弈中学会交互",
+      "authors": [
+        "Yuan Gui",
+        "Hongchen Luo",
+        "Jiao Wang",
+        "Liqi Qu"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Gui_Beyond_Rule-Based_Agents_Active_Markov_Games_for_Realistic_Multi-Agent_Interaction_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Gui_Beyond_Rule-Based_Agents_Active_Markov_Games_for_Realistic_Multi-Agent_Interaction_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-064",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "BridgeEQA: Virtual Embodied Agents for Real Bridge Inspections",
+      "note_title": "CVPR 2026 3D 与具身专题｜BridgeEQA：用真实桥梁检测检验具身问答",
+      "authors": [
+        "Subin Varghese",
+        "Joshua Gao",
+        "Asad Ur Rahman",
+        "Vedhus Hoskere"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Varghese_BridgeEQA_Virtual_Embodied_Agents_for_Real_Bridge_Inspections_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Varghese_BridgeEQA_Virtual_Embodied_Agents_for_Real_Bridge_Inspections_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-065",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Efficient Equivariant Transformer for Self-Driving Agent Modeling",
+      "note_title": "CVPR 2026 3D 与具身专题｜DriveGATr：无显式位姿编码的SE(2)等变交通Agent建模",
+      "authors": [
+        "Scott Xu",
+        "Dian Chen",
+        "Kelvin Wong",
+        "Chris Zhang",
+        "Kion Fallah",
+        "Raquel Urtasun"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_Efficient_Equivariant_Transformer_for_Self-Driving_Agent_Modeling_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xu_Efficient_Equivariant_Transformer_for_Self-Driving_Agent_Modeling_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-066",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents",
+      "note_title": "CVPR 2026 3D 与具身专题｜EmbodMocap：双iPhone可部署的人体-场景4D采集链",
+      "authors": [
+        "Wenjia Wang",
+        "Liang Pan",
+        "Huaijin Pi",
+        "Yuke Lou",
+        "Xuqian Ren",
+        "Yifan Wu",
+        "Zhouyingcheng Liao",
+        "Lei Yang",
+        "Rishabh Dabral",
+        "Christian Theobalt",
+        "Taku Komura"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_EmbodMocap_In-the-Wild_4D_Human-Scene_Reconstruction_for_Embodied_Agents_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_EmbodMocap_In-the-Wild_4D_Human-Scene_Reconstruction_for_Embodied_Agents_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-067",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Experience Transfer for Multimodal LLM Agents in Minecraft Game",
+      "note_title": "CVPR 2026 3D 与具身专题｜Echo：多模态经验迁移使Minecraft Agent更快冷启动",
+      "authors": [
+        "Chenghao Li",
+        "Jun Liu",
+        "Songbo Zhang",
+        "Huadong Jian",
+        "Hao Ni",
+        "Lik-Hang Lee",
+        "Sung-Ho Bae",
+        "Guoqing Wang",
+        "Yang Yang",
+        "Chaoning Zhang"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_Experience_Transfer_for_Multimodal_LLM_Agents_in_Minecraft_Game_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_Experience_Transfer_for_Multimodal_LLM_Agents_in_Minecraft_Game_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-068",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "History to Future: Evolving Agent with Experience and Thought for Zero-shot Vision-and-Language Navigation",
+      "note_title": "CVPR 2026 3D 与具身专题｜进化记忆导航：面向零样本VLN-CE的EvoNav",
+      "authors": [
+        "Guangzhao Dai",
+        "Shuo Wang",
+        "Zihan Wang",
+        "Guo-Sen Xie",
+        "Yang Yang",
+        "Jinshan Pan",
+        "Qianru Sun",
+        "Xiangbo Shu"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Dai_History_to_Future_Evolving_Agent_with_Experience_and_Thought_for_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Dai_History_to_Future_Evolving_Agent_with_Experience_and_Thought_for_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-069",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action Agent",
+      "note_title": "CVPR 2026 3D 与具身专题｜MergeVLA：为通用具身技能建模的可合并VLA",
+      "authors": [
+        "Yuxia Fu",
+        "Zhizhen Zhang",
+        "Yuqi Zhang",
+        "Zijian Wang",
+        "Zi Huang",
+        "Yadan Luo"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Fu_MergeVLA_Cross-Skill_Model_Merging_Toward_a_Generalist_Vision-Language-Action_Agent_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Fu_MergeVLA_Cross-Skill_Model_Merging_Toward_a_Generalist_Vision-Language-Action_Agent_CVPR_2026_paper.pdf",
+      "code_url": "https://mergevla.github.io/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-070",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "MindPower: Enabling Theory-of-Mind Reasoning in VLM-based Embodied Agents",
+      "note_title": "CVPR 2026 3D 与具身专题｜MindPower：具身Agent的机器人中心化理论心理推理",
+      "authors": [
+        "Ruoxuan Zhang",
+        "Qiyun Zheng",
+        "Zhiyu Zhou",
+        "Ziqi Liao",
+        "Siyu Wu",
+        "Jian-Yu Jiang-Lin",
+        "Bin Wen",
+        "Hongxia Xie",
+        "Jianlong Fu",
+        "Wen-Huang Cheng"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_MindPower_Enabling_Theory-of-Mind_Reasoning_in_VLM-based_Embodied_Agents_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_MindPower_Enabling_Theory-of-Mind_Reasoning_in_VLM-based_Embodied_Agents_CVPR_2026_paper.pdf",
+      "code_url": "https://zhangdaxia22.github.io/MindPower/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-071",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "note_title": "CVPR 2026 3D 与具身专题｜SAGE：基于视觉与物理反馈的具身AI场景生成框架",
+      "authors": [
+        "Hongchi Xia",
+        "Xuan Li",
+        "Zhaoshuo Li",
+        "Qianli Ma",
+        "Jiashu Xu",
+        "Ming-Yu Liu",
+        "Yin Cui",
+        "Tsung-Yi Lin",
+        "Wei-Chiu Ma",
+        "Shenlong Wang",
+        "Shuran Song",
+        "Fangyin Wei"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xia_SAGE_Scalable_Agentic_3D_Scene_Generation_for_Embodied_AI_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xia_SAGE_Scalable_Agentic_3D_Scene_Generation_for_Embodied_AI_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-072",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "SyncMos: Scalable Motion Synchronisation for Multi-Agent Scene Interaction",
+      "note_title": "CVPR 2026 3D 与具身专题｜SyncMos：基于单Agent模型的多角色时序同步场景交互运动框架",
+      "authors": [
+        "Lingxiao Li",
+        "Dongwon Kim",
+        "Lingyan Ruan",
+        "Bin Chen",
+        "Taesoo Kwon",
+        "Taehyun Rhee"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_SyncMos_Scalable_Motion_Synchronisation_for_Multi-Agent_Scene_Interaction_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_SyncMos_Scalable_Motion_Synchronisation_for_Multi-Agent_Scene_Interaction_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-073",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "TopoMA: Topology-Guided Multi-Agent Dense RGB 3D Reconstruction via Distributed Inference",
+      "note_title": "CVPR 2026 3D 与具身专题｜TopoMA：拓扑引导的多Agent分布式RGB3D重建框架",
+      "authors": [
+        "Xuanxuan Zhang",
+        "ShuHui Shi",
+        "Tianxiang Zhang",
+        "Zhetao Guo",
+        "Huang Zixuan",
+        "You Li"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_TopoMA_Topology-Guided_Multi-Agent_Dense_RGB_3D_Reconstruction_via_Distributed_Inference_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_TopoMA_Topology-Guided_Multi-Agent_Dense_RGB_3D_Reconstruction_via_Distributed_Inference_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-074",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "ViBES: A Conversational Agent with Behaviorally-Intelligent 3D Virtual Body",
+      "note_title": "CVPR 2026 3D 与具身专题｜ViBES：对话式3D虚拟体行为联合建模",
+      "authors": [
+        "Juze Zhang",
+        "Changan Chen",
+        "Xin Chen",
+        "Heng Yu",
+        "Tiange Xiang",
+        "Ali Sartaz Khan",
+        "Shrinidhi K. Lakshmikanth",
+        "Ehsan Adeli"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_ViBES_A_Conversational_Agent_with_Behaviorally-Intelligent_3D_Virtual_Body_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_ViBES_A_Conversational_Agent_with_Behaviorally-Intelligent_3D_Virtual_Body_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-075",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Vinedresser3D: Towards Agentic Text-guided 3D Editing",
+      "note_title": "CVPR 2026 3D 与具身专题｜Vinedresser3D：文本指导下的3D编辑Agent",
+      "authors": [
+        "Yankuan Chi",
+        "Xiang Li",
+        "Zixuan Huang",
+        "James Matthew Rehg"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chi_Vinedresser3D_Towards_Agentic_Text-guided_3D_Editing_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chi_Vinedresser3D_Towards_Agentic_Text-guided_3D_Editing_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-076",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "VULCAN: Tool-Augmented Multi Agents for Iterative 3D Object Arrangement",
+      "note_title": "CVPR 2026 3D 与具身专题｜VULCAN：多步3D物体排列协作Agent",
+      "authors": [
+        "Zhengfei Kuang",
+        "Rui Lin",
+        "Long Zhao",
+        "Gordon Wetzstein",
+        "Saining Xie",
+        "Sanghyun Woo"
+      ],
+      "topics": [
+        "embodied"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Kuang_VULCAN_Tool-Augmented_Multi_Agents_for_Iterative_3D_Object_Arrangement_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Kuang_VULCAN_Tool-Augmented_Multi_Agents_for_Iterative_3D_Object_Arrangement_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-077",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "ACoT-VLA: Action Chain-of-Thought for Vision-Language-Action Models",
+      "note_title": "CVPR 2026 VLA 专题｜ACoT-VLA：以动作空间推理为核心的VLA结构化控制框架",
+      "authors": [
+        "Linqing Zhong",
+        "Yi Liu",
+        "Yifei Wei",
+        "Ziyu Xiong",
+        "Si Liu",
+        "Guanghui Ren"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhong_ACoT-VLA_Action_Chain-of-Thought_for_Vision-Language-Action_Models_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhong_ACoT-VLA_Action_Chain-of-Thought_for_Vision-Language-Action_Models_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-078",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "ActiveVLA: Injecting Active Perception into Vision-Language-Action Models for Precise 3D Robotic Manipulation",
+      "note_title": "CVPR 2026 VLA 专题｜ActiveVLA：基于主动视点选择与三维缩放的精细化VLA操作框架",
+      "authors": [
+        "Zhenyang Liu",
+        "Yongchong Gu",
+        "Yikai Wang",
+        "Xiangyang Xue",
+        "Yanwei Fu"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_ActiveVLA_Injecting_Active_Perception_into_Vision-Language-Action_Models_for_Precise_3D_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_ActiveVLA_Injecting_Active_Perception_into_Vision-Language-Action_Models_for_Precise_3D_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-079",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Adaptive Action Chunking at Inference-time for Vision-Language-Action Models",
+      "note_title": "CVPR 2026 VLA 专题｜基于动作熵的AAC：VLA模型推理时自适应动作块策略",
+      "authors": [
+        "Yuanchang Liang",
+        "Xiaobo Wang",
+        "Kai Wang",
+        "Shuo Wang",
+        "Xiaojiang Peng",
+        "Haoyu Chen",
+        "David Kim Huat Chua",
+        "Prahlad Vadakkepat"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liang_Adaptive_Action_Chunking_at_Inference-time_for_Vision-Language-Action_Models_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Liang_Adaptive_Action_Chunking_at_Inference-time_for_Vision-Language-Action_Models_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-080",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "AT-VLA: Adaptive Tactile Injection for Enhanced Feedback Reaction in Vision-Language-Action Models",
+      "note_title": "CVPR 2026 VLA 专题｜AT-VLA：接触感知门控与快慢双流协同的触觉增益 VLA",
+      "authors": [
+        "Xiaoqi Li",
+        "Muhe Cai",
+        "Jiadong Xu",
+        "Juan Zhu",
+        "Hongwei Fan",
+        "Yan Shen",
+        "Guangrui Ren",
+        "Hao Dong"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_AT-VLA_Adaptive_Tactile_Injection_for_Enhanced_Feedback_Reaction_in_Vision-Language-Action_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_AT-VLA_Adaptive_Tactile_Injection_for_Enhanced_Feedback_Reaction_in_Vision-Language-Action_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-081",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "AVA-VLA: Improving Vision-Language-Action models with Active Visual Attention",
+      "note_title": "CVPR 2026 VLA 专题｜AVA-VLA：基于 POMDP 的历史感知主动视觉增强 VLA",
+      "authors": [
+        "Lei Xiao",
+        "Jifeng Li",
+        "Juntao Gao",
+        "Feiyang Ye",
+        "Yan Jin",
+        "Jingjing Qian",
+        "Jing Zhang",
+        "Yong Wu",
+        "Xiaoyuan Yu"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xiao_AVA-VLA_Improving_Vision-Language-Action_models_with_Active_Visual_Attention_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xiao_AVA-VLA_Improving_Vision-Language-Action_models_with_Active_Visual_Attention_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-082",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Boosting Vision-Language-Action Finetuning with Feasible Action Neighborhood Prior",
+      "note_title": "CVPR 2026 VLA 专题｜基于 FAN 的 VLA 微调方法：用高斯邻域正则提升动作鲁棒性",
+      "authors": [
+        "Haochen Niu",
+        "Kanyu Zhang",
+        "Shuyu Yin",
+        "Qinghai Guo",
+        "Peilin Liu",
+        "Fei Wen"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Niu_Boosting_Vision-Language-Action_Finetuning_with_Feasible_Action_Neighborhood_Prior_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Niu_Boosting_Vision-Language-Action_Finetuning_with_Feasible_Action_Neighborhood_Prior_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-083",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Counterfactual VLA: Self-Reflective Vision-Language-Action Model with Adaptive Reasoning",
+      "note_title": "CVPR 2026 VLA 专题｜反事实自检循环驱动的自动驾驶VLA：CF-VLA",
+      "authors": [
+        "Zhenghao Peng",
+        "Wenhao Ding",
+        "Yurong You",
+        "Yuxiao Chen",
+        "Wenjie Luo",
+        "Thomas Tian",
+        "Yulong Cao",
+        "Apoorva Sharma",
+        "Danfei Xu",
+        "Boris Ivanovic",
+        "Boyi Li",
+        "Yan Wang",
+        "Marco Pavone"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Peng_Counterfactual_VLA_Self-Reflective_Vision-Language-Action_Model_with_Adaptive_Reasoning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Peng_Counterfactual_VLA_Self-Reflective_Vision-Language-Action_Model_with_Adaptive_Reasoning_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-084",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Cross-Hand Latent Representation for Vision-Language-Action Models",
+      "note_title": "CVPR 2026 VLA 专题｜XL-VLA：用于跨手形态统一潜在动作空间的视觉语言动作模型框架",
+      "authors": [
+        "Guangqi Jiang",
+        "Yutong Liang",
+        "Jianglong Ye",
+        "Jia-Yang Huang",
+        "Changwei Jing",
+        "Rocky Duan",
+        "Pieter Abbeel",
+        "Xiaolong Wang",
+        "Xueyan Zou"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Jiang_Cross-Hand_Latent_Representation_for_Vision-Language-Action_Models_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Jiang_Cross-Hand_Latent_Representation_for_Vision-Language-Action_Models_CVPR_2026_paper.pdf",
+      "code_url": "https://xl-vla.github.io",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-085",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Drive My Way: Preference Alignment of Vision-Language-Action Model for Personalized Driving",
+      "note_title": "CVPR 2026 VLA 专题｜Drive My Way：面向个体驾驶偏好的闭环VLA偏好对齐框架",
+      "authors": [
+        "Zehao Wang",
+        "Huaide Jiang",
+        "Shuaiwu Dong",
+        "Yuping Wang",
+        "Hang Qiu",
+        "Jiachen Li"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Drive_My_Way_Preference_Alignment_of_Vision-Language-Action_Model_for_Personalized_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_Drive_My_Way_Preference_Alignment_of_Vision-Language-Action_Model_for_Personalized_CVPR_2026_paper.pdf",
+      "code_url": "https://dmw-cvpr.github.io/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-086",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving",
+      "note_title": "CVPR 2026 VLA 专题｜DriveMoE：通过场景化视图路由与技能专家路由提升端到端自动驾驶VLA",
+      "authors": [
+        "Zhenjie Yang",
+        "Yilin Chai",
+        "Xiaosong Jia",
+        "Qifeng Li",
+        "Yuqian Shao",
+        "Xuekai Zhu",
+        "Haisheng Su",
+        "Junchi Yan"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_DriveMoE_Mixture-of-Experts_for_Vision-Language-Action_Model_in_End-to-End_Autonomous_Driving_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_DriveMoE_Mixture-of-Experts_for_Vision-Language-Action_Model_in_End-to-End_Autonomous_Driving_CVPR_2026_paper.pdf",
+      "code_url": "https://thinklab-sjtu.github.io/DriveMoE/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-087",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "E3AD: An Emotion-Aware Vision-Language-Action Model for Human-Centric End-to-End Autonomous Driving",
+      "note_title": "CVPR 2026 VLA 专题｜E3AD：基于连续情绪状态与双通道空间推理的情绪驱动端到端自动驾驶VLA",
+      "authors": [
+        "Yihong Tang",
+        "Haicheng Liao",
+        "Tong Nie",
+        "Junlin He",
+        "Ao Qu",
+        "Kehua Chen",
+        "Wei Ma",
+        "Zhenning Li",
+        "Lijun Sun",
+        "Chengzhong Xu"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Tang_E3AD_An_Emotion-Aware_Vision-Language-Action_Model_for_Human-Centric_End-to-End_Autonomous_Driving_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Tang_E3AD_An_Emotion-Aware_Vision-Language-Action_Model_for_Human-Centric_End-to-End_Autonomous_Driving_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-088",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Evo-1: Lightweight Vision-Language-Action Model with Preserved Semantic Alignment",
+      "note_title": "CVPR 2026 VLA 专题｜Evo-1：基于跨模态扩散Transformer与两阶段训练的轻量化VLA",
+      "authors": [
+        "Tao Lin",
+        "Yilei Zhong",
+        "Yuxin Du",
+        "Jingjing Zhang",
+        "Jiting Liu",
+        "Yinxinyu Chen",
+        "Encheng Gu",
+        "Ziyan Liu",
+        "Hongyi Cai",
+        "Yanwen Zou",
+        "Lixing Zou",
+        "Zhaoye Zhou",
+        "Gen Li",
+        "Bo Zhao"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Lin_Evo-1_Lightweight_Vision-Language-Action_Model_with_Preserved_Semantic_Alignment_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lin_Evo-1_Lightweight_Vision-Language-Action_Model_with_Preserved_Semantic_Alignment_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/MINT-SJTU/Evo-1",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-089",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Fast-ThinkAct: Efficient Vision-Language-Action Reasoning via Verbalizable Latent Planning",
+      "note_title": "CVPR 2026 VLA 专题｜Fast-ThinkAct：以可言语化潜在轨迹压缩实现实时化VLA推理",
+      "authors": [
+        "Chi-Pin Huang",
+        "Yunze Man",
+        "Zhiding Yu",
+        "Min-Hung Chen",
+        "Jan Kautz",
+        "Yu-Chiang Frank Wang",
+        "Fu-En Yang"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Huang_Fast-ThinkAct_Efficient_Vision-Language-Action_Reasoning_via_Verbalizable_Latent_Planning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Fast-ThinkAct_Efficient_Vision-Language-Action_Reasoning_via_Verbalizable_Latent_Planning_CVPR_2026_paper.pdf",
+      "code_url": "https://jasper0314-huang.github.io/fast-thinkact/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-090",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "FlowHijack: A Dynamics-Aware Backdoor Attack on Flow-Matching Vision-Language-Action Models",
+      "note_title": "CVPR 2026 VLA 专题｜FlowHijack：基于低τ矢量场注入与运动学模仿正则的VLA后门攻击框架",
+      "authors": [
+        "Xinyuan An",
+        "Tao Luo",
+        "Gengyun Peng",
+        "Yaobing Wang",
+        "Kui Ren",
+        "Dongxia Wang"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/An_FlowHijack_A_Dynamics-Aware_Backdoor_Attack_on_Flow-Matching_Vision-Language-Action_Models_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/An_FlowHijack_A_Dynamics-Aware_Backdoor_Attack_on_Flow-Matching_Vision-Language-Action_Models_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-091",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "ForeAct: Steering Your VLA with Efficient Visual Foresight Planning",
+      "note_title": "CVPR 2026 VLA 专题｜ForeAct：基于未来视觉前瞻的VLA闭环控制框架",
+      "authors": [
+        "Zhuoyang Zhang",
+        "Shang Yang",
+        "Qinghao Hu",
+        "Luke J. Huang",
+        "James Hou",
+        "Yufei Sun",
+        "Yao Lu",
+        "Song Han"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_ForeAct_Steering_Your_VLA_with_Efficient_Visual_Foresight_Planning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_ForeAct_Steering_Your_VLA_with_Efficient_Visual_Foresight_Planning_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/mit-han-lab/foreact",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-092",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "From Manuals to Actions: A Unified VLA Model for Chain-of-Thought Manual Generation and Robotic Manipulation",
+      "note_title": "CVPR 2026 VLA 专题｜ManualVLA：目标驱动长时程操控的统一VLA与手册推理框架",
+      "authors": [
+        "Chenyang Gu",
+        "Jiaming Liu",
+        "Hao Chen",
+        "Runzhong Huang",
+        "Qingpo Wuwu",
+        "Xiaoqi Li",
+        "Zhuoyang Liu",
+        "Ying Li",
+        "Renrui Zhang",
+        "Peng Jia",
+        "Pheng-Ann Heng",
+        "Shanghang Zhang"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Gu_From_Manuals_to_Actions_A_Unified_VLA_Model_for_Chain-of-Thought_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Gu_From_Manuals_to_Actions_A_Unified_VLA_Model_for_Chain-of-Thought_CVPR_2026_paper.pdf",
+      "code_url": "https://sites.google.com/view/maunalvla",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-093",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "GeoPredict: Leveraging Predictive Kinematics and 3D Gaussian Geometry for Precise VLA Manipulation",
+      "note_title": "CVPR 2026 VLA 专题｜GeoPredict：面向VLA操控的预测运动学与3D高斯几何先验模型",
+      "authors": [
+        "Jingjing Qian",
+        "Boyao Han",
+        "Chen Shi",
+        "Lei Xiao",
+        "Long Yang",
+        "Shaoshuai Shi",
+        "Li Jiang"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Qian_GeoPredict_Leveraging_Predictive_Kinematics_and_3D_Gaussian_Geometry_for_Precise_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Qian_GeoPredict_Leveraging_Predictive_Kinematics_and_3D_Gaussian_Geometry_for_Precise_CVPR_2026_paper.pdf",
+      "code_url": "https://jingjingqian75.github.io/GeoPredict-Page/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-094",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Global Prior Meets Local Consistency: Dual-Memory Augmented Vision-Language-Action Model for Efficient Robotic Manipulation",
+      "note_title": "CVPR 2026 VLA 专题｜OptimusVLA：通过全局先验检索与局部一致性记忆提升VLA效率与时序鲁棒性的双记忆框架",
+      "authors": [
+        "Zaijing Li",
+        "Bing Hu",
+        "Rui Shao",
+        "Gongwei Chen",
+        "Dongmei Jiang",
+        "Pengwei Xie",
+        "Jianye Hao",
+        "Liqiang Nie"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_Global_Prior_Meets_Local_Consistency_Dual-Memory_Augmented_Vision-Language-Action_Model_for_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_Global_Prior_Meets_Local_Consistency_Dual-Memory_Augmented_Vision-Language-Action_Model_for_CVPR_2026_paper.pdf",
+      "code_url": "https://cybertronagent.github.io/OptimusVLA.github.io/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-095",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "HiF-VLA: Hindsight, Insight and Foresight through Motion Representation for Vision-Language-Action Models",
+      "note_title": "CVPR 2026 VLA 专题｜HiF-VLA：基于运动表示的时序双向推理视觉语言动作模型",
+      "authors": [
+        "Minghui Lin",
+        "Pengxiang Ding",
+        "Shu Wang",
+        "Zifeng Zhuang",
+        "Yang Liu",
+        "Xinyang Tong",
+        "Wenxuan Song",
+        "Shangke Lyu",
+        "Siteng Huang",
+        "Donglin Wang"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Lin_HiF-VLA_Hindsight_Insight_and_Foresight_through_Motion_Representation_for_Vision-Language-Action_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lin_HiF-VLA_Hindsight_Insight_and_Foresight_through_Motion_Representation_for_Vision-Language-Action_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-096",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "HybridDriveVLA: Vision-Language-Action Model with Visual CoT reasoning and ToT Evaluation for Autonomous Driving",
+      "note_title": "CVPR 2026 VLA 专题｜HybridDriveVLA：用于自动驾驶的视觉先验与多目标路径评估联合VLA框架",
+      "authors": [
+        "Yipene Cedric Francois Bassole",
+        "Sungwoo Kim",
+        "Jiwoo Jung",
+        "Yunsick Sung"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Bassole_HybridDriveVLA_Vision-Language-Action_Model_with_Visual_CoT_reasoning_and_ToT_Evaluation_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Bassole_HybridDriveVLA_Vision-Language-Action_Model_with_Visual_CoT_reasoning_and_ToT_Evaluation_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-097",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Joint-Aligned Latent Action: Towards Scalable VLA Pretraining in the Wild",
+      "note_title": "CVPR 2026 VLA 专题｜JALA：基于视觉-语言-动作模型的联合对齐潜在动作预训练方法",
+      "authors": [
+        "Hao Luo",
+        "Ye Wang",
+        "Wanpeng Zhang",
+        "Haoqi Yuan",
+        "Yicheng Feng",
+        "Haiweng Xu",
+        "Sipeng Zheng",
+        "Zongqing Lu"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Luo_Joint-Aligned_Latent_Action_Towards_Scalable_VLA_Pretraining_in_the_Wild_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Luo_Joint-Aligned_Latent_Action_Towards_Scalable_VLA_Pretraining_in_the_Wild_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-098",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Localizing, Structuring, and Rendering: Bridging 3D and 2D Vision-Language-Action Models for Robotic Manipulation",
+      "note_title": "CVPR 2026 VLA 专题｜DiffRender-VLA：基于可微分渲染的3D-2D视觉空间闭环VLA框架",
+      "authors": [
+        "Yunlong Zhao",
+        "Xiaoheng Deng",
+        "Yichao Cao",
+        "Yi Chen",
+        "Xiangjian He",
+        "Shan You",
+        "Shuo Yang",
+        "Lei Fan",
+        "Fei Wang",
+        "Xiu Su"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhao_Localizing_Structuring_and_Rendering_Bridging_3D_and_2D_Vision-Language-Action_Models_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_Localizing_Structuring_and_Rendering_Bridging_3D_and_2D_Vision-Language-Action_Models_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/zyl123456aB/DIFFVLA",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-099",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Mantis: A Versatile Vision-Language-Action Model with Disentangled Visual Foresight",
+      "note_title": "CVPR 2026 VLA 专题｜Mantis：用解耦式视觉前瞻提升动作预测的通用VLA框架",
+      "authors": [
+        "Yi Yang",
+        "Xueqi Li",
+        "Yiyang Chen",
+        "Jin Song",
+        "Yihan Wang",
+        "Zipeng Xiao",
+        "Jiadi Su",
+        "You Qiaoben",
+        "Pengfei Liu",
+        "Zhijie Deng"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_Mantis_A_Versatile_Vision-Language-Action_Model_with_Disentangled_Visual_Foresight_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_Mantis_A_Versatile_Vision-Language-Action_Model_with_Disentangled_Visual_Foresight_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-100",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "MAPS: Preserving Vision-Language Representations via Module-Wise Proximity Scheduling for Better Vision-Language-Action Generalization",
+      "note_title": "CVPR 2026 VLA 专题｜MAPS：模块级近邻约束调度（MAPS）实现VLA稳健微调",
+      "authors": [
+        "Chengyue Huang",
+        "Mellon M. Zhang",
+        "Robert Azarcon",
+        "Glen Chou",
+        "Zsolt Kira"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Huang_MAPS_Preserving_Vision-Language_Representations_via_Module-Wise_Proximity_Scheduling_for_Better_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_MAPS_Preserving_Vision-Language_Representations_via_Module-Wise_Proximity_Scheduling_for_Better_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-101",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "MoEActok: A MoE-based Action Tokenizer for Vision-Language-Action Models",
+      "note_title": "CVPR 2026 VLA 专题｜MoEActok：基于动作技能聚类与专家量化的VLA动作离散化方法",
+      "authors": [
+        "Chunpu Xu",
+        "Zhixuan Liang",
+        "Tianshuo Yang",
+        "Chi-Min Chan",
+        "Yang Xiao",
+        "Jessie Wang",
+        "Xiaokang Yang",
+        "Yao Mu"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_MoEActok_A_MoE-based_Action_Tokenizer_for_Vision-Language-Action_Models_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xu_MoEActok_A_MoE-based_Action_Tokenizer_for_Vision-Language-Action_Models_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/cpaaax/MoEActok",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-102",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "NoRD: A Data-Efficient Vision-Language-Action Model that Drives without Reasoning",
+      "note_title": "CVPR 2026 VLA 专题｜NORD：通过Dr. GRPO实现低数据与低token开销的无推理VLA驾驶模型",
+      "authors": [
+        "Ishaan Rawal",
+        "Shubh Gupta",
+        "Yihan Hu",
+        "Wei Zhan"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Rawal_NoRD_A_Data-Efficient_Vision-Language-Action_Model_that_Drives_without_Reasoning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Rawal_NoRD_A_Data-Efficient_Vision-Language-Action_Model_that_Drives_without_Reasoning_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-103",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "QuantVLA: Scale-Calibrated Post-Training Quantization for Vision-Language-Action Models",
+      "note_title": "CVPR 2026 VLA 专题｜QuantVLA：通过量化布局选择与温度/残差能量校准实现无训练的VLA低比特部署",
+      "authors": [
+        "Jingxuan Zhang",
+        "Yunta Hsieh",
+        "Zhongwei Wan",
+        "Haokun Lin",
+        "Xin Wang",
+        "Ziqi Wang",
+        "Yingtie Lei",
+        "Mi Zhang"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_QuantVLA_Scale-Calibrated_Post-Training_Quantization_for_Vision-Language-Action_Models_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_QuantVLA_Scale-Calibrated_Post-Training_Quantization_for_Vision-Language-Action_Models_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-104",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "SRPO: Self-Referential Policy Optimization for Vision-Language-Action Models",
+      "note_title": "CVPR 2026 VLA 专题｜SRPO：利用自参照轨迹参考与世界表示提升视觉-语言-动作的稀疏奖励学习",
+      "authors": [
+        "Senyu Fei",
+        "Siyin Wang",
+        "Li Ji",
+        "Ao Li",
+        "Shiduo Zhang",
+        "Liming Liu",
+        "Jinlong Hou",
+        "Jingjing Gong",
+        "Xianzhong Zhao",
+        "Xipeng Qiu"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Fei_SRPO_Self-Referential_Policy_Optimization_for_Vision-Language-Action_Models_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Fei_SRPO_Self-Referential_Policy_Optimization_for_Vision-Language-Action_Models_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-105",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "SwiftVLA: Unlocking Spatiotemporal Dynamics for Lightweight VLA Models at Minimal Overhead",
+      "note_title": "CVPR 2026 VLA 专题｜SwiftVLA：以4D时空蒸馏实现轻量化VLA的跨模态动作控制",
+      "authors": [
+        "Chaojun Ni",
+        "Cheng Chen",
+        "Xiaofeng Wang",
+        "Zheng Zhu",
+        "Wenzhao Zheng",
+        "Boyuan Wang",
+        "Tianrun Chen",
+        "Guosheng Zhao",
+        "Haoyun Li",
+        "Zhehao Dong",
+        "Qiang Zhang",
+        "Yun Ye",
+        "Yang Wang",
+        "Guan Huang",
+        "Wenjun Mei"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ni_SwiftVLA_Unlocking_Spatiotemporal_Dynamics_for_Lightweight_VLA_Models_at_Minimal_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Ni_SwiftVLA_Unlocking_Spatiotemporal_Dynamics_for_Lightweight_VLA_Models_at_Minimal_CVPR_2026_paper.pdf",
+      "code_url": "https://Swiftvla.github.io",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-106",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Test-Time Perturbation Tuning with Delayed Feedback for Vision-Language-Action Models",
+      "note_title": "CVPR 2026 VLA 专题｜PDF：面向VLA的测试时扰动调优与延迟反馈框架",
+      "authors": [
+        "Zehua Zang",
+        "Xi Wang",
+        "Fuchun Sun",
+        "Xiao Xu",
+        "Lixiang Liu",
+        "Jiahuan Zhou",
+        "Jiangmeng Li"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zang_Test-Time_Perturbation_Tuning_with_Delayed_Feedback_for_Vision-Language-Action_Models_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zang_Test-Time_Perturbation_Tuning_with_Delayed_Feedback_for_Vision-Language-Action_Models_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/zhoujiahuan1991/CVPR2026-PDF",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-107",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "TRM-VLA: Temporal-Aware Chain-of-Thought Reasoning and Memorization for Vision-Language-Action Models",
+      "note_title": "CVPR 2026 VLA 专题｜TRM-VLA：通过关键帧触发推理与可变粒度记忆缓冲提升长时序VLA一致性",
+      "authors": [
+        "Xiang Li",
+        "Ya-Li Li",
+        "Yuan Wang",
+        "Shengjin Wang"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_TRM-VLA_Temporal-Aware_Chain-of-Thought_Reasoning_and_Memorization_for_Vision-Language-Action_Models_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_TRM-VLA_Temporal-Aware_Chain-of-Thought_Reasoning_and_Memorization_for_Vision-Language-Action_Models_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-108",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Unleashing VLA Potentials in Autonomous Driving via Explicit Learning from Failures",
+      "note_title": "CVPR 2026 VLA 专题｜ELF-VLA：通过显式失败学习释放自动驾驶VLA潜能",
+      "authors": [
+        "Yuechen Luo",
+        "Fang Li",
+        "Qimao Chen",
+        "Shaoqing Xu",
+        "Jiaxin Liu",
+        "Ziying Song",
+        "Zhi-xin Yang",
+        "Fuxi Wen"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Luo_Unleashing_VLA_Potentials_in_Autonomous_Driving_via_Explicit_Learning_from_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Luo_Unleashing_VLA_Potentials_in_Autonomous_Driving_via_Explicit_Learning_from_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-109",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "VLA Models Are More Generalizable Than You Think: Revisiting Physical and Spatial Modeling",
+      "note_title": "CVPR 2026 VLA 专题｜VLA模型比想象更具泛化性：重访物理与空间建模",
+      "authors": [
+        "Weiqi Li",
+        "Quande Zhang",
+        "Ruifeng Zhai",
+        "Liang Lin",
+        "Guangrun Wang"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_VLA_Models_Are_More_Generalizable_Than_You_Think_Revisiting_Physical_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_VLA_Models_Are_More_Generalizable_Than_You_Think_Revisiting_Physical_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-110",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "When Robots Obey the Patch: Universal Transferable Patch Attacks on Vision-Language-Action Models",
+      "note_title": "CVPR 2026 VLA 专题｜当机器人遵从补丁：面向视觉-语言-动作模型的通用可迁移补丁攻击",
+      "authors": [
+        "Hui Lu",
+        "Yi Yu",
+        "Yiming Yang",
+        "Chenyu Yi",
+        "Qixin Zhang",
+        "Bingquan Shen",
+        "Alex C. Kot",
+        "Xudong Jiang"
+      ],
+      "topics": [
+        "vla"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Lu_When_Robots_Obey_the_Patch_Universal_Transferable_Patch_Attacks_on_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lu_When_Robots_Obey_the_Patch_Universal_Transferable_Patch_Attacks_on_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/yuyi-sd/UPA-RFAS",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-111",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Agentic Retoucher for Text-To-Image Generation",
+      "note_title": "CVPR 2026 生成与编辑专题｜Agentic Retoucher：以感知、诊断与局部修复闭环校正生成图像",
+      "authors": [
+        "Shaocheng Shen",
+        "Jianfeng Liang",
+        "Chunlei Cai",
+        "Cong Geng",
+        "Huiyu Duan",
+        "Xiaoyun Zhang",
+        "Qiang Hu",
+        "Guangtao Zhai"
+      ],
+      "topics": [
+        "generation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Shen_Agentic_Retoucher_for_Text-To-Image_Generation_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Shen_Agentic_Retoucher_for_Text-To-Image_Generation_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-112",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "DiffGraph: An Automated Agent-driven Model Merging Framework for In-the-Wild Text-to-Image Generation",
+      "note_title": "CVPR 2026 生成与编辑专题｜基于图结构的在线专家模型动态融合框架",
+      "authors": [
+        "Zhuoling Li",
+        "Hossein Rahmani",
+        "Jiarui Zhang",
+        "Yu Xue",
+        "Majid Mirmehdi",
+        "Jason Kuen",
+        "Jiuxiang Gu",
+        "Jun Liu"
+      ],
+      "topics": [
+        "generation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_DiffGraph_An_Automated_Agent-driven_Model_Merging_Framework_for_In-the-Wild_Text-to-Image_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_DiffGraph_An_Automated_Agent-driven_Model_Merging_Framework_for_In-the-Wild_Text-to-Image_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-113",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs",
+      "note_title": "CVPR 2026 生成与编辑专题｜知识图谱驱动的多模态智能体任务自动生成框架",
+      "authors": [
+        "Yurun Chen",
+        "Xueyu Hu",
+        "Yuhan Liu",
+        "Ziqi Wang",
+        "Zeyi Liao",
+        "Lin Chen",
+        "Feng Wei",
+        "Yuxi Qian",
+        "Bo Zheng",
+        "Keting Yin",
+        "Shengyu Zhang"
+      ],
+      "topics": [
+        "generation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Graph2Eval_Automatic_Multimodal_Task_Generation_for_Agents_via_Knowledge_Graphs_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_Graph2Eval_Automatic_Multimodal_Task_Generation_for_Agents_via_Knowledge_Graphs_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/YurunChen/Graph2Eval",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-114",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Hybrid Agents for Image Restoration",
+      "note_title": "CVPR 2026 生成与编辑专题｜混合智能体：快/慢/反馈协作的图像复原框架",
+      "authors": [
+        "Bingchen Li",
+        "Xin Li",
+        "Yiting Lu",
+        "Zhibo Chen"
+      ],
+      "topics": [
+        "generation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_Hybrid_Agents_for_Image_Restoration_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_Hybrid_Agents_for_Image_Restoration_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-115",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "InterAgent: Physics-based Multi-agent Command Execution via Diffusion on Interaction Graphs",
+      "note_title": "CVPR 2026 生成与编辑专题｜基于交互图稀疏扩散的多智能体物理驱动动作生成",
+      "authors": [
+        "Bin Li",
+        "Ruichi Zhang",
+        "Han Liang",
+        "Jingyan Zhang",
+        "Juze Zhang",
+        "Xin Chen",
+        "Lan Xu",
+        "Jingyi Yu",
+        "Jingya Wang"
+      ],
+      "topics": [
+        "generation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_InterAgent_Physics-based_Multi-agent_Command_Execution_via_Diffusion_on_Interaction_Graphs_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_InterAgent_Physics-based_Multi-agent_Command_Execution_via_Diffusion_on_Interaction_Graphs_CVPR_2026_paper.pdf",
+      "code_url": "https://binlee26.github.io/InterAgent-Page",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-116",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "JarvisEvo: Towards a Self-Evolving Photo Editing Agent with Synergistic Editor-Evaluator Optimization",
+      "note_title": "CVPR 2026 生成与编辑专题｜JarvisEvo：通过视觉反馈闭环实现自进化编辑与评估",
+      "authors": [
+        "Yunlong Lin",
+        "Linqing Wang",
+        "Kunjie Lin",
+        "Zixu Lin",
+        "Kaixiong Gong",
+        "Wenbo Li",
+        "Bin Lin",
+        "Zhenxi Li",
+        "Shiyi Zhang",
+        "Yuyang Peng",
+        "Wenxun Dai",
+        "Xinghao Ding",
+        "Chunyu Wang",
+        "Qinglin Lu"
+      ],
+      "topics": [
+        "generation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Lin_JarvisEvo_Towards_a_Self-Evolving_Photo_Editing_Agent_with_Synergistic_Editor-Evaluator_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lin_JarvisEvo_Towards_a_Self-Evolving_Photo_Editing_Agent_with_Synergistic_Editor-Evaluator_CVPR_2026_paper.pdf",
+      "code_url": "https://jarvisevo.vercel.app/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-117",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "OctoT2I: A Self-Evolving Agentic Text-to-Image Router",
+      "note_title": "CVPR 2026 生成与编辑专题｜OctoT2I：在保真与效率间协同进化的文本到图像路由代理",
+      "authors": [
+        "Xu Jiang",
+        "Bin Chen",
+        "Gehui Li",
+        "Yule Duan",
+        "Ronggang Wang",
+        "Jian Zhang"
+      ],
+      "topics": [
+        "generation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Jiang_OctoT2I_A_Self-Evolving_Agentic_Text-to-Image_Router_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Jiang_OctoT2I_A_Self-Evolving_Agentic_Text-to-Image_Router_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-118",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Paper2Figure: A Multi-Agent Collaborative System for Figure Generation Towards Academic Research Paper",
+      "note_title": "CVPR 2026 生成与编辑专题｜多代理协同与 FigScript 的学术图表生成框架",
+      "authors": [
+        "Siwei Han",
+        "Haonian Ji",
+        "Siyang Xin",
+        "Juanquan Shi",
+        "Shi Qiu",
+        "Xinyu Ye",
+        "Peng Xia",
+        "Jiaqi Liu",
+        "Zhaorun Chen",
+        "Yiyang Zhou",
+        "Linjie Li",
+        "Lijuan Wang",
+        "Huaxiu Yao"
+      ],
+      "topics": [
+        "generation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Han_Paper2Figure_A_Multi-Agent_Collaborative_System_for_Figure_Generation_Towards_Academic_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Han_Paper2Figure_A_Multi-Agent_Collaborative_System_for_Figure_Generation_Towards_Academic_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-119",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "RetouchIQ: MLLM Agents for Instruction-Based Image Retouching with Generalist Reward",
+      "note_title": "CVPR 2026 生成与编辑专题｜通才奖励驱动的图像修图 Agent 框架",
+      "authors": [
+        "Qiucheng Wu",
+        "Jing Shi",
+        "Simon Jenni",
+        "Kushal Kafle",
+        "Tianyu Wang",
+        "Shiyu Chang",
+        "Handong Zhao"
+      ],
+      "topics": [
+        "generation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wu_RetouchIQ_MLLM_Agents_for_Instruction-Based_Image_Retouching_with_Generalist_Reward_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wu_RetouchIQ_MLLM_Agents_for_Instruction-Based_Image_Retouching_with_Generalist_Reward_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-120",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Socratic-Geo: Synthetic Data Generation and Cross-Modal Geometric Reasoning via Multi-Agent Interaction",
+      "note_title": "CVPR 2026 生成与编辑专题｜跨模态几何推理的多智能体交互合成框架",
+      "authors": [
+        "Zhengbo Jiao",
+        "Zifan Zhang",
+        "Shaobo Wang",
+        "Wei Wang",
+        "Bing Zhao",
+        "Hu Wei",
+        "Linfeng Zhang"
+      ],
+      "topics": [
+        "generation"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Jiao_Socratic-Geo_Synthetic_Data_Generation_and_Cross-Modal_Geometric_Reasoning_via_Multi-Agent_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Jiao_Socratic-Geo_Synthetic_Data_Generation_and_Cross-Modal_Geometric_Reasoning_via_Multi-Agent_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-121",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "ARM-Thinker: Reinforcing Multimodal Generative Reward Models with Agentic Tool Use and Visual Reasoning",
+      "note_title": "CVPR 2026 工具调用与推理专题｜ARM-Thinker：让奖励模型主动调用工具核查答案",
+      "authors": [
+        "Shengyuan Ding",
+        "Xinyu Fang",
+        "Ziyu Liu",
+        "Yuhang Zang",
+        "Yuhang Cao",
+        "Xiangyu Zhao",
+        "Haodong Duan",
+        "Xiaoyi Dong",
+        "Jianze Liang",
+        "Bin Wang",
+        "Conghui He",
+        "Dahua Lin",
+        "Jiaqi Wang"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ding_ARM-Thinker_Reinforcing_Multimodal_Generative_Reward_Models_with_Agentic_Tool_Use_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Ding_ARM-Thinker_Reinforcing_Multimodal_Generative_Reward_Models_with_Agentic_Tool_Use_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-122",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Beyond Sequential Tools: A Unified VLM Agent System for Photographic Post-Processing via Dynamic Multi-Expert Fusion",
+      "note_title": "CVPR 2026 工具调用与推理专题｜动态多专家融合：一次完成多种照片修复",
+      "authors": [
+        "Honglin Xiong",
+        "Chenjie Zhu",
+        "Jianbiao Ding",
+        "Zixuan Ni",
+        "Wei Li",
+        "Zhenpeng Mi",
+        "Qian Wang"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xiong_Beyond_Sequential_Tools_A_Unified_VLM_Agent_System_for_Photographic_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xiong_Beyond_Sequential_Tools_A_Unified_VLM_Agent_System_for_Photographic_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-123",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "EvoGraph-R1: Self-Evolving Multimodal Knowledge Hypergraphs for Agentic Retrieval",
+      "note_title": "CVPR 2026 工具调用与推理专题｜EvoGraph-R1：在检索过程中持续更新多模态知识图",
+      "authors": [
+        "Jiashi Lin",
+        "Changhong Jiang",
+        "Xiangru Lin",
+        "Ruifei Zhang",
+        "Xinyi Zhu",
+        "Jiyao Liu",
+        "Cheng Tang",
+        "Ye Du",
+        "Shujian Gao",
+        "Junzhi Ning",
+        "Lihao Liu",
+        "Ziyan Huang",
+        "Tianbin Li",
+        "Jin Ye",
+        "Junjun He"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Lin_EvoGraph-R1_Self-Evolving_Multimodal_Knowledge_Hypergraphs_for_Agentic_Retrieval_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lin_EvoGraph-R1_Self-Evolving_Multimodal_Knowledge_Hypergraphs_for_Agentic_Retrieval_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-124",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Geometrically-Constrained Agent for Spatial Reasoning",
+      "note_title": "CVPR 2026 工具调用与推理专题｜GCA：先固定坐标系与目标，再调用工具完成空间推理",
+      "authors": [
+        "Zeren Chen",
+        "Xiaoya Lu",
+        "Zhijie Zheng",
+        "Pengrui Li",
+        "Lehan He",
+        "Yijin Zhou",
+        "Jing Shao",
+        "Bohan Zhuang",
+        "Lu Sheng"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Geometrically-Constrained_Agent_for_Spatial_Reasoning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_Geometrically-Constrained_Agent_for_Spatial_Reasoning_CVPR_2026_paper.pdf",
+      "code_url": "https://gca-spatial-reasoning.github.io",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-125",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "GTR-Turbo: Merged Checkpoint is Secretly a Free Teacher for Agentic VLM Training",
+      "note_title": "CVPR 2026 工具调用与推理专题｜GTR-Turbo：把历史检查点合并成免费的训练教师",
+      "authors": [
+        "Tong Wei",
+        "Yijun Yang",
+        "Changhao Zhang",
+        "Junliang Xing",
+        "Yuanchun Shi",
+        "Zongqing Lu",
+        "Deheng Ye"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wei_GTR-Turbo_Merged_Checkpoint_is_Secretly_a_Free_Teacher_for_Agentic_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wei_GTR-Turbo_Merged_Checkpoint_is_Secretly_a_Free_Teacher_for_Agentic_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-126",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Hierarchical Attacks for Multi-Modal Multi-Agent Reasoning",
+      "note_title": "CVPR 2026 工具调用与推理专题｜多模态多智能体推理的分层攻击机制",
+      "authors": [
+        "Hao Zhou",
+        "Tiru Wu",
+        "Yan Jiang",
+        "Wanqi Zhou",
+        "Junxing Hu",
+        "Ai Han"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_Hierarchical_Attacks_for_Multi-Modal_Multi-Agent_Reasoning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhou_Hierarchical_Attacks_for_Multi-Modal_Multi-Agent_Reasoning_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-127",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Scaling Agentic Reinforcement Learning for Tool-Integrated Reasoning in VLMs",
+      "note_title": "CVPR 2026 工具调用与推理专题｜VISTA-R1：用强化学习训练视觉模型选择并使用工具",
+      "authors": [
+        "Meng Lu",
+        "Ran Xu",
+        "Yi Fang",
+        "Wenxuan Zhang",
+        "Yue Yu",
+        "Gaurav Srivastava",
+        "Yuchen Zhuang",
+        "Mohamed Elhoseiny",
+        "Charles Fleming",
+        "Carl Yang",
+        "Zhengzhong Tu",
+        "Yang Xie",
+        "Guanghua Xiao",
+        "Di Jin",
+        "Wenqi Shi",
+        "Xuan Wang"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Lu_Scaling_Agentic_Reinforcement_Learning_for_Tool-Integrated_Reasoning_in_VLMs_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lu_Scaling_Agentic_Reinforcement_Learning_for_Tool-Integrated_Reasoning_in_VLMs_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/Lucanyc/VISTA-Gym",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-128",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "SenseSearch: Empowering Vision-Language Models with High-Resolution Agentic Search-Reasoning via Reinforcement Learning",
+      "note_title": "CVPR 2026 工具调用与推理专题｜SenseSearch：协调文本搜索、图像搜索与局部裁剪",
+      "authors": [
+        "Yong Xien Chng",
+        "Tao Hu",
+        "Wenwen Tong",
+        "Xueheng Li",
+        "Jiandong Chen",
+        "Haojia Yu",
+        "Jiefan Lu",
+        "Hewei Guo",
+        "Hanming Deng",
+        "Chengjun Xie",
+        "Gao Huang",
+        "Lewei Lu"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chng_SenseSearch_Empowering_Vision-Language_Models_with_High-Resolution_Agentic_Search-Reasoning_via_Reinforcement_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chng_SenseSearch_Empowering_Vision-Language_Models_with_High-Resolution_Agentic_Search-Reasoning_via_Reinforcement_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/OpenSenseNova/SenseNova-MARS",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-129",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "ViLoMem: Agentic Learner with Grow-and-Refine Multimodal Semantic Memory",
+      "note_title": "CVPR 2026 工具调用与推理专题｜ViLoMem：分别记住视觉错误与推理错误",
+      "authors": [
+        "Weihao Bo",
+        "Shan Zhang",
+        "Yanpeng Sun",
+        "Jingjing Wu",
+        "Qunyi Xie",
+        "Xiao Tan",
+        "Kunbin Chen",
+        "Wei He",
+        "Xiaofan Li",
+        "Na Zhao",
+        "Jingdong Wang",
+        "Zechao Li"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Bo_ViLoMem_Agentic_Learner_with_Grow-and-Refine_Multimodal_Semantic_Memory_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Bo_ViLoMem_Agentic_Learner_with_Grow-and-Refine_Multimodal_Semantic_Memory_CVPR_2026_paper.pdf",
+      "code_url": "https://weihao-bo.github.io/ViLoMeo-page/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-130",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "VS-Bench: Evaluating VLMs for Strategic Abilities in Multi-Agent Environments",
+      "note_title": "CVPR 2026 工具调用与推理专题｜VS-Bench：看懂游戏画面不等于会与其他参与者博弈",
+      "authors": [
+        "Zelai Xu",
+        "Zhexuan Xu",
+        "Xiangmin Yi",
+        "Huining Yuan",
+        "Mo Guang",
+        "Kaiwen Long",
+        "Xinlei Chen",
+        "Yi Wu",
+        "Chao Yu",
+        "Yu Wang"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_VS-Bench_Evaluating_VLMs_for_Strategic_Abilities_in_Multi-Agent_Environments_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xu_VS-Bench_Evaluating_VLMs_for_Strategic_Abilities_in_Multi-Agent_Environments_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-131",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "CodeDance: A Dynamic Tool-integrated MLLM for Executable Visual Reasoning",
+      "note_title": "CVPR 2026 工具调用与推理专题｜CodeDance：让视觉模型编写并执行代码组合工具",
+      "authors": [
+        "Qi Song",
+        "Honglin Li",
+        "Yingchen Yu",
+        "Haoyi Zhou",
+        "Lin Yang",
+        "Song Bai",
+        "Qi She",
+        "Zilong Huang",
+        "Yunqing Zhao"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Song_CodeDance_A_Dynamic_Tool-integrated_MLLM_for_Executable_Visual_Reasoning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Song_CodeDance_A_Dynamic_Tool-integrated_MLLM_for_Executable_Visual_Reasoning_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-132",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "CodeV: Code with Images for Faithful Visual Reasoning via Tool-Aware Policy Optimization",
+      "note_title": "CVPR 2026 工具调用与推理专题｜CodeV：不仅答对，还要让工具结果真正支持答案",
+      "authors": [
+        "Xinhai Hou",
+        "Shaoyuan Xu",
+        "Manan Biyani",
+        "Moyan Li",
+        "Jia Liu",
+        "Todd C Hollon",
+        "Bryan Wang"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Hou_CodeV_Code_with_Images_for_Faithful_Visual_Reasoning_via_Tool-Aware_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Hou_CodeV_Code_with_Images_for_Faithful_Visual_Reasoning_via_Tool-Aware_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/RenlyH/CodeV",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-133",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Don't Show Pixels, Show Cues: Unlocking Visual Tool Reasoning in Language Models via Perception Programs",
+      "note_title": "CVPR 2026 工具调用与推理专题｜P2：把视觉工具输出改写成可推理的感知程序",
+      "authors": [
+        "Muhammad Kamran Janjua",
+        "Hugo Silva",
+        "Di Niu",
+        "Bahador Rashidi"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Janjua_Dont_Show_Pixels_Show_Cues_Unlocking_Visual_Tool_Reasoning_in_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Janjua_Dont_Show_Pixels_Show_Cues_Unlocking_Visual_Tool_Reasoning_in_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-134",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Learning to Select Visual Tools from Experience",
+      "note_title": "CVPR 2026 工具调用与推理专题｜VisTA：从经验反馈中学习选择视觉工具",
+      "authors": [
+        "Zeyi Huang",
+        "Yuyang Ji",
+        "Anirudh Sundara Rajan",
+        "Zefan Cai",
+        "Wen Xiao",
+        "Haohan Wang",
+        "Junjie Hu",
+        "Yong Jae Lee"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Huang_Learning_to_Select_Visual_Tools_from_Experience_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Learning_to_Select_Visual_Tools_from_Experience_CVPR_2026_paper.pdf",
+      "code_url": "https://oodbag.github.io/vista_web/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-135",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "OralGPT-Plus: Learning to Use Visual Tools via Reinforcement Learning for Panoramic X-ray Analysis",
+      "note_title": "CVPR 2026 工具调用与推理专题｜OralGPT-Plus：用局部放大和左右对照复查牙科全景片",
+      "authors": [
+        "Yuxuan Fan",
+        "Jing Hao",
+        "Hong Chen",
+        "Jiahao Bao",
+        "Yihua Shao",
+        "Yuci Liang",
+        "Kuo Feng Hung",
+        "Hao Tang"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Fan_OralGPT-Plus_Learning_to_Use_Visual_Tools_via_Reinforcement_Learning_for_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Fan_OralGPT-Plus_Learning_to_Use_Visual_Tools_via_Reinforcement_Learning_for_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-136",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "SpaceTools: Tool-Augmented Spatial Reasoning via Double Interactive RL",
+      "note_title": "CVPR 2026 工具调用与推理专题｜SpaceTools：用双阶段交互强化学习协调空间工具",
+      "authors": [
+        "Siyi Chen",
+        "Mikaela Angelina Uy",
+        "Chan Hee Song",
+        "Faisal Ladhak",
+        "Adithyavairavan Murali",
+        "Qing Qu",
+        "Stan Birchfield",
+        "Valts Blukis",
+        "Jonathan Tremblay"
+      ],
+      "topics": [
+        "tool_reasoning"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_SpaceTools_Tool-Augmented_Spatial_Reasoning_via_Double_Interactive_RL_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_SpaceTools_Tool-Augmented_Spatial_Reasoning_via_Double_Interactive_RL_CVPR_2026_paper.pdf",
+      "code_url": "https://spacetools.github.io/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-215",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "AMusE: Audio-Visual Benchmark and Alignment Framework for Agentic Multi-Speaker Understanding",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜AMusE：智能体式多人对话理解的音视频评测与对齐",
+      "authors": [
+        "Sanjoy Chowdhury",
+        "Karren D Yang",
+        "Xudong Liu",
+        "Fartash Faghri",
+        "Pavan Kumar Anasosalu Vasu",
+        "Oncel Tuzel",
+        "Dinesh Manocha",
+        "Chun-Liang Li",
+        "Raviteja Vemulapalli"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chowdhury_AMusE_Audio-Visual_Benchmark_and_Alignment_Framework_for_Agentic_Multi-Speaker_Understanding_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chowdhury_AMusE_Audio-Visual_Benchmark_and_Alignment_Framework_for_Agentic_Multi-Speaker_Understanding_CVPR_2026_paper.pdf",
+      "code_url": "https://machinelearning.apple.com/research/amuse",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-216",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "DRAMA: Next-Gen Dynamic Orchestration for Resilient Multi-Agent Ecosystems in Flux",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜DRAMA：动态任务编排与故障接力的多智能体韧性框架",
+      "authors": [
+        "Xinkui Zhao",
+        "Yifan Zhang",
+        "Sai Liu",
+        "Naibo Wang",
+        "Guanjie Cheng",
+        "Yueshen Xu",
+        "Chang Liu",
+        "Shuiguang Deng",
+        "Jianwei Yin"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhao_DRAMA_Next-Gen_Dynamic_Orchestration_for_Resilient_Multi-Agent_Ecosystems_in_Flux_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_DRAMA_Next-Gen_Dynamic_Orchestration_for_Resilient_Multi-Agent_Ecosystems_in_Flux_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-217",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Dual-Agent Reinforcement Learning for Adaptive and Cost-Aware Visual-Inertial Odometry",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜双智能体 VIO：用强化学习决定何时看图、如何融合",
+      "authors": [
+        "Feiyang Pan",
+        "Shenghe Zheng",
+        "Chunyan Yin",
+        "Guangbin Dou"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Pan_Dual-Agent_Reinforcement_Learning_for_Adaptive_and_Cost-Aware_Visual-Inertial_Odometry_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Pan_Dual-Agent_Reinforcement_Learning_for_Adaptive_and_Cost-Aware_Visual-Inertial_Odometry_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-218",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "DualMirage: Hunting Stealthy Multimodal LLM Agents via CAPTCHAs with Contour and Adversarial Illusions",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜DualMirage：轮廓错觉与对抗扰动联合封堵隐蔽多模态代理",
+      "authors": [
+        "Bei Chen",
+        "Gaolei Li",
+        "Jun Wu",
+        "Jianhua Li"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_DualMirage_Hunting_Stealthy_Multimodal_LLM_Agents_via_CAPTCHAs_with_Contour_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_DualMirage_Hunting_Stealthy_Multimodal_LLM_Agents_via_CAPTCHAs_with_Contour_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-219",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "EpiAgent: An Agent-Centric System for Ancient Inscription Restoration",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜EpiAgent：观察-构思-执行-反思闭环修复古文字",
+      "authors": [
+        "Shipeng Zhu",
+        "Ang Chen",
+        "Na Nie",
+        "Pengfei Fang",
+        "Min-Ling Zhang",
+        "Hui Xue"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhu_EpiAgent_An_Agent-Centric_System_for_Ancient_Inscription_Restoration_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhu_EpiAgent_An_Agent-Centric_System_for_Ancient_Inscription_Restoration_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/blackprotoss/EpiAgent",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-220",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "GardenDesigner: Encoding Aesthetic Principles into Jiangnan Garden Construction via a Chain of Agents",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜GardenDesigner：让四段代理链按江南园林规则自动构园",
+      "authors": [
+        "Mengtian Li",
+        "Fan Yang",
+        "Ruixue Xiong",
+        "Yiyan Fan",
+        "Zhifeng Xie",
+        "Zeyu Wang"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_GardenDesigner_Encoding_Aesthetic_Principles_into_Jiangnan_Garden_Construction_via_a_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_GardenDesigner_Encoding_Aesthetic_Principles_into_Jiangnan_Garden_Construction_via_a_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-221",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Learning to Assist: Physics-Grounded Human-Human Control via Multi-Agent Reinforcement Learning",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜AssistMimic：让两个物理人体共同学会支撑与受助",
+      "authors": [
+        "Yuto Shibata",
+        "Kashu Yamazaki",
+        "Lalit Jayanti",
+        "Yoshimitsu Aoki",
+        "Mariko Isogawa",
+        "Katerina Fragkiadaki"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Shibata_Learning_to_Assist_Physics-Grounded_Human-Human_Control_via_Multi-Agent_Reinforcement_Learning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Shibata_Learning_to_Assist_Physics-Grounded_Human-Human_Control_via_Multi-Agent_Reinforcement_Learning_CVPR_2026_paper.pdf",
+      "code_url": "https://yutoshibata07.github.io/AssistMimic/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-222",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "MangoBench: A Benchmark for Multi-Agent Goal-Conditioned Offline Reinforcement Learning",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜MangoBench：用 47 个任务检验多智能体离线策略能否泛化到新目标",
+      "authors": [
+        "Yi Wang",
+        "Ningze Zhong",
+        "Zhiheng Fu",
+        "Longguang Wang",
+        "Ye Zhang",
+        "Yulan Guo"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_MangoBench_A_Benchmark_for_Multi-Agent_Goal-Conditioned_Offline_Reinforcement_Learning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_MangoBench_A_Benchmark_for_Multi-Agent_Goal-Conditioned_Offline_Reinforcement_Learning_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-223",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "NERFIFY: A Multi-Agent Framework for Turning NeRF Papers into Code",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜NERFIFY：把 NeRF 论文自动转成可训练实现的多智能体流水线",
+      "authors": [
+        "Seemandhar Jain",
+        "Keshav Gupta",
+        "Kunal Gupta",
+        "Manmohan Chandraker"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Jain_NERFIFY_A_Multi-Agent_Framework_for_Turning_NeRF_Papers_into_Code_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Jain_NERFIFY_A_Multi-Agent_Framework_for_Turning_NeRF_Papers_into_Code_CVPR_2026_paper.pdf",
+      "code_url": "https://seemandhar.github.io/NERFIFY/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-224",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "NitroGen: An Open Foundation Model for Generalist Gaming Agents",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜NitroGen：从 4 万小时视频训练跨游戏视觉动作模型",
+      "authors": [
+        "Loïc Magne",
+        "Anas Awadalla",
+        "Guanzhi Wang",
+        "Yinzhen Xu",
+        "Joshua Belofsky",
+        "Fengyuan Hu",
+        "Joohwan Kim",
+        "Ludwig Schmidt",
+        "Georgia Gkioxari",
+        "Jan Kautz",
+        "Yisong Yue",
+        "Yejin Choi",
+        "Yuke Zhu",
+        "Linxi Fan"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Magne_NitroGen_An_Open_Foundation_Model_for_Generalist_Gaming_Agents_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Magne_NitroGen_An_Open_Foundation_Model_for_Generalist_Gaming_Agents_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-225",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "RAAS: LLM Agentic System Architecture Search with GRPO",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜RAAS：用同伴归一化与多试验聚合稳定化 LLM 智能体结构搜索",
+      "authors": [
+        "Jiayi Yang",
+        "Guancheng Wan",
+        "Man Zhang",
+        "Mang Ye"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_RAAS_LLM_Agentic_System_Architecture_Search_with_GRPO_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_RAAS_LLM_Agentic_System_Architecture_Search_with_GRPO_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-226",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "RLFTSim: Realistic and Controllable Multi-Agent Traffic Simulation via Reinforcement Learning Fine-Tuning",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜RLFTSim：用 MLOO 奖励信号做样本高效的多车真实流量仿真对齐与目标可控微调",
+      "authors": [
+        "Ehsan Ahmadi",
+        "Hunter Schofield",
+        "Behzad Khamidehi",
+        "Fazel Arasteh",
+        "Jinjun Shan",
+        "Lili Mou",
+        "Dongfeng Bai",
+        "Kasra Rezaee"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ahmadi_RLFTSim_Realistic_and_Controllable_Multi-Agent_Traffic_Simulation_via_Reinforcement_Learning_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Ahmadi_RLFTSim_Realistic_and_Controllable_Multi-Agent_Traffic_Simulation_via_Reinforcement_Learning_CVPR_2026_paper.pdf",
+      "code_url": "https://ehsan-ami.github.io/rlftsim",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-227",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Simple Agents Outperform Experts in Biomedical Imaging Workflow Optimization",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜Simple Agents：用轻量代码智能体优化生物医学影像工作流",
+      "authors": [
+        "Xuefei Wang",
+        "Kai Horstmann",
+        "Ethan Lin",
+        "Jonathan Chen",
+        "Alexander Farhang",
+        "Sophia Stiles",
+        "Atharva Sehgal",
+        "Jonathan Light",
+        "David Van Valen",
+        "Yisong Yue",
+        "Jennifer J. Sun"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Simple_Agents_Outperform_Experts_in_Biomedical_Imaging_Workflow_Optimization_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_Simple_Agents_Outperform_Experts_in_Biomedical_Imaging_Workflow_Optimization_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-228",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "TaskForce: Cooperative Multi-agent Reinforcement Learning for Multi-task Optimization",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜TaskForce：用协作多智能体强化学习进行多任务优化权重分配",
+      "authors": [
+        "Wonhyeok Choi",
+        "Kyumin Hwang",
+        "Jihun Park",
+        "Kyoungmin Lee",
+        "Seunghun Lee",
+        "Jaeyeul Kim",
+        "Minwoo Choi",
+        "Sunghoon Im"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Choi_TaskForce_Cooperative_Multi-agent_Reinforcement_Learning_for_Multi-task_Optimization_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Choi_TaskForce_Cooperative_Multi-agent_Reinforcement_Learning_for_Multi-task_Optimization_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-229",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Training One Model to Master Cross-Level Agentic Actions via Reinforcement Learning",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜CrossHA：跨级动作空间自适应切换的统一智能体",
+      "authors": [
+        "Kaichen He",
+        "Zihao Wang",
+        "Muyao Li",
+        "Anji Liu",
+        "Yitao Liang"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/He_Training_One_Model_to_Master_Cross-Level_Agentic_Actions_via_Reinforcement_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/He_Training_One_Model_to_Master_Cross-Level_Agentic_Actions_via_Reinforcement_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-230",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Universal Guideline-Driven Image Clustering via a Hybrid LLM Agent",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜指南驱动图像聚类：用概念代理与 MST 减少 LLM 判断成本",
+      "authors": [
+        "Wenliang Zhong",
+        "Rob Barton",
+        "Lucas Goncalves",
+        "Kushal Kumar",
+        "Feng Jiang",
+        "Hehuan Ma",
+        "Yuzhi Guo",
+        "Vidit Bansal",
+        "Karim Bouyarmane",
+        "Junzhou Huang"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhong_Universal_Guideline-Driven_Image_Clustering_via_a_Hybrid_LLM_Agent_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhong_Universal_Guideline-Driven_Image_Clustering_via_a_Hybrid_LLM_Agent_CVPR_2026_paper.pdf",
+      "code_url": "https://clustering-agent.github.io/",
+      "wechat_url": null,
+      "wechat_verified_at": null
+    },
+    {
+      "id": "cvpr-2026-231",
+      "series": "cvpr",
+      "venue": "CVPR",
+      "year": 2026,
+      "title": "Unsupervised Multi-agent and Single-agent Perception from Cooperative Views",
+      "note_title": "CVPR 2026 跨领域 Agent 专题｜UMS：用协同视角联合训练多车与单车 3D 检测器",
+      "authors": [
+        "Haochen Yang",
+        "Baolu Li",
+        "Lei Li",
+        "Delin Ren",
+        "Jiacheng Guo",
+        "Minghai Qin",
+        "Tianyun Zhang",
+        "Hongkai Yu"
+      ],
+      "topics": [
+        "cross_domain"
+      ],
+      "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_Unsupervised_Multi-agent_and_Single-agent_Perception_from_Cooperative_Views_CVPR_2026_paper.html",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_Unsupervised_Multi-agent_and_Single-agent_Perception_from_Cooperative_Views_CVPR_2026_paper.pdf",
+      "code_url": null,
+      "wechat_url": null,
+      "wechat_verified_at": null
+    }
+  ]
+}
