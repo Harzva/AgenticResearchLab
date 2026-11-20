@@ -50,6 +50,7 @@ jobs:
           fi
       - name: Check daily publication without the network
         run: |
+          python3 agent-hot/test_daily.py
           printf '[]\n' > "$RUNNER_TEMP/agent-hot-fixture.json"
           python3 agent-hot/daily.py --feed "$RUNNER_TEMP/agent-hot/feed.json" \
             --out "$RUNNER_TEMP/agent-hot-daily-test" --date 2026-11-19 \

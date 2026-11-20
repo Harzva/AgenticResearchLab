@@ -151,7 +151,7 @@ systemctl enable --now agenthot-daily.timer
 systemctl list-timers agenthot-daily.timer
 ~~~
 
-定时器每天北京时间 14:00 运行，错过触发后会补运行。当天重复执行时会复用已写入的专题。源站无新条目或暂不可用时会生成精选回顾，并在 JSON 中标记 `mode: "review"`。首次运行可从服务日志和公开的 daily/latest.json 确认采集结果。生产请求允许最多 65 秒并协商压缩。运维人员可用 `--promote-review` 重试一次当天回顾，只有确实取得新文献时才更新同一个日期页。
+定时器每天北京时间 14:00 运行，错过触发后会补运行。当天重复执行时会复用已写入的专题。生产请求读取 arXiv cs.AI 的 Atom 源，允许最多 65 秒并协商压缩，最多选取首批 24 条完整的 Agent 相关论文作为候选。连接中断时，已完整读取至少 5 条候选即可继续核对来源日期。没有可用新文献时会生成精选回顾，并在 JSON 中标记 `mode: "review"`。首次运行结果见服务日志和公开的 daily/latest.json。运维人员可用 `--promote-review` 重试当天回顾，只有确实取得新文献时才更新同一个日期页。
 
 ## 验收
 
