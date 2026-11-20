@@ -19,6 +19,11 @@ ROOT = Path(__file__).resolve().parent
 BASE_URL = "https://harzva.online/agent-hot/"
 STATIC_FILES = ("index.html", "styles.css", "app.js")
 SOURCE_TYPES = {"paper": "论文原文", "report": "官方报告", "repo": "代码仓库"}
+COMMUNITY_STATUS = {"planned": "待复现", "reported": "公开运行记录", "reviewed": "独立复核"}
+RUN_OUTCOME = {
+    "reproduced": "已复现", "partial": "部分复现", "not_reproduced": "未复现", None: "未评估",
+}
+GIT_REVISION = re.compile(r"(?:[0-9a-f]{40}|[0-9a-f]{64})\Z", re.IGNORECASE | re.ASCII)
 ATOM = "http://www.w3.org/2005/Atom"
 SLUG = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*\Z")
 DATE = re.compile(
@@ -157,6 +162,102 @@ def validate(data):
     return edition_time, item_times
 
 
+def validate_community_links(links, label):
+    if not isinstance(links, list) or not links:
+        raise ValueError(f"{label} must be a non-empty array")
+    result = set()
+    for index, link in enumerate(links, 1):
+        entry = f"{label}[{index}]"
+        expect_fields(link, {"title", "url"}, set(), entry)
+        text(link["title"], f"{entry}.title")
+        url = public_url(link["url"], f"{entry}.url")
+        if url in result:
+            raise ValueError(f"{entry}.url duplicates a link")
+        result.add(url)
+    return result
+
+
+def account_key(value):
+    return unicodedata.normalize("NFKC", value).strip().removeprefix("@").casefold()
+
+
+def validate_community_run(note, label):
+    run = note["run"]
+    expect_fields(run, {"author", "revision", "environment", "method", "observed", "outcome", "evidence"}, set(), label)
+    for field in ("author", "revision", "environment", "method", "observed"):
+        text(run[field], f"{label}.{field}")
+    if not GIT_REVISION.fullmatch(run["revision"]):
+        raise ValueError(f"{label}.revision must be a full Git commit SHA")
+    if run["outcome"] is not None and (not isinstance(run["outcome"], str) or run["outcome"] not in RUN_OUTCOME):
+        raise ValueError(f"{label}.outcome must be reproduced, partial, not_reproduced, or null")
+    author = account_key(run["author"])
+    if not author:
+        raise ValueError(f"{label}.author must identify the contributor")
+    return author, validate_community_links(run["evidence"], f"{label}.evidence")
+
+
+def validate_community(data, item_ids):
+    expect_fields(data, {"schema_version", "notes"}, set(), "community")
+    if type(data["schema_version"]) is not int or data["schema_version"] != 1:
+        raise ValueError("community.schema_version must be 1")
+    if not isinstance(data["notes"], list):
+        raise ValueError("community.notes must be an array")
+    seen = set()
+    common_fields = {"id", "item_id", "title", "published_at", "status", "scope", "steps", "expected", "sources"}
+    for index, note in enumerate(data["notes"], 1):
+        label = f"community.notes[{index}]"
+        expect_fields(note, common_fields, {"run", "review"}, label)
+        for key in ("id", "item_id"):
+            valid_slug(note[key], f"{label}.{key}")
+        if len(note["id"]) > 100:
+            raise ValueError(f"{label}.id must be at most 100 characters")
+        if note["item_id"] not in item_ids:
+            raise ValueError(f"{label}.item_id must refer to an existing selected item")
+        if not note["id"].startswith(note["item_id"] + "-"):
+            raise ValueError(f"{label}.id must start with item_id followed by a hyphen")
+        if note["id"] in seen:
+            raise ValueError(f"{label} duplicates a note ID")
+        seen.add(note["id"])
+        status = note["status"]
+        if not isinstance(status, str) or status not in COMMUNITY_STATUS:
+            raise ValueError(f"{label}.status must be planned, reported, or reviewed")
+        for field in ("title", "scope", "expected"):
+            text(note[field], f"{label}.{field}")
+        publication_time(note["published_at"], f"{label}.published_at")
+        if not isinstance(note["steps"], list) or not note["steps"]:
+            raise ValueError(f"{label}.steps must be a non-empty array of text")
+        for step, line in enumerate(note["steps"], 1):
+            text(line, f"{label}.steps[{step}]")
+        sources = validate_community_links(note["sources"], f"{label}.sources")
+        if status == "planned":
+            if "run" in note or "review" in note:
+                raise ValueError(f"{label} must not contain run or review fields while planned")
+            continue
+        if "run" not in note:
+            raise ValueError(f"{label}.run is required after execution is reported")
+        author, evidence = validate_community_run(note, f"{label}.run")
+        evidence = evidence - sources
+        if not evidence:
+            raise ValueError(f"{label}.run.evidence must include run output distinct from the input materials")
+        if status == "reported":
+            if "review" in note:
+                raise ValueError(f"{label}.review requires reviewed status")
+            continue
+        review_label = f"{label}.review"
+        review = note.get("review")
+        expect_fields(review, {"reviewer", "revision", "url", "evidence_url", "summary"}, set(), review_label)
+        for field in ("reviewer", "revision", "summary"):
+            text(review[field], f"{review_label}.{field}")
+        reviewer = account_key(review["reviewer"])
+        if not reviewer or author == reviewer:
+            raise ValueError(f"{review_label}.reviewer must be distinct from the run author")
+        if review["revision"].lower() != note["run"]["revision"].lower():
+            raise ValueError(f"{review_label}.revision does not match the recorded run")
+        public_url(review["url"], f"{review_label}.url")
+        if public_url(review["evidence_url"], f"{review_label}.evidence_url") not in evidence:
+            raise ValueError(f"{review_label}.evidence_url must match published run output")
+
+
 def item_url(item):
     return BASE_URL + "?item=" + item["id"]
 
@@ -195,7 +296,7 @@ def markdown_section(value):
     return [markdown_inline(value)]
 
 
-def write_pages(destination, data):
+def write_pages(destination, data, community):
     edition = data["edition"]
     index = [
         "# AgentHot", "", f"> {markdown_inline(edition['description'])}", "",
@@ -203,6 +304,7 @@ def write_pages(destination, data):
         "## 入口", "", "- [首页](./)", "- [完整 JSON](feed.json)", "- [RSS](rss.xml)",
         "- [每日专题索引](daily/index.json)", "- [最新一期](daily/latest.json)", "- [每日专题 RSS](daily/rss.xml)",
         "- 按日期读取逐期文档，将索引中的日期用于 daily/YYYY-MM-DD.md 或 daily/YYYY-MM-DD.json。",
+        "- [实验笔记 JSON](community/index.json)",
         "", "## 本期条目", "",
     ]
     item_dir = destination / "items"
@@ -225,13 +327,67 @@ def write_pages(destination, data):
             if "pdf_url" in source:
                 page.append(f"  · [公开 PDF](<{source['pdf_url']}>)")
         (destination / link).write_text("\n".join(page) + "\n", encoding="utf-8")
+    index.extend(("", "## 实验笔记", ""))
+    for note in community["notes"]:
+        status = COMMUNITY_STATUS[note["status"]]
+        index.append(f"- [{markdown_inline(note['title'])}](community/{note['id']}.md) · {status}")
     (destination / "llms.txt").write_text("\n".join(index) + "\n", encoding="utf-8")
+
+
+def write_community(destination, community):
+    directory = destination / "community"
+    directory.mkdir()
+    (directory / "index.json").write_text(
+        json.dumps(community, ensure_ascii=False, indent=2) + "\n", encoding="utf-8",
+    )
+    for note in community["notes"]:
+        note_id = note["id"]
+        item_id = note["item_id"]
+        page = [
+            f"# {markdown_inline(note['title'])}", "", f"- **状态** {COMMUNITY_STATUS[note['status']]}",
+            f"- **笔记 ID** {note_id}", f"- **精选 ID** [{item_id}](../items/{item_id}.md)",
+            f"- **日期** {note['published_at']}",
+            f"- [网页详情](<{BASE_URL}?view=community&note={note_id}>)", "- [实验笔记 JSON](index.json)",
+            "", "## 核查范围与材料", "", markdown_inline(note["scope"]),
+            "", "## 计划步骤", "", *markdown_section(note["steps"]),
+            "", "## 预期产物", "", markdown_inline(note["expected"]),
+            "", "## 公开来源", "",
+        ]
+        page.extend(f"- [{markdown_inline(link['title'])}](<{link['url']}>)" for link in note["sources"])
+        if note["status"] == "planned":
+            page.extend(("", "## 实际结果", "", "实验结果未评估。尚无实验运行记录。"))
+        else:
+            run = note["run"]
+            page.extend((
+                "", "## 实际运行", "", f"- **记录作者** {markdown_inline(run['author'])}",
+                f"- **提交版本** {run['revision']}", f"- **结果** {RUN_OUTCOME[run['outcome']]}",
+                "", "### 运行环境", "", markdown_inline(run["environment"]),
+                "", "### 实际执行方法", "", markdown_inline(run["method"]),
+                "", "### 实际观察", "", markdown_inline(run["observed"]),
+                "", "### 运行证据", "",
+            ))
+            page.extend(f"- [{markdown_inline(link['title'])}](<{link['url']}>)" for link in run["evidence"])
+        if note["status"] == "reviewed":
+            review = note["review"]
+            page.extend((
+                "", "## 独立复核", "", f"- **复核者** {markdown_inline(review['reviewer'])}",
+                f"- **复核版本** {review['revision']}", f"- [复核记录](<{review['url']}>)",
+                f"- [对应运行证据](<{review['evidence_url']}>)", "", markdown_inline(review["summary"]),
+            ))
+        (directory / f"{note_id}.md").write_text("\n".join(page) + "\n", encoding="utf-8")
 
 
 def read_feed():
     path = ROOT / "content" / "items.json"
     if path.is_symlink():
         raise ValueError("content/items.json must be a regular source file")
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def read_community():
+    path = ROOT / "content" / "community.json"
+    if path.is_symlink() or not path.is_file():
+        raise ValueError("content/community.json must be a regular source file")
     return json.loads(path.read_text(encoding="utf-8"))
 
 
@@ -243,6 +399,8 @@ def build(out):
         raise ValueError("Output must be a new or empty directory")
     data = read_feed()
     edition_time, item_times = validate(data)
+    community = read_community()
+    validate_community(community, item_times)
     out.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix=".agent-hot-", dir=out.parent) as scratch:
         staging = Path(scratch) / "site"
@@ -258,7 +416,8 @@ def build(out):
             json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8",
         )
         write_rss(staging / "rss.xml", data, edition_time, item_times)
-        write_pages(staging, data)
+        write_community(staging, community)
+        write_pages(staging, data, community)
         staging.replace(out)
     return data
 
