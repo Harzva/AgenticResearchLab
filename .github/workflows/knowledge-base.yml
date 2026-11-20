@@ -1,0 +1,58 @@
+name: Build knowledge base
+
+on:
+  pull_request:
+    paths:
+      - "knowledge-base/**"
+      - "src/agentic_research_lab/**"
+      - "tests/**"
+      - "pyproject.toml"
+      - ".github/workflows/knowledge-base.yml"
+  push:
+    branches: ["**"]
+    paths:
+      - "knowledge-base/**"
+      - "src/agentic_research_lab/**"
+      - "tests/**"
+      - "pyproject.toml"
+      - ".github/workflows/knowledge-base.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run repository tests
+        run: |
+          python -m pip install -e .
+          python -m unittest discover -s tests -v
+      - name: Build public site
+        run: |
+          python3 knowledge-base/build.py --out "$RUNNER_TEMP/agent-papers"
+          for file in index.html styles.css app.js graph.js research.js catalog.json catalog.csv llms.txt; do
+            if [ ! -s "$RUNNER_TEMP/agent-papers/$file" ]; then
+              echo "Missing static site file: $file" >&2
+              exit 1
+            fi
+          done
+          unexpected=$(find "$RUNNER_TEMP/agent-papers" \( -type l -o -iname '*.pdf' \) -print -quit)
+          if [ -n "$unexpected" ]; then
+            echo "Public site artifact contains a symbolic link or raw PDF" >&2
+            exit 1
+          fi
+      - name: Upload static site
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-papers
+          path: ${{ runner.temp }}/agent-papers
+          if-no-files-found: error

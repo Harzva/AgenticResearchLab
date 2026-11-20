@@ -1,0 +1,55 @@
+{
+  "papers": [
+    {
+      "id": "tpami-2025-etpnav",
+      "title": "ETPNav: Evolving Topological Planning for Vision-Language Navigation in Continuous Environments",
+      "authors": ["Dong An", "Hanqing Wang", "Wenguan Wang", "Zun Wang", "Yan Huang", "Keji He", "Liang Wang"],
+      "venue": "TPAMI",
+      "year": 2025,
+      "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "volume": 47,
+      "number": 7,
+      "pages": "5130--5145",
+      "doi": "10.1109/TPAMI.2024.3386695",
+      "abstract": "Public abstract summary: ETPNav builds a topological map online from proposed waypoints and separates route planning from low-level obstacle avoidance in continuous vision-language navigation.",
+      "paper_url": "https://ieeexplore.ieee.org/document/10495141/",
+      "pdf_url": "https://arxiv.org/pdf/2304.03047",
+      "code_url": "https://github.com/MarSaKi/ETPNav",
+      "source_url": "https://api.crossref.org/works/10.1109/TPAMI.2024.3386695"
+    },
+    {
+      "id": "tpami-2025-jarvis-1",
+      "title": "JARVIS-1: Open-World Multi-Task Agents With Memory-Augmented Multimodal Language Models",
+      "authors": ["Zihao Wang", "Shaofei Cai", "Anji Liu", "Yonggang Jin", "Jinbing Hou", "Bowei Zhang", "Haowei Lin", "Zhaofeng He", "Zilong Zheng", "Yaodong Yang", "Xiaojian Ma", "Yitao Liang"],
+      "venue": "TPAMI",
+      "year": 2025,
+      "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "volume": 47,
+      "number": 3,
+      "pages": "1894--1907",
+      "doi": "10.1109/TPAMI.2024.3511593",
+      "abstract": "Public abstract summary: JARVIS-1 combines multimodal planning and goal-conditioned control in Minecraft, using memory of past experiences to support longer tasks.",
+      "paper_url": "https://ieeexplore.ieee.org/document/10778628/",
+      "pdf_url": "https://arxiv.org/pdf/2311.05997",
+      "code_url": "https://github.com/CraftJarvis/JARVIS-1",
+      "source_url": "https://api.crossref.org/works/10.1109/TPAMI.2024.3511593"
+    },
+    {
+      "id": "tpami-2023-k-eqa",
+      "title": "Knowledge-Based Embodied Question Answering",
+      "authors": ["Sinan Tan", "Mengmeng Ge", "Di Guo", "Huaping Liu", "Fuchun Sun"],
+      "venue": "TPAMI",
+      "year": 2023,
+      "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "volume": 45,
+      "number": 10,
+      "pages": "11948--11960",
+      "doi": "10.1109/TPAMI.2023.3277206",
+      "abstract": "Public abstract summary: K-EQA uses neural program synthesis for reasoning over external knowledge and a 3D scene graph. The graph acts as memory of visited scenes for follow-up questions.",
+      "paper_url": "https://ieeexplore.ieee.org/document/10128752/",
+      "pdf_url": "https://arxiv.org/pdf/2109.07872",
+      "code_url": null,
+      "source_url": "https://api.crossref.org/works/10.1109/TPAMI.2023.3277206"
+    }
+  ]
+}

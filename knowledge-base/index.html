@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="按会议和期刊查找 Agent 论文，比较技术路线，获取原文、公开 PDF 和科研资料。">
+  <meta name="theme-color" content="#262237">
+  <title>Agent 论文知识库 · Harzva</title>
+  <link rel="alternate" type="application/json" title="Agent 论文目录" href="./catalog.json">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到论文目录</a>
+  <header class="top">
+    <a class="brand" href="./" aria-label="Agent 论文知识库首页">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Agent 论文知识库</span>
+    </a>
+    <div class="top-links">
+      <a href="./llms.txt">Agent 入口</a>
+      <a href="https://github.com/Harzva/AgenticResearchLab">GitHub</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-labelledby="venues-title">
+      <h2 id="venues-title">会议与期刊</h2>
+      <nav id="venues" aria-label="按会议或期刊浏览"></nav>
+      <div class="sidebar-foot">
+        <a href="./catalog.json">JSON 目录</a>
+        <a href="./catalog.csv">CSV 目录</a>
+      </div>
+    </aside>
+
+    <main id="main" class="main" tabindex="-1">
+      <nav class="views" aria-label="知识库视图">
+        <a href="./" data-view="papers" aria-current="page">论文目录</a>
+        <a href="?view=research" data-view="research">科研工作台 <span id="saved-count" hidden></span></a>
+        <a class="graph-jump" href="#graph-title">关系图</a>
+      </nav>
+
+      <div class="workspace">
+        <section class="center" aria-label="论文和科研资料">
+          <div id="content" aria-busy="true">
+            <h1>论文目录</h1>
+            <p class="state-message">正在载入公开论文目录…</p>
+          </div>
+        </section>
+
+        <aside class="graph-panel" aria-labelledby="graph-title">
+          <header class="graph-head">
+            <h2 id="graph-title">论文关系图</h2>
+            <p>点选节点浏览论文，连线表示发表来源或可追溯的技术路线。</p>
+          </header>
+          <div id="graph"></div>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <p id="announcement" class="sr-only" role="status"></p>
+  <div id="toast" class="toast" aria-hidden="true" hidden></div>
+  <noscript>
+    <p class="noscript">可以直接读取 <a href="./llms.txt">Agent 使用说明</a>、
+      <a href="./catalog.json">JSON 目录</a>或<a href="./catalog.csv">CSV 目录</a>。</p>
+  </noscript>
+</body>
+</html>

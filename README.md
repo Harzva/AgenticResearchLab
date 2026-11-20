@@ -4,7 +4,7 @@
 
 ### Turn projects and topics into evidence-grounded agentic research.
 
-[Mobile Agentic AI](awesome/mobile-agentic-ai/README.md) · [All 1,242 Agentic Papers](awesome/all-agentic-papers-2026/README.md) · [Upgrade Plan](docs/next-upgrade-plan.md) · [Research Method](docs/research-method.md) · [Contributing](CONTRIBUTING.md)
+[Agent 论文知识库](https://harzva.online/agent-papers/) · [Mobile Agentic AI](awesome/mobile-agentic-ai/README.md) · [All 1,242 Agentic Papers](awesome/all-agentic-papers-2026/README.md) · [Upgrade Plan](docs/next-upgrade-plan.md) · [Research Method](docs/research-method.md) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -13,6 +13,21 @@ AgenticResearchLab is a local-first research tool for answering a concrete quest
 > Given a software project or research topic, what would make it a necessary, novel, and testable agentic research contribution?
 
 It combines curated topic catalogs, an external paper corpus, deterministic retrieval, and rejection-oriented research checks. It does **not** treat “add multiple agents” as novelty and does not invent papers, repositories, results, or venues.
+
+## Agent 论文知识库
+
+按论文发表的会议或期刊浏览，首批收录 CVPR、ICLR、ICML、AAAI、ECCV、IJCAI 和 TPAMI。图谱实线表示论文的发表来源，虚线依据题目或摘要中的技术关键词。科研工作台可找相近论文、保存对照清单，并生成检索、写作或实验计划。
+
+把 [Agent 入口](https://harzva.online/agent-papers/llms.txt) 或论文详情中的 JSON 链接交给 Agent，即可获取书目、原文和已有的公网 PDF 地址。下载由原站提供。公开页面还提供 [JSON 目录](https://harzva.online/agent-papers/catalog.json) 和 [CSV 目录](https://harzva.online/agent-papers/catalog.csv)。
+
+本地预览需要 Python 3.11+。从仓库根目录构建到新目录，然后在浏览器打开 `http://127.0.0.1:8080/`。
+
+```sh
+python3 knowledge-base/build.py --out build/agent-papers
+python3 -m http.server 8080 --bind 127.0.0.1 --directory build/agent-papers
+```
+
+[公开数据来源与同步](knowledge-base/sources/README.md) · [GitHub 构建、部署与回滚](knowledge-base/DEPLOY.md)
 
 ## First built-in topic
 
