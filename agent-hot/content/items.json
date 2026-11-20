@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "slug": "agent-research",
+    "title": "Agent 怎么做科研？从找论文到跑实验",
+    "description": "从检索相关论文、核对原文证据到设计可证伪的实验，再用固定评测挑选下一轮改动。每个案例附公开来源和可以自己动手验证的一步。",
+    "published_at": "2026-11-20"
+  },
+  "items": [
+    {
+      "id": "inspire",
+      "title": "INSPIRE：找得到一篇相关论文，还要找齐关键前作",
+      "stage": "literature",
+      "summary": "给 Agent 一道删去答案的研究题，观察它能否找回真正帮助解题的前作。INSPIRE 记录每一步检索结果，可以区分漏搜、漏选和排错顺序。",
+      "evidence": "作者在 476 个计算机科学目标上使用统一的检索接口和预算。最好成绩为 nDCG@10 0.284。分阶段分析发现，关键前作没有出现在检索结果里是最大的损失来源。",
+      "reproduce": "从熟悉的领域挑一篇论文，只把研究问题给 Agent。自己事先标出三篇关键前作，再比对它的检索日志，记录前作首次出现在哪轮、是否被保留及最终排名。",
+      "published_at": "2026-09-27",
+      "sources": [
+        {
+          "type": "paper",
+          "title": "INSPIRE 论文",
+          "url": "https://arxiv.org/abs/2609.33233",
+          "pdf_url": "https://arxiv.org/pdf/2609.33233"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "openscholar",
+      "title": "OpenScholar：让综述里的每个结论能回到原文段落",
+      "stage": "literature",
+      "summary": "OpenScholar 先检索论文段落，再合成带引用的跨论文回答。需要核对一条说法时，读者可以沿引用找到对应原文。",
+      "evidence": "Nature 论文报告，语料规模为约 4,500 万篇开放获取论文。ScholarQABench 包含 2,967 个专家编写的查询和 208 个长答案，跨论文综合是其中一类任务。",
+      "reproduce": "选一个计算机科学问题和三篇可下载论文，让 Agent 输出一张结论、论文版本、页码、原文片段对照表。人工抽核五行，记下原文是否支持结论及适用条件。",
+      "published_at": "2026-02-04",
+      "sources": [
+        {
+          "type": "paper",
+          "title": "OpenScholar Nature 论文",
+          "url": "https://www.nature.com/articles/s41586-025-10072-4",
+          "pdf_url": "https://www.nature.com/articles/s41586-025-10072-4.pdf"
+        },
+        {
+          "type": "repo",
+          "title": "OpenScholar 作者实现",
+          "url": "https://github.com/AkariAsai/OpenScholar"
+        }
+      ]
+    },
+    {
+      "id": "deepresearch-bench",
+      "title": "DeepResearch Bench：把报告质量和引用准确性分开评",
+      "stage": "literature",
+      "summary": "一份研究报告需要覆盖问题，也需要让引用支撑对应句子。这个基准用两套指标分别检查成稿质量和检索引用。",
+      "evidence": "初版包括 22 个领域的 100 道专家设计任务。论文分别用 RACE 评估报告质量，用 FACT 检查引用是否准确以及有效引用数量。",
+      "reproduce": "给两个 Agent 同一道综述问题和相同检索预算。盲评报告的完整性，再随机抽十条引用核对来源，并分别记录两种分数。",
+      "published_at": "2025-06-13",
+      "sources": [
+        {
+          "type": "paper",
+          "title": "DeepResearch Bench 论文",
+          "url": "https://arxiv.org/abs/2506.11763",
+          "pdf_url": "https://arxiv.org/pdf/2506.11763"
+        }
+      ]
+    },
+    {
+      "id": "research-agent",
+      "title": "ResearchAgent：从一篇种子论文推到可检验的新问题",
+      "stage": "hypothesis",
+      "summary": "ResearchAgent 由一篇种子论文找出相关文献与知识实体，再逐轮改写研究问题、方法和实验设计。多个评审 Agent 提供结构化反馈。",
+      "evidence": "作者实现从 Semantic Scholar 论文 ID 出发，取回引文与相关实体，然后让评审 Agent 按多维标准提意见。论文说明这些评审维度来自研究者判断。",
+      "reproduce": "选知识库里一篇有公开代码的论文，让 Agent 只产出一条假设、一个最接近的基线和一个能推翻假设的实验。人工核对前作中是否已做过同一比较。",
+      "published_at": "2024-04-11",
+      "sources": [
+        {
+          "type": "paper",
+          "title": "ResearchAgent 论文",
+          "url": "https://arxiv.org/abs/2404.07738",
+          "pdf_url": "https://arxiv.org/pdf/2404.07738"
+        },
+        {
+          "type": "repo",
+          "title": "ResearchAgent 作者实现",
+          "url": "https://github.com/JinheonBaek/ResearchAgent"
+        }
+      ]
+    },
+    {
+      "id": "sci-agent-exam",
+      "title": "SCI-AGENT-EXAM：研究方案的叙述和代码各自验收",
+      "stage": "hypothesis",
+      "summary": "研究任务通常既有文字论证，也有可运行的脚本。这个基准为两者分别设计验收方法，并观察 Agent 在运行过程中是否持续接近解答。",
+      "evidence": "作者发布 120 道专家整理的任务，覆盖 11 个学科和 7 类研究任务。可执行产物由确定性程序核对，文本产物采用经专家校准的模型评审。",
+      "reproduce": "选一项计算机方向的小实验，在运行前写下假设、预期方向和失败判据。提交两份证据，一份是能在新环境重跑的脚本，另一份是每条结论对应的日志位置。",
+      "published_at": "2026-10-23",
+      "sources": [
+        {
+          "type": "paper",
+          "title": "SCI-AGENT-EXAM 论文",
+          "url": "https://arxiv.org/abs/2610.32441",
+          "pdf_url": "https://arxiv.org/pdf/2610.32441"
+        },
+        {
+          "type": "repo",
+          "title": "SCI-AGENT-EXAM 任务与评测",
+          "url": "https://github.com/SKYLENAGE-AI/Sci-Agent-Exam"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "ai-scientist",
+      "title": "The AI Scientist：把选题、实验、写作和评审接起来",
+      "stage": "experiment",
+      "summary": "Sakana AI 将机器学习选题、代码修改、实验、绘图、写作和模型评审接到同一流程，并比较模板和开放探索两种起点。",
+      "evidence": "2026 年正式发表于 Nature。作者记录了在获组织方同意后的 ICLR 2025 工作坊评审，其中一篇生成稿通过首轮并按预先约定撤回。可在作者仓库核对代码、生成稿和研究结构。",
+      "reproduce": "选作者仓库里的小模型模板，固定数据和随机种子，只让 Agent 增加一个对照。逐项比对论文表格、日志、代码改动和评审意见，再决定这条结论是否可写进稿件。",
+      "published_at": "2026-03-25",
+      "sources": [
+        {
+          "type": "paper",
+          "title": "The AI Scientist Nature 论文",
+          "url": "https://www.nature.com/articles/s41586-026-10265-5",
+          "pdf_url": "https://www.nature.com/articles/s41586-026-10265-5.pdf"
+        },
+        {
+          "type": "report",
+          "title": "Sakana AI 研究发布说明",
+          "url": "https://sakana.ai/ai-scientist-nature/"
+        },
+        {
+          "type": "repo",
+          "title": "AI Scientist-v2 作者实现",
+          "url": "https://github.com/SakanaAI/AI-Scientist-v2"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "agent-action-bench",
+      "title": "AgentActionBench：复现实验时也要留下过程证据",
+      "stage": "experiment",
+      "summary": "这项 NLPCC 共享任务把复现拆成读论文、写计划、改代码、跑命令和核结果。过程日志能定位 Agent 是在哪一步脱离了原实验。",
+      "evidence": "作者在 150 篇论文上设计评分细则，用 MCP 行为记录器保存轨迹。其中约 10% 的案例被人工标注用于验证，作者实验将命令执行识别为主要难点。",
+      "reproduce": "在公开仓库选一个机器学习案例。保存 Agent 的计划、修改、退出码和输出，再用主表里一个预先选定的数值逐项比对。另请一人复核缺少哪项产物。",
+      "published_at": "2026-09-10",
+      "sources": [
+        {
+          "type": "paper",
+          "title": "NLPCC 2026 共享任务论文",
+          "url": "https://arxiv.org/abs/2609.11117",
+          "pdf_url": "https://arxiv.org/pdf/2609.11117"
+        },
+        {
+          "type": "repo",
+          "title": "共享任务官方仓库",
+          "url": "https://github.com/KOU-199024/NLPCC-2026-Shared-Task-11"
+        }
+      ]
+    },
+    {
+      "id": "paperbench",
+      "title": "PaperBench：按评分清单验收论文复现",
+      "stage": "experiment",
+      "summary": "复现一篇论文包括理解结论、实现代码和跑出关键结果。PaperBench 让原论文作者共同编写分层评分表，分别检查这些产物。",
+      "evidence": "初版覆盖 ICML 2024 的 20 篇论文和 8,316 个可评分子项。首发报告中，采用基础脚手架的 Claude 3.5 Sonnet 平均复现分 21.0%。公开仓库也列出其他脚手架和运行时限的成绩。",
+      "reproduce": "挑一篇含公开评判清单的论文，先完成一条可独立运行的叶节点任务。把数据版本、命令、产物及误差容差交给另一人照表复核。",
+      "published_at": "2025-04-02",
+      "sources": [
+        {
+          "type": "paper",
+          "title": "PaperBench 论文",
+          "url": "https://arxiv.org/abs/2504.01848",
+          "pdf_url": "https://arxiv.org/pdf/2504.01848"
+        },
+        {
+          "type": "report",
+          "title": "OpenAI PaperBench 发布说明",
+          "url": "https://openai.com/index/paperbench/"
+        },
+        {
+          "type": "repo",
+          "title": "OpenAI PaperBench 实现",
+          "url": "https://github.com/openai/frontier-evals/tree/main/project/paperbench"
+        }
+      ]
+    },
+    {
+      "id": "mle-bench",
+      "title": "MLE-bench：训练可以自动化，成绩要在同一口径比",
+      "stage": "experiment",
+      "summary": "MLE-bench 把 Kaggle 比赛整理成统一的机器学习工程评测，让 Agent 分别准备数据、训练和提交可评分产物。",
+      "evidence": "作者整理 75 场比赛，并用 Kaggle 公共榜单设定人类参照。首发报告中，最佳受测配置在 16.9% 的比赛达到至少铜牌水平。",
+      "reproduce": "选一个小型非敏感任务，固定训练验证切分、预算和一个可运行基线。让 Agent 只调整一个要素，保留提交文件并用同一评分脚本比较。",
+      "published_at": "2024-10-10",
+      "sources": [
+        {
+          "type": "report",
+          "title": "OpenAI MLE-bench 发布说明",
+          "url": "https://openai.com/index/mle-bench/"
+        },
+        {
+          "type": "repo",
+          "title": "MLE-bench 作者实现",
+          "url": "https://github.com/openai/mle-bench"
+        }
+      ]
+    },
+    {
+      "id": "autoresearch",
+      "title": "autoresearch：五分钟一轮，按同一指标留用候选",
+      "stage": "iteration",
+      "summary": "Karpathy 的单 GPU 实验把可修改的训练脚本、固定准备流程和 Agent 指令拆成不同文件。每轮在同一时间预算下比较验证指标。",
+      "evidence": "作者仓库以约五分钟为单次训练预算，通过验证集每字节比特数 val_bpb 比较候选，运行记录保留每轮表现及保留或回退结果。",
+      "reproduce": "先固定一份数据切分和一个小基线，让 Agent 在连续两轮各只改一个超参。写下 seed、耗时和验证分数，并用预留切分重跑获胜配置。",
+      "published_at": "2026-03-06",
+      "sources": [
+        {
+          "type": "repo",
+          "title": "Karpathy autoresearch 作者仓库",
+          "url": "https://github.com/karpathy/autoresearch"
+        }
+      ]
+    },
+    {
+      "id": "rrsi",
+      "title": "RRSI：Agent 自我改进要通过稳定性和留出测试",
+      "stage": "iteration",
+      "summary": "RRSI 固定底层模型，让 Agent 逐轮改进提示、流程或工具。候选选择考虑测量噪声、推理开销和对原任务的过拟合。",
+      "evidence": "作者用重复运行或重采样估计基线波动，再为候选收益设门槛，并记录分数和 Token 成本。公开仓库中，Harvey LAB 留出任务未进入候选选择，得分由 86.9 升到 89.2。论文报告，演化后的系统相对无正则约束的演化方案少用了约 30% 的策略模型 Token。",
+      "reproduce": "固定模型和一个文档整理任务集，重复跑基线估计波动。只在开发集选一个改动，再用此前未参与选择的留出任务复验，记下各次的分数、失败率及 Token 数。",
+      "published_at": "2026-09-21",
+      "sources": [
+        {
+          "type": "paper",
+          "title": "RRSI 论文",
+          "url": "https://arxiv.org/abs/2609.24972",
+          "pdf_url": "https://arxiv.org/pdf/2609.24972"
+        },
+        {
+          "type": "repo",
+          "title": "Google Research RRSI 实现与评测记录",
+          "url": "https://github.com/google-research/rrsi"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "darwin-godel-machine",
+      "title": "Darwin Gödel Machine：把 Agent 自身的改动也纳入回归评测",
+      "stage": "iteration",
+      "summary": "DGM 是递归自我改进（RSI）的实验案例。它从版本档案里选择已有 Agent，提出对自身实现的改动，再用编码基准验证并保留多条分支。",
+      "evidence": "论文报告 SWE-bench 从 20.0% 提升到 50.0%，Polyglot 从 14.2% 提升到 30.7%，并对比了缺少自我改进或开放式探索的版本。这些是作者在所述编码基准上的实验结果。",
+      "reproduce": "准备一个格式化或测试生成的小型 Agent 基线，冻结任务和评测脚本。每轮只允许修改一个普通工具组件，在隔离工作区执行公开测试，由人审阅改动并用保留任务复验。",
+      "published_at": "2025-05-29",
+      "sources": [
+        {
+          "type": "paper",
+          "title": "Darwin Gödel Machine 论文",
+          "url": "https://arxiv.org/abs/2505.22954",
+          "pdf_url": "https://arxiv.org/pdf/2505.22954"
+        },
+        {
+          "type": "report",
+          "title": "Sakana AI DGM 发布说明",
+          "url": "https://sakana.ai/dgm/"
+        }
+      ]
+    }
+  ]
+}

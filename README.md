@@ -4,7 +4,7 @@
 
 ### Turn projects and topics into evidence-grounded agentic research.
 
-[Agent 论文知识库](https://harzva.online/agent-papers/) · [Mobile Agentic AI](awesome/mobile-agentic-ai/README.md) · [All 1,242 Agentic Papers](awesome/all-agentic-papers-2026/README.md) · [Upgrade Plan](docs/next-upgrade-plan.md) · [Research Method](docs/research-method.md) · [Contributing](CONTRIBUTING.md)
+[AgentHot](https://harzva.online/agent-hot/) · [Agent 论文知识库](https://harzva.online/agent-papers/) · [Mobile Agentic AI](awesome/mobile-agentic-ai/README.md) · [All 1,242 Agentic Papers](awesome/all-agentic-papers-2026/README.md) · [Upgrade Plan](docs/next-upgrade-plan.md) · [Research Method](docs/research-method.md) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -28,6 +28,14 @@ python3 -m http.server 8080 --bind 127.0.0.1 --directory build/agent-papers
 ```
 
 [公开数据来源与同步](knowledge-base/sources/README.md) · [GitHub 构建、部署与回滚](knowledge-base/DEPLOY.md)
+
+## AgentHot
+
+Agent 研究与开源热点。首期专题《Agent 怎么做科研？从找论文到跑实验》按找文献、提问题、做实验、看反馈再迭代组织。每条精选保留可核对的证据、验证方法和一手来源。
+
+[每日专题](https://harzva.online/agent-hot/?view=daily) 每天北京时间 14:00 更新。新文献专题根据 arXiv 公开订阅源聚合。新文献不足时，会从不同研究方向轮换发布基础文献回顾。保留日期页及机器可读版本。
+
+[精选 RSS](https://harzva.online/agent-hot/rss.xml) · [每日专题 RSS](https://harzva.online/agent-hot/daily/rss.xml) · [Agent 入口](https://harzva.online/agent-hot/llms.txt) · [RSDL 拆解](agent-hot/RSDL-REFERENCE.md) · [构建与发布](agent-hot/DEPLOY.md)
 
 ## First built-in topic
 

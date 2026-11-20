@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173e37">
+  <meta name="description" content="Agent 研究与开源热点。读论文和技术报告，找到公开代码与可复现的实验入口。">
+  <link rel="canonical" href="https://harzva.online/agent-hot/">
+  <link rel="alternate" type="application/rss+xml" title="AgentHot" href="./rss.xml">
+  <link rel="alternate" type="application/json" href="./feed.json">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="data:,">
+  <title>AgentHot · Agent 研究与开源热点</title>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="masthead">
+    <div class="mast-inner">
+      <a class="brand" href="./" aria-label="AgentHot 首页">
+        <span class="wordmark">Agent<span>Hot</span></span>
+        <span class="brand-subtitle">Agent 研究与开源热点</span>
+      </a>
+      <nav class="site-links" aria-label="站点入口">
+        <a href="./" data-home aria-current="page">精选</a>
+        <a href="?view=daily" data-route>每日专题</a>
+        <a href="/agent-papers/">论文知识库</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="shell" tabindex="-1">
+    <header id="topic" class="intro">
+      <div class="edition-label"><span>首期专题</span><time id="edition-date" datetime="2026-11-20">2026.11.20</time></div>
+      <h1 id="edition-title">Agent 怎么做科研？从找论文到跑实验</h1>
+      <p id="edition-description">从论文、技术报告和开源项目里，找得到可以核对的证据和可以复现的方法。</p>
+      <nav id="edition-steps" class="edition-steps" aria-label="按科研环节浏览"></nav>
+    </header>
+
+    <div class="layout">
+      <section class="feed" aria-label="精选和文章">
+        <div id="browse">
+          <div class="feed-head">
+            <h2>近期精选</h2>
+            <form id="search-form" role="search">
+              <label class="sr-only" for="query">搜索热点</label>
+              <input id="query" name="q" type="search" maxlength="160" placeholder="搜论文、工具或方法">
+              <button class="action" type="submit">搜索</button>
+            </form>
+          </div>
+          <nav id="filters" class="filters" aria-label="按来源类型筛选"></nav>
+          <div class="toolbar"><p id="result-count" class="result-count" role="status"></p><div id="feed-actions"></div></div>
+          <div id="feed-list" aria-busy="true"><p class="empty">正在载入精选…</p></div>
+        </div>
+        <article id="entry" class="entry" aria-labelledby="entry-title" hidden></article>
+      </section>
+
+      <aside class="sidebar" aria-label="查看与订阅">
+        <section class="panel" id="daily-panel">
+          <h2>每日专题</h2>
+          <div id="daily-teaser"><p>正在读取最新一期…</p></div>
+          <a href="?view=daily" data-route>查看每日专题</a>
+        </section>
+        <section class="panel">
+          <h2>继续研究</h2>
+          <a href="/agent-papers/">按会议和期刊查论文</a>
+          <a href="/agent-papers/?view=research">用科研工作台做文献对照</a>
+        </section>
+        <section class="panel">
+          <h2>订阅与 Agent</h2>
+          <p>订阅更新，或把入口发给 Agent 查原文、PDF 和代码。</p>
+          <div class="panel-links"><a href="./rss.xml">精选 RSS</a><a href="./daily/rss.xml">每日专题 RSS</a><a href="./feed.json">JSON</a><a href="./llms.txt">Agent 入口</a></div>
+        </section>
+        <section class="panel">
+          <h2>参与维护</h2>
+          <p>有值得读的研究？在 GitHub 提交工作与一手来源。</p>
+          <a href="https://github.com/Harzva/AgenticResearchLab/tree/main/agent-hot">公开内容与源码</a>
+        </section>
+      </aside>
+    </div>
+    <noscript><p>可以直接读取 <a href="./feed.json">JSON 精选</a>、<a href="./rss.xml">RSS</a> 或 <a href="./llms.txt">Agent 使用说明</a>。</p></noscript>
+  </main>
+
+  <footer class="shell site-footer">
+    <a href="./">AgentHot</a>
+    <a href="/agent-papers/">Agent 论文知识库</a>
+    <a href="https://github.com/Harzva/AgenticResearchLab">GitHub</a>
+  </footer>
+  <p id="notice" role="status" hidden></p>
+</body>
+</html>
