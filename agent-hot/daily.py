@@ -15,6 +15,7 @@ import re
 import signal
 import sys
 import tempfile
+from textwrap import shorten
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
@@ -34,6 +35,9 @@ ARXIV_HOSTS = {"arxiv.org", "export.arxiv.org", "www.arxiv.org"}
 ARXIV_PAPER = re.compile(r"/abs/(\d{4}\.\d{4,5})(?:v\d+)?\Z", re.ASCII)
 SOURCE_ERRORS = (OSError, EOFError, HTTPException, zlib.error, ValueError, ET.ParseError)
 DATE_FILE = re.compile(r"\d{4}-\d{2}-\d{2}\.json\Z", re.ASCII)
+EXCERPT_CHARS = 300
+SENTENCE_END = re.compile(r"""[.!?]["'”’）)\]]*(?:\s+|$)|[。！？][”’」』）】]*\s*""")
+ABBREVIATION = re.compile(r"\b(?:et al|figs?|eqs?|refs?|vs|(?:[a-z]\.)+[a-z])\.$", re.IGNORECASE)
 THEMES = (
     ("科研自动化与实验 Agent", r"research agents?|self-driving laborator|scientific|experiments?|科研|实验",
      "这些方法如何把一次性演示变成可复查的实验流程？"),
@@ -192,15 +196,35 @@ def choose_topic(rows, last_reviewed=None):
     return "Agent 研究方法", "怎样用同一组任务、指标和证据比较这些方法？", AGENT, rows
 
 
-def excerpt(row, matcher):
+def sentences(text):
+    start = 0
+    for boundary in SENTENCE_END.finditer(text):
+        if boundary.end() < len(text) and ABBREVIATION.search(text, start, boundary.start() + 1):
+            continue
+        yield text[start:boundary.end()].strip()
+        start = boundary.end()
+    if start < len(text):
+        yield text[start:]
+
+
+def fresh_excerpt(row, matcher):
     abstract = row["abstract"] or row["title"]
-    evidence = matcher.search(abstract)
-    start = max(0, evidence.start() - 36) if evidence else 0
-    end = start + 235
-    words = list(re.finditer(r"\S+", abstract[start:end]))
-    if len(words) > 22:
-        end = start + words[21].end()
-    return ("…" if start else "") + abstract[start:end].strip() + ("…" if end < len(abstract) else "")
+    if len(abstract) <= EXCERPT_CHARS:
+        return abstract
+
+    first_sentence = ""
+    for sentence in sentences(abstract):
+        if len(sentence) > EXCERPT_CHARS:
+            continue
+        if matcher.search(sentence):
+            return sentence
+        if not first_sentence:
+            first_sentence = sentence
+    if first_sentence:
+        return first_sentence
+
+    opening = shorten(abstract, width=EXCERPT_CHARS, placeholder="…")
+    return row["title"] if opening == "…" else opening
 
 
 def create_edition(day, now, feed, papers, history):
@@ -230,7 +254,9 @@ def create_edition(day, now, feed, papers, history):
         fresh if fresh else curated_candidates(feed), None if fresh else last_reviewed,
     )
     items = [
-        {key: row[key] for key in ("title", "url", "pdf_url", "published_at")} | {"excerpt": excerpt(row, matcher)}
+        {key: row[key] for key in ("title", "url", "pdf_url", "published_at")} | {
+            "excerpt": fresh_excerpt(row, matcher) if fresh else row["abstract"],
+        }
         for row in selected[:5]
     ]
     if fresh:
