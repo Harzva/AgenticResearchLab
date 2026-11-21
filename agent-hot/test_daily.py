@@ -4,7 +4,15 @@ from http.client import IncompleteRead
 from io import BytesIO, StringIO
 import unittest
 
-from daily import ATOM, MAX_ATOM_CANDIDATES, candidate, create_edition, stream_atom_candidates
+from daily import (
+    ATOM,
+    EXCERPT_CHARS,
+    MAX_ATOM_CANDIDATES,
+    candidate,
+    create_edition,
+    edition_markdown,
+    stream_atom_candidates,
+)
 
 
 def entry(number):
@@ -56,6 +64,48 @@ class DailyTest(unittest.TestCase):
         now = datetime(2026, 11, 20, 8, tzinfo=timezone.utc)
         edition = create_edition(date(2026, 11, 20), now, {}, [repeated, other], history)
         self.assertEqual([item["url"] for item in edition["items"]], [other["url"]])
+
+    def test_curated_review_keeps_the_full_editorial_summary(self):
+        summary = (
+            "ResearchAgent 由一篇种子论文找出相关文献与知识实体，"
+            "再逐轮改写研究问题、方法和实验设计。多个评审 Agent 提供结构化反馈。"
+        )
+        feed = {"items": [{
+            "title": "ResearchAgent",
+            "summary": summary,
+            "published_at": "2024-04-11",
+            "sources": [{"type": "paper", "url": "https://arxiv.org/abs/2404.07738"}],
+        }]}
+        now = datetime(2026, 11, 21, 6, tzinfo=timezone.utc)
+        edition = create_edition(date(2026, 11, 21), now, feed, [], [])
+        self.assertEqual(edition["mode"], "review")
+        self.assertEqual(edition["items"][0]["excerpt"], summary)
+        self.assertIn(summary, edition_markdown(edition))
+
+    def test_fresh_excerpt_prefers_a_complete_relevant_sentence(self):
+        for sentence, introduction in (
+            ("We evaluate the agent on 3.5-hour tasks, e.g. those in Fig. 2.", "Prior work frames the problem. "),
+            ("我们用固定实验任务对照两类 Agent。", "背景材料介绍了这项工作的范围。"),
+        ):
+            with self.subTest(sentence=sentence):
+                paper = candidate(
+                    "Agent study", "https://arxiv.org/abs/2611.00456", None, "2026-11-21T05:00:00Z",
+                    introduction * 25 + sentence,
+                )
+                now = datetime(2026, 11, 21, 6, tzinfo=timezone.utc)
+                edition = create_edition(date(2026, 11, 21), now, {}, [paper], [])
+                self.assertEqual(edition["mode"], "fresh")
+                self.assertEqual(edition["items"][0]["excerpt"], sentence)
+
+    def test_fresh_long_sentence_falls_back_to_a_whole_word_prefix(self):
+        abstract = "Agent evaluation " + "methodology " * 35 + "concludes here."
+        paper = candidate("Agent study", "https://arxiv.org/abs/2611.00456", None, "2026-11-21T05:00:00Z", abstract)
+        now = datetime(2026, 11, 21, 6, tzinfo=timezone.utc)
+        edition = create_edition(date(2026, 11, 21), now, {}, [paper], [])
+        excerpt = edition["items"][0]["excerpt"]
+        self.assertLessEqual(len(excerpt), EXCERPT_CHARS)
+        self.assertTrue(excerpt.startswith("Agent evaluation methodology"))
+        self.assertTrue(excerpt.endswith(" methodology…"))
 
 
 if __name__ == "__main__":
