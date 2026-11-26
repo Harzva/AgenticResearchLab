@@ -275,10 +275,29 @@ function renderEntry(item, focus) {
 function modeLabel(mode) { return mode === "fresh" ? "新文献专题" : "基础文献回顾"; }
 function editionTitle(title) { return title.replace(/^每日(?:专题|回顾)｜/, ""); }
 
+function renderPulse() {
+  const itemCount = feed?.items?.length ?? 0;
+  const editionCount = archive?.editions?.length ?? 0;
+  const noteCount = community?.length ?? 0;
+  const latest = archive?.editions?.find(item => item.date === archive.latest);
+  const reviewed = community?.filter(note => note.status === "reviewed").length ?? 0;
+  const pulseItems = $("#pulse-items");
+  const pulseEditions = $("#pulse-editions");
+  const pulseNotes = $("#pulse-notes");
+  if (!pulseItems || !pulseEditions || !pulseNotes) return;
+  pulseItems.textContent = formatCount.format(itemCount);
+  pulseEditions.textContent = formatCount.format(editionCount);
+  pulseNotes.textContent = formatCount.format(noteCount);
+  $("#pulse-items-note").textContent = itemCount ? "条公开资料" : "正在读取资料";
+  $("#pulse-editions-note").textContent = latest ? "期 · 更新至 " + displayDate(latest.date) : "正在读取归档";
+  $("#pulse-notes-note").textContent = reviewed ? reviewed + " 条已独立复核" : "等待公开运行记录";
+}
+
 function renderTeaser() {
   const latest = archive?.editions.find(item => item.date === archive.latest);
   if (!latest) {
     $("#daily-teaser").textContent = archiveError ? "暂时无法读取专题归档。" : "正在读取最新一期…";
+    renderPulse();
     return;
   }
   const path = route({ view: "daily", day: latest.date });
@@ -351,6 +370,7 @@ async function loadCommunity() {
   } catch { communityError = true; }
   communityLoading = false;
   renderCommunityTeaser();
+  renderPulse();
   if (state.view === "community") renderCommunity(entry.contains(document.activeElement));
   if (state.view === "feed" && state.item) {
     const share = route({ view: "feed", kind: "all", stage: "", q: "", sort: "recent", item: state.item });
@@ -443,6 +463,7 @@ async function loadArchive() {
     archive = { ...data, editions: data.editions.sort((a, b) => b.date.localeCompare(a.date)) };
   } catch { archiveError = true; }
   renderTeaser();
+  renderPulse();
   if (state.view === "daily") renderDaily(false);
   if (state.view === "archive") renderArchive(false);
   if (state.view === "saved") renderSaved(false);
@@ -784,6 +805,7 @@ itemsById = new Map(feed.items.map(item => [item.id, item]));
 state = getState();
 bind();
 $("#open-search").disabled = false;
+renderPulse();
 render();
 loadArchive();
 loadCommunity();

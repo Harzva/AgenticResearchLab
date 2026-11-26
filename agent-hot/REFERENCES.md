@@ -14,6 +14,7 @@
 | **Product Hunt** | 发布归档给可跳到具体日期的日历，并有 Newsletter 入口。官方更新记录说明榜单分数与社区投票、讨论有关。 [发布归档](https://www.producthunt.com/leaderboard) · [产品更新](https://www.producthunt.com/changes) | 为日更专题提供过去任意一天的稳定入口。首期先做最近日期列表，长历史再采用月历。 |
 | **arXiv** | 人工智能近期条目按日期分页。每项带稳定编号、作者、分类和 PDF，部分同时提供 HTML。页面还可跳转当日新增与更新。 [cs.AI 近期论文](https://arxiv.org/list/cs.AI/recent) | 标题下显示预印本 ID 和版本或日期来源，一个入口直达官方全文。把修订挂到原条目下。 |
 | **Cool Papers** | 分类页的条目连续展示作者、摘要和 UTC 发布时间。条目旁可见 PDF、复制链接、Kimi 和关联论文入口。 [Cool Papers 人工智能分类](https://papers.cool/arxiv/cs.AI) | 把复制引用、原文、关联材料和 Agent 读取动作集中在详情的固定位置，检索列表保留阅读所需摘要。 |
+| **Just-DDL** | 联邦式多仓库 DDL 网络。子专题独立维护数据出口、crawler、校验和 Actions，总站按标准 JSON 汇总并发布。首页用状态点、活跃数量、来源数和下一节点组成紧凑看板。 [总站](https://just-agent.github.io/just-ddl/) · [源码](https://github.com/Just-Agent/just-ddl) · [Agent-DDL](https://github.com/Just-Agent/agent-ddl) | AgentHot 保留单层导航和编辑阅读流，借用首屏更新面板、公开数据入口和证据流。计数只来自已加载的公开数据，不把预测状态写成事实，也不复制其深色顶栏和绿色状态色。 |
 
 ## 本轮优先落地
 
