@@ -302,7 +302,7 @@ function archiveList() {
 }
 
 async function getJson(path) {
-  const res = await fetch(path, { headers: { Accept: "application/json" } });
+  const res = await fetch(path, { headers: { Accept: "application/json" }, cache: "no-cache" });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();
 }
