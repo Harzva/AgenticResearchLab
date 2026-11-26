@@ -47,6 +47,21 @@
     </div>
   </header>
 
+  <section class="network-bar" aria-label="AgentHot 更新网络">
+    <div class="network-inner">
+      <div class="network-identity">
+        <span class="network-dot" aria-hidden="true"></span>
+        <strong>AgentHot research network</strong>
+        <span class="network-note">公开来源 · 编辑核对 · 可复现步骤</span>
+      </div>
+      <nav class="network-links" aria-label="机器可读入口">
+        <a href="./feed.json">精选 JSON</a>
+        <a href="./daily/rss.xml">每日 RSS</a>
+        <a href="./community/index.json">实验笔记 JSON</a>
+      </nav>
+    </div>
+  </section>
+
   <main id="main" class="shell" tabindex="-1">
     <div id="home-hero" class="hero">
       <section class="today" aria-labelledby="today-title">
@@ -67,6 +82,35 @@
         <nav id="edition-steps" class="edition-steps" aria-label="按科研环节浏览"></nav>
       </section>
     </div>
+
+    <section id="pulse-board" class="pulse-board" aria-labelledby="pulse-title">
+      <div class="pulse-copy">
+        <div class="hero-kicker"><span class="pulse-spark" aria-hidden="true"></span>更新面板</div>
+        <h2 id="pulse-title">从发现到复现，保持一条可追踪的线</h2>
+        <p>AgentHot 把精选研究、每日专题和实验笔记放在同一条证据链上。数据入口和更新节奏都公开可查。</p>
+        <a class="pulse-link" href="https://github.com/Harzva/AgenticResearchLab/tree/main/agent-hot">查看源码与更新记录 <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="pulse-metrics">
+        <a class="pulse-metric pulse-metric-blue" href="./feed.json">
+          <span class="pulse-label">研究精选</span>
+          <strong id="pulse-items">—</strong>
+          <span id="pulse-items-note">条公开资料</span>
+        </a>
+        <a class="pulse-metric pulse-metric-coral" href="?view=daily" data-route>
+          <span class="pulse-label">每日专题</span>
+          <strong id="pulse-editions">—</strong>
+          <span id="pulse-editions-note">期已发布</span>
+        </a>
+        <a class="pulse-metric pulse-metric-amber" href="?view=community" data-route>
+          <span class="pulse-label">实验笔记</span>
+          <strong id="pulse-notes">—</strong>
+          <span id="pulse-notes-note">条公开记录</span>
+        </a>
+      </div>
+      <div class="pulse-flow" aria-label="AgentHot 证据流">
+        <span>公开来源</span><i aria-hidden="true">→</i><span>编辑核对</span><i aria-hidden="true">→</i><span>复现步骤</span><i aria-hidden="true">→</i><span>独立复核</span>
+      </div>
+    </section>
 
     <div class="layout">
       <div class="feed">
@@ -113,6 +157,7 @@
         </section>
       </aside>
     </div>
+
     <noscript><p>可以直接读取 <a href="./feed.json">JSON 精选</a>、<a href="./community/index.json">实验笔记 JSON</a>、<a href="./daily/rss.xml">每日专题 RSS</a> 或 <a href="./llms.txt">Agent 使用说明</a>。</p></noscript>
   </main>
 
